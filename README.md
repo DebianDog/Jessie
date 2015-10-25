@@ -4,7 +4,7 @@ DebianDog is very small 32-bit Debian Live CD shaped to look and act like Puppy 
 
 [Extra squashfs modules](https://github.com/DebianDog/Jessie/releases/tag/v.0.1)
 
-[Bugs and fixes information](https://github.com/DebianDog/Jessie/issues/1)
+[Bugs and fixes information](https://github.com/DebianDog/Jessie/blob/master/Bugs-and-Fixes.md)
 
 [Forum thread](http://murga-linux.com/puppy/viewtopic.php?t=99460)
 
