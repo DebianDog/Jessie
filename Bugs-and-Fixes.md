@@ -25,3 +25,9 @@ You can stop/start it from System -> Start/Stop Slim display-manager. More infor
 apt-get update
 apt-get install slim
 ```
+
+**4.** The included /sbin/cryptsetup doesn't create working encrypted save file. Install this fixed  [cryptsetup-bin_1.6.6-9-debdog_i386.deb](http://kazzascorner.com.au/saintless/DebianDog/DebianDog-Jessie/Packages/Mod/cryptsetup-bin_1.6.6-9-debdog_i386.deb) or run in terminal:
+```
+sudo apt-get update
+sudo apt-get install cryptsetup-bin
+```
