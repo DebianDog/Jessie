@@ -22,8 +22,8 @@ sudo apt-get install debdoginstallscripts
 In OpenBox version you can install this [slim](http://kazzascorner.com.au/saintless/DebianDog/DebianDog-Jessie/Packages/Extra/slim_1.3.6-4-ddjessie_i386.deb) package.
 You can stop/start it from System -> Start/Stop Slim display-manager. More information read [here.](http://murga-linux.com/puppy/viewtopic.php?p=869164#869164) Available also in debiandog-repository:
 ```
-apt-get update
-apt-get install slim
+sudo apt-get update
+sudo apt-get install slim
 ```
 
 **4.** The included /sbin/cryptsetup doesn't create working encrypted save file. Install this fixed  [cryptsetup-bin_1.6.6-9-debdog_i386.deb](http://kazzascorner.com.au/saintless/DebianDog/DebianDog-Jessie/Packages/Mod/cryptsetup-bin_1.6.6-9-debdog_i386.deb) or run in terminal:
