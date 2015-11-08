@@ -31,3 +31,11 @@ sudo apt-get install slim
 sudo apt-get update
 sudo apt-get install cryptsetup-bin
 ```
+
+**5.** Some fixes from Fred for fixdepinstall (install deb and dependencies right click option).
+[More information read here.](http://murga-linux.com/puppy/viewtopic.php?p=871384#871384)
+Install fixed version from the link above or from terminal:
+```
+sudo apt-get update
+sudo apt-get install fixdepinstall
+```
