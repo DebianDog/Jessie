@@ -39,3 +39,17 @@ Install fixed version from the link above or from terminal:
 sudo apt-get update
 sudo apt-get install fixdepinstall
 ```
+
+**6.** In OpenBox version when trying to install the full xfce4 desktop:
+```
+apt-get install xfce4	
+```
+
+There is an error:
+```
+xfce4 : Depends: libxfce4ui-utils (>= 4.10) but it is not going to be installed	
+```
+To fix it downgrade libxfce4ui-1-0 to official jessie version:
+```
+apt-get install libxfce4ui-1-0=4.10.0-6	
+```
