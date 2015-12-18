@@ -12,11 +12,16 @@ Or you can upgrade fixed gnome-mplayer-1.0.7 deb with:
     sudo apt-get update
     sudo apt-get install gnome-mplayer-1.0.7
 
-**2.** Fixes for frugal installer from Fred described [here.](http://murga-linux.com/puppy/viewtopic.php?p=867572#867572) Upgrade the installer package with:
+**2.** The installer scripts bugs fixing created new problem and the last two versions removed from the repository. 
+Recommended to make sure you have this version on your system by reinstalling this package: [debdoginstallscripts_1.0.5_i386.deb](http://kazzascorner.com.au/saintless/DebianDog/DebianDog-Jessie/Packages/Included/debdoginstallscripts_1.0.5_i386.deb)
+
+Or by running in terminal:
 ```
 sudo apt-get update
+sudo apt-get remove debdoginstallscripts
 sudo apt-get install debdoginstallscripts
 ```
+In case you have some problem with this package check out for updated deb package from Fred [here.](http://murga-linux.com/puppy/viewtopic.php?p=877300&sid=7a08609033f6af763ab2acf4c3941c8c#877300)
 
 **3.** Jwm version has xdm login manager included but it doesn't work well in OpenBox.
 In OpenBox version you can install this [slim](http://kazzascorner.com.au/saintless/DebianDog/DebianDog-Jessie/Packages/Extra/slim_1.3.6-4-ddjessie_i386.deb) package.
