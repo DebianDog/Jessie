@@ -61,3 +61,9 @@ apt-get install libxfce4ui-1-0=4.10.0-6
 **7.** For **porteus-boot only** we have a report about a problem with clean shutdown described [here](http://murga-linux.com/puppy/viewtopic.php?p=876371#876371). In case you experience the same problem extract this [archive](http://murga-linux.com/puppy/viewtopic.php?mode=attach&id=92743) with fix from **Jrb** inside /live/image/live/rootcopy
 
 The fix will be loaded only with porteus-boot without replacing the original /etc/init.d files for live-boot.
+
+**8.** Fix for squashfs module loading scripts from Fred. [More information read here.](http://murga-linux.com/puppy/viewtopic.php?p=878996#878996)
+```
+sudo apt-get update
+sudo apt-get install sfsload portablesfs-loadsfs-fuse
+```
