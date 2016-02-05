@@ -73,3 +73,10 @@ sudo apt-get install sfsload portablesfs-loadsfs-fuse
 sudo apt-get update
 sudo apt-get install frisbee
 ```
+
+**10.** Small fix for apt2sfs. [More information read here.](http://murga-linux.com/puppy/viewtopic.php?p=885536&sid=e09b92e591e85bcc4632168abdb32e5b#885536)
+```
+sudo apt-get update
+sudo apt-get install apt2sfs
+```
+
