@@ -14,5 +14,7 @@ b6a6b76c0c2c0b326ffcbc1073fe9f82  00-locale-files-jessie-openbox_xfce.squashfs
 7c59fb74f3837952237a7767055acd76  00-locale-files-jwm-icewm-jessie.squashfs
 f527ae623c1fd26dc88415b004fede36  061-man-doc-info-jessie.squashfs
 ecf5b22af33be8c0648898e339becff5  061-DEVX-DebianDog-Jessie.squashfs
-dca13c0d19152ab740ea1f2a742c1ae1  09-jessie-repo-2015.12.18.squashfs
 aa7bc3e44dc4e9491ad16857eb8cadde  slimjet-i386.squashfs
+7157161772cdb0c8a1a179f2e01ddd6b  09-jessie-repo-2016.02.05.squashfs
+e7fcaa7774e6975eb46b787a2b003593  3.16-NOPAE-kernel-squashfs-lz4-support.tar.gz
+acc16901f7817f0f736f1031d298dd11  3.16-PAE-kernel-squashfs-lz4-support.tar.gz
