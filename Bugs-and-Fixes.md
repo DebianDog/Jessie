@@ -80,3 +80,12 @@ sudo apt-get update
 sudo apt-get install apt2sfs
 ```
 
+**11.** Fix for porteus-boot initrd1.xz in case you are using **encrypted save file and usb keyboard**. More information about this problem read [here.](http://murga-linux.com/puppy/viewtopic.php?p=885874&sid=a1a579b99b8a00be9a2b36bc9a227635#885874)
+
+For **NOPAE** DD-Jessie iso versions (DebianDog-Jessie-jwm_icewm-2015-09-02.iso or DebianDog-Jessie-openbox_xfce-2015-09-02.iso) use this [initrd1.xz-hid-dd-nopae](https://github.com/DebianDog/Jessie/releases/download/v.0.1/initrd1.xz-hid-dd-nopae) instead initrd1.xz included in the iso.
+
+For **PAE** DD-Jessie iso versions (DebianDog-Jessie-openbox_xfce-2015-09-02-PAE.iso or DebianDog-Jessie-jwm_icewm-2015-09-02-PAE.iso) use this [initrd1.xz-hid-dd-pae](https://github.com/DebianDog/Jessie/releases/download/v.0.1/initrd1.xz-hid-dd-pae) instead initrd1.xz included in the iso.
+
+initrd1.xz will be replaced with the fixed versions in next iso updates.
+
+In case you don't use **encrypted save file + usb keyboard** combination there is no need to change initrd1.xz yet.
