@@ -103,7 +103,7 @@ sudo apt-get install porteusbootscripts=0.0.1
 
 ```
 
-**8.** New packages **sfs-get-smokey-get** and **debdog-repo-updater** uploaded.
+**13.** New packages **sfs-get-smokey-get** and **debdog-repo-updater** uploaded.
 
 We need to change some scripts and free some space by removing modules from kazzascorner.com.au and smokey01.com in order to make the maintaining easier. Sfs-get script will download the extra modules from github.com in the future for all DD versions and MintPup.
 
