@@ -113,3 +113,12 @@ sudo apt-get update
 sudo apt-get install debdog-repo-updater sfs-get-smokey-get
 sudo apt-get update
 ```
+
+**14.** **Only for DebianDog-Jwm version** fix for XDM login manager. In case XDM is activated using porteus-boot save on Exit and typing reboot command in terminal (instead using the Reboot-Shutdown menu) does not give option **not to save** changes. [More information read here.](https://github.com/DebianDog/Jessie/issues/2)
+To fix this just reisntall XDM (make sure to install debdog-repo-updater first and run apt-get update again - the previous fix):
+```
+sudo apt-get update
+sudo apt-get install --reinstall xdm
+
+```
+Or download and install the package [xdm_1.1.11-2_i386.deb](http://smokey01.com/saintless/DebianDog-Jessie/Packages/Included/xdm_1.1.11-2_i386.deb)
