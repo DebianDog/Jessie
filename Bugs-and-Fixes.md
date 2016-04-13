@@ -131,3 +131,4 @@ sudo apt-get update
 sudo apt-get install thunar
 
 ```
+Or download and install the package [thunar_1.6.3-2_i386.deb](http://www.smokey01.com/saintless/DebianDog-Jessie/Packages/Extra/thunar_1.6.3-2_i386.deb)
