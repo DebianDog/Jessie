@@ -125,7 +125,7 @@ Or download and install the package [xdm_1.1.11-2_i386.deb](http://smokey01.com/
 
 
 **15.** **Only for DebianDog-openbox_xfce version** fix for Thunar file-manager. When right-clicking on a file or folder > Properties, > Permissions, the options are disabled/greyed out. Fixed by recompiling Thunar (patched for to "not-show-root-warning") , see [Here](http://murga-linux.com/puppy/viewtopic.php?p=898519#898519) for more info.
-Install (install first debdog-repo-updater):
+To install: (install first debdog-repo-updater):
 ```
 sudo apt-get install debdog-repo-updater
 sudo apt-get update
