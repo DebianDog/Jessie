@@ -26,10 +26,11 @@ In case you have some problem with this package check out for updated deb packag
 **Update**: All previous bugs are fixed now in version 1.0.8, install:
 ```
 sudo apt-get update
+apt-get install debdog-repo-updater
 sudo apt-get install debdoginstallscripts
 ```
 Or download and install the package
-[debdoginstallscripts_1.0.8_i386.deb](http://kazzascorner.com.au/saintless/DebianDog/DebianDog-Jessie/Packages/Included/debdoginstallscripts_1.0.8_i386.deb)
+[debdoginstallscripts_1.0.8_i386.deb](http://www.smokey01.com/saintless/DebianDog-Jessie/Packages/Included/debdoginstallscripts_1.0.8_i386.deb)
 
 **3.** Jwm version has xdm login manager included but it doesn't work well in OpenBox.
 In OpenBox version you can install this [slim](http://kazzascorner.com.au/saintless/DebianDog/DebianDog-Jessie/Packages/Extra/slim_1.3.6-4-ddjessie_i386.deb) package.
