@@ -25,8 +25,9 @@ In case you have some problem with this package check out for updated deb packag
 
 **Update**: All previous bugs are fixed now in version 1.0.8, install:
 ```
-sudo apt-get update
-apt-get install debdog-repo-updater
+sudo apt-get update # if required
+sudo apt-get install debdog-repo-updater
+sudo apt-get update # apply new change in repositories listing
 sudo apt-get install debdoginstallscripts
 ```
 Or download and install the package
