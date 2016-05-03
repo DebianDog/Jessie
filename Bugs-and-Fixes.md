@@ -23,6 +23,14 @@ sudo apt-get install debdoginstallscripts
 ```
 In case you have some problem with this package check out for updated deb package from Fred [here.](http://murga-linux.com/puppy/viewtopic.php?p=877300&sid=7a08609033f6af763ab2acf4c3941c8c#877300)
 
+**Update**: All previous bugs are fixed now in version 1.0.8, install:
+```
+sudo apt-get update
+sudo apt-get install debdoginstallscripts
+```
+Or download and install the package
+[debdoginstallscripts_1.0.8_i386.deb](http://kazzascorner.com.au/saintless/DebianDog/DebianDog-Jessie/Packages/Included/debdoginstallscripts_1.0.8_i386.deb)
+
 **3.** Jwm version has xdm login manager included but it doesn't work well in OpenBox.
 In OpenBox version you can install this [slim](http://kazzascorner.com.au/saintless/DebianDog/DebianDog-Jessie/Packages/Extra/slim_1.3.6-4-ddjessie_i386.deb) package.
 You can stop/start it from System -> Start/Stop Slim display-manager. More information read [here.](http://murga-linux.com/puppy/viewtopic.php?p=869164#869164) Available also in debiandog-repository:
