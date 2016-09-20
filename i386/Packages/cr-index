@@ -50,7 +50,7 @@ function create_gnu_index ()
  
         # print the html header
         echo '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">';
-        echo "<html><head><title>Index of http://${DOMAIN}${SUBDIR}</title></head>";
+        echo "<html><head><title>Index of ${DOMAIN}${SUBDIR}</title></head>";
         echo "<body><h2>Index of ${SUBDIR}</h2><pre><b> Name                                                                      Last modified        Size</b>";
  
         # start of content output

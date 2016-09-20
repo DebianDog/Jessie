@@ -1234,24 +1234,6 @@ Description: personal organizer for GTK+
  configurable to meet the user's preferences.
 Homepage: http://clayo.org/osmo
 
-Package: wifibox-dhcpcd
-Priority: extra
-Section: checkinstall
-Installed-Size: 282
-Maintainer: root@wheezy
-Architecture: i386
-Version: 1.0.2
-Replaces: ceni, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, frisbee, wifibox, wifibox-tazpanel
-Depends: libc6, rfkill, libiw30, yad, libgtk2.0-0, libglade2-0, psmisc, wpasupplicant, wireless-tools, net-tools, gsu | gksu
-Conflicts: ceni, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, frisbee, wifibox, wifibox-tazpanel 
-Filename: ./Extra/wifibox-dhcpcd_1.0.2_i386.deb
-Size: 93722
-MD5sum: 7eb833753ae1e90648ea9df42388e8a1
-SHA1: cc1f340cf7e7df94ec48f205d78ff8786403aab0
-SHA256: b10080ec66bd68de0f3b9b3301553ca19844f51cfbbc444a4c0ea0a46f50fbfd
-SHA512: 5947f80f56640a8f3058193bea2471dc779405d84e085b284eaeb8adfb36a580b488bbcee017c82670668e8747f1d52ad67d7ab64ba3382c22abe116a9ac8edf
-Description: Wireless Network manager
-
 Package: ffmpeg
 Priority: optional
 Section: video
@@ -2080,24 +2062,6 @@ SHA1: 300a66919bf627ded86db1df7a3daf2a47135c1e
 SHA256: 8980dc5135afec1dc693764aef33326424f570a9c9bdbbf6723eafbc9b699187
 SHA512: 76289675e36857faffdd5fc1b6d0da618b96891e39e2de3d594bbc7766ea3684eeeac62d87e6f7bb3dba373bcd0bb31007b77938ef92a599804b7bf0543b4877
 Description: SMB/CIFS clients for Unix
-
-Package: wifibox
-Priority: extra
-Section: checkinstall
-Installed-Size: 290
-Maintainer: root@wheezy
-Architecture: i386
-Version: 1.0.4
-Replaces: ceni, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, udhcpc, frisbee, wifibox-tazpanel, wifibox-dhcpcd
-Depends: libc6, rfkill, libiw30, yad, libgtk2.0-0, libglade2-0, psmisc, wpasupplicant, wireless-tools, net-tools, gsu | gksu
-Conflicts: ceni, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, frisbee, wifibox-tazpanel, wifibox-dhcpcd 
-Filename: ./Extra/wifibox_1.0.4_i386.deb
-Size: 43458
-MD5sum: 75cb0521461143f1f4231db9aadd7372
-SHA1: 91fb2841b6eb861006e5df78f8f80dc4f99639d5
-SHA256: ba6ec2248d853b700c5ee44c6cb22e11aa00252d89c0cda88bc9990e9a58735e
-SHA512: 946d80f569314f9bb7946ea511c20b2dd9e1404e0b80852e38dd55392afad43ba81f7813eadbd7d6856c30144f80db9b5df061693259b511251bb91ff791c5b0
-Description: Wireless Network manager
 
 Package: findnrun
 Priority: optional
