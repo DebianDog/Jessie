@@ -1,7 +1,0 @@
-?package(sfs-get-smokey-get):\
-	needs="X11"\
-	section="Applications/Utilities"\
-	title="SFS-get"\
-	command="sfs-get"\
-	icon="application-x-squashfs.png"
-
