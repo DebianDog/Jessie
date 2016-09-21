@@ -1,0 +1,24 @@
+Package: sfs-get-smokey-get
+Maintainer: fredx181 dog@root.nl
+Architecture: i386
+Version: 1.0.3-jessie
+Installed-Size: 224 
+Depends: libc6, yad, wget, elinks, gsu | gksu
+Description: The sfs-get-smokey-get program downloads files from github.com or smokey01.com or kazzascorner.com
+ sfs-get_smokey-get by MakeDEBPackage-GUI.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

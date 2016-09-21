@@ -1,0 +1,613 @@
+#!/bin/bash
+
+if [ -z `which gsu` ]; then
+[ "`whoami`" != "root" ] && exec gksu ${0} "$@"
+else
+[ "`whoami`" != "root" ] && exec gsu ${0} "$@"
+fi
+
+list_download() {
+
+# Variables for host directory, recursive and contents file:
+CONTENT=`tempfile 2>/dev/null` || TMPF=/tmp/test$$
+HOSTDIR="`echo $SETUP | cut -d "|" -f 3`"
+SAVEFOLDER="`echo $SETUP | cut -d "|" -f 5`"
+#RECURSIVE="`echo $SETUP | cut -d "|" -f 6`"
+BASEHOSTDIR="`basename $HOSTDIR`"
+EXT="`echo $SETUP | cut -d "|" -f 7`"
+FILENAMES="`echo $SETUP | cut -d "|" -f 8`"
+if [ "$HOSTDIR" = "$(echo "$MAINHOSTDIR" | sed 's|$|/|')" ]; then
+BASEHOSTDIR="$BASEHOST"
+else
+BASEHOSTDIR="$BASEHOST ... `basename $HOSTDIR`"
+fi
+# Set GUI variables up for multi-progress download gui.
+TITLE="YAD wget downloader"                 # dialog title
+TEXT="             <b>Downloads</b> in progress:"        # dialog text
+ICON="browser-dload"                     # window icon (appears in launcher)
+IMAGE="browser-dload"                    # window image (appears in dialog)
+
+echo "Scanning $HOSTDIR ..."
+yad --text="                      *** <b>P L E A S E      W A I T</b>  ***\n  This may take some time depending on the number of items  " --center --undecorated --no-buttons &
+pd=$!
+disown
+#wget -d -r -np -N --spider -e robots=off --no-parent --no-check-certificate "$HOSTDIR"/ 2>&1 | grep " -> " | grep -Ev "\/\?C=" | sed "s/.* -> //" > $CONTENTFILE
+
+PARENT=$(dirname "$HOSTDIR")
+FOLDERS=$(elinks -dump "$HOSTDIR" | awk '/http/{print $2}' | grep -vw "$HOSTDIR" | grep -vw "$PARENT"/ | sort -u)
+echo "$FOLDERS" > $CONTENT
+export FOLDERS=`echo -e "$FOLDERS" | grep '/$' | tr ' ' '\n'`
+
+while true; do 
+[ -z "$FOLDERS" ] && break
+while IFS= read -r line; do
+PARENT=$(dirname "$line")
+FOLDER=$(elinks -dump $line | awk '/http/{print $2}' | grep -vw "$line" | grep -vw "$PARENT"/ | sort -u)
+if [ -n "$FOLDER" ]; then
+echo "$FOLDER" >> $CONTENT
+FOLDERS1=`echo -e "$FOLDERS1\n$FOLDER" | grep '/$' | tr ' ' '\n'`
+fi
+done <<< "$FOLDERS"
+
+[ -z "$FOLDERS1" ] && break
+while IFS= read -r line; do
+PARENT=$(dirname "$line")
+FOLDER=$(elinks -dump $line | awk '/http/{print $2}' | grep -vw "$line" | grep -vw "$PARENT"/ | sort -u)
+if [ -n "$FOLDER" ]; then
+echo "$FOLDER" >> $CONTENT
+FOLDERS2=`echo -e "$FOLDERS2\n$FOLDER" | grep '/$' | tr ' ' '\n'`
+fi
+done <<< "$FOLDERS1"
+
+[ -z "$FOLDERS2" ] && break
+while IFS= read -r line; do
+PARENT=$(dirname "$line")
+FOLDER=$(elinks -dump $line | awk '/http/{print $2}' | grep -vw "$line" | grep -vw "$PARENT"/ | sort -u)
+if [ -n "$FOLDER" ]; then
+echo "$FOLDER" >> $CONTENT
+FOLDERS3=`echo -e "$FOLDERS3\n$FOLDER" | grep '/$' | tr ' ' '\n'`
+fi
+done <<< "$FOLDERS2"
+
+[ -z "$FOLDERS3" ] && break
+while IFS= read -r line; do
+PARENT=$(dirname "$line")
+FOLDER=$(elinks -dump $line | awk '/http/{print $2}' | grep -vw "$line" | grep -vw "$PARENT"/ | sort -u)
+if [ -n "$FOLDER" ]; then
+echo "$FOLDER" >> $CONTENT
+FOLDERS4=`echo -e "$FOLDERS4\n$FOLDER" | grep '/$' | tr ' ' '\n'`
+fi
+done <<< "$FOLDERS3"
+
+[ -z "$FOLDERS4" ] && break
+while IFS= read -r line; do
+PARENT=$(dirname "$line")
+FOLDER=$(elinks -dump $line | awk '/http/{print $2}' | grep -vw "$line" | grep -vw "$PARENT"/ | sort -u)
+if [ -n "$FOLDER" ]; then
+echo "$FOLDER" >> $CONTENT
+FOLDERS5=`echo -e "$FOLDERS5\n$FOLDER" | grep '/$' | tr ' ' '\n'`
+fi
+done <<< "$FOLDERS4"
+
+[ -z "$FOLDERS5" ] && break
+while IFS= read -r line; do
+PARENT=$(dirname "$line")
+FOLDER=$(elinks -dump $line | awk '/http/{print $2}' | grep -vw "$line" | grep -vw "$PARENT"/ | sort -u)
+if [ -n "$FOLDER" ]; then
+echo "$FOLDER" >> $CONTENT
+FOLDERS6=`echo -e "$FOLDERS6\n$FOLDER" | grep '/$' | tr ' ' '\n'`
+fi
+done <<< "$FOLDERS5"
+
+[ -z "$FOLDERS6" ] && break
+while IFS= read -r line; do
+PARENT=$(dirname "$line")
+FOLDER=$(elinks -dump $line | awk '/http/{print $2}' | grep -vw "$line" | grep -vw "$PARENT"/ | sort -u)
+if [ -n "$FOLDER" ]; then
+echo "$FOLDER" >> $CONTENT
+FOLDERS7=`echo -e "$FOLDERS7\n$FOLDER" | grep '/$' | tr ' ' '\n'`
+fi
+done <<< "$FOLDERS6"
+
+[ -z "$FOLDERS7" ] && break
+while IFS= read -r line; do
+PARENT=$(dirname "$line")
+FOLDER=$(elinks -dump $line | awk '/http/{print $2}' | grep -vw "$line" | grep -vw "$PARENT"/ | sort -u)
+if [ -n "$FOLDER" ]; then
+echo "$FOLDER" >> $CONTENT
+FOLDERS8=`echo -e "$FOLDERS8\n$FOLDER" | grep '/$' | tr ' ' '\n'`
+fi
+done <<< "$FOLDERS7"
+
+[ -z "$FOLDERS8" ] && break
+while IFS= read -r line; do
+PARENT=$(dirname "$line")
+FOLDER=$(elinks -dump $line | awk '/http/{print $2}' | grep -vw "$line" | grep -vw "$PARENT"/ | sort -u)
+if [ -n "$FOLDER" ]; then
+echo "$FOLDER" >> $CONTENT
+FOLDERS9=`echo -e "$FOLDERS9\n$FOLDER" | grep '/$' | tr ' ' '\n'`
+fi
+done <<< "$FOLDERS8"
+done
+
+if [ -n "$EXT" ]; then
+ALL=`cat $CONTENT | grep -Ev "\/\?C=" | grep "${EXT}$" | grep -v '\.ftpquota' | grep -v '/$' | sort -u | tr '\n' ' '`
+else
+ALL=`cat $CONTENT | grep -Ev "\/\?C=" | grep -v '\.ftpquota' | grep -v '/$' | sort -u | tr '\n' ' '`
+fi
+
+if [ "$FILENAMES" = "TRUE" ]; then
+# Stemsee: show only the base name in download list.
+ALL=$(echo $ALL | tr ' ' '\n' | rev | sed 's|/| |' | rev | sort -u)
+else
+# Fred: Slightly changed Stemsee's idea, show also the sub-directory names in the list.
+ALL=`echo $ALL | tr ' ' '\n' | sed "s|${HOSTDIR}|${HOSTDIR} |g" | sort -u`
+echo all=$ALL
+fi
+kill $pd 2> /dev/null
+
+rm -f "$CONTENT"
+
+download_list() {
+if [ "$FILENAMES" = "TRUE" ]; then
+# Stemsee: Reverse back to full https address.
+URILIST="`echo "$URILIST" | rev | sed 's| |/|2g' | rev | tr '\n' ' '`"
+else
+# Fred: Reverse back to full https address.
+URILIST="$(echo "$URILIST" | sed "s|${HOSTDIR} |${HOSTDIR}|g" | tr '\n' ' ')"
+fi
+
+# Select folder to download to:
+#SAVEFOLDER=$(yad  --center --image="browser-dload" --image-on-top --title="Select target folder" --file --height=600 --width=800 --text=" Select target folder for downloads" )
+#ret=$?
+#[[ $ret -ne 0 ]] && exit 1
+
+MAXDLS="5" # set maximum number of simultaneous downloads
+
+# download file and extract progress, speed and ETA from wget
+# we use sed regex for this
+# source: http://ubuntuforums.org/showthread.php?t=306515&page=2&p=7455412#post7455412
+# modified to work with different locales and decimal point conventions
+download(){
+    cd "$SAVEFOLDER"
+    wget --no-check-certificate "$1" 2>&1 | sed -u \
+    "s/.* \([0-9]\+%\)\ \+\([0-9,.]\+.\) \(.*\)/$2:\1\n$2:# Downloading at \2\/s, ETA \3/"
+    RET_WGET="${PIPESTATUS[0]}"             # get return code of wget
+    if [[ "$RET_WGET" = 0 ]]                # check return code for errors
+      then
+          echo "$2:100%"
+          echo "$2:#Download completed."
+      else
+          echo "$2:#Download error."
+    fi
+}
+
+
+# compose list of bars for yad
+for URI in $URILIST; do                     # iterate through all URIs
+    FILENAME="${URI##*/}"                   # extract last field of URI as filename
+    YADBARS="$YADBARS --bar=$FILENAME:NORM" # add filename to the list of URIs
+done
+
+IFS=" "
+COUNTER="1"
+DYNAMIC_COUNTER="1"
+
+# main
+# iterate through all URIs, download them in the background and 
+# pipe all output simultaneously to yad
+# source: http://pastebin.com/yBL2wjaY
+
+for URI in $URILIST; do
+    if [[ "$DYNAMIC_COUNTER" = "$MAXDLS" ]] # only download n files at a time
+      then
+          download "$URI" "$COUNTER"        # if limit reached wait until wget complete
+          DYNAMIC_COUNTER="1"               # before proceeding (by not sending download() to bg)
+      else
+          download "$URI" "$COUNTER" &      # pass URI and URI number to download()
+          DYNAMIC_COUNTER="$[$DYNAMIC_COUNTER+1]"
+    fi
+    COUNTER="$[$COUNTER+1]"                 # increment counter
+done | yad --multi-progress --on-top --auto-kill $YADBARS --title "$TITLE" \
+--text "$TEXT" --window-icon "$ICON" --image "$IMAGE"
+
+# ↑ launch yad multi progress-bar window
+}
+
+urilist_download() {
+if [ "$FILENAMES" = "TRUE" ]; then
+WIDTH=400
+else
+WIDTH=800
+fi
+URILIST=$(yad --separator=" " --image="browser-dload" --image-on-top --center --height 600 --width="$WIDTH" --list --title="Download Files" --multiple --text="  This will show the files from '$BASEHOSTDIR' and its subdirectories (if there are any). \n  Select (multiple) items to download." --column " Available Files in '$BASEHOSTDIR'" $ALL --column Name --hide-column=1 --button="gtk-cancel:1" --button="gtk-ok:0")
+ret=$?
+[[ $ret -ne 0 ]] && exit 1
+
+# Usage check
+ if [[ -z "$URILIST" ]]
+  then
+      echo "Error: No arguments provided"
+      yad  --center --title="Download" --image="browser-dload" --text "  Nothing selected! \n  Please try again. "
+      [[ $ret -ne 0 ]] && exit 1
+      exec ${0}
+fi
+urilist_download &
+disown
+download_list
+}
+
+urilist_download
+}
+
+new_url() {
+CONTENTFILE=`tempfile 2>/dev/null` || TMPF=/tmp/test$$
+[ -z "$MAINHOSTDIR" ] && MAINHOSTDIR="http://www.smokey01.com/"
+NEWMAINHOSTDIR=$(yad --title="Smokey Updater" --image="browser-dload" --image-on-top --width=560 --text="  Add new main directory url. \n  For example: http://www.smokey01.com/pemasu or: \n  http://www.smokey01.com/saintless \n  Do NOT append a slash at the end of the url. \n  Click OK to add it to the drop-down list for choosing the main host. \n  This may take some time to complete.  " --entry --entry-text="$MAINHOSTDIR")
+ret=$?
+[[ $ret -ne 0 ]] && exec ${0}
+
+#cd /tmp 
+
+#wget -d -r -np -N --spider -e robots=off --no-parent --no-check-certificate "$NEWMAINHOSTDIR"/ 2>&1 | grep " -> " | grep -Ev "\/\?C=" | sed "s/.* -> //" > $CONTENTFILE
+#ALL=`cat $CONTENTFILE | grep "$NEWMAINHOSTDIR" | grep '/$' | sort -u | tr '\n' '!' | sed s'/.$//'`
+
+# Check if url is valid
+wget -q --spider "$NEWMAINHOSTDIR"
+ret=$?
+
+if [ $ret -ne 0 ] || [ "$NEWMAINHOSTDIR" = "http://www.smokey01.com/" ]; then
+       yad  --center --title="Smokey updater" --image="browser-dload" --text "  Sorry, creating new main host directory failed. Did you use a valid url? or: \n  Did you add a valid name to 'http://www.smokey01.com/' ? "  --button="gtk-close:0"
+exec ${0}
+else
+echo "Scanning $NEWMAINHOSTDIR ..."
+yad --text="                      *** <b>P L E A S E      W A I T</b>  ***\n  This may take some time depending on the number of items  " --center --undecorated --no-buttons &
+pd=$!
+disown
+
+NEWBASEHOST=`basename "$NEWMAINHOSTDIR"`
+#wget -r -l 0 -np -A index.html "$NEWMAINHOSTDIR"/
+#ALLHTML="$(find www.smokey01.com/$NEWBASEHOST -type f -name 'index.html')"
+#ALL=$(echo $(for i in $ALLHTML; do echo http://"$(dirname $i)"/; done) | sort -u | tr ' ' '!')
+
+# Scan for all directories (limited to 10 deep)
+PARENT=$(dirname "$NEWMAINHOSTDIR")
+FOLDERS=$(elinks -dump "$NEWMAINHOSTDIR"/ | awk '/http/{print $2}' | grep -vw "$NEWMAINHOSTDIR"/ | grep -vw "$PARENT"/  | grep '/$' | sort -u)
+export FOLDERS=`echo -e "$FOLDERS" | tr ' ' '\n'`
+echo "$FOLDERS" > $CONTENTFILE
+
+while true; do 
+[ -z "$FOLDERS" ] && break
+while IFS= read -r line; do
+PARENT=$(dirname "$line")
+FOLDER=$(elinks -dump $line | awk '/http/{print $2}' | grep -vw "$line" | grep -vw "$PARENT"/ | grep '/$' | sort -u)
+if [ -n "$FOLDER" ]; then
+echo "$FOLDER" >> $CONTENTFILE
+FOLDERS1=`echo -e "$FOLDERS1\n$FOLDER" | tr ' ' '\n'`
+fi
+done <<< "$FOLDERS"
+
+[ -z "$FOLDERS1" ] && break
+while IFS= read -r line; do
+PARENT=$(dirname "$line")
+FOLDER=$(elinks -dump $line | awk '/http/{print $2}' | grep -vw "$line" | grep -vw "$PARENT"/ | grep '/$' | sort -u)
+if [ -n "$FOLDER" ]; then
+echo "$FOLDER" >> $CONTENTFILE
+FOLDERS2=`echo -e "$FOLDERS2\n$FOLDER" | tr ' ' '\n'`
+fi
+done <<< "$FOLDERS1"
+
+[ -z "$FOLDERS2" ] && break
+while IFS= read -r line; do
+PARENT=$(dirname "$line")
+FOLDER=$(elinks -dump $line | awk '/http/{print $2}' | grep -vw "$line" | grep -vw "$PARENT"/ | grep '/$' | sort -u)
+if [ -n "$FOLDER" ]; then
+echo "$FOLDER" >> $CONTENTFILE
+FOLDERS3=`echo -e "$FOLDERS3\n$FOLDER" | tr ' ' '\n'`
+fi
+done <<< "$FOLDERS2"
+
+[ -z "$FOLDERS3" ] && break
+while IFS= read -r line; do
+PARENT=$(dirname "$line")
+FOLDER=$(elinks -dump $line | awk '/http/{print $2}' | grep -vw "$line" | grep -vw "$PARENT"/ | grep '/$' | sort -u)
+if [ -n "$FOLDER" ]; then
+echo "$FOLDER" >> $CONTENTFILE
+FOLDERS4=`echo -e "$FOLDERS4\n$FOLDER" | tr ' ' '\n'`
+fi
+done <<< "$FOLDERS3"
+
+[ -z "$FOLDERS4" ] && break
+while IFS= read -r line; do
+PARENT=$(dirname "$line")
+FOLDER=$(elinks -dump $line | awk '/http/{print $2}' | grep -vw "$line" | grep -vw "$PARENT"/ | grep '/$' | sort -u)
+if [ -n "$FOLDER" ]; then
+echo "$FOLDER" >> $CONTENTFILE
+FOLDERS5=`echo -e "$FOLDERS5\n$FOLDER" | tr ' ' '\n'`
+fi
+done <<< "$FOLDERS4"
+
+[ -z "$FOLDERS5" ] && break
+while IFS= read -r line; do
+PARENT=$(dirname "$line")
+FOLDER=$(elinks -dump $line | awk '/http/{print $2}' | grep -vw "$line" | grep -vw "$PARENT"/ | grep '/$' | sort -u)
+if [ -n "$FOLDER" ]; then
+echo "$FOLDER" >> $CONTENTFILE
+FOLDERS6=`echo -e "$FOLDERS6\n$FOLDER" | tr ' ' '\n'`
+fi
+done <<< "$FOLDERS5"
+
+[ -z "$FOLDERS6" ] && break
+while IFS= read -r line; do
+PARENT=$(dirname "$line")
+FOLDER=$(elinks -dump $line | awk '/http/{print $2}' | grep -vw "$line" | grep -vw "$PARENT"/ | grep '/$' | sort -u)
+if [ -n "$FOLDER" ]; then
+echo "$FOLDER" >> $CONTENTFILE
+FOLDERS7=`echo -e "$FOLDERS7\n$FOLDER" | tr ' ' '\n'`
+fi
+done <<< "$FOLDERS6"
+
+[ -z "$FOLDERS7" ] && break
+while IFS= read -r line; do
+PARENT=$(dirname "$line")
+FOLDER=$(elinks -dump $line | awk '/http/{print $2}' | grep -vw "$line" | grep -vw "$PARENT"/ | grep '/$' | sort -u)
+if [ -n "$FOLDER" ]; then
+echo "$FOLDER" >> $CONTENTFILE
+FOLDERS8=`echo -e "$FOLDERS8\n$FOLDER" | tr ' ' '\n'`
+fi
+done <<< "$FOLDERS7"
+
+[ -z "$FOLDERS8" ] && break
+while IFS= read -r line; do
+PARENT=$(dirname "$line")
+FOLDER=$(elinks -dump $line | awk '/http/{print $2}' | grep -vw "$line" | grep -vw "$PARENT"/ | grep '/$' | sort -u)
+if [ -n "$FOLDER" ]; then
+echo "$FOLDER" >> $CONTENTFILE
+FOLDERS9=`echo -e "$FOLDERS9\n$FOLDER" | tr ' ' '\n'`
+fi
+done <<< "$FOLDERS8"
+done
+
+sed -i "1i ${NEWMAINHOSTDIR}/" $CONTENTFILE
+
+COUNTLINES=`cat $CONTENTFILE | sed '/^\s*$/d' | wc -l`
+if [ $COUNTLINES -lt 2 ]; then
+ALL=`cat $CONTENTFILE`
+else
+ALL=`cat $CONTENTFILE | sort -u | tr '\n' '!' | sed s'/.$//'`
+fi
+
+NEWCHOICE="CHOICE="'"'"$ALL"'"'""
+echo -e "MAINHOSTDIR="'"'"$NEWMAINHOSTDIR"'"'" \n$NEWCHOICE" > /usr/local/smokey-get/$NEWBASEHOST
+kill $pd 2> /dev/null
+rm -f "$CONTENTFILE"
+
+#BASENEWMAINHOSTVAR="BASEHOST=`basename "$NEWMAINHOSTDIR"`"
+#BASEHOSTVAR="`cat "/usr/local/smokey-get/func" | grep BASEHOST=`"
+#sed -i "s|$BASEHOSTVAR|$BASENEWMAINHOSTVAR|g" /usr/local/smokey-get/func
+
+yad --title="Smokey Updater" --image="browser-dload" --width=530 --text="  New main host directory added succesfully:  \n  <b>$NEWMAINHOSTDIR</b> " --button="gtk-close:0"
+exec ${0}
+fi
+}
+
+update_url() {
+CONTENTFILE=`tempfile 2>/dev/null` || TMPF=/tmp/test$$
+mkdir -p /usr/local/smokey-get 2> /dev/null
+
+yad  --center --title="Smokey Updater" --image="browser-dload" --text "  Click OK to update the url drop-down list for choosing different directories. \n  Use it only sometimes (when the site is re-organized). \n  It may take some time to complete. \n  The main host directory is now:  \n  <b>$MAINHOSTDIR</b> \n  To add a new main host directory click 'New Main-host'. " --button="New Main-host:3" --button="Back:2" --button="gtk-quit:1" --button="gtk-ok:0"
+
+button1=$?
+case $button1 in
+0)
+echo "Scanning $MAINHOSTDIR ..."
+yad --text="                      *** <b>P L E A S E      W A I T</b>  ***\n  This may take some time depending on the number of items  " --center --undecorated --no-buttons &
+pd=$!
+disown
+
+#wget -d -r -np -N --spider -e robots=off --no-parent --no-check-certificate "$MAINHOSTDIR"/ 2>&1 | grep " -> " | grep -Ev "\/\?C=" | sed "s/.* -> //" > $CONTENTFILE
+#ALL=`cat $CONTENTFILE | grep "$MAINHOSTDIR" | grep '/$' | sort -u | tr '\n' '!' | sed s'/.$//'`
+#wget -r -l 0 -np -A index.html "$MAINHOSTDIR"/
+#ALLHTML="$(find www.smokey01.com/$BASEHOST -type f -name 'index.html')"
+#ALL=$(echo $(for i in $ALLHTML; do echo http://"$(dirname $i)"/; done) | sort -u | tr ' ' '!')
+
+# Scan for all directories (limited to 10 deep)
+PARENT=$(dirname "$MAINHOSTDIR")
+FOLDERS=$(elinks -dump "$MAINHOSTDIR"/ | awk '/http/{print $2}' | grep -vw "$MAINHOSTDIR"/ | grep -vw "$PARENT"/  | grep '/$' | sort -u)
+export FOLDERS=`echo -e "$FOLDERS" | tr ' ' '\n'`
+echo "$FOLDERS" > $CONTENTFILE
+
+while true; do 
+[ -z "$FOLDERS" ] && break
+while IFS= read -r line; do
+PARENT=$(dirname "$line")
+FOLDER=$(elinks -dump $line | awk '/http/{print $2}' | grep -vw "$line" | grep -vw "$PARENT"/ | grep '/$' | sort -u)
+if [ -n "$FOLDER" ]; then
+echo "$FOLDER" >> $CONTENTFILE
+FOLDERS1=`echo -e "$FOLDERS1\n$FOLDER" | tr ' ' '\n'`
+fi
+done <<< "$FOLDERS"
+
+[ -z "$FOLDERS1" ] && break
+while IFS= read -r line; do
+PARENT=$(dirname "$line")
+FOLDER=$(elinks -dump $line | awk '/http/{print $2}' | grep -vw "$line" | grep -vw "$PARENT"/ | grep '/$' | sort -u)
+if [ -n "$FOLDER" ]; then
+echo "$FOLDER" >> $CONTENTFILE
+FOLDERS2=`echo -e "$FOLDERS2\n$FOLDER" | tr ' ' '\n'`
+fi
+done <<< "$FOLDERS1"
+
+[ -z "$FOLDERS2" ] && break
+while IFS= read -r line; do
+PARENT=$(dirname "$line")
+FOLDER=$(elinks -dump $line | awk '/http/{print $2}' | grep -vw "$line" | grep -vw "$PARENT"/ | grep '/$' | sort -u)
+if [ -n "$FOLDER" ]; then
+echo "$FOLDER" >> $CONTENTFILE
+FOLDERS3=`echo -e "$FOLDERS3\n$FOLDER" | tr ' ' '\n'`
+fi
+done <<< "$FOLDERS2"
+
+[ -z "$FOLDERS3" ] && break
+while IFS= read -r line; do
+PARENT=$(dirname "$line")
+FOLDER=$(elinks -dump $line | awk '/http/{print $2}' | grep -vw "$line" | grep -vw "$PARENT"/ | grep '/$' | sort -u)
+if [ -n "$FOLDER" ]; then
+echo "$FOLDER" >> $CONTENTFILE
+FOLDERS4=`echo -e "$FOLDERS4\n$FOLDER" | tr ' ' '\n'`
+fi
+done <<< "$FOLDERS3"
+
+[ -z "$FOLDERS4" ] && break
+while IFS= read -r line; do
+PARENT=$(dirname "$line")
+FOLDER=$(elinks -dump $line | awk '/http/{print $2}' | grep -vw "$line" | grep -vw "$PARENT"/ | grep '/$' | sort -u)
+if [ -n "$FOLDER" ]; then
+echo "$FOLDER" >> $CONTENTFILE
+FOLDERS5=`echo -e "$FOLDERS5\n$FOLDER" | tr ' ' '\n'`
+fi
+done <<< "$FOLDERS4"
+
+[ -z "$FOLDERS5" ] && break
+while IFS= read -r line; do
+PARENT=$(dirname "$line")
+FOLDER=$(elinks -dump $line | awk '/http/{print $2}' | grep -vw "$line" | grep -vw "$PARENT"/ | grep '/$' | sort -u)
+if [ -n "$FOLDER" ]; then
+echo "$FOLDER" >> $CONTENTFILE
+FOLDERS6=`echo -e "$FOLDERS6\n$FOLDER" | tr ' ' '\n'`
+fi
+done <<< "$FOLDERS5"
+
+[ -z "$FOLDERS6" ] && break
+while IFS= read -r line; do
+PARENT=$(dirname "$line")
+FOLDER=$(elinks -dump $line | awk '/http/{print $2}' | grep -vw "$line" | grep -vw "$PARENT"/ | grep '/$' | sort -u)
+if [ -n "$FOLDER" ]; then
+echo "$FOLDER" >> $CONTENTFILE
+FOLDERS7=`echo -e "$FOLDERS7\n$FOLDER" | tr ' ' '\n'`
+fi
+done <<< "$FOLDERS6"
+
+[ -z "$FOLDERS7" ] && break
+while IFS= read -r line; do
+PARENT=$(dirname "$line")
+FOLDER=$(elinks -dump $line | awk '/http/{print $2}' | grep -vw "$line" | grep -vw "$PARENT"/ | grep '/$' | sort -u)
+if [ -n "$FOLDER" ]; then
+echo "$FOLDER" >> $CONTENTFILE
+FOLDERS8=`echo -e "$FOLDERS8\n$FOLDER" | tr ' ' '\n'`
+fi
+done <<< "$FOLDERS7"
+
+[ -z "$FOLDERS8" ] && break
+while IFS= read -r line; do
+PARENT=$(dirname "$line")
+FOLDER=$(elinks -dump $line | awk '/http/{print $2}' | grep -vw "$line" | grep -vw "$PARENT"/ | grep '/$' | sort -u)
+if [ -n "$FOLDER" ]; then
+echo "$FOLDER" >> $CONTENTFILE
+FOLDERS9=`echo -e "$FOLDERS9\n$FOLDER" | tr ' ' '\n'`
+fi
+done <<< "$FOLDERS8"
+done
+sed -i "1i ${MAINHOSTDIR}/" $CONTENTFILE
+
+COUNTLINES=`cat $CONTENTFILE | sed '/^\s*$/d' | wc -l`
+if [ $COUNTLINES -lt 2 ]; then
+ALL=`cat $CONTENTFILE`
+else
+ALL=`cat $CONTENTFILE | sort -u | tr '\n' '!' | sed s'/.$//'`
+fi
+
+NEWCHOICE="CHOICE="'"'"$ALL"'"'""
+echo -e "MAINHOSTDIR="'"'"$MAINHOSTDIR"'"'" \n$NEWCHOICE" > /usr/local/smokey-get/$BASEHOST
+
+kill $pd 2> /dev/null
+rm -f "$CONTENTFILE"
+exec ${0}
+;;
+1|252)
+rm -f "$CONTENTFILE"; exit 0
+;;
+2)
+rm -f "$CONTENTFILE"; exec ${0}
+;;
+3)
+rm -f "$CONTENTFILE"
+new_url
+;;
+esac
+}
+
+mkdir -p /usr/local/smokey-get 2> /dev/null
+NUM=$(find /usr/local/smokey-get/ -type f | wc -l)
+if [ $NUM -gt 1 ]; then
+SMOKEYNAME=$(echo $(for n in $(ls -t /usr/local/smokey-get/ 2> /dev/null); do echo $(basename "${n}"); done) | tr ' ' '!')
+
+SMOKEY=`yad  --width=320 --image="browser-dload" --image-on-top --center --title="Smokey Downloader"  --text=" <b>Download from smokey01.com \n or kazzascorner.com</b>  \n Choose a host. " \
+--window-icon="preferences-system" --form --columns=1 \
+--field="   Select: :LBL" "" \
+--field=" :CBE" "$SMOKEYNAME" \
+--button="Add New:3" --button="Remove:2" --button="gtk-quit:1" --button="gtk-ok:0"`
+ret=$?
+#[[ $ret -ne 0 ]] && exit 1
+echo $ret
+case $ret in
+0)
+:
+;;
+1|252)
+exit
+;;
+2)
+BASEHOST="$(echo $SMOKEY | cut -d "|" -f 2)"
+rm -f /usr/local/smokey-get/$BASEHOST
+exec "${0}"
+;;
+3)
+new_url
+;;
+esac
+
+export BASEHOST="$(echo $SMOKEY | cut -d "|" -f 2)"
+
+. /usr/local/smokey-get/$BASEHOST
+fi
+if [ $NUM -eq 1 ]; then
+export BASEHOST="$(basename "$(find /usr/local/smokey-get/ 2> /dev/null)")"
+yad --on-top --title="SmokeyGet" --text="  <span size='large' background='dark green' foreground='white'><b> *** Using '$BASEHOST' *** </b></span>  " --center --undecorated --no-buttons --timeout 3
+. /usr/local/smokey-get/$BASEHOST
+fi
+if [ $NUM -lt 1 ]; then
+yad --title="Smokey Downloader" --image="browser-dload" --width=530 --text="  No template file found in /usr/local/smokey-get/. \n  Click Ok to create one. "
+ret=$?
+[[ $ret -ne 0 ]] && exit 1
+new_url
+fi
+
+SETUP=`yad  --width=520 --image="browser-dload" --image-on-top --center --title="Smokey Downloader"  --text="  <b>Download from smokey01.com or kazzascorner.com</b>  \n  Make your choices and click OK. " \
+--window-icon="preferences-system" --form --columns=1 \
+--field="  A list of files to download will show from the directory of the selected url. \n \n  The 'Update lists' button will update the url drop-down list. \n  Use it sometimes in case the site is re-organized, or: \n  Can be used to add a new host directory, for example: \n  http://www.smokey01.com/01micko  :LBL"  "" \
+--field="   Choose or edit url: :LBL" "" \
+--field=" :CBE" "$CHOICE" \
+--field="   Choose Download folder: :LBL" "" \
+--field=" :DIR" "/media/" \
+--field="  Show only filetypes with extension:  (<b>optional</b>) \n  Type one extension name, for example:  .iso  or  .pet :LBL" "" \
+--field=" " "" \
+--field="  Show only filenames in download list (no sub-directory names):CHK" "FALSE" \
+--button="Update lists:2" --button="gtk-quit:1" --button="gtk-ok:0"`
+ret=$?
+case $ret in
+0)
+list_download
+exit
+;;
+1|252)
+rm -f "$CONTENT"
+exit
+;;
+2)
+update_url
+;;
+esac
+
+
+

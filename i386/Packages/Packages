@@ -331,6 +331,21 @@ Description: Warning - This package works only in DebianDog! In ver. 1.0.3 fixed
  .
  For creating a *.squashfs module from changes (from /live/cow directory) or full system remaster (from / directory).
 
+Package: sfs-get-smokey-get
+Installed-Size: 224 
+Maintainer: fredx181 dog@root.nl
+Architecture: i386
+Version: 1.0.3-jessie
+Depends: libc6, yad, wget, elinks, gsu | gksu
+Filename: ./Included/sfs-get-smokey-get_1.0.3-jessie_i386.deb
+Size: 77412
+MD5sum: e098db8f529288b198d164257526fa4c
+SHA1: a3cd43b352ce76018ca0870126c5ce0694ccea59
+SHA256: 8f9ef44f40af52c357b69ee71cb94ced11b16a57b845fcbbb668d5221f029173
+SHA512: 63446c868a40b0f39146186d936d3cbec7a55f490c53ffe6b574ec9d3afcb25d6b2f490684f1fadcb2fc084b9b470c4f137f2c0905240166114c36e2f5bf75be
+Description: The sfs-get-smokey-get program downloads files from github.com or smokey01.com or kazzascorner.com
+ sfs-get_smokey-get by MakeDEBPackage-GUI.
+
 Package: yad
 Priority: extra
 Section: x11
