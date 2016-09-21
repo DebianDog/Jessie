@@ -441,6 +441,24 @@ Description: simple configuration storage system - runtime library
 Multi-Arch: same
 Homepage: http://live.gnome.org/dconf
 
+Package: flashplayerchoice
+Installed-Size: 14 
+Maintainer: root
+Architecture: i386
+Version: 1.0.2
+Depends: libc6, wget, inotify-tools, yad, sed, apt, squashfs-tools, menu, tar, gsu | gksu
+Filename: ./Included/flashplayerchoice_1.0.2_i386.deb
+Size: 7536
+MD5sum: af34bf9885349a1769cb02434413e44d
+SHA1: e334b2c099e88c0faac30049777f853a3f73eab9
+SHA256: 92f9b7fb72997bd082eadb9fdf412d10f58f6efd3b84a7298f59a7fb867fc137
+SHA512: 2fa08b125330dd1d88c1de20e9471d3a77d7f2722f750efa0972dfa180c48eaa361bdaacd4c3bb0c3abc752a07d4f60ff30512b53d2aee8c272ed84f8a71e654
+Description: The flashplayerchoice script gives choice of several options to install flashplayer :
+ - version 10 from http://www.smokey01.com/OscarTalks/ (= 12 Mb uncompressed)
+ - version 11 from http://www.smokey01.com/OscarTalks/ (= 17 Mb uncompressed)
+ - Install flashplugin-nonfree with apt-get (= 34 Mb uncompressed)
+ - Create flashplugin-nonfree.sfs module (= 8,9 Mb compressed)
+
 Package: xfe
 Priority: optional
 Section: x11
@@ -575,24 +593,6 @@ Description: Load a *.squashfs or *.sfs module.
  Changes in v 1.0.5:
  - kill processes which are keeping from proper unmounting (might be needed in some cases for SFS-load mode)
 
-Package: flashplayerchoice
-Installed-Size: 14 
-Maintainer: root
-Architecture: i386
-Version: 1.0.1
-Depends: libc6, wget, inotify-tools, yad, sed, apt, squashfs-tools, menu, tar, gsu | gksu
-Filename: ./Included/flashplayerchoice_1.0.1_i386.deb
-Size: 7544
-MD5sum: 131fd828c7934fad8e939da9c2748694
-SHA1: 2a245a918522d30993691b3601bd4ee677a9d561
-SHA256: 4f8f257d40a270b49109f266b48839833de51283aa357a87452dd88874f090ab
-SHA512: 04bd2b175d6e5a7a883dfb2156f2014b3e98642a3e7a47878e2ec19253f0df8448121b03001265352fafe2ffced16e361fcc41fd2a7a1b0eaa8691b25afa42f3
-Description: The flashplayerchoice script gives choice of several options to install flashplayer :
- - version 10 from http://www.smokey01.com/OscarTalks/ (= 12 Mb uncompressed)
- - version 11 from http://www.smokey01.com/OscarTalks/ (= 17 Mb uncompressed)
- - Install flashplugin-nonfree with apt-get (= 34 Mb uncompressed)
- - Create flashplugin-nonfree.sfs module (= 8,9 Mb compressed)
-
 Package: fixdepinstall
 Installed-Size: 140
 Maintainer: root
@@ -659,24 +659,6 @@ Description: Qt GUI Library (Threaded runtime version), Version 3
  applications that link against the libqt-mt.so.3, e.g. all KDE3
  applications.
 Homepage: http://trolltech.com
-
-Package: flashplayerchoice
-Installed-Size: 14 
-Maintainer: root
-Architecture: i386
-Version: 1.0.0
-Depends: libc6, wget, inotify-tools, yad, sed, apt, squashfs-tools, menu, tar, gsu | gksu
-Filename: ./Included/flashplayerchoice_1.0.0_i386.deb
-Size: 7420
-MD5sum: ddf1be526640f3a7048fb4f07eac2711
-SHA1: de661adb45be4f83731ec6317441be6608f6c2e7
-SHA256: 44b85de26d1e3ba6a5c32f04890dab59823211ca638e6a82752c84f47ca70367
-SHA512: 81d744fd5e451d9900b6fdda25fcae6945a1827452b25e39d0b7012b2dbbf0f09e5b1097c860ffdfb77702fc02b3aaedc0285b32c58cf2d1916ef6f05faa5df8
-Description: The flashplayerchoice script gives choice of several options to install flashplayer :
- - version 10 from http://www.smokey01.com/OscarTalks/ (= 12 Mb uncompressed)
- - version 11 from http://www.smokey01.com/OscarTalks/ (= 17 Mb uncompressed)
- - Install flashplugin-nonfree with apt-get (= 34 Mb uncompressed)
- - Create flashplugin-nonfree.sfs module (= 8,9 Mb compressed)
 
 Package: peasyglue
 Priority: optional
