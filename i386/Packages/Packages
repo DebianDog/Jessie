@@ -1,3 +1,22 @@
+Package: frisbee
+Priority: extra
+Section: checkinstall
+Installed-Size: 524
+Maintainer: root@wheezy
+Architecture: i386
+Version: 1.2-20160920
+Replaces: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd
+Depends: gtkdialog, libgtk2.0-0, libglade2-0, psmisc, wpasupplicant, gsu | gksu, rfkill
+Conflicts: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd
+Filename: ./Included/frisbee_1.2-20160920_i386.deb
+Size: 89312
+MD5sum: a516a4c91a3fcc0d4f71d8364be11159
+SHA1: 8f410349824000987d0e466d805d209fb8d7befe
+SHA256: 01984105dfea69234e34a306971c9429aa37f7b9917a7e05f2dc2d0119bc841a
+SHA512: 7b50b6faf508a13bb925c027aea93a73e41936802dc0fc911daac63b96291d21f14156938fa6bd6de3cc7fdb85867b086c79d530d5a46742d72469f70fd1e765
+Description: Wireless Network manager
+ Fixed refreshing network_tray icon, e.g. when plugging the cable in/out and when connecting to wireless 
+
 Package: probepart
 Priority: extra
 Section: system
@@ -226,25 +245,6 @@ Description: Porteus-boot helper-scripts (Note: works only on DebianDog)
  Note: Removing this package does not make any change.
  This is on purpose because the scrips are essential for porteus-boot to work
  To revert back to the old save-setup, install version 0.0.2
-
-Package: frisbee
-Priority: extra
-Section: checkinstall
-Installed-Size: 524
-Maintainer: root@wheezy
-Architecture: i386
-Version: 1.2-20160918
-Replaces: dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd
-Depends: gtkdialog, libgtk2.0-0, libglade2-0, psmisc, wpasupplicant, gsu | gksu, rfkill
-Conflicts: dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd
-Filename: ./Included/frisbee_1.2-20160918_i386.deb
-Size: 89316
-MD5sum: 7a7e54ef3bd697e66e70311df3356ba2
-SHA1: 59dc051ff572fe22f49ab5f816a852ad4c6cdc92
-SHA256: 4bf7467c0c7627f52870fa6af518270210c48a93f85d8224d2d78cdb648b5625
-SHA512: e523560e88c36de963c708e143ef9e6feb3f3f41a6b7fe7bf4eeb2019c73d3474b4817752ad91cc616f11e1b0acdd56cbe2d03d707e753d7fd15988f32eb6a3f
-Description: Wireless Network manager
- Fixed refreshing network_tray icon, e.g. when plugging the cable in/out and when connecting to wireless 
 
 Package: xdm
 Priority: optional
@@ -1231,6 +1231,46 @@ Description: personal organizer for GTK+
  configurable to meet the user's preferences.
 Homepage: http://clayo.org/osmo
 
+Package: ceni
+Priority: optional
+Section: net
+Installed-Size: 235
+Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
+Architecture: all
+Version: 2.31a
+Replaces: frisbee, wifibox, wifibox-dhcpcd
+Depends: perl, libcurses-ui-perl, libexpect-perl, libterm-readkey-perl, ifupdown, udev, wpasupplicant, resolvconf, dhcpcd | dhcpcd5, xterm
+Suggests: wpagui
+Conflicts: frisbee, wifibox, wifibox-dhcpcd
+Filename: ./Extra/ceni_2.31a_all.deb
+Size: 56542
+MD5sum: e24148d7840651132df4da157245c23b
+SHA1: bc9e65ef121442352dddef5e74ed9f9d48bdfc4d
+SHA256: 3846a34d1e3a4ff505e7589a728cae7549a664b062d186f3161abe0ead5c0483
+SHA512: 331327699ee15f2a8dcc76dd49b8a9e0502e390ef50bb4d9e3543aa9f21b31803f6fe1ad74a8b1975adb3680c702d9a3629c45a22cce3e1c8ea4567b1f217c1a
+Description: Curses interface to /etc/network/interfaces
+ A Curses user interface for configuring network interfaces with ifupdown.
+ Ceni can manage basic network interface ifupdown configuration stanzas for
+ ethernet and wireless devices.
+
+Package: wifibox-dhcpcd
+Priority: extra
+Section: checkinstall
+Installed-Size: 282
+Maintainer: root@wheezy
+Architecture: i386
+Version: 1.0.2
+Replaces: ceni, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, frisbee, wifibox, wifibox-tazpanel
+Depends: libc6, rfkill, libiw30, yad, libgtk2.0-0, libglade2-0, psmisc, wpasupplicant, wireless-tools, net-tools, gsu | gksu
+Conflicts: ceni, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, frisbee, wifibox, wifibox-tazpanel 
+Filename: ./Extra/wifibox-dhcpcd_1.0.2_i386.deb
+Size: 93738
+MD5sum: 77346a3a1afd706f4ee32848a55c1f52
+SHA1: f527c05394b64d86deb70fa2d3a5911a4a46e091
+SHA256: 50b18a4929f2e0e3af3eb85f1967b9b904cb97c51441de3a89eeba85275592d7
+SHA512: 1ab7b10cf9a62f797d103d6e8fa32662b1f1e266f5753d4b4fc585e3c6452c79f630e8af7672a6a77ee3ce20dc61be16e40cd8fa2b2a5559d38f2029ae21831d
+Description: Wireless Network manager
+
 Package: ffmpeg
 Priority: optional
 Section: video
@@ -1692,26 +1732,6 @@ Description: YouTube Downloader, frontend for youtube-dl
  - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
  - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
 
-Package: ceni
-Priority: optional
-Section: net
-Installed-Size: 235
-Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
-Architecture: all
-Version: 2.31
-Depends: perl, libcurses-ui-perl, libexpect-perl, libterm-readkey-perl, ifupdown, udev, wpasupplicant, resolvconf, dhcpcd | dhcpcd5, xterm
-Suggests: wpagui
-Filename: ./Extra/ceni_2.31_all.deb
-Size: 56596
-MD5sum: b6cb45a629d72208eb45384b256ce6ca
-SHA1: 528a93e16407c784682d8a842bce5c94e162437b
-SHA256: 2a2ae19b0f781d61b9486890b0e6841009d2e62d1698d26404e185e6a0c8fc37
-SHA512: 72e2197fe61e18d09fa30924ed06397dbe897fd3801e585a46e7f8425587da4206da80e451540b4aff19808e42d5afda5a937e39856cf7c1eb72990b599ef955
-Description: Curses interface to /etc/network/interfaces
- A Curses user interface for configuring network interfaces with ifupdown.
- Ceni can manage basic network interface ifupdown configuration stanzas for
- ethernet and wireless devices.
-
 Package: echinus
 Priority: extra
 Section: checkinstall
@@ -2059,6 +2079,24 @@ SHA1: 300a66919bf627ded86db1df7a3daf2a47135c1e
 SHA256: 8980dc5135afec1dc693764aef33326424f570a9c9bdbbf6723eafbc9b699187
 SHA512: 76289675e36857faffdd5fc1b6d0da618b96891e39e2de3d594bbc7766ea3684eeeac62d87e6f7bb3dba373bcd0bb31007b77938ef92a599804b7bf0543b4877
 Description: SMB/CIFS clients for Unix
+
+Package: wifibox
+Priority: extra
+Section: checkinstall
+Installed-Size: 290
+Maintainer: root@wheezy
+Architecture: i386
+Version: 1.0.4
+Replaces: ceni, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, udhcpc, frisbee, wifibox-tazpanel, wifibox-dhcpcd
+Depends: libc6, rfkill, libiw30, yad, libgtk2.0-0, libglade2-0, psmisc, wpasupplicant, wireless-tools, net-tools, gsu | gksu
+Conflicts: ceni, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, frisbee, wifibox-tazpanel, wifibox-dhcpcd 
+Filename: ./Extra/wifibox_1.0.4_i386.deb
+Size: 43458
+MD5sum: a11a2e8f2eb5793413cd9b91517ade39
+SHA1: a726888df04de31ad5a3ef8d46a54c688db4f69f
+SHA256: 9560ce19e0c0420653cf64bcf9be232aa0e74e8e44ba3923849421b86f7762e3
+SHA512: 6fa176a0781b9cf3d6fec02d7f24e1f0d584f1ff616e1a6abeb6c8d68c6996230ae5e1597e0cfc8b16c7fe1682945bd54446806faf0339d83ec3777c94f3c805
+Description: Wireless Network manager
 
 Package: findnrun
 Priority: optional
