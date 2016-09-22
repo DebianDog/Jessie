@@ -1,29 +1,29 @@
-Origin: Ubuntu
-Label: XenialDog
+Origin: Debian
+Label: DebianDog
 Suite: stable
 Version: 1.0
-Codename: xenial
+Codename: jessie
 Architectures: i386
 Components: main
-Description: XenialDog repository
-Date: Thu, 22 Sep 2016 16:10:23 UTC
+Description: DebianDog repository
+Date: Thu, 22 Sep 2016 20:42:52 UTC
 MD5Sum:
  cea0c16fc20a603ebd0112ba5df9a447           109527 Packages
- f5245b30e5f36b1785969471dbc1ccc8            43938 Packages.gz
- 0b59bd525fe26d5769b42ae50b304198              147 Release
- f5245b30e5f36b1785969471dbc1ccc8            43938 Translation-en.gz
+ bb70b32375c87069665ab2e3b1571100            43938 Packages.gz
+ 16d95e565f30490d2f5eb6e11391ce92              147 Release
+ bb70b32375c87069665ab2e3b1571100            43938 Translation-en.gz
 SHA1:
  5a1124af9c553e5ed585151b4ac5f6eec6204d4d           109527 Packages
- 885d9b02847db6b4f535491623e01eb25b124e15            43938 Packages.gz
- d9dddb389fe2d8fd6abc3c5b83ecf5ca88a81155              147 Release
- 885d9b02847db6b4f535491623e01eb25b124e15            43938 Translation-en.gz
+ 73c86e0381dd60d3ba82eaf78f35de9f904b6c79            43938 Packages.gz
+ f7f9cdc238475cfc47c7813d70a42c0ff1a1e7b6              147 Release
+ 73c86e0381dd60d3ba82eaf78f35de9f904b6c79            43938 Translation-en.gz
 SHA256:
  981c6838086d47e69ac86e122980fd0e52c61559cebf25c3d3a876e2021b17d7           109527 Packages
- 8c7e8df8b09115ea5cf47ce2185e54a17c084d1ef85c84e3206c7fa2ff086bde            43938 Packages.gz
- a0f16f5f92fb8787fa2e8792887ec297d87f1dd5feecd59c9971a9f88df2a0b3              147 Release
- 8c7e8df8b09115ea5cf47ce2185e54a17c084d1ef85c84e3206c7fa2ff086bde            43938 Translation-en.gz
+ 47d9ab174911464778fc41983910a5fe3eb9f2595d7ccf2687024993824ebb53            43938 Packages.gz
+ 1fa55e4027dc946f1f5542b28f56c5e1f2c51794003c2d27761fadd9f411db3e              147 Release
+ 47d9ab174911464778fc41983910a5fe3eb9f2595d7ccf2687024993824ebb53            43938 Translation-en.gz
 SHA512:
  92a63d80d298b62dd84d2e7404d31e5fa00fac2c23b60f5c47366bc76f296ad16e1522d48fcac6577cd693b4eb5248e1b3544d1baa4aa73373b9d9e79dad1bb8           109527 Packages
- ac5bdb62cae1031cfc43f19ab175ae2ad165e46ee8150d1db2a3761cd6a9a47795a9545628ae35255a3fe4eb756a4b424ea0ba2a0ad5fa31ab703c222c640d04            43938 Packages.gz
- bfae75e5e6f1315dcd39ecff3c314fa3833c49a353ef50e2f7abb81a5389c395727046537ecd8b69fd7e009e5ac38d7650853794f01f46a2a9313db8d1cb0157              147 Release
- ac5bdb62cae1031cfc43f19ab175ae2ad165e46ee8150d1db2a3761cd6a9a47795a9545628ae35255a3fe4eb756a4b424ea0ba2a0ad5fa31ab703c222c640d04            43938 Translation-en.gz
+ bb85361f14f08db606fb496437c0203176118947ac813b0d2aa22795f194418fe669f6cc485f65b1ae0ff97322222744c6f96f1414b3868a0151224ce710a8a7            43938 Packages.gz
+ 996e9c0931ed449630ff52d7cf68b109996b529e018d0638d047adf75159a63a3572c7dade7dcb92057f96bdccd7fa129d9c215130ff7c19efbe50db2148e3d5              147 Release
+ bb85361f14f08db606fb496437c0203176118947ac813b0d2aa22795f194418fe669f6cc485f65b1ae0ff97322222744c6f96f1414b3868a0151224ce710a8a7            43938 Translation-en.gz

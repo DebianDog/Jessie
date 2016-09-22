@@ -17,14 +17,14 @@ echo
 echo "Creating the required files e.g. Packages.gz by apt-ftparchive..."
 cd "$PWD"
 # Insert needed info first in Release file
-echo 'Origin: Ubuntu
-Label: XenialDog
+echo 'Origin: Debian
+Label: DebianDog
 Suite: stable
 Version: 1.0
-Codename: xenial
+Codename: jessie
 Architectures: i386
 Components: main
-Description: XenialDog repository' > Release
+Description: DebianDog repository' > Release
 
 apt-ftparchive packages . > Packages
 gzip -c Packages > Packages.gz
@@ -37,14 +37,14 @@ gpg -abs --homedir .gnupg -o Release.gpg Release
   n|N ) cd "$PWD"
 echo "Creating the required files e.g. Packages.gz by apt-ftparchive..."
 # Insert needed info first in Release file
-echo 'Origin: Ubuntu
-Label: XenialDog
+echo 'Origin: Debian
+Label: DebianDog
 Suite: stable
 Version: 1.0
-Codename: xenial
+Codename: jessie
 Architectures: i386
 Components: main
-Description: XenialDog repository' > Release
+Description: DebianDog repository' > Release
 
 apt-ftparchive packages . > Packages
 gzip -c Packages > Packages.gz
