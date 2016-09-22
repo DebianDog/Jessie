@@ -117,29 +117,6 @@ SHA256: 11d582924b3c9ae4ea6d551f0a9d86778fae7bc6f62112cc6a462a5c981fe7f4
 SHA512: 3267d7a5d9f8dc66207c2062d9d0243c1f353e31be10e24683fab125e41ad2b025498429c1036a3d2825d7c235bd5b828164f70609a24d7d42707d2cfd5462ca
 Description: Disk volume monitor
 
-Package: apt2sfs
-Installed-Size: 72 
-Maintainer: fredx181 dog@root.nl
-Architecture: i386
-Version: 1.0.8
-Depends: libc6, x11-utils, x11-xserver-utils, findutils, yad, unionfs-fuse, coreutils, menu, mount, procps, sed, squashfs-tools, apt, xterm, gsu | gksu
-Filename: ./Included/apt2sfs_1.0.8_i386.deb
-Size: 9336
-MD5sum: f4ed0c2bac610eb1a816b9ca267db10d
-SHA1: 7becc1b119615fd271c3e8705ff371ad7dd031c4
-SHA256: e709d99a6abf04a5bf3dbc08be7bba7a267cdbd8544255cd6eaf6631f7357f63
-SHA512: 91bfa40104b1e72c6fe3b8471aa8358ed17903f63332b901bbb3ff0d3944ed8bdf01d8c6f199e24238016dee2ad914b472e67160abfd2687108c8a29320b6df2
-Description: Warning - This package works only in XenialDog! Fix: Force being user 'root' in chroot, otherwise installing might fail (for example when running with new created user).  
- Fix: version 1.0.4 (and earlier) doesn't work well because of 'stable' entry in /etc/apt/sources.list after jessie became stable at 2015-04-25.
- .
- Fix after version 1.0.3: added option to choose location / or /tmp for working directory (in case you have only vfat or ntfs partitions available).
- For creating a *.squashfs module from installing by apt-get
- The installing takes place outside of the running system, in 'chroot'
- - apt2sfs, GUI using yad
- - apt2sfs-fullinst, GUI using yad, can be used on a full install
- - Choice dialog now for compression algorthim: xz, gz or lz4
- - Output from apt-get through xterm (instead using yad in previous versions)
-
 Package: freememapplettray
 Installed-Size: 64
 Maintainer: root
@@ -270,6 +247,29 @@ Description: X display manager
  (X Display Manager Control Protocol) and can also be used to run a chooser
  process which presents the user with a menu of possible hosts that offer
  XDMCP display management.
+
+Package: apt2sfs
+Installed-Size: 72 
+Maintainer: fredx181 dog@root.nl
+Architecture: i386
+Version: 1.0.9
+Depends: libc6, x11-utils, x11-xserver-utils, findutils, yad, unionfs-fuse, coreutils, menu, mount, procps, sed, squashfs-tools, apt, xterm, gsu | gksu
+Filename: ./Included/apt2sfs_1.0.9_i386.deb
+Size: 9414
+MD5sum: d6a6b0ef1e8eb320014d347769e93da8
+SHA1: 1f8d80a786b7ef55316518ec2c084eecc2d77a38
+SHA256: d3c79c5a685958d78a0de5df93d73d9fc3a40db321a100c16645b6aca99be591
+SHA512: 24d7f0b6c0578ce341dcb9140b363cec3e2e34bfe9174c5d3fa85439425ec0c3efc4b40c237be2f594d9dec5fd51a46872c87d48854473ba933ee2dfc77f70ee
+Description: Warning - This package works only in XenialDog! Fix: Force being user 'root' in chroot, otherwise installing might fail (for example when running with new created user).  
+ Fix: version 1.0.4 (and earlier) doesn't work well because of 'stable' entry in /etc/apt/sources.list after jessie became stable at 2015-04-25.
+ .
+ Fix after version 1.0.3: added option to choose location / or /tmp for working directory (in case you have only vfat or ntfs partitions available).
+ For creating a *.squashfs module from installing by apt-get
+ The installing takes place outside of the running system, in 'chroot'
+ - apt2sfs, GUI using yad
+ - apt2sfs-fullinst, GUI using yad, can be used on a full install
+ - Choice dialog now for compression algorthim: xz, gz or lz4
+ - Output from apt-get through xterm (instead using yad in previous versions)
 
 Package: pburn
 Priority: extra

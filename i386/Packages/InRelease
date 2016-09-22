@@ -9,35 +9,35 @@ Codename: xenial
 Architectures: i386
 Components: main
 Description: XenialDog repository
-Date: Wed, 21 Sep 2016 21:11:39 UTC
+Date: Thu, 22 Sep 2016 10:31:58 UTC
 MD5Sum:
- 6c26e494516988350744bed1d6fd918d           112355 Packages
- 7bfe4a78bf5cc2df4eb83248a410f892            44808 Packages.gz
+ c2a554e4f3bfe21360ed7c5336629b9d           112355 Packages
+ 1f453c3c7a9b5ffd860f2e9a543e372d            44816 Packages.gz
  0b59bd525fe26d5769b42ae50b304198              147 Release
- 7bfe4a78bf5cc2df4eb83248a410f892            44808 Translation-en.gz
+ 1f453c3c7a9b5ffd860f2e9a543e372d            44816 Translation-en.gz
 SHA1:
- cfce9a98761e03c70af34b9a41de6c5b32cd151d           112355 Packages
- 432cb3b4eb6030304d03158c588f7faa7588168d            44808 Packages.gz
+ 05b1c8a0d2ea19182887e81746f9371682f122d3           112355 Packages
+ c0b1c037b1afc1b95bd57e6905120800392dfa8f            44816 Packages.gz
  d9dddb389fe2d8fd6abc3c5b83ecf5ca88a81155              147 Release
- 432cb3b4eb6030304d03158c588f7faa7588168d            44808 Translation-en.gz
+ c0b1c037b1afc1b95bd57e6905120800392dfa8f            44816 Translation-en.gz
 SHA256:
- 119a2af3ebc878e2a4c9b8b8b44548937a87655af385d0e2688707231d043816           112355 Packages
- db714f5756a89f3befc690e261db64eff3286bcc746b050c480772c8f407d99b            44808 Packages.gz
+ 69805658ff00c605042c0e0ff40f79380c9cc2122ad93fd7b818df3c202ffaf3           112355 Packages
+ 00a94fea7f350df62592d118064657b9bc74083dbf6fe5837d6b8315f7e6c16b            44816 Packages.gz
  a0f16f5f92fb8787fa2e8792887ec297d87f1dd5feecd59c9971a9f88df2a0b3              147 Release
- db714f5756a89f3befc690e261db64eff3286bcc746b050c480772c8f407d99b            44808 Translation-en.gz
+ 00a94fea7f350df62592d118064657b9bc74083dbf6fe5837d6b8315f7e6c16b            44816 Translation-en.gz
 SHA512:
- 613e4a035c00ae9a6b82ccad055370493fff818a930985c181186c305742beb6e98f7b8ab5b2a70aa6dbc8273275cfa76712c952de87b17621b91c6bc7b9ffaa           112355 Packages
- bc47c9a8f8d48ea591041b02998aec63e5c02d9b8a202e74bbd3924febfde72be021a5364c69a09b6242054b53c974a853dfd7fd23216562a94bd58f420b1e37            44808 Packages.gz
+ 84acdae7bf2b686c5967c1b87b5aa9698c89a1c886b9211a3769982c757a38dd01d07abb34445d7efd2f4dd9b8ce22679d039ee08ce07d888bb8eeda91b95eb8           112355 Packages
+ f1dfd53c2c4525a2feeb3fd0f8899ed351814ee18d3798bab0a66f5fd6ffa1cbe3bfa2d3b5be7a36989df7601e8149b350891fb8ff2126e77cf75abfcde8267f            44816 Packages.gz
  bfae75e5e6f1315dcd39ecff3c314fa3833c49a353ef50e2f7abb81a5389c395727046537ecd8b69fd7e009e5ac38d7650853794f01f46a2a9313db8d1cb0157              147 Release
- bc47c9a8f8d48ea591041b02998aec63e5c02d9b8a202e74bbd3924febfde72be021a5364c69a09b6242054b53c974a853dfd7fd23216562a94bd58f420b1e37            44808 Translation-en.gz
+ f1dfd53c2c4525a2feeb3fd0f8899ed351814ee18d3798bab0a66f5fd6ffa1cbe3bfa2d3b5be7a36989df7601e8149b350891fb8ff2126e77cf75abfcde8267f            44816 Translation-en.gz
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBCAAGBQJX4veRAAoJEK2HvHp9cwgd8M0H/jMGAlGB2ftWiYBDX7FNy+Rq
-BVZnD9hGkX0eexS1KeiDuwhDXMaecgGrpveixpzR8XKkZQnOrlrBpfffKrMCBKsW
-6Y7QeAd5p/68BsqZ4cDt40f4tsTGn2x924yj25f1hPVEsV7UM5RStIxXcRE54e6e
-Sa3TEeMq88fn0d3FqVfPcH31jJ0v6TH0vlqtppCUSVysZWpftR64YiSEFbbfMWQk
-fVoiTHzv7cKP9Aoh782OJORew76wrfsqMVy92y5X2YbGJKFDtbuWrCWP2roLyig3
-9SwQvD3Og4NI0WksyBJ94jaoBZhs9/8NGeRF93/PYFuY+AwsIA/64KmjWexln7Q=
-=/yG6
+iQEcBAEBCAAGBQJX47MjAAoJEK2HvHp9cwgdvNgH/i/xV8xfqrgeQlmkXhCRNOdw
+yx/nUCutB/cMWy5yld0gEZfHHXsF2BEXnlLlDnocTmmdoVRmCha2thKl7Hjm5dYp
+pd9PEm5oZPq2qhiUrDCgFUvuSXZ9pdbBrAU20bdWs0fzTQQJnYqwb2iL3wFYwQNS
+izO8LMCK3hu8KX2cIwlxDcMGw/6tqBTFjUhw5D7/JqA6BGuW0xH5YqcWtjRe9fhG
+66svrNKzNOm+OiC13j8u7IJ5LHeJD97aJcxTYuUD14PCFeFFp7XyW0bLNYZCvFwO
++G2FH+rXFdlVVhC2phrxQ81w0h1k1fjZu5paVDKt8YRnrPTXhAqPu4zgK4IIEoA=
+=jD60
 -----END PGP SIGNATURE-----
