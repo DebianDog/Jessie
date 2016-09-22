@@ -169,18 +169,18 @@ home/puppy/Startup/netmon_wce				    wifibox
 home/puppy/Startup/network_tray.sh			    sns,wifibox-dhcpcd
 home/puppy/startup-jwm					    jwm-setup
 lib/dhcpcd/dhcpcd-hooks					    frisbee,wifibox-dhcpcd
-lib/dhcpcd/dhcpcd-hooks/01-test				    sns,xpns-tool
-lib/dhcpcd/dhcpcd-hooks/02-dump				    sns,xpns-tool
-lib/dhcpcd/dhcpcd-hooks/10-mtu				    sns,xpns-tool
-lib/dhcpcd/dhcpcd-hooks/10-wpa_supplicant		    sns,xpns-tool
-lib/dhcpcd/dhcpcd-hooks/15-timezone			    sns,xpns-tool
-lib/dhcpcd/dhcpcd-hooks/20-resolv.conf			    sns,xpns-tool
-lib/dhcpcd/dhcpcd-hooks/29-lookup-hostname		    sns,xpns-tool
-lib/dhcpcd/dhcpcd-hooks/30-hostname			    sns,xpns-tool
-lib/dhcpcd/dhcpcd-hooks/99-frisbee_tray			    sns,xpns-tool
-lib/dhcpcd/dhcpcd-hooks/99-network_tray			    sns,xpns-tool
-lib/dhcpcd/dhcpcd-hooks/99-notify			    sns,xpns-tool
-lib/dhcpcd/dhcpcd-run-hooks				    frisbee,xpns-tool,wifibox-dhcpcd,sns
+lib/dhcpcd/dhcpcd-hooks/01-test				    sns
+lib/dhcpcd/dhcpcd-hooks/02-dump				    sns
+lib/dhcpcd/dhcpcd-hooks/10-mtu				    sns
+lib/dhcpcd/dhcpcd-hooks/10-wpa_supplicant		    sns
+lib/dhcpcd/dhcpcd-hooks/15-timezone			    sns
+lib/dhcpcd/dhcpcd-hooks/20-resolv.conf			    sns
+lib/dhcpcd/dhcpcd-hooks/29-lookup-hostname		    sns
+lib/dhcpcd/dhcpcd-hooks/30-hostname			    sns
+lib/dhcpcd/dhcpcd-hooks/99-frisbee_tray			    sns
+lib/dhcpcd/dhcpcd-hooks/99-network_tray			    sns
+lib/dhcpcd/dhcpcd-hooks/99-notify			    sns
+lib/dhcpcd/dhcpcd-run-hooks				    frisbee,wifibox-dhcpcd,sns
 lib/i386-linux-gnu/libudev.so.0				    libudev0
 lib/i386-linux-gnu/libudev.so.0.13.0			    libudev0
 lib/libtaz.sh						    wifibox-dhcpcd,wifibox
@@ -206,7 +206,6 @@ opt/bin/ifplugstatus-0.18				    sns
 opt/bin/ifplugstatus-0.25				    sns
 opt/bin/ifplugstatus-0.28				    sns
 opt/bin/ipinfo						    sns
-opt/bin/mnt-img						    filemnt-xfe
 opt/bin/network_tray					    sns
 opt/bin/proxy-setup					    sns
 opt/bin/sns						    sns
@@ -458,7 +457,7 @@ usr/bin/iceauth						    x11-xserver-utils
 usr/bin/ipinfo						    frisbee,wifibox,wifibox-dhcpcd
 usr/bin/jwm						    jwm
 usr/bin/linux-user-chroot				    linux-user-chroot
-usr/bin/losetup-FULL					    filemnt-rox,filemnt-thunar,filemnt-xfe
+usr/bin/losetup-FULL					    filemnt-rox,filemnt-thunar
 usr/bin/lumina-config					    lumina-desktop-debdog
 usr/bin/lumina-fileinfo					    lumina-desktop-debdog
 usr/bin/lumina-fm					    lumina-desktop-debdog
@@ -492,8 +491,8 @@ usr/bin/probedisk					    probepart
 usr/bin/probepart					    probepart
 usr/bin/pup-volume-monitor				    pup-volume-monitor
 usr/bin/pup-volume-monitor-admin			    pup-volume-monitor
-usr/bin/pupdialog					    filemnt-rox,filemnt-thunar,filemnt-xfe
-usr/bin/pupmessage					    filemnt-rox,filemnt-thunar,filemnt-xfe
+usr/bin/pupdialog					    filemnt-rox,filemnt-thunar
+usr/bin/pupmessage					    filemnt-rox,filemnt-thunar
 usr/bin/rox						    rox-filer
 usr/bin/rox-filer					    rox-filer
 usr/bin/sessreg						    x11-xserver-utils
@@ -508,7 +507,7 @@ usr/bin/thunar-settings					    thunar
 usr/bin/unsquashfs					    squashfs-tools
 usr/bin/update-alternatives				    dpkg
 usr/bin/usleep						    pburn
-usr/bin/vercmp						    filemnt-rox,filemnt-thunar,filemnt-xfe
+usr/bin/vercmp						    filemnt-rox,filemnt-thunar
 usr/bin/wget						    wget
 usr/bin/wifi-box					    wifibox-dhcpcd,wifibox
 usr/bin/xcmsdb						    x11-xserver-utils
@@ -1021,8 +1020,8 @@ usr/lib/ssl/engines/libgmp.so				    libssl0.9.8
 usr/lib/ssl/engines/libnuron.so				    libssl0.9.8
 usr/lib/ssl/engines/libsureware.so			    libssl0.9.8
 usr/lib/ssl/engines/libubsec.so				    libssl0.9.8
-usr/libexec/dhcpcd-hooks				    frisbee,xpns-tool,wifibox-dhcpcd,sns
-usr/libexec/dhcpcd-run-hooks				    frisbee,xpns-tool,wifibox-dhcpcd,sns
+usr/libexec/dhcpcd-hooks				    frisbee,wifibox-dhcpcd,sns
+usr/libexec/dhcpcd-run-hooks				    frisbee,wifibox-dhcpcd,sns
 usr/libexec/pup-volume-monitor/mount			    pup-volume-monitor
 usr/libexec/pup-volume-monitor/umount			    pup-volume-monitor
 usr/local/.dogradio/.fonts/Oxygen-Regular.ttf		    dogradio
@@ -1204,7 +1203,6 @@ usr/local/bin/debdog-install				    debdoginstallscripts
 usr/local/bin/defaultconnect				    sns
 usr/local/bin/desktop-editor				    desktop-editor
 usr/local/bin/desktop_drive_icons			    desktop-drive-icons
-usr/local/bin/dhcpcd					    xpns-tool
 usr/local/bin/dogradio					    dogradio
 usr/local/bin/dogradiorip				    dogradio
 usr/local/bin/drive-info				    debdogmountscripts
@@ -1221,7 +1219,6 @@ usr/local/bin/flitetf2wav				    flite-hts-engine
 usr/local/bin/freememapplet_start			    freememapplettray
 usr/local/bin/freememapplet_stop			    freememapplettray
 usr/local/bin/freememapplet_tray			    freememapplettray
-usr/local/bin/gdrive-get				    sfs-get-smokey-get
 usr/local/bin/gethosts					    debdog-advert-blocker
 usr/local/bin/gnome-mplayer				    gnome-mplayer-1.0.7
 usr/local/bin/grldr					    debdoginstallscripts
@@ -1300,7 +1297,6 @@ usr/local/bin/xhippo					    xhippo
 usr/local/bin/xhplay					    xhippo
 usr/local/bin/xhrecord					    xhippo
 usr/local/bin/xload					    jwm-setup
-usr/local/bin/xpns-tool					    xpns-tool
 usr/local/bin/xrecord					    xhippo
 usr/local/bin/yad-splash				    yad-splash
 usr/local/bin/youtube-dl				    youtube-get2
@@ -3005,11 +3001,6 @@ usr/local/etc/dillo/domainrc				    dillo
 usr/local/etc/dillo/dpidrc				    dillo
 usr/local/etc/dillo/keysrc				    dillo
 usr/local/etc/xhippo.config				    xhippo
-usr/local/gdrive-get/fred				    sfs-get-smokey-get
-usr/local/gdrive-get/pupli				    sfs-get-smokey-get
-usr/local/gdrive-get/stemsee				    sfs-get-smokey-get
-usr/local/gdrive-get/stemsee-pets			    sfs-get-smokey-get
-usr/local/gdrive-get/toni				    sfs-get-smokey-get
 usr/local/lib/X11/mini-icons				    frisbee,wifibox-dhcpcd
 usr/local/lib/X11/mini-icons/info16.xpm			    sns
 usr/local/lib/X11/mini-icons/mini-question.xpm		    sns
@@ -3845,7 +3836,6 @@ usr/share/applications/flburn.desktop			    flburn
 usr/share/applications/freememapplet-off.desktop	    freememapplettray
 usr/share/applications/freememapplet-on.desktop		    freememapplettray
 usr/share/applications/frisbee.desktop			    frisbee
-usr/share/applications/gdrive-get.desktop		    sfs-get-smokey-get
 usr/share/applications/gnome-mplayer.desktop		    gnome-mplayer-1.0.7
 usr/share/applications/gtk-youtube-viewer.desktop	    youtube-viewer
 usr/share/applications/jwm-theme-change.desktop		    jwm-setup
@@ -3897,7 +3887,6 @@ usr/share/applications/xfp.desktop			    xfe
 usr/share/applications/xfv.desktop			    xfe
 usr/share/applications/xfw.desktop			    xfe
 usr/share/applications/xhippo.desktop			    xhippo
-usr/share/applications/xpns-tool.desktop		    xpns-tool
 usr/share/applications/xrecord.desktop			    xhippo
 usr/share/applications/xvidcap.desktop			    xvidcap
 usr/share/audio/2barks.au				    pburn
@@ -6822,7 +6811,6 @@ usr/share/menu/fixdepinstall				    fixdepinstall
 usr/share/menu/flashplayerchoice			    flashplayerchoice
 usr/share/menu/freememapplet-off			    freememapplettray
 usr/share/menu/freememapplet-on				    freememapplettray
-usr/share/menu/gdrive-get				    sfs-get-smokey-get
 usr/share/menu/gnome-mplayer				    gnome-mplayer-1.0.7
 usr/share/menu/gtk-youtube-viewer			    youtube-viewer
 usr/share/menu/isotools					    isotools
@@ -6866,7 +6854,6 @@ usr/share/menu/thunar					    thunar
 usr/share/menu/viewtopic.php?t=60204			    samba-tng-rcrsn-0.5-rc1-debdog
 usr/share/menu/x11-xserver-utils			    x11-xserver-utils
 usr/share/menu/xfe					    xfe
-usr/share/menu/xpns-tool				    xpns-tool
 usr/share/menu/xvidcap					    xvidcap
 usr/share/menu/youtube-get				    youtube-get
 usr/share/menu/youtube-get2				    youtube-get2
@@ -7043,7 +7030,7 @@ usr/share/pixmaps/sfs.png				    edit-sfs-thunar
 usr/share/pixmaps/sfsload.png				    sfsload
 usr/share/pixmaps/shutdown-lumina.png			    lumina-desktop-debdog
 usr/share/pixmaps/shutdown.png				    jwm-setup
-usr/share/pixmaps/sns.xpm				    sns,xpns-tool
+usr/share/pixmaps/sns.xpm				    sns
 usr/share/pixmaps/suspend.png				    jwm-setup
 usr/share/pixmaps/swap2.png				    makeswap
 usr/share/pixmaps/switch.png				    jwm-setup

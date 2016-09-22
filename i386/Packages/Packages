@@ -315,22 +315,6 @@ Description: Yet Another Dialog - dialogs for shell
  developers/maintainers were in GNOME Bugzilla.
 Homepage: http://code.google.com/p/yad/
 
-Package: remaster-scripts
-Installed-Size: 57
-Maintainer: fredx181 dog@root.nl
-Architecture: i386
-Version: 1.0.4
-Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu
-Filename: ./Included/remaster-scripts_1.0.4_i386.deb
-Size: 8294
-MD5sum: db0370563fbff5a9a158d4d316dcecdc
-SHA1: eb857df8f1b02b27ad9389d6758ec3301f5112a9
-SHA256: 9d5744967f5115a36240d9e52cb97cf5c81826282714c70fa20f221c7d5422cb
-SHA512: 7aaffbbf183f863ad39e59aad3d0af45d334c166ce8ad6d6d6dbeab49f04d0b80793842862cc18691a004350929e1cd667a0cfc385f09c64db3666394363712d
-Description: Warning - This package works only in DebianDog! In ver. 1.0.3 fixed progress bar bug for very old PC.
- .
- For creating a *.squashfs module from changes (from /live/cow directory) or full system remaster (from / directory).
-
 Package: sfs-get-smokey-get
 Installed-Size: 224 
 Maintainer: fredx181 dog@root.nl
@@ -372,21 +356,6 @@ Description: Yet Another Dialog - dialogs for shell
  the long time, but many interesting ideas which are ignored by
  developers/maintainers were in GNOME Bugzilla.
 Homepage: http://code.google.com/p/yad/
-
-Package: sfs-get-smokey-get
-Installed-Size: 224 
-Maintainer: fredx181 dog@root.nl
-Architecture: i386
-Version: 1.0.2-jessie
-Depends: libc6, yad, wget, elinks, gsu | gksu
-Filename: ./Included/sfs-get-smokey-get_1.0.2-jessie_i386.deb
-Size: 80136
-MD5sum: e6bb6234d35c79e032e0406274a1434e
-SHA1: 225e3ef349313f781f79b663c2c6d44910786594
-SHA256: 50430a7aae389f6a7379faf40b806e8da3341a20c3cc1df094c559a098b4cd90
-SHA512: e20d437800897c2bf4704737a413e47d4d08eb9dbf23d2ae0974f33428761eff72dbafa98ce2fb594cc36a066706a5c22775453867b23c03c0af46ce8159ea9e
-Description: The sfs-get-smokey-get program downloads files from github.com or smokey01.com or kazzascorner.com
- sfs-get_smokey-get by MakeDEBPackage-GUI.
 
 Package: makeswap
 Installed-Size: 45
@@ -608,20 +577,6 @@ Description: Load a *.squashfs or *.sfs module.
  Changes in v 1.0.5:
  - kill processes which are keeping from proper unmounting (might be needed in some cases for SFS-load mode)
 
-Package: fixdepinstall
-Installed-Size: 140
-Maintainer: root
-Architecture: i386
-Version: 1.0.2
-Depends: libc6, x11-utils, yad, dpkg, apt, procps, gsu | gksu
-Filename: ./Included/fixdepinstall_1.0.2_i386.deb
-Size: 3550
-MD5sum: ac6fd59ca921a103f556ce9966003109
-SHA1: 5983d99cc8097413d3f85a2051411b32a2003161
-SHA256: 676e068d8244ec5f807ab64401027d85622914f97691d336afbe1cbb60dc4889
-SHA512: de2c57908185392ae29ffb36d564039adff7d51debd7e4c62b59e514fa44bd20e58e845e8e7d36bd38e5942f113338c7bf5baff77b4b68439cc96d4f4bee07ed
-Description: DebianDog deb + dependencies install utility from Fredx181
-
 Package: rox-filer
 Priority: optional
 Section: x11
@@ -777,21 +732,6 @@ Description: setuid helper for making bind mounts and chrooting
  for use by build systems.
 Homepage: https://git.gnome.org/browse/linux-user-chroot/
 
-Package: filemnt-xfe
-Installed-Size: 39 
-Maintainer: fredx181 root@dog
-Architecture: i386
-Version: 1.0.0
-Replaces: filemnt-thunar, filemnt-rox
-Depends: libc6, gtkdialog, disktype, xfe, gsu | gksu
-Filename: ./Included/filemnt-xfe_1.0.0_i386.deb
-Size: 23278
-MD5sum: 05815f5124d60783e8d011582fbaac89
-SHA1: 33e7c87cc7d70bd7ce56751a4bebbfd86390f207
-SHA256: c292d66b8f2d80a5efd0426a37b726f32769703b3721b5028c6ce584c40dc974
-SHA512: 29e974f73d0e4692282670999b6b4215aea8b44ddd80c08387f6fb96ac9245514b017775f9d4af711c0026a5993679d0f31a6194fb1ae09b618b689b6aad946b
-Description: Mount images, savefile, modules
-
 Package: domycommand
 Priority: extra
 Section: utilities
@@ -938,6 +878,20 @@ Description: Small and fast web browser
  It aims to be small in resources, stable, developer-friendly, usable,
  very fast, and extensible.
 Homepage: http://www.dillo.org/
+
+Package: fixdepinstall
+Installed-Size: 140
+Maintainer: root
+Architecture: i386
+Version: 1.0.3
+Depends: libc6, x11-utils, yad, dpkg, apt, procps, gsu | gksu
+Filename: ./Included/fixdepinstall_1.0.3_i386.deb
+Size: 3570
+MD5sum: 2d83d7df7af48e40ed757d75fe7e45cd
+SHA1: af7bbe91d4443492a0219756915c694f29befdeb
+SHA256: 01ae422d5e34c5369e51f10733fae58058602ec74b4e0c10ba70cfec60879e39
+SHA512: 73181ffee150a1ba9d503a4520ffe49e8ea3dab856590dc2329d63d549b2184f4899350df7caf841067d19d29fa88ab40a9c84bbc4cc31e281cea753dfaab367
+Description: DebianDog deb + dependencies install utility from Fredx181
 
 Package: jwm
 Priority: optional
@@ -1230,6 +1184,23 @@ Description: personal organizer for GTK+
  manager and address book modules. It aims to be easy to use and
  configurable to meet the user's preferences.
 Homepage: http://clayo.org/osmo
+
+Package: Firewall-Puppy
+Priority: extra
+Section: system
+Installed-Size: 200
+Maintainer: root@wheezy
+Architecture: i386
+Version: 1.0.0-2
+Provides: Firewall
+Depends: libc6, dialog, iptables
+Filename: ./Extra/firewall-puppy_1.0.0-2_i386.deb
+Size: 19634
+MD5sum: a9b18be2c81cbd4b2574ecae2448c08f
+SHA1: 05ebf5c04c624ca26dff935a490d197d13497d69
+SHA256: b2143a6f9481fb871bb6c88b8f9d9c79ef991918fcfdaf92a23b4ddf168ea4fd
+SHA512: 069c7b801482c879d64fe24f158059badb3d60acd471bf59357e5ee287d8a7cdb0eed1ebff3ac13b3a46f7b019678ff7060f0bbd2111920a10b786dc4d93118a
+Description: system-firewall
 
 Package: ceni
 Priority: optional
@@ -1657,23 +1628,6 @@ Description: x264 video coding library
 Bugs: mailto:marillat@deb-multimedia.org
 Multi-Arch: same
 Homepage: http://www.videolan.org/developers/x264.html
-
-Package: Firewall-Puppy
-Priority: extra
-Section: system
-Installed-Size: 200
-Maintainer: root@wheezy
-Architecture: i386
-Version: 1.0.0-1
-Provides: Firewall
-Depends: libc6, dialog, iptables
-Filename: ./Extra/firewall-puppy_1.0.0-1_i386.deb
-Size: 19612
-MD5sum: b77f6c13d3f8751225dbe130b7371465
-SHA1: c1a2e538c69fdd32f740d264310c7626c52dc850
-SHA256: ac292b32f3e1f246969692b10ea1af713f3a1ab04097b09092caf3d41c9d1cb7
-SHA512: 28c97846c850cb4ad849688ad7066b9c7e6706cf9010d805025210d499834e304c55157d541b86c3e91c84d1caab61518fa1d664f3a57ccc24001b9170d15120
-Description: system-firewall
 
 Package: flburn
 Priority: extra
@@ -2118,23 +2072,6 @@ Description:  findnrun 1.10.6 (utility)
   Files in this base package: executable script, desktop and
   icons, smaller English help (markdown), NLS .pot.
   https://github.com/step-/find-n-run/ 
-
-Package: xpns-tool
-Installed-Size: 189
-Maintainer: root
-Architecture: i386
-Version: 1.0.1
-Replaces: dhcpcd, resolvconf, isc-dhcp-client, isc-dhcp-common
-Depends: libc6, gtkdialog, libgtk2.0-0, libglade2-0, psmisc, wpasupplicant, gsu
-Recommends: libc6-i686
-Conflicts: frisbee, resolvconf, isc-dhcp-client, isc-dhcp-common
-Filename: ./Extra/xpns-tool_1.0.1_i386.deb
-Size: 67790
-MD5sum: 0fa478f8ea6c446911dd6de8593734f3
-SHA1: 29fe88b213dc21c96530c9fb377ba0f16f49a40b
-SHA256: aecab4333189c9904bfb56f31be81124e29305ea95467bea33ae6bede06393e4
-SHA512: d2e0f7c85b073b7aa4ed43c8301ac19675a59631ec20eb587b35481790c02d3cbc357653d97297401ab29c5571c1a8a5c13f77778be7e942df0a1e027b924959
-Description: Network Manager
 
 Package: lumina-desktop-debdog
 Priority: extra
