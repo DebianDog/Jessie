@@ -504,17 +504,17 @@ Maintainer: Maintainers of Mozilla-related packages <pkg-mozilla-maintainers@lis
 Architecture: i386
 Version: 24.8.0esr-1~deb8u2
 Provides: gnome-www-browser, www-browser
-Depends: libasound2 (>= 1.0.16), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.17), libcairo2 (>= 1.2.4), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.78), libffi6 (>= 3.0.4), libfontconfig1 (>= 2.11), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:4.1.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.20.0), libgtk2.0-0 (>= 2.24.0), libpango-1.0-0 (>= 1.14.0), libstartup-notification0 (>= 0.8), libstdc++6 (>= 4.9), libx11-6, libxcomposite1 (>= 1:0.3-1), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxrender1, libxt6, zlib1g (>= 1:1.2.0), fontconfig, procps, debianutils (>= 1.16), libsqlite3-0 (>= 3.7.12-1~)
+Depends: libasound2 (>= 1.0.16), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.17), libcairo2 (>= 1.2.4), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.78), libevent-2.0-5 (>= 2.0.10-stable), libffi6 (>= 3.0.4), libfontconfig1 (>= 2.11), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:4.1.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.20.0), libgtk2.0-0 (>= 2.24.0), libhunspell-1.3-0 (>= 1.3.3), libpango-1.0-0 (>= 1.14.0), libstartup-notification0 (>= 0.8), libstdc++6 (>= 4.9), libx11-6, libxcomposite1 (>= 1:0.3-1), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxrender1, libxt6, zlib1g (>= 1:1.2.0), fontconfig, procps, debianutils (>= 1.16), libsqlite3-0 (>= 3.7.12-1~)
 Recommends: gstreamer1.0-libav, gstreamer1.0-plugins-good
 Suggests: fonts-stix | otf-stix, fonts-lmodern, mozplugger, libgssapi-krb5-2 | libkrb53, libgnomeui-0, libcanberra0
 Conflicts: iceweasel (<< 45), j2re1.4, pango-graphite (<< 0.9.3)
 Breaks: xul-ext-torbutton
 Filename: ./Included/firefox-esr_24.8.0esr-1~deb8u2_i386.deb
-Size: 25119856
-MD5sum: dc43de786adcfe42d9b4d55dcd5b30dc
-SHA1: 2b71eac3168fca89b5493058f74bf4285ee645ff
-SHA256: a22ceba7325a01097325133ce0e6cb32bc7c242dca9945966a1fbb2701087c2e
-SHA512: aa8cf68ad513c691f766984297ecabc6307e288bc6ed3269eb42019b31c0dd9501f5ec3829be0599865cc72030eea561bc4c3b2b3e32116cf594cd7398150092
+Size: 25132806
+MD5sum: 0dd11acb392c6ffafc24af320dd991ac
+SHA1: 8dbf7d87059b75233b58cb6bd1939f6ee75969b8
+SHA256: 5f5debeaa6a7eae94fee9f908d43866d7ad59d49d5663a4500eb2816efb6453f
+SHA512: 220589cbae15d32080bfd02796899b4da71782955b080416bd34d346f5732b59140d5fd29f82664792d535360f3f583438a87522bd1436df5bf780ab19965303
 Description: Mozilla Firefox web browser - Extended Support Release (ESR)
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
