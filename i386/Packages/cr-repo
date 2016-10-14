@@ -11,7 +11,7 @@ echo "Type 'n' if you have already created a signed key and continue"
 read -p "Create signed key (y/n)?" choice
 case "$choice" in 
   y|Y ) gpg --gen-key --homedir $PWD/.gnupg
-cp -a $PWD/.gnupg/pubring.gpg $PWD/xendog.gpg
+cp -a $PWD/.gnupg/pubring.gpg $PWD/debdog.gpg
 [ "$?" -eq 0 ] && echo -e "\e[0;32mSigned key is created!\033[0m"
 echo
 echo "Creating the required files e.g. Packages.gz by apt-ftparchive..."

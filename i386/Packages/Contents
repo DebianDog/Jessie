@@ -451,7 +451,6 @@ usr/bin/gtkdialog					    gtkdialog
 usr/bin/gtkdialog-splash				    gtkdialog
 usr/bin/gtkdialog3					    gtkdialog
 usr/bin/gtkdialog4					    gtkdialog
-usr/bin/gtkdialogbin					    gtkdialog
 usr/bin/hotplug2stdout					    pburn
 usr/bin/iceauth						    x11-xserver-utils
 usr/bin/ipinfo						    frisbee,wifibox,wifibox-dhcpcd
@@ -1194,6 +1193,8 @@ usr/local/apps/zenity/zenity				    zenity-portable
 usr/local/bin/Readme_loadsfs-fuse-writesfs		    portablesfs-loadsfs-fuse
 usr/local/bin/apt2sfs					    apt2sfs
 usr/local/bin/apt2sfs-fullinst				    apt2sfs
+usr/local/bin/clear-changes				    quick-remaster
+usr/local/bin/clear-changes-start			    quick-remaster
 usr/local/bin/conkyclock				    conkyclock
 usr/local/bin/conkyclock-2				    conkyclock2
 usr/local/bin/conv-sfs					    edit-sfs-thunar
@@ -1270,6 +1271,8 @@ usr/local/bin/pnmcat					    peasyglue
 usr/local/bin/pnmtojpeg					    peasyglue
 usr/local/bin/pnmtopng					    peasyglue
 usr/local/bin/portablesfs				    portablesfs-loadsfs-fuse
+usr/local/bin/quick-remaster				    quick-remaster
+usr/local/bin/quick-remaster-start			    quick-remaster
 usr/local/bin/remastercow				    remaster-scripts
 usr/local/bin/remastercow-start				    remaster-scripts
 usr/local/bin/remasterdog				    remaster-scripts
@@ -3171,7 +3174,6 @@ usr/local/simple_network_setup/help_profiles		    sns
 usr/local/simple_network_setup/help_security		    sns
 usr/local/simple_network_setup/rc.network		    sns
 usr/local/smokey-get/01micko				    sfs-get-smokey-get
-usr/local/smokey-get/DebianDog-kazza			    sfs-get-smokey-get
 usr/local/smokey-get/JamesC				    sfs-get-smokey-get
 usr/local/smokey-get/OscarTalks				    sfs-get-smokey-get
 usr/local/smokey-get/Tman				    sfs-get-smokey-get
@@ -3809,6 +3811,7 @@ usr/share/applications/Jwm.desktop			    jwm
 usr/share/applications/Make Swap.desktop		    makeswap
 usr/share/applications/Play_with_mplayer.desktop	    youtube-get,youtube-get2
 usr/share/applications/Remaster-DebianDog.desktop	    remaster-scripts
+usr/share/applications/SFS-Load-GUI.desktop		    sfsload
 usr/share/applications/Thunar-bulk-rename.desktop	    thunar
 usr/share/applications/Thunar-folder-handler.desktop	    thunar
 usr/share/applications/Thunar.desktop			    thunar
@@ -3817,6 +3820,7 @@ usr/share/applications/YouTube-Get2.desktop		    youtube-get2
 usr/share/applications/apt2sfs-fullinst.desktop		    apt2sfs
 usr/share/applications/apt2sfs.desktop			    apt2sfs
 usr/share/applications/ceni.desktop			    ceni
+usr/share/applications/clear-changes.desktop		    quick-remaster
 usr/share/applications/conv-sfs.desktop			    edit-sfs-thunar
 usr/share/applications/debdog-advert-blocker.desktop	    debdog-advert-blocker
 usr/share/applications/desktop_view_edit.desktop	    desktop-editor
@@ -3862,6 +3866,7 @@ usr/share/applications/peasyglue.desktop		    peasyglue
 usr/share/applications/peasyscale.desktop		    peasyscale
 usr/share/applications/pfind.desktop			    pfind
 usr/share/applications/precord.desktop			    precord
+usr/share/applications/quick-remaster.desktop		    quick-remaster
 usr/share/applications/resize-save.desktop		    resize-save-file
 usr/share/applications/rox.desktop			    rox-filer
 usr/share/applications/samba-login.desktop		    yassm-smbclient-mpscan
@@ -6923,6 +6928,7 @@ usr/share/pixmaps/Insight-FileManager.png		    lumina-desktop-debdog
 usr/share/pixmaps/Lumina-DE.png				    lumina-desktop-debdog
 usr/share/pixmaps/application-x-squashfs.png		    sfs-get-smokey-get
 usr/share/pixmaps/application-x-squashfs2.png		    remaster-scripts
+usr/share/pixmaps/application-x-squashfs3.png		    quick-remaster
 usr/share/pixmaps/apt2sfs.png				    apt2sfs
 usr/share/pixmaps/browser-dload.png			    sfs-get-smokey-get
 usr/share/pixmaps/card24.png				    mount-wizard
@@ -7020,6 +7026,7 @@ usr/share/pixmaps/puppy/qual_6.svg			    wifibox
 usr/share/pixmaps/puppy/qual_7.svg			    wifibox
 usr/share/pixmaps/puppy/qual_8.svg			    wifibox
 usr/share/pixmaps/puppy/qual_9.svg			    wifibox
+usr/share/pixmaps/re-fresh.png				    quick-remaster
 usr/share/pixmaps/reboot-lumina.png			    lumina-desktop-debdog
 usr/share/pixmaps/restart.png				    jwm-setup
 usr/share/pixmaps/rocket.png				    desktop-editor
@@ -7058,6 +7065,7 @@ usr/share/pixmaps/xhippo/stop.png			    xhippo
 usr/share/pixmaps/xvidcap.png				    xvidcap
 usr/share/pixmaps/yassm.png				    yassm-smbclient-mpscan
 usr/share/pixmaps/yt.png				    youtube-get2
+usr/share/pixmaps/ytb.png				    youtube-get
 usr/share/pixmaps/ytt.png				    youtube-get,youtube-get2
 usr/share/pixmaps/yyt.png				    youtube-get2
 usr/share/pkgconfig/adwaita-icon-theme.pc		    adwaita-icon-theme

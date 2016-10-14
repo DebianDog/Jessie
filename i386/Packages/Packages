@@ -40,11 +40,11 @@ Architecture: all
 Version: 1.0.5
 Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu
 Filename: ./Included/remaster-scripts_1.0.5_all.deb
-Size: 8794
-MD5sum: 79e222321714c020d3963f0bdbd29ae4
-SHA1: 85c4bf002422d476a8e89c802628dd5bf8664264
-SHA256: 733e6401446c179eceea0b58114c6b80d2fc8366388976a297e948ed61e03274
-SHA512: 3e7a5e878e01f00aa2a9aacd6ce83ac69947fdad7dd8b52cb3d664c3aff830a1c12ea3014f8c9e2df01e237031db6ff3e5ac5b58ba60afcbaa9c3e43cefdbbab
+Size: 8832
+MD5sum: 506bd502446abea8101cc496b5315270
+SHA1: 817698fdc19d2a3203eeec3c3323b07b51a32f6e
+SHA256: 9ede4e9a54f74ac5fae35b5878c39c79a9e1f9a24885db593f3179a8004e738b
+SHA512: 80d75fb8ca32bf81bd25f38d5a2b12dcc40742233652de56277c3b4d5be5fdde1560551cda015d8f41f9db4f974d13198f053ec1236d4a86adb53f4ce183c2c8
 Description: Warning - This package works only in DebianDog! In ver. 1.0.3 fixed progress bar bug for very old PC.
  .
  For creating a *.squashfs module from changes (from /live/cow directory) or full system remaster (from / directory).
@@ -58,11 +58,11 @@ Architecture: all
 Version: 1.0.0-2
 Depends: libc6, gtkdialog, yad, e2fsprogs, gsu | gksu
 Filename: ./Included/resize-save-file_1.0.0-2_all.deb
-Size: 3584
-MD5sum: a32ef51f6452c6968d5e50badea4de0e
-SHA1: 8bde9e38f8e63ace816d563455e1a6b34367638e
-SHA256: baccbe33c54e52cd864a1a66be4d14daffadb79b4f9119b0f77e85c27a417699
-SHA512: fa3c4626ff5503d59550a5648f87e4a8721ca65f3e13414db233b67c1594d8c7cf204b3352960c0576fb3a888378684b67dd0aa11c77c5b653a9099b3d2b3f88
+Size: 3590
+MD5sum: c6721d5257129683683414d28270b5f1
+SHA1: 50800ee9ca1dcbeebd153298bc87a33a386ca094
+SHA256: 6b2996fe99679cb5a172719017f932fc18bced76cbf31350a25789892c00bc99
+SHA512: 1381e74a428178273e77d53ba7f3aff7e8efb2d10f73a0673d5dc26db08b44f995416bc84f0bb4351aec318219ee7954510cb401bb51bddd07cdbceb8ef08046
 Description: Utilty for save file resizing.
 
 Package: domyfile
@@ -212,11 +212,11 @@ Architecture: i386
 Version: 0.0.2a
 Depends: libc6
 Filename: ./Included/porteusbootscripts_0.0.2a_i386.deb
-Size: 10504
-MD5sum: 50358c6a4853c4a735320e1a832efd7c
-SHA1: 3c041d0004cfc1948c7189673bd964999ed66b37
-SHA256: 802763d401b8aa2e1b89240c744c1c7027d91343bf01eaa66587004f620197c7
-SHA512: 93c0e955734a044e7f372f7bc7f45ac6b38e7232f174bd07438682077363e5c484869bf51b2877c00ed3dc1ec6393dae44db460883ad58b52f0a971039d58dcd
+Size: 10512
+MD5sum: 8a7cbf9937d803defe32d4320abeca2a
+SHA1: 0a5ab2d3a8dd8d52026065de6cef6ebd511cd996
+SHA256: 75ba84fa4bb1c9f558543f3f62b9f758bfe02aeb93547aff752bec9de92e6c76
+SHA512: cb2fb33f6fb8185df90b72a03a149e7be51e05daead56d64a857e2aba5ed7fa3248cfb7bc908897b7a6f0f0b3d584760b79879a9c16c90285d7ee93977260aa5
 Description: Porteus-boot helper-scripts (Note: works only on DebianDog)
  This version has included the scripts for the new-save-setup
  Note: Removing this package does not make any change.
@@ -255,11 +255,11 @@ Architecture: i386
 Version: 1.0.9
 Depends: libc6, x11-utils, x11-xserver-utils, findutils, yad, unionfs-fuse, coreutils, menu, mount, procps, sed, squashfs-tools, apt, xterm, gsu | gksu
 Filename: ./Included/apt2sfs_1.0.9_i386.deb
-Size: 9414
-MD5sum: d6a6b0ef1e8eb320014d347769e93da8
-SHA1: 1f8d80a786b7ef55316518ec2c084eecc2d77a38
-SHA256: d3c79c5a685958d78a0de5df93d73d9fc3a40db321a100c16645b6aca99be591
-SHA512: 24d7f0b6c0578ce341dcb9140b363cec3e2e34bfe9174c5d3fa85439425ec0c3efc4b40c237be2f594d9dec5fd51a46872c87d48854473ba933ee2dfc77f70ee
+Size: 9530
+MD5sum: 408002273a6adbe95b68a3162363a206
+SHA1: 0558def5cbf54d143edeae711f3b74711410ed93
+SHA256: 20e90ec77272ec9db549cc730d8f5caf69e2bf840c73a3d605c37f27a35fe34b
+SHA512: 1fccfe2e51028faa5e1f586fed5ca536c7c5e3918ec3a5651f333bd9c0754b156f1be73eeae8362be5eb072bfa037b0ca9298033abd15af296b86a7e66f3bd8f
 Description: Warning - This package works only in XenialDog! Fix: Force being user 'root' in chroot, otherwise installing might fail (for example when running with new created user).  
  Fix: version 1.0.4 (and earlier) doesn't work well because of 'stable' entry in /etc/apt/sources.list after jessie became stable at 2015-04-25.
  .
@@ -322,12 +322,12 @@ Architecture: i386
 Version: 1.0.3-jessie
 Depends: libc6, yad, wget, elinks, gsu | gksu
 Filename: ./Included/sfs-get-smokey-get_1.0.3-jessie_i386.deb
-Size: 77412
-MD5sum: e098db8f529288b198d164257526fa4c
-SHA1: a3cd43b352ce76018ca0870126c5ce0694ccea59
-SHA256: 8f9ef44f40af52c357b69ee71cb94ced11b16a57b845fcbbb668d5221f029173
-SHA512: 63446c868a40b0f39146186d936d3cbec7a55f490c53ffe6b574ec9d3afcb25d6b2f490684f1fadcb2fc084b9b470c4f137f2c0905240166114c36e2f5bf75be
-Description: The sfs-get-smokey-get program downloads files from github.com or smokey01.com or kazzascorner.com
+Size: 77126
+MD5sum: c3aa79f63030863ff53a9966a6421840
+SHA1: b5b6bffb0954d4689838ffafc42356dcbe1a5cb6
+SHA256: 0b61c4b1b7748f3239295acac9f4583d62207eb63353686f0835890bd8d7a527
+SHA512: 32be070fbd73270fe049d635c59fe8570dbb5000363f50a7a8e6f0f8f1490263cf2b1e5108aa1af1e3cd21f7dd1bfb0b6eb1f77047f38148148010ad7de5c3d7
+Description: The sfs-get-smokey-get program downloads files from github.com or smokey01.com
  sfs-get_smokey-get by MakeDEBPackage-GUI.
 
 Package: yad
@@ -364,11 +364,11 @@ Architecture: i386
 Version: 1.0.2
 Depends: libc6, gtkdialog, coreutils, util-linux, x11-utils, pv, mount, gsu | gksu
 Filename: ./Included/makeswap_1.0.2_i386.deb
-Size: 16156
-MD5sum: 785a22e1dc702e378572f3564420f69b
-SHA1: a1282d9b2d55473ca90257f575b6b56f8ca3d203
-SHA256: c01c38a30bf17616cc9470e1df0d8b9cbed3a4039bca100909467576a3dffa4d
-SHA512: e5a7e190937bdf077fe1df8f9252745a36324703ff8cf0463887e3a18a615339a99e7043018362377b4bc73aaca202a2361c4a5bd5e87575d12cc3cb52e05061
+Size: 16164
+MD5sum: 6813cf2ea4636cd90c7a58eb85766e25
+SHA1: c311249a31796e576f5522988a477a0d54041f78
+SHA256: 69df8db58f4d0d1c9d2885cbc55d0b4951265212e374bdec8bdfbab1a1d46194
+SHA512: c30ddfefe42a98ff27d74d49a943df6b75d0fecc6d46ed22375ffc0cfe2c8bfb4a2894ed0dee2c66314a3d2623504b3ecd33396310495c51918e8e3f7e27ab8b
 Description: Make and auto-mount swap file script. Security fix: owner root:root and chmod 0600 for new created swap file.
 
 Package: filemnt-rox
@@ -432,16 +432,31 @@ Architecture: i386
 Version: 1.0.2
 Depends: libc6, wget, inotify-tools, yad, sed, apt, squashfs-tools, menu, tar, gsu | gksu
 Filename: ./Included/flashplayerchoice_1.0.2_i386.deb
-Size: 7536
-MD5sum: af34bf9885349a1769cb02434413e44d
-SHA1: e334b2c099e88c0faac30049777f853a3f73eab9
-SHA256: 92f9b7fb72997bd082eadb9fdf412d10f58f6efd3b84a7298f59a7fb867fc137
-SHA512: 2fa08b125330dd1d88c1de20e9471d3a77d7f2722f750efa0972dfa180c48eaa361bdaacd4c3bb0c3abc752a07d4f60ff30512b53d2aee8c272ed84f8a71e654
+Size: 7532
+MD5sum: d1d0c772451fb6b30fd7f6a780293727
+SHA1: c0e17b8c0433741f4577196388bace5d325a07d8
+SHA256: aa2b0d1bdd6c7d8ac73efd69d3b0acb4237fed8bf31a8996685bfee34b9a67c1
+SHA512: 0e03a08fa5564fb646f62bb509cf12af3fadc82555c4f46fc8afb449a32e17559e9ad9065722129f0db03c4e9df055371bb3e45dfa3b40599874f60e321278ee
 Description: The flashplayerchoice script gives choice of several options to install flashplayer :
  - version 10 from http://www.smokey01.com/OscarTalks/ (= 12 Mb uncompressed)
  - version 11 from http://www.smokey01.com/OscarTalks/ (= 17 Mb uncompressed)
  - Install flashplugin-nonfree with apt-get (= 34 Mb uncompressed)
  - Create flashplugin-nonfree.sfs module (= 8,9 Mb compressed)
+
+Package: quick-remaster
+Installed-Size: 37
+Maintainer: fredx181 dog@root.nl
+Architecture: all
+Version: 1.0.1
+Depends: libc6, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu
+Filename: ./Included/quick-remaster_1.0.1_all.deb
+Size: 6156
+MD5sum: 6c4fc582807ce9b76539983ae2dbdf59
+SHA1: b42ffae5a8992b875a01c707826842ff1550b8d3
+SHA256: 03cab4278afefa2b7bef1e2a79e3b5b363daa06c77a0b1a14f7c3f0b50efcab7
+SHA512: cc96e4ec04761a5cd865e02979184252745dff12714574323086fa707d10d7eace8f42697c2a5f4061aa6444eaec27484bdc12c4d92497c2f20fa6b67dc0695d
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ .
 
 Package: xfe
 Priority: optional
@@ -544,11 +559,11 @@ Architecture: i386
 Version: 1.0.1
 Depends: libc6, yad, gsu | gksu, aufs-tools, lsof
 Filename: ./Included/sfsload_1.0.1_i386.deb
-Size: 6274
-MD5sum: 361e6080bb852c30efc5f956f4fd1423
-SHA1: a0ee0d93475b0c87911ca24e0b642aca50ecfe9f
-SHA256: c01267be8c40572e4135ff88562857dffded4ee1c135bcddf9e6dae0c986d929
-SHA512: 408968f75705270c4d98d8603a1fdb9a72fba0e3ff0b8bfae1e0cd2def2e151f1cb79bb1ff894f6279a9e2a4bcaa2242a250528ffb7be7bf9dd88f04104cc00f
+Size: 6270
+MD5sum: 5766db1a62218cbfda3e7411eb56ef6c
+SHA1: 9d5077ab46316b82661cd0c997f48d188707a1d0
+SHA256: b8ea322a513786b54c6141f173004f4125ba64c9780c21e4be9000fdd0b55d06
+SHA512: 943a3dd762ac8f7d741f7233319095689c3e9ce8995dcbf1a8af73da7ccc2daf30b36baa1efd85e03baa80f0ccb1d30b0561f5fc064364725f53b60f477ddf17
 Description: Load a *.squashfs or *.sfs module.
  Changes compared to included scripts in DebianDog-2015-09-02 iso: loadmodule and loadsfs
  In case unloading failed at first, find out (by 'aubusy', from aufs-tools) which process is keeping it from unloading and kill it, then try again.
@@ -560,11 +575,11 @@ Architecture: all
 Version: 1.0.5
 Depends: libc6, yad, unionfs-fuse, gsu | gksu, linux-user-chroot, squashfuse, aufs-tools, lsof
 Filename: ./Included/portablesfs-loadsfs-fuse_1.0.5_all.deb
-Size: 8878
-MD5sum: b23f87d4b5b6f4002beb5c0f97a5f597
-SHA1: c15da88c61f8bf7a242e4220f31cb7bce910a5ae
-SHA256: c520568595a8009043fe6312ba7e7fce03141b3a111492f367c33ea3b8c73826
-SHA512: 455fcd6b8d57197f01287e6c9d7c056b79c202e0cd4b2595c237880f6688986af2cb3d6597e765ad3ae26dab7efba37856ab4da7af5cd1339edd716065c862f4
+Size: 8898
+MD5sum: f502dbb25066dd9d8af9ad1f6477abda
+SHA1: 9067022c356ebedb5d27a2eb707a157df4b90c02
+SHA256: af5b99e7da521fac2d0d061fb2950b07811c000850ebf29083b4faed88ad2151
+SHA512: 073045e8a100320a79afb2ffca492349705973697ac361451592c30f3d663360632c403389436fba3bebe76628958a40acd69c5fe14d4aa2c70aa4e613162bdf
 Description: Load a *.squashfs or *.sfs module.
  Changes in v 1.0.3:
  When logged in as unprivileged user, no password is required to run portable sfs script with 'Chroot Mode'
@@ -647,25 +662,6 @@ SHA256: a705b34b20a730dbf2c7614646e4b9159c252b75c18dae692d2d5fc9e8493412
 SHA512: 7f84b5da364a1ae94a6adc3f1e245e370969bfebc31220c925107972989f3695a40d90253346f1e4f9c77de9d8db251db5100d1683703915f167e29d2a577545
 Description: graphic-utility
 
-Package: gtkdialog
-Priority: extra
-Section: system
-Installed-Size: 264
-Maintainer: root@wheezy
-Architecture: i386
-Version: 0.8.3-2
-Provides: gtkdialog
-Depends: libc6, libgtk2.0-0, libglade2-0, procps, libgdk-pixbuf2.0-0, libglib2.0-0, libatk1.0-0, libpango1.0-0, libcairo2, libfreetype6, libfontconfig1, libxml2, switchsh
-Filename: ./Included/gtkdialog_0.8.3-2_i386.deb
-Size: 140868
-MD5sum: 930a5d904fae3dd63b3623f71c585c5d
-SHA1: b032a92fdb8f54171e20e2beea28eb62dc91a557
-SHA256: f7ab26a1a1d501755881354bdb84586cdd98337339a7e28d9f8fb034b8b632a8
-SHA512: 1b27406eba4688da1efbe9ca0442256e3ddbe74a02610c9fbedea9d7677150143bee7f9be766d3df4ead37a13940e9f8ab924ea8b1d550d793caaa594b1413cd
-Description: gtkdialog
- Changes in 0.8.3-2: depends on switchsh, this solves problems when sh > dash symlinked
- (makes it temporarily sh > bash only when gtkdialog runs)
-
 Package: libgbm-dev
 Priority: optional
 Section: libdevel
@@ -731,6 +727,30 @@ Description: setuid helper for making bind mounts and chrooting
  bind mounts, and use some Linux container features.  It's primarily intended
  for use by build systems.
 Homepage: https://git.gnome.org/browse/linux-user-chroot/
+
+Package: slim
+Priority: optional
+Section: x11
+Installed-Size: 2059
+Maintainer: Nobuhiro Iwamatsu <iwamatsu@debian.org>
+Architecture: i386
+Version: 1:1.3.6-4-ddjessie
+Provides: x-display-manager
+Depends: libc6 (>= 2.14), libfontconfig1 (>= 2.11), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:4.1.1), libjpeg62-turbo (>= 1.3.1), libpam0g (>= 0.99.7.1), libpng12-0 (>= 1.2.13-4), libstdc++6 (>= 4.9), libx11-6, libxext6, libxft2 (>> 2.1.1), libxmu6, libxrandr2 (>= 2:1.2.99.3), libxrender1, zlib1g (>= 1:1.1.4), debconf (>= 1.2.9) | debconf-2.0, dbus
+Recommends: xterm
+Suggests: scrot, xauth
+Filename: ./Included/slim_1.3.6-4-ddjessie_i386.deb
+Size: 454764
+MD5sum: 0e60193389d7baf03fd8ba2e7053470b
+SHA1: f5730451ffe10e232730bc8baf21e6a7240f5086
+SHA256: 488c62d951c3ec7fb2aa2625e694cff97a0ecdba105a931a2e1f7b2994c67d30
+SHA512: 93183667ac62e4c35c78af688b1195e2b86a7b3f06f2e19795cb5c6c6330e1b183ce3458e8e546cf55a6e18ee9c6be4c61731f3d95c308b83a9a76a4c64b6c08
+Description: desktop-independent graphical login manager for X11
+ SLiM aims to be light, simple and independent from the various
+ desktop environments. Although completely configurable through
+ themes and an option file. It is particularly suitable for machines
+ that don't require remote logins.
+Homepage: http://sourceforge.net/projects/slim.berlios/
 
 Package: domycommand
 Priority: extra
@@ -845,11 +865,11 @@ Architecture: i386
 Version: 0.0.3
 Depends: libatk1.0-0, libc6, libcairo2, libfontconfig1, libfreetype6, libgdk-pixbuf2.0-0, libglib2.0-0, libgtk2.0-0, libmenu-cache3, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, sed, jwm, rox-filer, wmctrl, hsetroot
 Filename: ./Included/jwm-setup_0.0.3_i386.deb
-Size: 593196
-MD5sum: 309dab403028a148ce973494a53ed5d6
-SHA1: 0e85147fd6166c40465b1c8a7fe782cd0e72a77b
-SHA256: 746dfc72733cd10290562ee6f7fabf6f38c76a68c3abe660f005d89397d49e39
-SHA512: 616299c688a8d84053e94526743d3591fc4a00504078f221543c1dfb9b880cc97314df5029df0a1b6ddab358a63a8884d80ea7403d6ecdaab379c078dcc4d582
+Size: 593264
+MD5sum: d43e98bc17defa4023d9fb795c7da2d2
+SHA1: bf1dbc9c00f994188d6807a9d68a69a332076c7c
+SHA256: 7c556a7268b2681e712c701a1ac6cc7e862242d1157e1002277394d40f8c36e7
+SHA512: caa178a72cd49ea1e2c6646602903de8f02b9eb37b1d91be5b9f214a575057eb97881c32bab3417ac9b87528a3948deee6ea7fac56ca9a1af3479a37dba63796
 Description: Jwm custom setup for Debiandog, includes:
  - openbox-menu, pipe-menu setup for JWM to display entries in *.desktop files
  - jwm-obmenu script for the Jwm window manager. It provides
@@ -886,11 +906,11 @@ Architecture: i386
 Version: 1.0.3
 Depends: libc6, x11-utils, yad, dpkg, apt, procps, gsu | gksu
 Filename: ./Included/fixdepinstall_1.0.3_i386.deb
-Size: 3570
-MD5sum: 2d83d7df7af48e40ed757d75fe7e45cd
-SHA1: af7bbe91d4443492a0219756915c694f29befdeb
-SHA256: 01ae422d5e34c5369e51f10733fae58058602ec74b4e0c10ba70cfec60879e39
-SHA512: 73181ffee150a1ba9d503a4520ffe49e8ea3dab856590dc2329d63d549b2184f4899350df7caf841067d19d29fa88ab40a9c84bbc4cc31e281cea753dfaab367
+Size: 3574
+MD5sum: 8777b2ac3573813d9d93c2ceed478410
+SHA1: 96427298ac36427f188202f77271ed335d5f3840
+SHA256: 8de16e32d72e1cddfd7532075981abd2a0910ad06bf60d83dbbafe702c1c4a28
+SHA512: 7c8261c47bbe7151310a2ad57af6a4f2059aca9c9f8c1224fdb8fd6ed398ab7799760678efd598dfae762631d52ffdc9612a7c184f90594ac26baeef814b61d6
 Description: DebianDog deb + dependencies install utility from Fredx181
 
 Package: jwm
@@ -950,11 +970,11 @@ Version: 2.2
 Replaces: edit-sfs-rox
 Depends: libc6 (>= 2.7-1), squashfs-tools (>= 4.2-1), bash, x11-utils, thunar|pcmanfm, disktype, coreutils, xterm
 Filename: ./Included/edit-sfs-thunar_2.2_all.deb
-Size: 6366
-MD5sum: 137de0d7398f1a445323befbf7eebac2
-SHA1: 173c421fb9a24936ab1231290690d66093730de3
-SHA256: 6f9b2745f9dde99d7cb21951efc0446cf0776cde22cdc9dd625201caef4b3721
-SHA512: 55ea84cc401b54bb583e1d0f315977c20e4ccdd21746173ece8b5a04daf26bfcbe908d489aa1ab3c1215b5b2021f42b0cf0435ea447da1be76ead305dd0abbcd
+Size: 6362
+MD5sum: 949ef5a72e2b1cfefff2e6e3963d502f
+SHA1: d12d1cf398c118f1435338fea3a98558043d6918
+SHA256: d341b00218802782a7662d9288f8e6a53cb5270692a1c566b76bf55da48e7195
+SHA512: cef279708d7547dc731a337ddfc19aefae57cbb6dbad2458c788a04f92e404c4555cb6ac68104156abfdfd39555ac5e51f4305114ea7d300ae4e5506cf207da0
 Description: squashfs editor, converter
 
 Package: porteusbootscripts
@@ -1109,11 +1129,11 @@ Architecture: i386
 Version: 1.1.0
 Depends: libc6, debdogmountscripts
 Filename: ./Included/debdoginstallscripts_1.1.0_i386.deb
-Size: 428058
-MD5sum: 526f498f6a613dde5d7a17c6575ea123
-SHA1: cfad9e38c23f5a771a5b77f1f71cf19adeac8d32
-SHA256: 79e66a53cc640ddfe6442611269b5bf71fad2b6c2e7c5bda6f2253ace988a6e7
-SHA512: ce78828c777822b2de2de24200016e85684504e3d5f9c858b0871a09deb01f4c9e7c6ec34f1e50f7f5c8edb32d56bbebf663a278739d8595d96a51232d73d332
+Size: 428186
+MD5sum: ba9401ab7737b31f2769f4732cf671d2
+SHA1: 47d2b7371075a1ae0f2418fb6e7082dace5cbfb4
+SHA256: 3edae8dc8fe2a62c6b11b0cff8137b2aa0d2fcf229c371ab9da62b992719229a
+SHA512: 5a6a1d6ecaccae258a474d5c84549877dc365fbd9dd3f6f45c45262cb0054434e68dc33407c8f53e9112afe7640ef198c3eda13870f55dbc4ac0cf79c72ff10f
 Description: Special DebianDog frugal and full install scripts + added SD card support + full install loop module loading.
 
 Package: sns
@@ -1937,30 +1957,6 @@ Description: Dogradio is a GUI displaying icons for playing radio streams.
  - Using conky for 'conky ticker', showing metadata
  (can be enabled/disabled from tray icon menu + other settings)
 
-Package: slim
-Priority: optional
-Section: x11
-Installed-Size: 2059
-Maintainer: Nobuhiro Iwamatsu <iwamatsu@debian.org>
-Architecture: i386
-Version: 1:1.3.6-4-ddjessie
-Provides: x-display-manager
-Depends: libc6 (>= 2.14), libfontconfig1 (>= 2.11), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:4.1.1), libjpeg62-turbo (>= 1.3.1), libpam0g (>= 0.99.7.1), libpng12-0 (>= 1.2.13-4), libstdc++6 (>= 4.9), libx11-6, libxext6, libxft2 (>> 2.1.1), libxmu6, libxrandr2 (>= 2:1.2.99.3), libxrender1, zlib1g (>= 1:1.1.4), debconf (>= 1.2.9) | debconf-2.0, dbus
-Recommends: xterm
-Suggests: scrot, xauth
-Filename: ./Extra/slim_1.3.6-4-ddjessie_i386.deb
-Size: 454946
-MD5sum: 991ab9a02bbaee96c580a6cdec01b61b
-SHA1: 7285debdaa40f0ebe68555e8e5cb9bcd7c59a4f3
-SHA256: 91f68cae2c137ab87395bc5e67757c63cfcb35aac5a7de00f0119fa15469e47c
-SHA512: ad46410e5f0b2baadda02a7be9eb4151a989e8d5ce70c91a6b8f475c58d99bce8270c54b27f53da110e4bfc9b5ecac87084918eb8a2365eb4beddfb93ae78949
-Description: desktop-independent graphical login manager for X11
- SLiM aims to be light, simple and independent from the various
- desktop environments. Although completely configurable through
- themes and an option file. It is particularly suitable for machines
- that don't require remote logins.
-Homepage: http://sourceforge.net/projects/slim.berlios/
-
 Package: mount-wizard-2
 Installed-Size: 50
 Maintainer: root
@@ -1984,11 +1980,11 @@ Replaces: youtube-get2
 Depends: libc6, yad, sed, wget, xterm, gnome-mplayer-1.0.7 | mpv | mplayer | gmplayer-portable
 Recommends: locales
 Filename: ./Extra/youtube-get_0.1.1_i386.deb
-Size: 20686
-MD5sum: b7cd3d59510b27a952b85a31bfe4a7eb
-SHA1: c89227d08b1d51ab7d5ff859617b4e17e089c251
-SHA256: f7e8911f62044b3dc0b0b2ecb14df67bcb34fc8fe7526be684f272aff8bcd072
-SHA512: 9a78c5d23aeccf484ea4638ace81161132a376ff0570839d9e7e30515262d543f47b476b006efa104f58f8eab89b56b6ed6ae3fd360a3a70f0ea317aafa7e4ba
+Size: 20710
+MD5sum: ee9bca311d6c4a6195172b5db97852f9
+SHA1: 39603d990bf2abf6b709b1664ac02fce8ee39f82
+SHA256: 8b8cdf87a8d5b5c4670b3be643987650f725a016b72bc1ff4d9991008c373319
+SHA512: f3c0a711b2903a6e8df115b4783f7c4e28c963e01c2de5240b5cb7b248562f2ef42069a6b47177e687d81f925ef7df4e5d33599396eebdd8264371c71e997504
 Description: A simple YouTube Downloader
  - A shell script (bash) with yad as frontend
  - Based on the idea of Dr. Mark Humphrys, see here:
