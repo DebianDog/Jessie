@@ -8,7 +8,7 @@
 
 [Bugs and fixes information after 2016-10-16](https://github.com/DebianDog/Jessie/blob/gh-pages/Bugs-and-Fixes-after-2016-10-16)
 
-[Forum thread: DebianDog - Jessie - Continued](http://murga-linux.com/puppy/viewtopic.php?p=928498#928498)
+[Forum thread: DebianDog - Jessie - Continued](http://murga-linux.com/puppy/viewtopic.php?t=108535)
 
 ***
 [DebianDog-Jessie iso images 2015-09-02](https://github.com/DebianDog/Jessie/releases/tag/v.1.0)
