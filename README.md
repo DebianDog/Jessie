@@ -6,7 +6,7 @@
 
 [Extra squashfs modules 2016-10-16](https://github.com/DebianDog/Jessie/releases/tag/v2.0)
 
-[Bugs and fixes information after 2016-10-16](https://github.com/DebianDog/Jessie/blob/gh-pages/Bugs-and-Fixes-after-2016-10-16)
+[Bugs and fixes information after 2016-10-16](https://github.com/DebianDog/Jessie/blob/gh-pages/Bugs-and-Fixes-after-2016-10-16.md)
 
 [Forum thread: DebianDog - Jessie - Continued](http://murga-linux.com/puppy/viewtopic.php?t=108535)
 
