@@ -1,0 +1,2777 @@
+Package: rox-filer
+Priority: optional
+Section: x11
+Installed-Size: 4000
+Maintainer: Francesco Paolo Lovergine <frankie@debian.org>
+Architecture: i386
+Source: rox
+Version: 1:2.11
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.4), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.8.0), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglade2-0 (>= 1:2.6.1), libglib2.0-0 (>= 2.24.0), libgtk2.0-0 (>= 2.24.0), libice6 (>= 1:1.0.0), libpango1.0-0 (>= 1.14.0), libsm6, libx11-6, libxml2 (>= 2.7.4), shared-mime-info (>= 0.16)
+Recommends: zeroinstall-injector
+Suggests: file, menu
+Filename: ./Included/rox-filer_2.11_i386-DebianDog-compiled.deb
+Size: 1597074
+MD5sum: 0a2fe66073fcfd3746dff66ba313e96e
+SHA1: 9b9623891c4afc1db525abefb69b0942bd3ef602
+SHA256: 31455b1b8b9856bd2cfd10ca22c03a787f9ce26c25af6936790856cd6bc80668
+SHA512: 02d60b0166de4d897199c5572aa5496ad5f8d569dad1012f2ddb1d9e1465f7678e6c1c9ac422b15b87a976bac5624518bf4a30c11e76248769cbcaca851fb43d
+Description: simple graphical file manager for X11 (compiled in DebianDog)
+ ROX-Filer is a simple and easy to use graphical file manager
+ for X11 based on the GTK2 library. It uses a uniform
+ drag-and-drop approach for every operation.
+ .
+ It is also the core component of the ROX Desktop Environment.
+ .
+ Invoking rox opens each directory or file listed,  or  the
+ current working directory if no arguments are given.
+Homepage: http://rox.sourceforge.net/desktop/ROX-Filer
+
+Package: debdoginstallscripts
+Installed-Size: 863
+Maintainer: root
+Architecture: i386
+Version: 1.1.0
+Depends: libc6, debdogmountscripts
+Filename: ./Included/debdoginstallscripts_1.1.0_i386.deb
+Size: 428186
+MD5sum: ba9401ab7737b31f2769f4732cf671d2
+SHA1: 47d2b7371075a1ae0f2418fb6e7082dace5cbfb4
+SHA256: 3edae8dc8fe2a62c6b11b0cff8137b2aa0d2fcf229c371ab9da62b992719229a
+SHA512: 5a6a1d6ecaccae258a474d5c84549877dc365fbd9dd3f6f45c45262cb0054434e68dc33407c8f53e9112afe7640ef198c3eda13870f55dbc4ac0cf79c72ff10f
+Description: Special DebianDog frugal and full install scripts + added SD card support + full install loop module loading.
+
+Package: xdm
+Priority: optional
+Section: x11
+Installed-Size: 705
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: i386
+Version: 1:1.1.11-2
+Provides: x-display-manager
+Depends: libc6 (>= 2.11), libpam0g (>= 0.99.7.1), libselinux1 (>= 1.32), libx11-6, libxau6, libxaw7, libxdmcp6, libxext6, libxft2 (>> 2.1.1), libxinerama1, libxmu6, libxpm4, libxrender1, libxt6, debconf (>= 1.2.9) | debconf-2.0, x11-utils | xbase-clients | xmessage, lsb-base (>= 3.2-14), x11-xserver-utils, procps
+Recommends: cpp
+Filename: ./Included/xdm_1.1.11-2_i386.deb
+Size: 243842
+MD5sum: 241a3178cfa1a1721de1ba0c1a7f83ad
+SHA1: 8d06f27c6fbbf92026c3b3dfe18e3020c1da417f
+SHA256: 7f19ee106b320675e6de2459500c43ccb5e9a4d5c21308a0229ccf010f058404
+SHA512: b9ac09aa93213b606e9cdaa8588058f54e0db5111702d66dcd1fe7d57b53bc240fd26c75ea94f7c848a81ef6324a3ea5dce3374876af26aee4cdd56694836abc
+Description: X display manager
+ xdm manages a collection of X servers, which may be on the local host or
+ remote machines.  It provides services similar to those provided by init,
+ getty, and login on character-based terminals: prompting for login name and
+ password, authenticating the user, and running a session.  xdm supports XDMCP
+ (X Display Manager Control Protocol) and can also be used to run a chooser
+ process which presents the user with a menu of possible hosts that offer
+ XDMCP display management.
+
+Package: apt2sfs
+Installed-Size: 72 
+Maintainer: fredx181 dog@root.nl
+Architecture: i386
+Version: 1.1.0
+Depends: libc6, x11-utils, x11-xserver-utils, findutils, yad, unionfs-fuse, coreutils, menu, mount, procps, sed, squashfs-tools, apt, xterm, gsu | gksu
+Filename: ./Included/apt2sfs_1.1.0_i386.deb
+Size: 9596
+MD5sum: 1dbf1ea15d3c2c32b2eaf3f718929e6a
+SHA1: 0c51437740c603ad09ab45d7f909232763217ef5
+SHA256: 5b02a26824ec8d7755d52e3fe3a0fb0d0111a0916e91474cb885b2775d94e274
+SHA512: 128aa88d55c01dfaf5d52f55b9a9c4be5ca79ed2a6c2390b365cf1e9305543ce3d29a6081b8809c02bf0442c5d51c373173e6306e21dd55ea878e7371fd60d00
+Description: Warning - This package works only in XenialDog! Fix: Force being user 'root' in chroot, otherwise installing might fail (for example when running with new created user).  
+ Fix: version 1.0.4 (and earlier) doesn't work well because of 'stable' entry in /etc/apt/sources.list after jessie became stable at 2015-04-25.
+ .
+ Fix after version 1.0.3: added option to choose location / or /tmp for working directory (in case you have only vfat or ntfs partitions available).
+ For creating a *.squashfs module from installing by apt-get
+ The installing takes place outside of the running system, in 'chroot'
+ - apt2sfs, GUI using yad
+ - apt2sfs-fullinst, GUI using yad, can be used on a full install
+ - Choice dialog now for compression algorthim: xz, gz or lz4
+ - Output from apt-get through xterm (instead using yad in previous versions)
+ Fix in v 1.1.0: skip symlinks while cleaning man and doc files
+
+Package: libdconf0
+Priority: optional
+Section: libs
+Installed-Size: 85
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Source: d-conf
+Version: 0.12.1-3
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.31.18)
+Pre-Depends: multiarch-support
+Breaks: dconf-gsettings-backend (<< 0.10.0)
+Filename: ./Included/libdconf0_0.12.1-3_i386.deb
+Size: 24942
+MD5sum: 659f85ab3ae5e300884c553f1fc47edc
+SHA1: c817ceba91a92bffd3e47d8fc6aad3f8cf10455a
+SHA256: 48d48793d150781a20f5fc5484520ae6378bf9c545a60c9053646812b374a0cb
+SHA512: 8244eb41158a7bf5ec2a5ef5c3cf9e2530ca01c92d938ffde6070b6613999884ab52d34e910fe6e7ef36e18df3a90549b0a393d33acbb145b2a08d017bd087ab
+Description: simple configuration storage system - runtime library
+ DConf is a low-level key/value database designed for storing desktop
+ environment settings.
+ .
+ This package contains the runtime library.
+Multi-Arch: same
+Homepage: http://live.gnome.org/dconf
+
+Package: gtkdialog
+Priority: extra
+Section: system
+Installed-Size: 264
+Maintainer: root@wheezy
+Architecture: i386
+Version: 0.8.3-1
+Provides: gtkdialog
+Depends: libc6, libgtk2.0-0, libglade2-0, procps, libgdk-pixbuf2.0-0, libglib2.0-0, libatk1.0-0, libpango1.0-0, libcairo2, libfreetype6, libfontconfig1, libxml2
+Filename: ./Included/gtkdialog_0.8.3-1_i386.deb
+Size: 183852
+MD5sum: 042468d52d00bcb30082eccaf0b83a70
+SHA1: 1256b13aa56101e3c4ec364f31a2d05fd756196b
+SHA256: 6827fa728443a05e07c497961a42e05e1b22797936e95ca77a716e833fc05b63
+SHA512: 882f1d5ab67f7b637f48f0e52fcb26142b992d6f7034ac811fcfdc53661e4d729e424499d19454c81370ff35d6ec279df1840973c0f19502be7268819231a859
+Description: gtkdialog
+
+Package: libudev0
+Priority: important
+Section: libs
+Installed-Size: 189
+Maintainer: Marco d'Itri <md@linux.it>
+Architecture: i386
+Source: udev
+Version: 175-7.2
+Depends: libc6 (>= 2.8)
+Pre-Depends: multiarch-support
+Filename: ./Included/libudev0_175-7.2_i386.deb
+Size: 127852
+MD5sum: fd0ba6521caf4677bbea99a3c8950aaa
+SHA1: 519d5032759311035bd84ce1c0d992285325cf5a
+SHA256: efdeedfe13433b8677fe18b6ab63e4791bcb1b570072bb936e5b54c935e8e31e
+SHA512: af88053bfa79ef071f1b4c70090c90ac5c4a42cb27f33ab0810b69414ca75f2c7c886a491a427fb87bef848ba7561accafc32bbab714f394e85883c0dce6e0d5
+Description: libudev shared library
+ This library provides access to udev device information.
+Multi-Arch: same
+
+Package: pup-volume-monitor
+Priority: extra
+Section: checkinstall
+Installed-Size: 928
+Maintainer: root@wheezy
+Architecture: i386
+Version: 0.1.15-1
+Depends: libc6, libglib2.0-0, libudev0
+Suggests: libgtk2.0-0
+Filename: ./Included/pup-volume-monitor_0.1.15-1_i386.deb
+Size: 331556
+MD5sum: 4ac2f5ac40881f4c726dbca6b7cfbbb1
+SHA1: 5cc238cf3438526e1124bca1ad0a88f7b97cc1eb
+SHA256: 11d582924b3c9ae4ea6d551f0a9d86778fae7bc6f62112cc6a462a5c981fe7f4
+SHA512: 3267d7a5d9f8dc66207c2062d9d0243c1f353e31be10e24683fab125e41ad2b025498429c1036a3d2825d7c235bd5b828164f70609a24d7d42707d2cfd5462ca
+Description: Disk volume monitor
+
+Package: edit-sfs-thunar
+Priority: extra
+Section: x11
+Installed-Size: 134
+Maintainer: root
+Architecture: all
+Version: 2.2
+Replaces: edit-sfs-rox
+Depends: libc6 (>= 2.7-1), squashfs-tools (>= 4.2-1), bash, x11-utils, thunar|pcmanfm, disktype, coreutils, xterm
+Filename: ./Included/edit-sfs-thunar_2.2_all.deb
+Size: 6362
+MD5sum: 949ef5a72e2b1cfefff2e6e3963d502f
+SHA1: d12d1cf398c118f1435338fea3a98558043d6918
+SHA256: d341b00218802782a7662d9288f8e6a53cb5270692a1c566b76bf55da48e7195
+SHA512: cef279708d7547dc731a337ddfc19aefae57cbb6dbad2458c788a04f92e404c4555cb6ac68104156abfdfd39555ac5e51f4305114ea7d300ae4e5506cf207da0
+Description: squashfs editor, converter
+
+Package: epdfview
+Priority: optional
+Section: x11
+Installed-Size: 657
+Maintainer: Yves-Alexis Perez <corsac@debian.org>
+Architecture: i386
+Version: 0.1.8-3
+Provides: pdf-viewer
+Depends: libc6 (>= 2.4), libcairo2 (>= 1.6.0), libcups2 (>= 1.4.0), libgcc1 (>= 1:4.1.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.31.8), libgtk2.0-0 (>= 2.8.0), libpango1.0-0 (>= 1.14.0), libpoppler-glib8 (>= 0.18), libstdc++6 (>= 4.1.1)
+Suggests: poppler-data
+Filename: ./Included/epdfview_0.1.8-3_i386.deb
+Size: 148806
+MD5sum: 819014f686f6d6a24a986cfbc21761bf
+SHA1: b8c1cfcf052bb07c298b7ee3599a6ed52df57c16
+SHA256: 49accd4ac0de64626be4de53c27e4313c0ab88ffd0e766d4b2b1e79a92d8d33d
+SHA512: cc9ca321d311f66c1bbfdf33b4ab5cc2e9620035406cdd7e7562656cb2b8ced1b54bc6d5d09eab6b321cce9f4089df7ccb21b3bd5416ad17b4d74d984b6bf212
+Description: Lightweight pdf viewer based on poppler libs
+ The aim of ePDFView is to make a simple PDF document viewer, in the lines of
+ Evince but without using the GNOME libraries.
+Homepage: http://trac.emma-soft.com/epdfview/
+
+Package: remaster-scripts
+Installed-Size: 57
+Maintainer: fredx181 dog@root.nl
+Architecture: all
+Version: 1.0.5
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu
+Filename: ./Included/remaster-scripts_1.0.5_all.deb
+Size: 8832
+MD5sum: 506bd502446abea8101cc496b5315270
+SHA1: 817698fdc19d2a3203eeec3c3323b07b51a32f6e
+SHA256: 9ede4e9a54f74ac5fae35b5878c39c79a9e1f9a24885db593f3179a8004e738b
+SHA512: 80d75fb8ca32bf81bd25f38d5a2b12dcc40742233652de56277c3b4d5be5fdde1560551cda015d8f41f9db4f974d13198f053ec1236d4a86adb53f4ce183c2c8
+Description: Warning - This package works only in DebianDog! In ver. 1.0.3 fixed progress bar bug for very old PC.
+ .
+ For creating a *.squashfs module from changes (from /live/cow directory) or full system remaster (from / directory).
+
+Package: gsu
+Priority: optional
+Section: admin
+Installed-Size: 20
+Maintainer: root
+Architecture: i386
+Version: 1.0.2
+Depends: libc6, sudo, xterm, yad
+Filename: ./Included/gsu_1.0.2_i386.deb
+Size: 1590
+MD5sum: e413ed64da62fb72e3f5cb1f3ba221c5
+SHA1: de1f0d41eb638200b951db004d67e09a7d173b28
+SHA256: f6e64b1f03273af94c14d4320a48ef431b9f7b6fdf7099f0aac41d30c852ad37
+SHA512: 605e251d6f1edb0076eb662d82e85a23786aa3694bbb2a9720c11e9fcf6d5cc07f6086104ca9e6be73818975aaa127e2159d5076424d3b912e808c9b48f84f49
+Description: graphical frontend to sudo - this version is fix for Jessie and SID upgrade but it is safe to install in Wheezy also.
+  You can keep old gsu version in Wheezy without problem.
+  .
+  More information available here:
+  http://www.murga-linux.com/puppy/viewtopic.php?p=829680#829680
+
+Package: pavrecord
+Priority: extra
+Section: video
+Installed-Size: 120
+Maintainer: mcewanw <Murga Puppy Linux Forum>
+Architecture: i386
+Version: 9.0.5
+Depends: libc6, gtkdialog
+Filename: ./Included/pavrecord_9.0.5_i386.deb
+Size: 15196
+MD5sum: 3bad047348d7fdb033039746218f91d6
+SHA1: 7036f1f18a84a1974a223652d2b43426bd2c3629
+SHA256: 5e1422bb4fe1d20414cb4182503106811c58622be7ac8d5e5a5a6d45c177fe09
+SHA512: 61ce277967602977351c8ccd03f5825b08475bfc895ba1344ad1b31ac1298b69415d16b4de3b59f7e63c692ead42a9411b23a9130d5ee1a91baf89006d114d14
+Description: pavrecord for DebianDog:
+ pavrecord by mcewanw
+
+Package: makeswap
+Installed-Size: 45
+Maintainer: root
+Architecture: i386
+Version: 1.0.2
+Depends: libc6, gtkdialog, coreutils, util-linux, x11-utils, pv, mount, gsu | gksu
+Filename: ./Included/makeswap_1.0.2_i386.deb
+Size: 16164
+MD5sum: 6813cf2ea4636cd90c7a58eb85766e25
+SHA1: c311249a31796e576f5522988a477a0d54041f78
+SHA256: 69df8db58f4d0d1c9d2885cbc55d0b4951265212e374bdec8bdfbab1a1d46194
+SHA512: c30ddfefe42a98ff27d74d49a943df6b75d0fecc6d46ed22375ffc0cfe2c8bfb4a2894ed0dee2c66314a3d2623504b3ecd33396310495c51918e8e3f7e27ab8b
+Description: Make and auto-mount swap file script. Security fix: owner root:root and chmod 0600 for new created swap file.
+
+Package: apt2sfs
+Installed-Size: 72 
+Maintainer: fredx181 dog@root.nl
+Architecture: i386
+Version: 1.0.9
+Depends: libc6, x11-utils, x11-xserver-utils, findutils, yad, unionfs-fuse, coreutils, menu, mount, procps, sed, squashfs-tools, apt, xterm, gsu | gksu
+Filename: ./Included/apt2sfs_1.0.9_i386.deb
+Size: 9530
+MD5sum: 408002273a6adbe95b68a3162363a206
+SHA1: 0558def5cbf54d143edeae711f3b74711410ed93
+SHA256: 20e90ec77272ec9db549cc730d8f5caf69e2bf840c73a3d605c37f27a35fe34b
+SHA512: 1fccfe2e51028faa5e1f586fed5ca536c7c5e3918ec3a5651f333bd9c0754b156f1be73eeae8362be5eb072bfa037b0ca9298033abd15af296b86a7e66f3bd8f
+Description: Warning - This package works only in XenialDog! Fix: Force being user 'root' in chroot, otherwise installing might fail (for example when running with new created user).  
+ Fix: version 1.0.4 (and earlier) doesn't work well because of 'stable' entry in /etc/apt/sources.list after jessie became stable at 2015-04-25.
+ .
+ Fix after version 1.0.3: added option to choose location / or /tmp for working directory (in case you have only vfat or ntfs partitions available).
+ For creating a *.squashfs module from installing by apt-get
+ The installing takes place outside of the running system, in 'chroot'
+ - apt2sfs, GUI using yad
+ - apt2sfs-fullinst, GUI using yad, can be used on a full install
+ - Choice dialog now for compression algorthim: xz, gz or lz4
+ - Output from apt-get through xterm (instead using yad in previous versions)
+
+Package: move-in-crypt
+Installed-Size: 38
+Maintainer: root
+Architecture: i386
+Version: 1.0.1
+Depends: libc6, gtkdialog, cryptsetup, mount, coreutils, xterm, gsu | gksu
+Filename: ./Included/move-in-crypt_1.0.1_i386.deb
+Size: 2674
+MD5sum: 9455d116598f1545673805bdee9aeaa5
+SHA1: 497167be64bc2765ec4139765afa7a54ed54903e
+SHA256: be68830a685ee894778998062c5547a3f0870a00cf7f8148f462cf930d3238e3
+SHA512: 1d960bcedc328a55b1c51e529d69a2cf8454278f736db468758d9e74edffc5dd54af688cbe56162651a8309ff5006925b3f3c22402e7fba7c18d60f8dfa446fb
+Description: Manage encrypted save file utility.
+
+Package: domycommand
+Priority: extra
+Section: utilities
+Installed-Size: 53
+Maintainer: mcewanw <Murga Puppy Linux Forum>
+Architecture: i386
+Version: 9.0.3
+Depends: libc6, gtkdialog
+Filename: ./Included/domycommand_9.0.3_i386.deb
+Size: 5854
+MD5sum: aa992f23290e09d3d4e10e291180f33d
+SHA1: f8d1cc465508bfe436e40b842aeda996677bb197
+SHA256: 075b825b3c276cba8e41d157aee4c71a7c218b256e564030acd149824821443d
+SHA512: 04b9201d08b0692f9eaeaeaf0e96e590aca9509b0e47b0a6584c2f94b0db2125a52c9f191f37581b4ae6f44f95229a5ad0e09ccf61ced23a3ec66b220a026ce9
+Description: domycommand version for DebianDog:
+ domycommand by mcewanw
+
+Package: filemnt-rox
+Installed-Size: 39 
+Maintainer: fredx181 root@dog
+Architecture: i386
+Version: 1.0.1
+Replaces: filemnt-thunar, filemnt-xfe
+Depends: libc6, gtkdialog, disktype, rox-filer, gsu | gksu
+Filename: ./Included/filemnt-rox_1.0.1_i386.deb
+Size: 20368
+MD5sum: 23702d995e1474899a87ef5a363bb13f
+SHA1: 7c24f882383571eea6b1783babcf24f0bda26a3f
+SHA256: e6d38d91a604ff2d1c3049f91bb6402db17b15c5c876b0671358d9e49a8284f9
+SHA512: 94f6f758c3a598eec295d41327f655532aa7f2c6287e0eafa51c0ff4a2efdc2eb2819d7d56929e611e5c4ac7dcfd82f322eda38d3e60f5f718bdbec6bfedc743
+Description: Mount images, savefile, modules
+
+Package: filemnt-thunar
+Installed-Size: 39 
+Maintainer: fredx181 root@dog
+Architecture: i386
+Version: 1.0.1
+Replaces: filemnt-rox, filemnt-xfe
+Depends: libc6, gtkdialog, disktype, thunar, gsu | gksu
+Filename: ./Included/filemnt-thunar_1.0.1_i386.deb
+Size: 20390
+MD5sum: c6627d92c4e1a1966f78bd46d75b52a2
+SHA1: fd138af9592e222227ab1680f177fe3c763c1e9f
+SHA256: 3d54546b6e4d995355d1ec9c353d8b841cd549baf587c63697aa982dbdb5471d
+SHA512: 73cb438786cea9c2635e871837ee83117a511fc005d9334b49b99153b1cdaa386bd052ab732d13ec0733f077e49a038566e64cc51d4a2ccce37e6338e8ae6c08
+Description: Mount images, savefile, modules
+
+Package: firefox-esr
+Priority: optional
+Section: web
+Installed-Size: 56333
+Maintainer: Maintainers of Mozilla-related packages <pkg-mozilla-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Version: 24.8.0esr-1~deb8u2
+Provides: gnome-www-browser, www-browser
+Depends: libasound2 (>= 1.0.16), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.17), libcairo2 (>= 1.2.4), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.78), libevent-2.0-5 (>= 2.0.10-stable), libffi6 (>= 3.0.4), libfontconfig1 (>= 2.11), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:4.1.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.20.0), libgtk2.0-0 (>= 2.24.0), libhunspell-1.3-0 (>= 1.3.3), libpango-1.0-0 (>= 1.14.0), libstartup-notification0 (>= 0.8), libstdc++6 (>= 4.9), libx11-6, libxcomposite1 (>= 1:0.3-1), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxrender1, libxt6, zlib1g (>= 1:1.2.0), fontconfig, procps, debianutils (>= 1.16), libsqlite3-0 (>= 3.7.12-1~)
+Recommends: gstreamer1.0-libav, gstreamer1.0-plugins-good
+Suggests: fonts-stix | otf-stix, fonts-lmodern, mozplugger, libgssapi-krb5-2 | libkrb53, libgnomeui-0, libcanberra0
+Conflicts: iceweasel (<< 45), j2re1.4, pango-graphite (<< 0.9.3)
+Breaks: xul-ext-torbutton
+Filename: ./Included/firefox-esr_24.8.0esr-1~deb8u2_i386.deb
+Size: 25132806
+MD5sum: 0dd11acb392c6ffafc24af320dd991ac
+SHA1: 8dbf7d87059b75233b58cb6bd1939f6ee75969b8
+SHA256: 5f5debeaa6a7eae94fee9f908d43866d7ad59d49d5663a4500eb2816efb6453f
+SHA512: 220589cbae15d32080bfd02796899b4da71782955b080416bd34d346f5732b59140d5fd29f82664792d535360f3f583438a87522bd1436df5bf780ab19965303
+Description: Mozilla Firefox web browser - Extended Support Release (ESR)
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+
+Package: sfsload
+Installed-Size: 47 
+Maintainer: fredx181 dog@root.nl
+Architecture: i386
+Version: 1.0.1
+Depends: libc6, yad, gsu | gksu, aufs-tools, lsof
+Filename: ./Included/sfsload_1.0.1_i386.deb
+Size: 6270
+MD5sum: 5766db1a62218cbfda3e7411eb56ef6c
+SHA1: 9d5077ab46316b82661cd0c997f48d188707a1d0
+SHA256: b8ea322a513786b54c6141f173004f4125ba64c9780c21e4be9000fdd0b55d06
+SHA512: 943a3dd762ac8f7d741f7233319095689c3e9ce8995dcbf1a8af73da7ccc2daf30b36baa1efd85e03baa80f0ccb1d30b0561f5fc064364725f53b60f477ddf17
+Description: Load a *.squashfs or *.sfs module.
+ Changes compared to included scripts in DebianDog-2015-09-02 iso: loadmodule and loadsfs
+ In case unloading failed at first, find out (by 'aubusy', from aufs-tools) which process is keeping it from unloading and kill it, then try again.
+
+Package: linux-user-chroot
+Priority: optional
+Section: devel
+Installed-Size: 28
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Architecture: i386
+Version: 2015.1-5
+Depends: libc6 (>= 2.8)
+Filename: ./Included/linux-user-chroot_2015.1-5_i386.deb
+Size: 15984
+MD5sum: c1edcc853a294bcd80a991264261f93b
+SHA1: d29b499bb3d42d882d688025556d84c363f86e7e
+SHA256: cd75884b0f2871b78e020c60c7f27eca1ee62674293c620786e5ef5f6b8a18fa
+SHA512: e2c75bd25ee036960c46bd59ea13d3424627e8e513ab9f2bb7dd58b175b8546e8d01632827756005e3988c2281b97548ef67c7aa7917d3a61a5023614e1c2f6c
+Description: setuid helper for making bind mounts and chrooting
+ This tool allows regular (non-root) users to call chroot(2), create Linux
+ bind mounts, and use some Linux container features.  It's primarily intended
+ for use by build systems.
+Homepage: https://git.gnome.org/browse/linux-user-chroot/
+
+Package: probepart
+Priority: extra
+Section: system
+Installed-Size: 22
+Maintainer: root
+Architecture: i386
+Version: 1.0.1
+Depends: libc6, coreutils
+Filename: ./Included/probepart_1.0.1_i386.deb
+Size: 2570
+MD5sum: 0daaa39f21f7b4e2141868e0219a6d63
+SHA1: 11c5cd191ddcc3b7e0e7d0fcde0ba9c659954460
+SHA256: 885417a218611620f7b529107b7b2c990ba29ddcc7635eb24bfa37b163ffb3d8
+SHA512: 02afb9016974259f26709fd0d842054843190cbecd45b860d10687d557cbb5a480f5c7b2b95bd55af4479ff4b5dec614dcff09eb1d9d68ac608549544fa530d3
+Description: partition information utilities probedisk and probepart
+
+Package: debdogmountscripts
+Installed-Size: 73
+Maintainer: root
+Architecture: i386
+Version: 1.0.4
+Depends: libc6
+Filename: ./Included/debdogmountscripts_1.0.4_i386.deb
+Size: 3048
+MD5sum: 906f1d66b57a905b58125bbe22677c5b
+SHA1: 098638878223f24544cc2d6099ed45bd3343e83c
+SHA256: 6a877175c48eab1ae02732f284f902fd726ad4a77f715c47ca492ed49489f87b
+SHA512: 11fe893faa46745adfa18ab989a1e3be30dcbdd82f693238417e5366f08ca577f11499a28f6d2a1f918bd83e0807d497b7bc6664d317113fc4914a5cd85c57fd
+Description: Special DebianDog mount and drive information scripts.
+
+Package: openbox-keybinder
+Installed-Size: 100 
+Maintainer: fredx181
+Architecture: i386
+Version: 0.0.1
+Depends: libc6, openbox
+Filename: ./Included/openbox-keybinder_0.0.1_i386.deb
+Size: 23572
+MD5sum: 2f7c7cd11e5e905ca30c3c1895604067
+SHA1: b9ad512f0986fdf556524d47d1cae6835d3240a6
+SHA256: 92ff337a410762e6b9db2532fea8a52b587cf0ac4c4d9ab4f5e11bcb427ca3bd
+SHA512: 70e4d4bc128087a91d294cbf16a3d7705ad6ceb8d66200d07979a987a9bc3c53ebda5013af6ce98f57fff2b562877cc8334ab05c638c0200853303866d618ad2
+Description: Openbox keybind configuration GUI
+
+Package: porteusbootscripts
+Section: checkinstall
+Installed-Size: 56
+Maintainer: root@jessie
+Architecture: i386
+Version: 0.0.2a
+Depends: libc6
+Filename: ./Included/porteusbootscripts_0.0.2a_i386.deb
+Size: 10512
+MD5sum: 8a7cbf9937d803defe32d4320abeca2a
+SHA1: 0a5ab2d3a8dd8d52026065de6cef6ebd511cd996
+SHA256: 75ba84fa4bb1c9f558543f3f62b9f758bfe02aeb93547aff752bec9de92e6c76
+SHA512: cb2fb33f6fb8185df90b72a03a149e7be51e05daead56d64a857e2aba5ed7fa3248cfb7bc908897b7a6f0f0b3d584760b79879a9c16c90285d7ee93977260aa5
+Description: Porteus-boot helper-scripts (Note: works only on DebianDog)
+ This version has included the scripts for the new-save-setup
+ Note: Removing this package does not make any change.
+ This is on purpose because the scrips are essential for porteus-boot to work
+ To revert back to the old save-setup, install version 0.0.2
+
+Package: quick-remaster
+Installed-Size: 49
+Maintainer: fredx181 dog@root.nl
+Architecture: all
+Version: 1.0.5
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu
+Filename: ./Included/quick-remaster_1.0.5_all.deb
+Size: 9000
+MD5sum: e06c6442bf71ca1d087c608e679f169a
+SHA1: 9991d0288965822b52e024bdc02992fca1c656fc
+SHA256: 909145c1307fe6dffe7d6d1314f479f00cfc3b070d5284659b7ec031ad6bf548
+SHA512: 7e6dfac7ab527b5ef27da379027ba8837d01c99bcaf2e996a641fedaa7fe7ac1489da9c697a7538426c7d517e8610100a3fb71173787d5e58ca06d86fd75814f
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ Bug fix: set the correct permissions for /tmp 
+ .
+
+Package: zenity-portable
+Priority: extra
+Section: x11
+Installed-Size: 280
+Maintainer: fredx <fredx@nomail.nl>
+Architecture: i386
+Version: 2.30.0
+Replaces: zenity
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.7), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.24.0), libgtk2.0-0 (>= 2.24.0), libpango1.0-0 (>= 1.14.0), libx11-6
+Conflicts: zenity
+Filename: ./Included/zenity-portable_2.30.0_i386.deb
+Size: 102162
+MD5sum: b969b04a28c99ec573458a9950cad0c8
+SHA1: 154e276015a70ff0a5361c3cace3cbf2fe7452a6
+SHA256: 6c67f639e516c847a82222d80cd264c6582dc3ad6877899073399a7f6842cbb8
+SHA512: 0e95f9c8947676ff3435a3d3d26dfa752ed24240f4dcfa48d278a02c7e00f9bd35710cd52e1221e7613a5c94dbabb7c2d5b2c8b6ff261172a11393554a758442
+Description: Small portable old(er) version of zenity
+
+Package: gnome-mplayer-1.0.7
+Priority: extra
+Section: system
+Installed-Size: 9500
+Maintainer: root@wheezy
+Architecture: i386
+Version: 1:1.0.6.1
+Replaces: gmplayer, gnome-mplayer, mplayer, mplayer2, gmplayer-portable
+Depends: dbus-x11, libasound2, libatk1.0-0, libc6, libcairo2, libcurl3, libdbus-1-3, libdbus-glib-1-2, libfontconfig1, libfreetype6, libgdk-pixbuf2.0-0, libglib2.0-0, libgtk2.0-0, libmusicbrainz3-6, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, libx11-6, libxss1, liba52-0.7.4, libdvdread4, libenca0, libfaad2, libfribidi0, libogg0, libpng12-0, libtheora0, libvorbis0a, libxext6, libxinerama1, libxv1, libxvidcore4
+Conflicts: gmplayer, gnome-mplayer, mplayer, mplayer2, gmplayer-portable
+Filename: ./Included/gnome-mplayer-1.0.7_1.0.6.1_i386.deb
+Size: 3697630
+MD5sum: 8d9cb69962b3f46311241437fa3e5e58
+SHA1: 9bed2e2fecce5b69a5c7c389392a32ae5c9f62f2
+SHA256: a762175242a11dba9422916cfdcf9546fda307e18141d818fc3f678cdc24be94
+SHA512: 8e443db41b13e444a90f06b5a3f7daf94a48678256abd242b551bb4a0bdec0ab1f269e8f04ba87c423c5e1d6119b32826fc664998c96e3d1291c0dafefdcef83
+Description: Media player small version for DebianDog
+
+Package: portablesfs-loadsfs-fuse
+Installed-Size: 87 
+Maintainer: fredx181 dog@root.nl
+Architecture: all
+Version: 1.0.5
+Depends: libc6, yad, unionfs-fuse, gsu | gksu, linux-user-chroot, squashfuse, aufs-tools, lsof
+Filename: ./Included/portablesfs-loadsfs-fuse_1.0.5_all.deb
+Size: 8898
+MD5sum: f502dbb25066dd9d8af9ad1f6477abda
+SHA1: 9067022c356ebedb5d27a2eb707a157df4b90c02
+SHA256: af5b99e7da521fac2d0d061fb2950b07811c000850ebf29083b4faed88ad2151
+SHA512: 073045e8a100320a79afb2ffca492349705973697ac361451592c30f3d663360632c403389436fba3bebe76628958a40acd69c5fe14d4aa2c70aa4e613162bdf
+Description: Load a *.squashfs or *.sfs module.
+ Changes in v 1.0.3:
+ When logged in as unprivileged user, no password is required to run portable sfs script with 'Chroot Mode'
+ Same for activating a .squashfs module with loadsfs-fuse.
+ - portablesfs creates a portable script to activate *.squashfs or *.sfs module
+ (changed in v 1.0.2: added (optional) choice to enter a command that will be executed directly when running created portable script, instead of showing 'Applications' menu)  
+ - loadsfs-fuse activates a provided *.squashfs or *.sfs module from the commandline or:
+ by drag and drop (can be used on a full install).
+ - loadsfs-fuse-writesfs: basically the same as loadsfs-fuse but it leaves no traces in / (rootfs), instead it writes the config files (or any other) that a program creates to: /root/<name_of_module> directory  
+ Changes in v 1.0.5:
+ - kill processes which are keeping from proper unmounting (might be needed in some cases for SFS-load mode)
+
+Package: ffconvert
+Priority: extra
+Section: video
+Installed-Size: 350
+Maintainer: mcewanw MakeDEBPackage-GUI <no-mail-address@nomailaddress.nomail>
+Architecture: i386
+Version: 1.4.2.2
+Depends: libc6, probepart, gtkdialog, oss-compat
+Filename: ./Included/ffconvert_1.4.2.2_i386.deb
+Size: 58462
+MD5sum: 30d3bf1b53645b4ef9c17f37474dc9f3
+SHA1: c68e83290f7192ff796161c53c2a1b4e90b1e753
+SHA256: 03d327c5c642fead1e0559cc1a718e5ecce3216332872dc03f51d39eef3cf88f
+SHA512: 53d2d7895759f075621520091633542d0e4bdeba786d742cf37f55bd952af813cc4afb3d04346d5a8fbf30e9a040f01a11b68624f501c6b71179cfc5c64d2b2e
+Description: ffconvert for DebianDog.
+ ffconvert by MakeDEBPackage-GUI.
+ checks for Debian version and recommends libav-tools if it is 8 or higher.
+
+Package: quick-remaster
+Installed-Size: 39
+Maintainer: fredx181 dog@root.nl
+Architecture: all
+Version: 1.0.2a
+Depends: libc6, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu
+Filename: ./Included/quick-remaster_1.0.2a_all.deb
+Size: 6838
+MD5sum: fc299edbedb91518161ad00dc327891e
+SHA1: bf44ea963620d8d22e6a9a07f9e8603aae9ea672
+SHA256: 0622eb51278860cafc66b1b7897ecf2bbb7c21bf7eed73f58aa7713b1e694023
+SHA512: d9035156439b082b8460214fc479f41dd889ed662991f6af27cb9c84f5a743c36e37ed003f7ac7487b1ef5c0097a535bfac1393b33a0ad8112a340de3c5ac628
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ .
+
+Package: lxrandr-save-fix
+Priority: extra
+Section: system
+Installed-Size: 158
+Maintainer: root@wheezy
+Architecture: i386
+Version:1.0
+Provides: save-settings-after-reboot
+Depends: libc6, lxrandr
+Filename: ./Included/lxrandr-save-fix_1.0_i386.deb
+Size: 1130
+MD5sum: 41fe59c1b2bee1793b9d9567e08aaad7
+SHA1: 8944563dbd9db1fca5026a122476d1d76d9a9850
+SHA256: 7259a557f8b2025e6bc5986b9b321403fa56a91de44c7219d49ebdfe67dbb5a2
+SHA512: 33cc30acb1758c429a375e1f4417788ce69b665eb500880360992ac7d10f2154ac5c238a6c12d964564466bc12e542cd44943f843ea37d1943ad41f72b9de914
+Description: desktop configuration save settings fix for DebianDog
+
+Package: squashfuse
+Priority: optional
+Section: devel
+Installed-Size: 35
+Maintainer: fredx181
+Architecture: i386
+Version: 0.1.0
+Depends: libc6, libfuse2, liblzma5, liblzo2-2, zlib1g
+Filename: ./Included/squashfuse_0.1.0_i386.deb
+Size: 18642
+MD5sum: ee745a46b43bf0c9be593ed433aa4006
+SHA1: 23016364b557788f614d66f6b5e5a5acd22125b3
+SHA256: b8dd141a3eee247af5b60addd4aefc17b17bd4fdfe1e25623dedcb09a607a0b3
+SHA512: dbf560128bdf2484013c2e2140590d81fe9c5c63b3993a46fda893bc82c18eafe4c19fc3ce3dc5523c826c972aa285a1bc21dfe31a24b3ccd67d2f1ffeb2bcc9
+Description: Mount .squashfs as unprivileged user.
+ Squashfuse lets you mount SquashFS archives in user-space
+
+Package: fixdepinstall
+Installed-Size: 140
+Maintainer: root
+Architecture: i386
+Version: 1.0.3
+Depends: libc6, x11-utils, yad, dpkg, apt, procps, gsu | gksu
+Filename: ./Included/fixdepinstall_1.0.3_i386.deb
+Size: 3574
+MD5sum: 8777b2ac3573813d9d93c2ceed478410
+SHA1: 96427298ac36427f188202f77271ed335d5f3840
+SHA256: 8de16e32d72e1cddfd7532075981abd2a0910ad06bf60d83dbbafe702c1c4a28
+SHA512: 7c8261c47bbe7151310a2ad57af6a4f2059aca9c9f8c1224fdb8fd6ed398ab7799760678efd598dfae762631d52ffdc9612a7c184f90594ac26baeef814b61d6
+Description: DebianDog deb + dependencies install utility from Fredx181
+
+Package: peasyglue
+Priority: optional
+Section: x11
+Installed-Size: 268
+Maintainer: root
+Architecture: i386
+Version: 1.10
+Provides: pictures-joiner
+Depends: libc6, gtkdialog, libnetpbm10
+Filename: ./Included/peasyglue_1.10_i386.deb
+Size: 37568
+MD5sum: 89aaf18be5f08f4b8988e558e114a9e1
+SHA1: 6daa69348db8eed9cc797bd3d4728b958c231db5
+SHA256: 434ea2399642fe288cc08ca9a5ed778bd9254352c491a67aaef4abe89b3bde72
+SHA512: e1015a2fa30b2ea3735c34089b28f7d9c96d6e383b2c10fda66f2426127e02c93c236277a5d3777c7b799b288630bf9785c47a140995cac4dfa492ef781f4a3e
+Description: graphic-utility
+
+Package: desktop-editor
+Priority: extra
+Section: Utility
+Installed-Size: 73
+Maintainer: root@wheezy
+Architecture: i386
+Version:1.0
+Provides: edit-desktop-files
+Depends: libc6, gtkdialog, coreutils, sed, procps, gsu | gksu
+Filename: ./Included/desktop-editor_1.0_i386.deb
+Size: 33876
+MD5sum: 9e36e8537d38255d19c21235985cb5a5
+SHA1: b70353f468dd63cf07e76fe34c856193dea5f929
+SHA256: 2b944247f9ff3d6ab836a751b9e011754d43782c1cd4eb269ea2ca3bdfcc979b
+SHA512: 8ad572ceacadb74708fd36d92bb41a21132355f2c0e5d7a7b1987c3c72e71e47efe221b41e573ad9858b94dbee0115ca1df06c8eb49541169473ef52a72639d8
+Description: Desktop files editor.
+
+Package: gnome-mplayer-1.0.7
+Priority: extra
+Section: system
+Installed-Size: 9500
+Maintainer: root@wheezy
+Architecture: i386
+Version: 1:1.0.6.2
+Replaces: gmplayer, gnome-mplayer, mplayer, mplayer2, gmplayer-portable
+Depends: dbus-x11, libasound2, libatk1.0-0, libc6, libcairo2, libcurl3, libdbus-1-3, libdbus-glib-1-2, libfontconfig1, libfreetype6, libgdk-pixbuf2.0-0, libglib2.0-0, libgtk2.0-0, libmusicbrainz3-6, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, libx11-6, libxss1, liba52-0.7.4, libdvdread4, libenca0, libfaad2, libfribidi0, libogg0, libpng12-0, libtheora0, libvorbis0a, libxext6, libxinerama1, libxv1, libxvidcore4, libcdio-paranoia1
+Conflicts: gmplayer, gnome-mplayer, mplayer, mplayer2, gmplayer-portable
+Filename: ./Included/gnome-mplayer-1.0.7_1.0.6.2_i386.deb
+Size: 3606668
+MD5sum: 0ff95685831ee5502e3f61089b4b9c2c
+SHA1: 13eea05c69e3f5fe1236a952937fb8cebb576ea5
+SHA256: b374e28ded44f66c20a1214d84efbf32bbb54f9afbe61d92b106598adc88e3f8
+SHA512: 97d9197750e7401210f5f5956a7d7febd281c300d11778fc426d03eed7f7f4735c0763e299f2fe4d35a32c10e276d3511276bd70142f6f5b919ee83f151f68c6
+Description: Media player small version for DebianDog
+
+Package: remaster-scripts
+Installed-Size: 57
+Maintainer: fredx181 dog@root.nl
+Architecture: all
+Version: 1.0.6
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu
+Filename: ./Included/remaster-scripts_1.0.6_all.deb
+Size: 8852
+MD5sum: 5a3ef78df2269fa48c3c21a7403136db
+SHA1: c4a007f88564d6ffdd3576cbad6a0f3b2821503e
+SHA256: 4fa4e695433e83401648ee7ee493d4c64130bc3de35c30896a84027f19bccbf1
+SHA512: 31c493471ccfc3a4ebacae35753eb8eef2e351e8c0a6d344d5d4ec26fd1ed60328f2900f419ff0df5eb1a737c58e1030a86dfb2e61aba80d2a30eaec31d6ac00
+Description: Warning - This package works only in DebianDog! In ver. 1.0.3 fixed progress bar bug for very old PC.
+ .
+ For creating a *.squashfs module from changes (from /live/cow directory) or full system remaster (from / directory).
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+
+Package: yad-splash
+Priority: optional
+Section: utility
+Installed-Size: 21
+Maintainer: Fredx181
+Architecture: i386
+Version: 1.0.1
+Depends: libc6, yad
+Filename: ./Included/yad-splash_1.0.1_i386.deb
+Size: 1462
+MD5sum: 5a59363dfe11c679bb1ad3c07105e453
+SHA1: 4afd0996e02557e964fd766dd67d7dc572ae36f8
+SHA256: 1cfdb048576024edd58ef02770d26bc71f1a88b7cbbd21c483b0940c9bc31097
+SHA512: 00880a7257fe446fffa905f5dd51f1040eea099517308f58e6579abb770f8c450e5af671705b3ec88e552cd2adee40fef61630ceb5bcfdba05ed2d935227daa4
+Description: graphical yad message utility.
+
+Package: freememapplettray
+Installed-Size: 64
+Maintainer: root
+Architecture: i386
+Version: 1.0.1
+Depends: libc6, coreutils, menu, procps, libgtk2.0-0, libatk1.0-0, libglib2.0-0, libcairo2, libfreetype6, libfontconfig1
+Suggests: libc6-i686, libgdk-pixbuf2.0-0, libpangoft2-1.0-0, libpangocairo-1.0-0, libpango-1.0-0
+Filename: ./Included/freememapplettray_1.0.1_i386.deb
+Size: 13280
+MD5sum: 0e7ef80be4c4366bb4bba7b095583927
+SHA1: ade1095a1a315fbfbeeca3ee74305aace02788a0
+SHA256: 4527725b2422252fab72ccfc2ad7bf78d767ec9e356cd1a1cbcd900634bd48b8
+SHA512: 112434ac62f10e11a082d4229e014257b24e420760b0eb1f7bece080354abbe265d56f2ffaa77b8e86e94ca82aa3feb1d8c5e4ca095ead70d0e2a38722c3e4fb
+Description: View free space (free RAM) utility taken from PuppyRus-A: http://wiki.puppyrus.org/puppyrus/start
+
+Package: precord
+Priority: extra
+Section: audio
+Installed-Size: 104
+Maintainer: mcewanw <Murga Puppy Linux Forum>
+Architecture: i386
+Version: 9.0.3
+Depends: libc6, gtkdialog
+Filename: ./Included/precord_9.0.3_i386.deb
+Size: 11306
+MD5sum: 878f9a62f9a397f86d1596f14a057aca
+SHA1: 7739f16f3869f5dcb76edd0e7878e091e677ffb3
+SHA256: 2172d1284f055271c9bc40683afb126a94b1f88ebead54dad1f74a0a0a317b23
+SHA512: a94d0ac43774b0639850516b455aa1780b5df56226ae06edd2448351b6214e9c6f492bd9192c072c34ed7bb71701aea071a9309d8e04a887aa3bb44fc8e6fded
+Description: precord for DebianDog:
+ precord by mcewanw
+
+Package: dillo
+Priority: extra
+Section: web
+Installed-Size: 1180
+Maintainer: root@debian
+Architecture: i386
+Version: 3.0.3-1
+Provides: www-browser
+Depends: libc6 (>= 2.11), libfltk1.3 (>= 1.3.0), libgcc1 (>= 1:4.1.1), libjpeg8 (>= 8c), libpng12-0 (>= 1.2.13-4), libssl1.0.0 (>= 1.0.0), libstdc++6 (>= 4.1.1), libx11-6, zlib1g (>= 1:1.1.4), wget
+Filename: ./Included/dillo_3.0.3-1_i386.deb
+Size: 324928
+MD5sum: 2bb1485cc7e2fb674ae87d8f8adfd59f
+SHA1: 718cafa68a9646dbdde35b75ed6bee0e305cb160
+SHA256: db5cf5e7505e70e71831f6d78809f9c555cdd8b7748cd7e96c40a1110b5ddb05
+SHA512: a6c6af6b2bb50ca67e3cf9473aa01e90aef71aff04d9271bd9581deb641a27f54b329b7d1515f0bff2e9a7815077f86ef8c598b6d54de00bd4f3e8569bdf7b1c
+Description: Small and fast web browser
+ Dillo 3 is a graphical multi-platform web browser known for its speed
+ and small footprint. It is based on version 1.3 of the Fast and Light
+ Toolkit (FLTK) in version 1.3
+ .
+ It aims to be small in resources, stable, developer-friendly, usable,
+ very fast, and extensible.
+Homepage: http://www.dillo.org/
+
+Package: flashplayerchoice
+Installed-Size: 14 
+Maintainer: root
+Architecture: i386
+Version: 1.0.2
+Depends: libc6, wget, inotify-tools, yad, sed, apt, squashfs-tools, menu, tar, gsu | gksu
+Filename: ./Included/flashplayerchoice_1.0.2_i386.deb
+Size: 7532
+MD5sum: d1d0c772451fb6b30fd7f6a780293727
+SHA1: c0e17b8c0433741f4577196388bace5d325a07d8
+SHA256: aa2b0d1bdd6c7d8ac73efd69d3b0acb4237fed8bf31a8996685bfee34b9a67c1
+SHA512: 0e03a08fa5564fb646f62bb509cf12af3fadc82555c4f46fc8afb449a32e17559e9ad9065722129f0db03c4e9df055371bb3e45dfa3b40599874f60e321278ee
+Description: The flashplayerchoice script gives choice of several options to install flashplayer :
+ - version 10 from http://www.smokey01.com/OscarTalks/ (= 12 Mb uncompressed)
+ - version 11 from http://www.smokey01.com/OscarTalks/ (= 17 Mb uncompressed)
+ - Install flashplugin-nonfree with apt-get (= 34 Mb uncompressed)
+ - Create flashplugin-nonfree.sfs module (= 8,9 Mb compressed)
+
+Package: mount-wizard
+Installed-Size: 73
+Maintainer: root
+Architecture: i386
+Version: 1.0.2
+Depends: libc6, gtkdialog, mount, gsu | gksu
+Filename: ./Included/mount-wizard_1.0.2_i386.deb
+Size: 17722
+MD5sum: 390d816d46265e16073d9a5abb522240
+SHA1: f70e4388d6f66214d9633e90a4e53cbaa27901de
+SHA256: 1e953156e2349a10650dd08dc1189e63f53f8153bf3135995c8747c99b46b314
+SHA512: e0763ddb8055214f530a87f6aa109a637fa00956a9773b99d6ce6dde7e7aa302f93625a37b27bad76abfd4d4fa5e0319716abf4a87374622050ab4d67b43b2bf
+Description: Changes from v. 1.0.1 - added SD card support. Mount drives utility moded by sfs, fredx181 and mcewanw.
+
+Package: yad
+Priority: extra
+Section: x11
+Installed-Size: 352
+Maintainer: Slavko <linux@slavino.sk>
+Architecture: i386
+Version: 0.20.3-1
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.7), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.24.0), libgtk2.0-0 (>= 2.24.0), libpango1.0-0 (>= 1.14.0)
+Filename: ./Included/yad_0.20.3-1_i386.deb
+Size: 174518
+MD5sum: 6110daa99d93360fd0fba5bbe9a37727
+SHA1: 65dab04de4385e2fe7809869005d75ff8a2106a7
+SHA256: acd0ad6134941f075f28175486551264b7ff7fc58290ecb4ff0936c5d6d05ec8
+SHA512: d48402482af305bb89f30b6da55d10b044a380c31804cb43825b4862d79fd92c194b3a084d4dc2baf4234c6e3c230c458b5a35b9612d604ad18928f9e5f78b2b
+Description: Yet Another Dialog - dialogs for shell
+ Yad (yet another dialog) is a fork of Zenity with many improvements, such
+ as custom buttons, additional dialogs, pop-up menu in notification icon
+ and more.
+ .
+ There were two main reasons to make this fork. The first one is to remove
+ dependencies on deprecated libraries, such as libglade and gnome-canvas.
+ And the second one - as for me, Zenity looks like an abandoned project. Its
+ ChangeLog consists of just "bump version to..." and "translation updated" for
+ the long time, but many interesting ideas which are ignored by
+ developers/maintainers were in GNOME Bugzilla.
+Homepage: http://code.google.com/p/yad/
+
+Package: quick-remaster
+Installed-Size: 49
+Maintainer: fredx181 dog@root.nl
+Architecture: all
+Version: 1.0.4
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu
+Filename: ./Included/quick-remaster_1.0.4_all.deb
+Size: 8930
+MD5sum: aa0f493e7f84de28b8b23daff15e53e3
+SHA1: b6b180df03329cfe0701d4e3141f866f5209040a
+SHA256: 705740e6d778c5d688677a361a3ef0c0a27dbb9f7f8dda6698ea9caa52f51fa9
+SHA512: ff866eb7260ce42633e6ec5f95e2ebb2ff11980e0a6c80d8ba8ee91625b3ad18de727b039ee2d2dc2ed8a843d4bde0faf5f46c27cd76486e677d3cad235109c9
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ .
+
+Package: quick-remaster
+Installed-Size: 49
+Maintainer: fredx181 dog@root.nl
+Architecture: all
+Version: 1.0.6
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu
+Filename: ./Included/quick-remaster_1.0.6_all.deb
+Size: 9222
+MD5sum: 0a298836e0c1f6d3cd19619326a68e0f
+SHA1: 378a611853b00bc91654c4a76497110a70c5d753
+SHA256: f73cba406b3d6817dfefcd82830bad2addd62411f40070a1db9ee78ae74b763a
+SHA512: fca5dfd73157978aaf9ea1d2b389ea64f88db9fb0dd790426b9c4287f201da9993f0e16c702f0be48f13cab205c8e182ab85dd507ef6df838a5e9024984d2976
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ Bug fix: set the correct permissions for /tmp 
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+
+Package: sns
+Installed-Size: 534
+Maintainer: <no-mail-address@nomailaddress.nomail>
+Architecture: i386
+Version: 2.1.1
+Replaces: dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, xpns-tool, frisbee
+Depends: libc6, gtkdialog, libgtk2.0-0, libglade2-0, psmisc, wpasupplicant, gsu | gksu
+Conflicts: dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, xpns-tool, frisbee
+Filename: ./Included/sns_2.1.1-1.deb
+Size: 268608
+MD5sum: 1246de8a367b5cdd20619bec9c07976a
+SHA1: 8a07b9193f88fa07df9efdb195d3784f00836477
+SHA256: 0b05471d2c328a65706ac9530cfc5dae7c61e3e81123a732091aa8cbe0e75c54
+SHA512: 2fe12231f27ed25a608680677ca056abee80317ccbd32618bddc3bb27b9871dd3a139af21cae321cc819cd686dcf8f9fb17966960d73733d501f0dbcc406f1d8
+Description: Network Manager by Barry Kauler
+
+Package: jwm
+Priority: optional
+Section: x11
+Installed-Size: 395
+Maintainer: Jari Aalto <jari.aalto@cante.net>
+Architecture: i386
+Version: 2.2.2-1
+Provides: x-window-manager
+Depends: libc6 (>= 2.4), libfribidi0 (>= 0.19.2), libpng12-0 (>= 1.2.13-4), libx11-6, libxext6, libxft2 (>> 2.1.1), libxinerama1, libxpm4, libxrender1, libjpeg8, rxvt-unicode-256color | rxvt-unicode | rxvt-unicode-lite | gnome-terminal | konsole | x-terminal-emulator
+Recommends: iceweasel | www-browser
+Suggests: menu, x11-apps
+Filename: ./Included/jwm_2.2.2-1_i386.deb
+Size: 140056
+MD5sum: f32cb62d26e2b8c35940906385f1f652
+SHA1: 0df244e5916e351b929e2e17e08211a1871da190
+SHA256: cd2148cab571a864bc4f90f2f074c81bf67fbc1159459d2b7a2bfa56fc4b6ecc
+SHA512: 8b88be225ea254307efe2db510ff7f6a450b9446ec1d4de000e623bc5243649ee8723d029f4406a18e8549dce8061ead72a31b7b7febce6a3185e380101827cd
+Description: very small lightweight pure X11 window manager with tray and menus
+ Low resource Window manager ideal for older PCs. It uses a minimum of external
+ libraries, thus very little memory, includes virtual screens, menubar and
+ root-menu popup.
+ .
+ JWM is a window manager for the X11 Window System. JWM is written in
+ C and uses only Xlib and (optionally) the shape extension and libXpm.
+ It can support some MWM, GNOME, and WM Spec hints. The menu
+ configuration files are managed in XML format.
+ .
+ Compared to other light WM, like Fvwm95, the Jwm consumes considerably
+ less memory while providing the same functionality.
+Homepage: http://www.joewing.net/programs/jwm
+
+Package: makedebpackage
+Installed-Size: 67 
+Maintainer: MakeDEBPackage-GUI <no-mail-address@nomailaddress.nomail>
+Architecture: i386
+Version: 0.0.3
+Depends: libc6, gtkdialog, yad, sed
+Filename: ./Included/makedebpackage_0.0.3_i386.deb
+Size: 6548
+MD5sum: 872d593f09342f6e28d0aa662d8706ec
+SHA1: 9e1ffc206264096d58773ae7cb326930d14abf4c
+SHA256: f6c18eb46f9270c3cf14b70b4123d0e3fe0705f424beb2fc1988fda4c4075f03
+SHA512: 3ff518c0732163b216b5bd36788c8eb69ae1fbe802787c6a07ea3168d40e4782dc8c6ca20c58d707f8df897d4e3d4896dc1294309008ddfbfa5a9af434de1df5
+Description: The makedebpackage (re)builds a debian package 
+ makedebpackage by MakeDEBPackage-GUI.
+
+Package: libgbm1
+Priority: optional
+Section: libs
+Installed-Size: 97
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: i386
+Source: mesa
+Version: 11.1.3-1~bpo8+1
+Depends: libc6 (>= 2.8), libdrm2 (>= 2.4.3), libexpat1 (>= 2.0.1), libwayland-client0 (>= 1.2.0), libwayland-server0 (>= 1.2.0), libudev1
+Pre-Depends: multiarch-support
+Filename: ./Included/libgbm1_11.1.3-1~bpo8+1_i386.deb
+Size: 59210
+MD5sum: 2b141e03a4e2fbb1c3a257f6278fcbd8
+SHA1: b2b9a7ec8d016552def4cc296766587be5690e9c
+SHA256: 3467b65fc8026f39c704915f21c0600ff2063d234263313e504c544091e884a4
+SHA512: b7b7741ccb7512a822164333cb1eda72005f07c906ea667187698844616285d3b6f57fd5af467695f5522d25af011b5e7f704f463d01705b48e27b9ef549dfe3
+Description: generic buffer management API -- runtime
+ This package contains the GBM buffer management library.  It provides a
+ mechanism for allocating buffers for graphics rendering tied to Mesa.
+ .
+ GBM is intended to be used as a native platform for EGL on drm or openwfd.
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+
+Package: libqt3-mt
+Priority: optional
+Section: libs
+Installed-Size: 7968
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Architecture: i386
+Source: qt-x11-free (3:3.3.8b-7)
+Version: 3:3.3.8b-8+b1
+Replaces: libqt3, libqt3-helper, libqt3c102-mt, qt3-tools (<< 2:3.0.2-20020306-1)
+Depends: libaudio2, libc6 (>= 2.3.6-6~), libfontconfig1 (>= 2.8.0), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:4.1.1), libice6 (>= 1:1.0.0), libjpeg8, libmng1 (>= 1.0.10), libpng12-0 (>= 1.2.13-4), libsm6, libstdc++6 (>= 4.1.1), libx11-6, libxcursor1 (>> 1.1.2), libxext6, libxft2 (>> 2.1.1), libxi6, libxinerama1, libxrandr2, libxrender1, libxt6, zlib1g (>= 1:1.1.4), fontconfig
+Recommends: libgl1-mesa-glx | libgl1, libglu1-mesa | libglu1, libxmu6 (>= 4.3.0.dfsg.1-4)
+Suggests: libqt3-mt-psql, libqt3-mt-mysql, libqt3-mt-odbc
+Conflicts: libqt3c-mt, libqt3c102-mt, libqui1-emb
+Filename: ./Included/libqt3-mt_3.3.8b-8+b1_i386.deb
+Size: 2525312
+MD5sum: 5f53e566802ef7ea9766cc991bea1ee4
+SHA1: 4a37908356e65ea00fff3d86afa581910b93bac0
+SHA256: b66eaf383054705c5d93e58552b95e6d737ad41e554252798f3e9af5de021aa3
+SHA512: 3e1dab86c746564e953645e57c0aa3e051770d1363128570391e30466136512719875376352713fe1206f6f58a750da95b83c1ef042d2fe14b1fc1301f29601f
+Description: Qt GUI Library (Threaded runtime version), Version 3
+ This is the Trolltech Qt library, version 3. It's necessary for
+ applications that link against the libqt-mt.so.3, e.g. all KDE3
+ applications.
+Homepage: http://trolltech.com
+
+Package: pup-volume-monitor
+Priority: extra
+Section: checkinstall
+Installed-Size: 928
+Maintainer: root@wheezy
+Architecture: i386
+Version: 0.1.15-2
+Depends: libc6, libglib2.0-0, libudev0
+Suggests: libgtk2.0-0
+Filename: ./Included/pup-volume-monitor_0.1.15-2_i386.deb
+Size: 221996
+MD5sum: 823515c3fabcd32ce7584fe19a628a36
+SHA1: ccbe27a50f106528f0f064429390dcbce6221075
+SHA256: 1d494c9bd8463a240cc3660993a2f51326c369957b0aa7dfc4c543fce30325d3
+SHA512: eed33372706005ba13082c8f34d0d275dca70f19fe7cfa052a3290fb189b176c6114468ca5cec0fb5e57e210ee539a7d4b96997c79273f6807184f6067c4f95f
+Description: Disk volume monitor
+
+Package: squashfs-tools
+Priority: optional
+Section: kernel
+Installed-Size: 321
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Architecture: i386
+Version: 1:4.3-3
+Depends: libc6 (>= 2.8), liblz4-1 (>= 0.0~r113), liblzma5 (>= 5.1.1alpha+20120614), liblzo2-2, zlib1g (>= 1:1.1.4)
+Filename: ./Included/squashfs-tools_4.3-3_i386.deb
+Size: 126162
+MD5sum: fa43ef9546c7e26e77785253c92448eb
+SHA1: 7aa21330d466b93b69227f9a2145c40f55ac1536
+SHA256: 9586db292a38e2b2d1c85a34dccd280cc300d1307a846dfdf3bab5f6b1591eeb
+SHA512: f764d7ca0f3ca97367ccf616a753b2decc5df616e15da5ffb0634c8a258195641505107076756f83ca72c76c47c0456d53f9f8499cd70c1cc4a6402f2a4f767f
+Description: Tool to create and append to squashfs filesystems
+ Squashfs is a highly compressed read-only filesystem for Linux. It uses zlib
+ compression to compress both files, inodes and directories. Inodes in the
+ system are very small and all blocks are packed to minimise data overhead.
+ Block sizes greater than 4K are supported up to a maximum of 64K.
+ .
+ Squashfs is intended for general read-only filesystem use, for archival use
+ (i.e. in cases where a .tar.gz file may be used), and in constrained block
+ device/memory systems (e.g. embedded systems) where low overhead is needed.
+Homepage: http://squashfs.sourceforge.net/
+
+Package: resize-save-file
+Priority: extra
+Section: system
+Installed-Size: 158
+Maintainer: root@wheezy
+Architecture: all
+Version: 1.0.0-2
+Depends: libc6, gtkdialog, yad, e2fsprogs, gsu | gksu
+Filename: ./Included/resize-save-file_1.0.0-2_all.deb
+Size: 3590
+MD5sum: c6721d5257129683683414d28270b5f1
+SHA1: 50800ee9ca1dcbeebd153298bc87a33a386ca094
+SHA256: 6b2996fe99679cb5a172719017f932fc18bced76cbf31350a25789892c00bc99
+SHA512: 1381e74a428178273e77d53ba7f3aff7e8efb2d10f73a0673d5dc26db08b44f995416bc84f0bb4351aec318219ee7954510cb401bb51bddd07cdbceb8ef08046
+Description: Utilty for save file resizing.
+
+Package: yad
+Priority: extra
+Section: x11
+Installed-Size: 429
+Maintainer: fredx181
+Architecture: i386
+Version: 0.28.1
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.7), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.24.0), libgtk2.0-0 (>= 2.24.0), libpango1.0-0 (>= 1.14.0)
+Filename: ./Included/yad_0.28.1_i386.deb
+Size: 217694
+MD5sum: 62bdd3bcd1ba0e494e30d596d90d36af
+SHA1: 8eb86eec33d68842d2d1232beb6957865b13a4df
+SHA256: 13fdc540920f7070e7f06545d5137a8f21bd23aa211f67ae0ce127fb1c8e3086
+SHA512: 55c44485adebc6f096aba20513783ba0e8f8b4784567396b803ec466d3f193b5b66927cdf6bf174f8ef9950a2d6d6c2aa109f5be2319362346ebb884ca59a35e
+Description: Yet Another Dialog - dialogs for shell
+ Yad (yet another dialog) is a fork of Zenity with many improvements, such
+ as custom buttons, additional dialogs, pop-up menu in notification icon
+ and more.
+ .
+ There were two main reasons to make this fork. The first one is to remove
+ dependencies on deprecated libraries, such as libglade and gnome-canvas.
+ And the second one - as for me, Zenity looks like an abandoned project. Its
+ ChangeLog consists of just "bump version to..." and "translation updated" for
+ the long time, but many interesting ideas which are ignored by
+ developers/maintainers were in GNOME Bugzilla.
+Homepage: http://code.google.com/p/yad/
+
+Package: pburn
+Priority: extra
+Section: system
+Installed-Size: 754
+Maintainer: root@wheezy
+Architecture: i386
+Version: 4.3.3-1
+Depends: libc6, libgtk2.0-0, gtkdialog, dvd+rw-tools, pfind, vamps
+Filename: ./Included/pburn_4.3.3-1_i386.deb
+Size: 243068
+MD5sum: 2d18ece08d834381aa236636df135ea9
+SHA1: 99b817f2e63071934437187df9c63a13913ea1d3
+SHA256: a43fe8aee3c433f52bfede728beae33a48414ae054be983f99269f3dd236f32e
+SHA512: f03b6bb485c64ec13766fdd5332b18ad329c359cd2a148bd10973812740715d7c2a0d02af609e7d299f84fda8566d3f5f8a07268a4735081f09f62fbc832e450
+Description: pBurn - Burning gui
+ Changes in 4.3.3-1: added /bin/bash in all scripts containing bashisms
+
+Package: xfe
+Priority: optional
+Section: x11
+Installed-Size: 6822
+Maintainer: Roland Baudin <roland65@free.fr>
+Architecture: i386
+Version: 1.37
+Replaces: xfe-themes
+Depends: libc6 (>= 2.3.6-6~), libfox-1.6-0, libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1), libx11-6, libxft2 (>> 2.1.1)
+Filename: ./Included/xfe_1.37_i386.deb
+Size: 1458608
+MD5sum: d80bf7e0fac8d5efdd5321e20d727521
+SHA1: e132638256bcc2977105867479bbae9676da78e2
+SHA256: 8701b77c54b8b19bf4b6ef871ab2b1faa37e0eb073b9c92300d2d50a43392d1e
+SHA512: 7f3cb23b9978e8cad13b75542dbb626bbeb2ffe581019d7175cf006ccc9dc12b4cc29a4ad1833ba942dd945a4499d79b756e70a6918560d00edc6a0a54042381
+Description: A lightweight file manager for X11
+ Xfe is desktop independent and is written using the C++ Fox Toolkit.
+ It has Windows Commander or MS-Explorer look and is very fast and simple.
+ Included in the package are a simple text viewer (Xfv),
+ a simple text editor (Xfw),a simple package manager (Xfp)
+ and a simple image viewer (Xfi).
+
+Package: transmission-2.31
+Installed-Size: 3500
+Maintainer: fredx181 <fredx@nomail.nl>
+Architecture: i386
+Version: 2.31
+Replaces: transmission, transmission-gtk, transmission-qt, transmission-common
+Depends: libatk1.0-0, libc6, libcairo2, libcurl3, libfontconfig1, libfreetype6, libgdk-pixbuf2.0-0, libglib2.0-0, libgtk2.0-0, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, libssl0.9.8
+Conflicts: transmission, transmission-gtk, transmission-qt, transmission-common
+Filename: ./Included/transmission-2.31_2.31_i386.deb
+Size: 1262970
+MD5sum: d09bbb1faa9bccb66aa874d81428e99d
+SHA1: 7e1c475aae61a6e884fa1e6431e6a4522c8031d3
+SHA256: acb120c3a391487e4bf4da1d419bd69259ba3f7c3fc2d45a2d717400c18ffd70
+SHA512: 774dc2fc7d858ff7113ba0c66e33cf45eab3ecba3e907b6c1594182cdddf03494cd5a765646b39f802c6d64938f433f6a28bbb07caaeaaab1a24e850f2df276f
+Description: transmission-2.31, a bittorrent client:
+ Light version of transmission for XenialDog
+
+Package: sfs-get-smokey-get
+Installed-Size: 224 
+Maintainer: fredx181 dog@root.nl
+Architecture: i386
+Version: 1.0.3-jessie
+Depends: libc6, yad, wget, elinks, gsu | gksu
+Filename: ./Included/sfs-get-smokey-get_1.0.3-jessie_i386.deb
+Size: 77126
+MD5sum: c3aa79f63030863ff53a9966a6421840
+SHA1: b5b6bffb0954d4689838ffafc42356dcbe1a5cb6
+SHA256: 0b61c4b1b7748f3239295acac9f4583d62207eb63353686f0835890bd8d7a527
+SHA512: 32be070fbd73270fe049d635c59fe8570dbb5000363f50a7a8e6f0f8f1490263cf2b1e5108aa1af1e3cd21f7dd1bfb0b6eb1f77047f38148148010ad7de5c3d7
+Description: The sfs-get-smokey-get program downloads files from github.com or smokey01.com
+ sfs-get_smokey-get by MakeDEBPackage-GUI.
+
+Package: pfind
+Priority: extra
+Section: system
+Installed-Size: 158
+Maintainer: root@wheezy
+Architecture: i386
+Version: 1.0.0-1
+Depends: libc6, libgtk2.0-0, libgtk2.0-bin, gtkdialog
+Filename: ./Included/pfind_1.0.0-1_i386.deb
+Size: 31910
+MD5sum: 01ad4603c03ac23a854762b07c33afed
+SHA1: e6b2b448f5192f321552458722ddcfa9fed764e1
+SHA256: 3026ca51a4413af4e0144b7cb4185fa7a312a99a77233054b4c9b3477892a3a0
+SHA512: 76357ff5fd51538b5c8ba0b195472438ec5f51281bd29be9c6c0253ff6d3e1e9c7d2da38bdf0f08b753d3756dfe2555f37f9ae77d0282a473011fa28a7388cd1
+Description: Search
+
+Package: frisbee
+Priority: extra
+Section: checkinstall
+Installed-Size: 524
+Maintainer: root@wheezy
+Architecture: i386
+Version: 1.2-20160920
+Replaces: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd
+Depends: gtkdialog, libgtk2.0-0, libglade2-0, psmisc, wpasupplicant, gsu | gksu, rfkill
+Conflicts: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd
+Filename: ./Included/frisbee_1.2-20160920_i386.deb
+Size: 89312
+MD5sum: a516a4c91a3fcc0d4f71d8364be11159
+SHA1: 8f410349824000987d0e466d805d209fb8d7befe
+SHA256: 01984105dfea69234e34a306971c9429aa37f7b9917a7e05f2dc2d0119bc841a
+SHA512: 7b50b6faf508a13bb925c027aea93a73e41936802dc0fc911daac63b96291d21f14156938fa6bd6de3cc7fdb85867b086c79d530d5a46742d72469f70fd1e765
+Description: Wireless Network manager
+ Fixed refreshing network_tray icon, e.g. when plugging the cable in/out and when connecting to wireless 
+
+Package: quick-remaster
+Installed-Size: 37
+Maintainer: fredx181 dog@root.nl
+Architecture: all
+Version: 1.0.1
+Depends: libc6, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu
+Filename: ./Included/quick-remaster_1.0.1_all.deb
+Size: 6156
+MD5sum: 6c4fc582807ce9b76539983ae2dbdf59
+SHA1: b42ffae5a8992b875a01c707826842ff1550b8d3
+SHA256: 03cab4278afefa2b7bef1e2a79e3b5b363daa06c77a0b1a14f7c3f0b50efcab7
+SHA512: cc96e4ec04761a5cd865e02979184252745dff12714574323086fa707d10d7eace8f42697c2a5f4061aa6444eaec27484bdc12c4d92497c2f20fa6b67dc0695d
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ .
+
+Package: porteusbootscripts
+Section: checkinstall
+Installed-Size: 40
+Maintainer: root@jessie
+Architecture: i386
+Version: 0.0.1a
+Depends: libc6
+Filename: ./Included/porteusbootscripts_0.0.1a_i386.deb
+Size: 8622
+MD5sum: 737ef589fe60bfb7b95460d6e76c5a2b
+SHA1: e839a99a5556c33914c4269c44adecc2c475c290
+SHA256: f60bb6623cf0930e610be16181c96fc43c3f76f33a7a275c9ace09599b3a5b5c
+SHA512: 8abeddf74da7cf74491c586b505d855e2df7db7f3f0cd461756fab761ecad8e0b2046fe35122f4311e0ee6f5f57354dbabbcf13f01d6203956176d24497e2b30
+Description: Porteus-boot helper-scripts (Note: works only on DebianDog)
+ Note: Removing this package does not make any change.
+ This is on purpose because the scrips are essential for porteus-boot to work
+ To upgrade to the new save-setup, install version 0.0.2
+
+Package: jwm-setup
+Priority: optional
+Section: x11
+Installed-Size: 480
+Maintainer: fredx181
+Architecture: i386
+Version: 0.0.3
+Depends: libatk1.0-0, libc6, libcairo2, libfontconfig1, libfreetype6, libgdk-pixbuf2.0-0, libglib2.0-0, libgtk2.0-0, libmenu-cache3, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, sed, jwm, rox-filer, wmctrl, hsetroot
+Filename: ./Included/jwm-setup_0.0.3_i386.deb
+Size: 593264
+MD5sum: d43e98bc17defa4023d9fb795c7da2d2
+SHA1: bf1dbc9c00f994188d6807a9d68a69a332076c7c
+SHA256: 7c556a7268b2681e712c701a1ac6cc7e862242d1157e1002277394d40f8c36e7
+SHA512: caa178a72cd49ea1e2c6646602903de8f02b9eb37b1d91be5b9f214a575057eb97881c32bab3417ac9b87528a3948deee6ea7fac56ca9a1af3479a37dba63796
+Description: Jwm custom setup for Debiandog, includes:
+ - openbox-menu, pipe-menu setup for JWM to display entries in *.desktop files
+ - jwm-obmenu script for the Jwm window manager. It provides
+ a dynamic menu listing of installed applications.
+
+Package: desktop-drive-icons
+Priority: extra
+Section: system
+Installed-Size: 115
+Maintainer: root@wheezy
+Architecture: i386
+Version: 0.0.1-i486
+Depends: libc6, libgtk2.0-0, libatk1.0-0, libpango1.0-0, libgdk-pixbuf2.0-0, libcairo2, libglib2.0-0, libfreetype6, libfontconfig1, libx11-6, hicolor-icon-theme, libgtk2.0-bin, hicolor-icon-theme, pup-volume-monitor
+Filename: ./Included/desktop-drive-icons_0.0.1-i486_i386.deb
+Size: 44160
+MD5sum: df40668556f206316a024f90d0c6949b
+SHA1: b4ef6f77d13e8987a95dd86abf574b253b0f2d7c
+SHA256: 15c42ea9ae3041bb88299cebe9882c1e9bd494c1885ab230baf1986af0bf4d7d
+SHA512: f5ad00e58a7710879c5ed66c1c98937e22cd6d2332c1d73b0e4d17897fa47293684099b0dba24b67f22e241f0033ad7ea629fdd35b99ba571eeb1e10356c9818
+Description: Show drive icons on desktop
+
+Package: domyfile
+Priority: extra
+Section: audio
+Installed-Size: 53
+Maintainer: mcewanw <Murga Puppy Linux Forum>
+Architecture: i386
+Version: 9.0.3
+Depends: libc6, gtkdialog
+Filename: ./Included/domyfile_9.0.3_i386.deb
+Size: 6136
+MD5sum: 040a8f8272b32d98de01825f6ee50a52
+SHA1: 49ddc54f9ff1f473332d5c3a9bce67912dd0806c
+SHA256: 7ac11a22e7c8baf2c76fda49835ba51f552ddfab5e93092f9833e0ec58cdb5b1
+SHA512: 90884c9c47ed25c4f50954a954d2cd247f3e8de5bf7cc37955bb70449f3409569397b57ebba622316fde9cb1d251c3bcf414eed1e96464ffb58128264f502391
+Description: domyfile for DebianDog:
+ domyfile by mcewanw
+
+Package: libgbm-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 54
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: i386
+Source: mesa
+Version: 11.1.3-1~bpo8+1
+Depends: libgbm1 (= 11.1.3-1~bpo8+1), libudev-dev
+Filename: ./Included/libgbm-dev_11.1.3-1~bpo8+1_i386.deb
+Size: 41116
+MD5sum: 7732431d2cc492c4b69b25a6fae7f66c
+SHA1: b6a11eaa21986c7d5757c2b841069dfb0870b608
+SHA256: e5be3f42325f307a9082f909120521c4f106d2ba1867b5ec23f28c8e1428c968
+SHA512: 9dba76855b83ed44b5e26578ef84744a9abc8260bdd05a39b67f8e09e4d4ecc1dd1ad8f234c5c098f745e68e21c919a699ca7fc9562d3b23e4278be8f6d19766
+Description: generic buffer management API -- development files
+ This package contains the GBM buffer management library.  It provides a
+ mechanism for allocating buffers for graphics rendering tied to Mesa.
+ .
+ GBM is intended to be used as a native platform for EGL on drm or openwfd.
+ .
+ This package provides the development environment for compiling programs
+ against the GBM library.
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+
+Package: slim
+Priority: optional
+Section: x11
+Installed-Size: 2059
+Maintainer: Nobuhiro Iwamatsu <iwamatsu@debian.org>
+Architecture: i386
+Version: 1:1.3.6-4-ddjessie
+Provides: x-display-manager
+Depends: libc6 (>= 2.14), libfontconfig1 (>= 2.11), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:4.1.1), libjpeg62-turbo (>= 1.3.1), libpam0g (>= 0.99.7.1), libpng12-0 (>= 1.2.13-4), libstdc++6 (>= 4.9), libx11-6, libxext6, libxft2 (>> 2.1.1), libxmu6, libxrandr2 (>= 2:1.2.99.3), libxrender1, zlib1g (>= 1:1.1.4), debconf (>= 1.2.9) | debconf-2.0, dbus
+Recommends: xterm
+Suggests: scrot, xauth
+Filename: ./Included/slim_1.3.6-4-ddjessie_i386.deb
+Size: 454764
+MD5sum: 0e60193389d7baf03fd8ba2e7053470b
+SHA1: f5730451ffe10e232730bc8baf21e6a7240f5086
+SHA256: 488c62d951c3ec7fb2aa2625e694cff97a0ecdba105a931a2e1f7b2994c67d30
+SHA512: 93183667ac62e4c35c78af688b1195e2b86a7b3f06f2e19795cb5c6c6330e1b183ce3458e8e546cf55a6e18ee9c6be4c61731f3d95c308b83a9a76a4c64b6c08
+Description: desktop-independent graphical login manager for X11
+ SLiM aims to be light, simple and independent from the various
+ desktop environments. Although completely configurable through
+ themes and an option file. It is particularly suitable for machines
+ that don't require remote logins.
+Homepage: http://sourceforge.net/projects/slim.berlios/
+
+Package: adwaita-icon-theme
+Priority: optional
+Section: gnome
+Installed-Size: 14087
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: all
+Version: 3.14.0-0
+Replaces: gnome-themes-standard-data (<< 3.13.90)
+Depends: hicolor-icon-theme, libgtk-3-bin, librsvg2-common
+Breaks: gnome-themes-standard-data (<< 3.13.90)
+Filename: ./Mod/adwaita-icon-theme_3.14.0-0_all.deb
+Size: 474802
+MD5sum: 83e185afe40284c68102bec57c1a1d79
+SHA1: 15863e1265e9697b5ac1cb539b87bfa351950a8a
+SHA256: 9964dd3ec35127b137c4fc2c68e113b7e51cbb5c6587016bebcbc821c5276e05
+SHA512: 268ccb11611d95d49613a63de137855487dcf404df92a9321de0bbe15c4629ab6ea97959d81e42c81562138b51af90505c59642845016825fdbb4b346c0fc8f3
+Description: default icon theme of GNOME
+ This package contains the default icon theme used by the GNOME desktop.
+ The icons are used in many of the official gnome applications like eog,
+ evince, system monitor, and many more.
+Multi-Arch: foreign
+
+Package: mount
+Essential: yes
+Priority: required
+Section: admin
+Installed-Size: 393
+Maintainer: Debian util-linux Maintainers <ah-util-linux@debian.org>
+Architecture: i386
+Source: util-linux
+Version: 2.26.2-6
+Pre-Depends: libblkid1 (>= 2.17.2), libc6 (>= 2.17), libmount1 (>= 2.25), libselinux1 (>= 2.0.15), libsmartcols1 (>= 2.25)
+Suggests: nfs-common (>= 1:1.1.0-13)
+Filename: ./Mod/mount_2.26.2-6_i386-mod.deb
+Size: 159856
+MD5sum: 25207598b4422d7cb7adefbadbbf4820
+SHA1: e12c4cf7ba6d2e761c6229e674fb387f8bb58f88
+SHA256: 11dfdd1eaccd9b52fccc055319a55bc674479ebca569b8d6fba527d8bbe5a07b
+SHA512: d0099e4ae42bc95a433519fc72fcfc9912380a27183a9cf85b4d5ff3f15fe3db2a1cc2e6942aaaa98973e9c7a923442df89f9157bdb5c87b931bb18cebbc167b
+Description: Tools for mounting and manipulating filesystems
+ This package provides the mount(8), umount(8), swapon(8),
+ swapoff(8), and losetup(8) commands.
+Multi-Arch: foreign
+
+Package: cryptsetup-bin
+Priority: optional
+Section: admin
+Installed-Size: 826
+Maintainer: Debian Cryptsetup Team <pkg-cryptsetup-devel@lists.alioth.debian.org>
+Architecture: i386
+Source: cryptsetup
+Version: 2:1.6.6-9-debdog
+Replaces: cryptsetup (<< 2:1.4.3-1~)
+Depends: libc6 (>= 2.15), libcryptsetup4 (>= 2:1.6), libpopt0 (>= 1.14)
+Breaks: cryptsetup (<< 2:1.4.3-1~)
+Filename: ./Mod/cryptsetup-bin_1.6.6-9-debdog_i386.deb
+Size: 283374
+MD5sum: 6b539bc6487853784581d2ed44ddc92b
+SHA1: c3364f3439b7cfb022c8b3224ad027b2d457ecb9
+SHA256: 6c1532b8ec3e3dee9118a5187f3c61605a037291ef882ba0c5598eb11f7b2466
+SHA512: 0e2a246c03232536bf155d4ccf67f65b6f058773eab822b35614b472e2111e8f4835ad9ab6537995a77a71dff8423cd6d26257e621be650d6d57b44cb07cfdb8
+Description: disk encryption support - command line tools
+ Cryptsetup provides an interface for configuring encryption on block
+ devices (such as /home or swap partitions), using the Linux kernel
+ device mapper target dm-crypt. It features integrated Linux Unified Key
+ Setup (LUKS) support.
+ .
+ This package provides cryptsetup, cryptsetup-reencrypt and luksformat.
+Homepage: http://code.google.com/p/cryptsetup/
+
+Package: xinit
+Priority: optional
+Section: x11
+Installed-Size: 57
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: i386
+Version: 1.3.4-1
+Depends: libc6 (>= 2.11), libx11-6, coreutils (>= 7.4-1), x11-common, xauth
+Recommends: xserver-xorg | xserver, xterm | x-session-manager | x-window-manager | x-terminal-emulator
+Filename: ./Mod/xinit_1.3.4-1_i386-mod.deb
+Size: 41352
+MD5sum: 8d3aa9dd72557a707fe878ef78a9aadc
+SHA1: 1fe7e798b31a3bd41ed8b0dd92d747ab9063d5e7
+SHA256: 33044b639b52693e4b82dfa998839e8b4b1529a65eabd0bf8c36cb6ae20afd33
+SHA512: 470cd1bce13e6c753d1aa5ca9605a322cf50d85d76a8c8912ed17e07669d0553db2c3719f669f9b89463696d2b9450a458ea002390d81e6459a442cc40fa4e31
+Description: X server initialisation tool
+ xinit and startx are programs which facilitate starting an X server, and
+ loading a base X session.
+
+Package: x11-xserver-utils
+Priority: optional
+Section: x11
+Installed-Size: 405
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: i386
+Source: x11-xserver-utils (7.7+3)
+Version: 7.7+2+b1
+Replaces: iceauth, sessreg, xbase-clients (<< 1:7.3), xgamma, xhost, xmodmap, xrandr, xrdb, xrefresh, xrgb, xset, xsetmode, xsetpointer, xsetroot, xstdcmap, xutils (<< 1:7.2), xvidtune
+Depends: libc6 (>= 2.8), libice6 (>= 1:1.0.0), libx11-6, libxaw7, libxcursor1 (>> 1.1.2), libxext6, libxi6, libxmu6, libxmuu1, libxrandr2 (>= 2:1.4.0), libxrender1, libxt6, libxxf86vm1
+Recommends: cpp
+Suggests: nickle, cairo-5c, xorg-docs-core
+Conflicts: iceauth, sessreg, xgamma, xhost, xmodmap, xrandr, xrdb, xrefresh, xrgb, xset, xsetmode, xsetpointer, xsetroot, xstdcmap, xvidtune
+Filename: ./Mod/x11-xserver-utils_7.7+2+b1_i386.deb
+Size: 156716
+MD5sum: c8bb79cc65742565b9a356e3efaa3ff6
+SHA1: 5a978cb9720467e33e57af17082bf119846d6f20
+SHA256: 31dd0b017af35fc9f496077d31418339e97025f0c77d26df7a282bf62dd4f201
+SHA512: 9436cc84cc44f0e717591b4dc870417e035d2ad14cc9d8039ed507f0274e50a7e1ab3dfec685da4475137f2572e54772fb2b7e77f4dde4c254b3b0b3862b5a08
+Description: X server utilities
+ An X client is a program that interfaces with an X server (almost always via
+ the X libraries), and thus with some input and output hardware like a
+ graphics card, monitor, keyboard, and pointing device (such as a mouse).
+ .
+ This package provides a miscellaneous assortment of X Server utilities
+ that ship with the X Window System, including:
+  - iceauth, a tool for manipulating ICE protocol authorization records;
+  - rgb;
+  - sessreg, a simple program for managing utmp/wtmp entries;
+  - xcmsdb, a device color characteristic utility for the X Color Management
+    System;
+  - xgamma, a tool for querying and setting a monitor's gamma correction;
+  - xhost, a very dangerous program that you should never use;
+  - xmodmap, a utility for modifying keymaps and pointer button mappings in X;
+  - xrandr, a command-line interface to the RandR extension;
+  - xrdb, a tool to manage the X server resource database;
+  - xrefresh, a tool that forces a redraw of the X screen;
+  - xset, a tool for setting miscellaneous X server parameters;
+  - xsetmode and xsetpointer, tools for handling X Input devices;
+  - xsetroot, a tool for tailoring the appearance of the root window;
+  - xstdcmap, a utility to selectively define standard colormap properties;
+  - xvidtune, a tool for customizing X server modelines for your monitor.
+
+Package: wget
+Priority: important
+Section: web
+Installed-Size: 720
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Noël Köthe <noel@debian.org>
+Architecture: i386
+Version: 1.16-1
+Depends: libc6 (>= 2.17), libidn11 (>= 1.13), libpcre3, libssl1.0.0 (>= 1.0.1), libuuid1 (>= 2.16), zlib1g (>= 1:1.1.4)
+Recommends: ca-certificates
+Conflicts: wget-ssl
+Filename: ./Mod/wget_1.16-1_i386.deb
+Size: 294260
+MD5sum: 47802059743c72a345b72d5fecda3399
+SHA1: 5f06d5c3db2e2f322f1a8072f1df00964f18e369
+SHA256: 3ad1faa34fd85341defe13ad5c84c5fcc2927b613abff01b56928eb8e1fc32e5
+SHA512: 5dc4a5fa4173ce96ffcd13d4044b0f41fcfc373cedafc715795d4c6b7f70083dbca631ac9b6e645e13793942c91222eb930af62bb3da4d9d97ec0ffaf699a854
+Description: retrieves files from the web
+ Wget is a network utility to retrieve files from the web
+ using HTTP(S) and FTP, the two most widely used internet
+ protocols. It works non-interactively, so it will work in
+ the background, after having logged off. The program supports
+ recursive retrieval of web-authoring pages as well as FTP
+ sites -- you can use Wget to make mirrors of archives and
+ home pages or to travel the web like a WWW robot.
+ .
+ Wget works particularly well with slow or unstable connections
+ by continuing to retrieve a document until the document is fully
+ downloaded. Re-getting files from where it left off works on
+ servers (both HTTP and FTP) that support it. Both HTTP and FTP
+ retrievals can be time stamped, so Wget can see if the remote
+ file has changed since the last retrieval and automatically
+ retrieve the new version if it has.
+ .
+ Wget supports proxy servers; this can lighten the network load,
+ speed up retrieval, and provide access behind firewalls.
+Multi-Arch: foreign
+Homepage: https://www.gnu.org/software/wget/
+
+Package: dpkg
+Essential: yes
+Priority: required
+Section: admin
+Installed-Size: 6447
+Maintainer: Dpkg Developers <debian-dpkg@lists.debian.org>
+Architecture: i386
+Version: 1.17.25
+Replaces: manpages-it (<< 2.80-4)
+Pre-Depends: libbz2-1.0, libc6 (>= 2.11), liblzma5 (>= 5.1.1alpha+20120614), libselinux1 (>= 2.3), zlib1g (>= 1:1.1.4), tar (>= 1.23)
+Suggests: apt
+Conflicts: ada-reference-manual (<< 20021112web-4), asn1-mode (<< 2.7-7), bogosort (<< 0.4.2-3), cl-yacc (<< 0.3-3), cpp-4.1-doc (<< 4.1.2.nf2-4), cpp-4.2-doc (<< 4.2.4.nf1-4), gcc-4.1-doc (<< 4.1.2.nf2-4), gcc-4.2-doc (<< 4.2.4.nf1-4), gcj-4.1-doc (<< 4.1.2.nf2-4), gcj-4.2-doc (<< 4.2.4.nf1-4), gfortran-4.1-doc (<< 4.1.2.nf2-4), gfortran-4.2-doc (<< 4.2.4.nf1-4), ggz-docs (<< 0.0.14.1-2), glame (<< 2.0.1-6), gnat-4.1-doc (<< 4.1.2.nf2-4), gnat-4.2-doc (<< 4.2.4.nf1-4), gtalk (<< 0.99.10-16), libalogg-dev (<< 1.3.7-2), libgtk1.2-doc (<< 1.2.10-19), libnettle-dev (<< 2), liborbit-dev (<< 0.5.17-12), libreadline5-dev (<< 5.2-8), librep-doc (<< 0.90), mmucl (<< 1.5.2-3), nxml-mode (<< 20041004-9), octave3.0-info (<< 1:3.0.1-6lenny3), octave3.2-info (<< 3.2.4-8), polgen-doc (<< 1.3-3), r6rs-doc (<< 1.0-2), serveez-doc (<< 0.1.5-3), slat (<< 2.0-6), texlive-base-bin-doc (<< 2007.dfsg.2-9), ttcn-el (<< 0.6.9-2), ulog-acctd (<< 0.4.3-3), xconq-doc (<< 7.4.1-5), zenirc (<< 2.112.dfsg-1)
+Breaks: apt (<< 0.7.7), apt-cudf (<< 3.3~beta1-3), aptitude (<< 0.4.7-1), auctex (<< 11.87-3+deb8u1), ccache (<< 3.1.10-1), cups (<< 1.7.5-10), debian-security-support (<< 2014.10.26), distcc (<< 3.1-6.1), doc-base (<< 0.10.5), dpkg-dev (<< 1.15.8), fontconfig (<< 2.11.0-6.2), fusionforge-plugin-mediawiki (<< 5.3.2+20141104-3), gap-core (<< 4r7p5-2), gitweb (<< 1:2.1.4-2.1), grace (<< 1:5.1.24-3), gxine (<< 0.5.908-3.1), hoogle (<< 4.2.33-4), icecc (<< 1.0.1-2), install-info (<< 5.1.dfsg.1-3), libapache2-mod-php5 (<< 5.6.4+dfsg-3), libapache2-mod-php5filter (<< 5.6.4+dfsg-3), libdpkg-perl (<< 1.15.8), libjs-protoaculous (<< 5), man-db (<< 2.6.3-6), mcollective (<< 2.6.0+dfsg-2.1), php5-fpm (<< 5.6.4+dfsg-3), pypy (<< 2.4.0+dfsg-3), readahead-fedora (<< 2:1.5.6-5.2), wordpress (<< 4.1+dfsg-1), xfonts-traditional (<< 1.7), xine-ui (<< 0.99.9-1.2)
+Filename: ./Mod/dpkg_1.17.25_i386.deb
+Size: 1909778
+MD5sum: 6f0f8b32f07d52d2164c7f4282aa8255
+SHA1: b0444d8f057d310491ebd70e93d44adfa5c54b15
+SHA256: bdb6a06dcfbab3d8e657f31aea5a4cda12ed59f8f0aceeac556feefe4e26e028
+SHA512: 50a85524043f1abbf008148fde4619e6b161a4fe6835abcb4e5aa5d7b3fc1cdb50bd5dfafbd989df40f36dec201491023cb18aaea94a6983689272a558c43116
+Description: Debian package management system
+ This package provides the low-level infrastructure for handling the
+ installation and removal of Debian software packages.
+ .
+ For Debian package development tools, install dpkg-dev.
+Origin: debian
+Bugs: debbugs://bugs.debian.org
+Multi-Arch: foreign
+Homepage: https://wiki.debian.org/Teams/Dpkg
+
+Package: dmmediaconverter
+Priority: optional
+Section: video
+Installed-Size: 3700
+Maintainer: Marius Dalacu <mdalacu@yahoo.com>
+Architecture: i386
+Version: 1.0.0
+Depends: libc6, desktop-file-utils, libx11-6, libgdk-pixbuf2.0-0, libgtk2.0-0, libpango1.0-0, libcairo2, libatk1.0-0
+Recommends: libc6-i686, ffmpeg
+Filename: ./Extra/dmmediaconverter_1.0.0_i386.deb
+Size: 1056308
+MD5sum: 073dcab2ca8c3dd6af82f7254198a8b3
+SHA1: f2a0b8f780f6fac194e92058306750c34ff17641
+SHA256: 72e01a9e399113b64104d1fc69691acd743e99c8998cf2759758dd7ae1208ac5
+SHA512: 2560c036a560aff320d528171862e711cd79e713ceeb60ffb4610ccbc041a5a256edd513e9d2ba2f19ca8576f02e04f98dafffa16856fd2ccc2b4b50e30acde7
+Description: dmMediaConverter - ffmpeg GUI. deb modded 2014/08/29 to use external ffmpeg by mcewanw
+ dmMediaConverter is a ffmpeg GUI intended to be simple and easy to use but also to be able to achieve complex tasks. It's inspired from a many media converters like Handbrake, WinFF and MkvMergeGui. One feature that was lacking in most such tools is video stream copy (pass-through), this being the main reason for creating dmMediaConverter.
+Homepage: http://dmsimpleapps.blogspot.ro/2014/04/dmmediaconverter.html
+
+Package: conkyclock2
+Installed-Size: 13900 
+Maintainer: fredx181 <fredx@nomail.nl>
+Architecture: all
+Version: 1.0.1
+Depends: libc6, yad (>= 0.26.0), sed, conky-all, liblua5.1-0, wmctrl, hsetroot
+Recommends: imagemagick
+Filename: ./Extra/conkyclock2_1.0.1_all.deb
+Size: 13056188
+MD5sum: 09446a5b35a79fd79f9ddffe0f0cf9c7
+SHA1: 1ae903b0c21d2f186e1a7a14791af02d7c31bf6c
+SHA256: cf4fb7f7d0263df70a1115b23b9e40c49ffb23997302eaffe3e29c9d73ed09d2
+SHA512: 467ce5504a7c48a64c6e7ac07cbfac88de45449ea34591a84a4e02fadffd90adb397e6a3c7fe46aea3d18ab929cfb2521c32bfe586d65c5139b027a8d195935c
+Description: Conky-clock v2 Luxe edition, choose analog clock display on the Desktop
+ Choice from 300 clock images with the appropriate hands
+ Option to display the date on the clock
+
+Package: libx264-132
+Priority: optional
+Section: libs
+Installed-Size: 1190
+Maintainer: Christian Marillat <marillat@deb-multimedia.org>
+Architecture: i386
+Source: x264-dmo
+Version: 3:0.132.2310+git76a5c3a-dmo1
+Depends: libc6 (>= 2.7), libx11-6
+Pre-Depends: multiarch-support
+Filename: ./Extra/libx264-132_0.132.2310+git76a5c3a-dmo1_i386.deb
+Size: 551698
+MD5sum: f78d629b975c5aecf5a3db7d9ab570ad
+SHA1: 672c15827fe29cdfa69c1d434c6930462f8c1a05
+SHA256: 6bf203fa52ede781a40302d06f154486155e6b6d770f8b6f86f03bb0ff310eae
+SHA512: cb82314ee7ce16e9671ad52edca1522e7c08d28f5cadb6c3bbaccdda4f4382c954377290a8b54593e375c44b5e18f48ee82e14b872d53d77f9e7a1b72cfce72f
+Description: x264 video coding library
+ libx264 is an advanced encoding library for creating H.264 (MPEG-4 AVC)
+ video streams.
+ .
+ This package contains the libx264 shared library.
+Bugs: mailto:marillat@deb-multimedia.org
+Multi-Arch: same
+Homepage: http://www.videolan.org/developers/x264.html
+
+Package: grub4dosconfig
+Installed-Size: 420
+Maintainer: root
+Architecture: i386
+Version: 1.8.9b
+Depends: libc6, probepart, guessfstype, coreutils, procps, gtkdialog, mount, menu, sed, x11-xserver-utils, gsu | gksu
+Filename: ./Extra/grub4dosconfig_1.8.9b_i386.deb
+Size: 154622
+MD5sum: 7f8aeddf6d514759fdefc7ec4b10c6d9
+SHA1: 86ea6445a70359d02fed4775b98bc6be2b3fbfd9
+SHA256: a13d76449ed052af40b6da0711e79f4117f5ea880265274b6d972b0c402fea72
+SHA512: 6b93ab3d7a8b39195d6c8a3457015508785517f366ef31ddce5b797029510e5a92d9c5c87fb193d3e3e533ec24eeab7dfc6c0cbe37460d4e96556c9ce2be05d0
+Description: Grub4DosConfig GUI script from Shinobar written for Puppy linux.
+
+Package: midori
+Priority: optional
+Section: web
+Installed-Size: 12000
+Maintainer: fredx181
+Architecture: i386
+Version: 0.5.2
+Provides: www-browser
+Depends: libc6, libcairo2, libgdk-pixbuf2.0-0, libglib2.0-0, libgtk2.0-0
+Recommends: gnome-icon-theme
+Conflicts: libsoup2.4-1 (<< 2.25.2)
+Filename: ./Extra/midori_0.5.2_i386.deb
+Size: 11354980
+MD5sum: 85fffea2132d3f2daea28230152efd82
+SHA1: c4c0844b95c5098dfe041914202e76c0aaa92ae6
+SHA256: ade74d1124c6800c21447d2ccd1fd2641e5c88365513c81360d5a5d0a50e5e29
+SHA512: 9576fefbcc6c78215d08183187c18928105d0ae077be7c0acaeeacf288a6d972642a66e1e2bf2c036f35499c6c7e0edf3a7d511bf67e98e6e9500e365ef44225
+Description: fast, lightweight graphical web browser
+ Midori is a lightweight web browser based on WebKit.
+ .
+ Its features include:
+ .
+  * Full integration with GTK+2.
+  * Fast rendering with WebKit.
+  * Tabs, windows and session management.
+  * Flexibly configurable Web Search.
+  * User scripts and user styles support.
+  * Straightforward bookmark management.
+  * Customizable and extensible interface.
+  * Support for extensions (written in C).
+  * Custom context menu actions.
+Homepage: http://www.twotoasts.de/index.php?/pages/midori_summary.html
+
+Package: mpv
+Priority: optional
+Section: misc
+Installed-Size: 6900
+Maintainer: fredx181
+Architecture: i386
+Version: 1:0.9.2-ddjessie
+Depends: libc6, libenca0, libfontconfig1, libfreetype6, libfribidi0, libgmp10, libgnutls-deb0-28, libharfbuzz0b, liblua5.1-0, libx11-6, libxcb-shm0, libxcb1, libxext6, libxinerama1, libxrandr2, libxv1 
+Filename: ./Extra/mpv_0.9.2-ddjessie_i386.deb
+Size: 7097786
+MD5sum: dc445ded672a814d6caee379e5bd2eaa
+SHA1: 493ea5d1a6344959bca63a7ec91294df6eabd56c
+SHA256: 70927c57be2fd5c4bce586c14f366998c55160aa01c82eb6fa4b7ced2622a9d2
+SHA512: 5a1e1136e6a59da0eb3da36e1ed34438b734ac00181062f18aa7a3f385fbcadd2bcd1c55f875885652f0a2e4075e2b5edafb88904b46983925e82ceb6f4b147d
+Description: mplayer/mplayer2 based video player, minimal build
+ MPV is a versatile CLI movie player, based on mplayer and mplayer2.
+ .
+ This package is not part of Debian. It was created by mpv-build scripts with
+ statically linked ffmpeg (not libav) and libass from upstream.
+Homepage: https://github.com/mpv-player/mpv-build
+
+Package: notecase-portable
+Priority: optional
+Section: x11
+Installed-Size: 946
+Maintainer: root
+Architecture: i386
+Version: 1.9.8-1
+Depends: libc6, gtkdialog, libgtk2.0-0, libgdk-pixbuf2.0-0, libpango1.0-0, libcairo2, libglib2.0-0, libstdc++6, libgcc1, libx11-6
+Recommends: libc6-i686
+Conflicts: notecase
+Filename: ./Extra/notecase-portable_1.9.8-1_i386.deb
+Size: 337386
+MD5sum: e615f8764ac690d5e9bd92ede626be52
+SHA1: 66cf2f5991450a0b185763ffff37803ad75f0287
+SHA256: eb8e2358214497e4e711d76973d28bebf82bba8fec5ad4472a7789ff2e101d0b
+SHA512: aa4d38e9f3754d56467ecf8c3f9ea69ced82784226cb7051df4062d3ee17ede38d2f28b84021f54ab7851efba3e38f84a152c8035d0e3bb27d6f42b335d21bbb
+Description: personal organizer for GTK+
+
+Package: findnrun
+Priority: optional
+Installed-Size: 277
+Maintainer: name <name@email>
+Architecture: all
+Version: 1.10.6-1
+Depends: libc6, gtkdialog (>= 0.8.3), gawk, gettext-base
+Suggests: findnrun-doc (= 1.10.6-1), findnrun-nls (= 1.10.6-1)
+Filename: ./Extra/findnrun_1.10.6-1_all.deb
+Size: 112628
+MD5sum: 1c350d0c12b684479ee9f8a94ada34d6
+SHA1: 520c957ffa904bcae85cf6afd73024ce5c9cf2ec
+SHA256: b4c29581c5cace4961a58a47df62c4db6f6dc5cfabf338a62bed4adee42db137
+SHA512: a44f990e60fb068abd876b6d85c38b97db0b6c3779a8ca631538fbf7d224e3f913303b252b057c91c926f3ce2431d682990685064aebb6eb17b5ce37ff7ae073
+Description:  findnrun 1.10.6 (utility)
+  Findnrun is a gtk-dialog based application finder and starter
+  for freedesktop.org desktop application files.
+  Files in this base package: executable script, desktop and
+  icons, smaller English help (markdown), NLS .pot.
+  https://github.com/step-/find-n-run/ 
+
+Package: grub4dosconfig
+Installed-Size: 420
+Maintainer: root
+Architecture: i386
+Version: 1.8.9a
+Depends: libc6, probepart, guessfstype, coreutils, procps, gtkdialog, mount, menu, sed, x11-xserver-utils, gsu | gksu
+Filename: ./Extra/grub4dosconfig_1.8.9a_i386.deb
+Size: 154522
+MD5sum: c450f8cc22fedefa823174da26700d84
+SHA1: a9d95433339d7465115a2001ed70a9b9b12b554c
+SHA256: df6482d736a0e8b56a6c639fc981dce066bc9367359193acf2e7dfecda855332
+SHA512: 561ccee02ec89d28abb3114d8a2e3ad322556cfd8f6225be74da4a03e4f9b87e18a67aa7f55243d938158372b9270a523feff735a0d6e3f35c836c0bef91e3fb
+Description: Grub4DosConfig GUI script from Shinobar written for Puppy linux.
+
+Package: ourico
+Priority: extra
+Installed-Size: 24
+Maintainer: root
+Architecture: i386
+Version: 0.1.7-1
+Depends: libc6, libx11-6, libxft2
+Recommends: echinus, libc6-i686
+Filename: ./Extra/ourico_0.1.7-1_i386.deb
+Size: 8710
+MD5sum: 359a06464a0843300aecca4d2109acd8
+SHA1: 89ef10e1d4128f26d35ecb4582364ce2d859899b
+SHA256: ad7839c6949005cd36ce1075f99e0812d23b7b0ff6d5f105b21db1bc4750f3c4
+SHA512: ee64b0ea1f699626a852eb141db9c0b8e8d4cb59c557c222d42f930713f2800d60c3984319c19fde194aba5e00b5336f0042dab4a5a595c549077a704ef16fe2
+Description: Lightweight EWMH taskbar, originally designed for echinus.
+
+Package: libssl0.9.8
+Priority: important
+Section: libs
+Installed-Size: 6984
+Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
+Architecture: i386
+Source: openssl
+Version: 0.9.8o-4squeeze14
+Depends: libc6 (>= 2.7), zlib1g (>= 1:1.1.4), debconf (>= 0.5) | debconf-2.0
+Conflicts: libssl, libssl096-dev (<< 0.9.6-2), openssl (<< 0.9.6-2), ssleay (<< 0.9.2b)
+Filename: ./Extra/libssl0.9.8_0.9.8o-4squeeze14-debiandog-mod_i386.deb
+Size: 3087812
+MD5sum: 285a7256e597550d1df553a245f976ec
+SHA1: 3f9b1aabbd685699df450af6dc2bbe96427a0e20
+SHA256: ca9114bd42c9f92f80721eca10cec16fbc9acc246e4f0d198d868d7d4efca0f4
+SHA512: 6c858e23a9d366a0a51ddf0f1536b76e9d2f35696222cd57c0ea3bfe6c5e60f8ad6092fee8378214b53587ed437ddd6ef706ece22a1c37aee6f26884baeb2f69
+Description: SSL shared libraries
+ libssl and libcrypto shared libraries needed by programs like
+ apache-ssl, telnet-ssl and openssh.
+ .
+ It is part of the OpenSSL implementation of SSL.
+
+Package: debdog-advert-blocker
+Priority: extra
+Section: system
+Installed-Size: 50
+Maintainer: root@wheezy
+Architecture: i386
+Version: 1.0.0-1
+Depends: libc6, sudo, wget, xterm
+Filename: ./Extra/debdog-advert-blocker_1.0.0-1_i386.deb
+Size: 4386
+MD5sum: 9b060d0df010f43827e16286e6b061ef
+SHA1: e79ec015fa8705b63a0d269003f90faef2eca2da
+SHA256: fe3ac897e92000bd915dbdb595d67adb537a7fca4ab04418a336a24b669472bd
+SHA512: 1e465cd8a01e377f5e0e05600e94c0a47696e18b453f38e81fa457db72629877d5574ca13d9f22d102b77131206aaddf2144e6f4a4e250f3ebed15dc795b2b54
+Description: gethosts script from SteveRiley: https://www.kubuntuforums.net/showthread.php?56419-Script-to-automate-building-an-adblocking-hosts-file
+  Thanks to jockjunior: http://www.murga-linux.com/puppy/viewtopic.php?p=899122#899122
+ .
+
+Package: motion-light
+Priority: optional
+Section: graphics
+Installed-Size: 334
+Maintainer: mcewanw
+Architecture: i386
+Version: 3.2.12
+Depends: libc6, libjpeg62 | libjpeg8
+Conflicts: motion
+Filename: ./Extra/motion-light_3.2.12_i386.deb
+Size: 109156
+MD5sum: b7b9262de56b07972435c54a1fc0d1af
+SHA1: 726c657cc503fc23b69357aaac05438acfb4fc49
+SHA256: 219f5c9e5df680587ffdab5e837baa9ace45261aeda522605f9706abe45eddba
+SHA512: e7b73afd2b6ed898ab191a4bf8e8e19abd11d4f8da27ca24da6df7efc82bf3fa0f3846751a88bf551daa44b2ea0e74125d29def0d50bdc8cac7675440b8ba105
+Description: Compiled from mcewanw for DebianDog light version generating a series of jpeg images
+ whenever webcam/video motion is detected (rather than continuous .avi) since streams of jpegs are
+ the most useful for low resource video surveillance use, and no heavy ffmpeg is required to generate
+ them so works well on even old slow computers. The generated jpegs can always be stitched together into
+ avi form later anyway. Also, via simple scripting, any motion-detected jpegs generated can be stored in
+ any desired directory and then auto-uploaded via email. 
+ .
+ You can watch the jpeg stream generated by 'motion' in real time by pointing your browser at
+ http://localhost:8081 whilst motion is running. 'motion' provides its own inbuilt httpd for this purpose.
+Homepage: http://motion.sf.net
+
+Package: lxinputsave
+Priority: optional
+Section: x11
+Installed-Size: 60
+Maintainer: root
+Architecture: i386
+Version: 1.0.1
+Depends: libc6, lxinput, sed, menu
+Filename: ./Extra/lxinputsave_1.0.1_i386.deb
+Size: 5186
+MD5sum: 1e3fe5d14429aed2c078d83534aae41b
+SHA1: ce1e520f898b3294dbcb85057508f873d7f7e94a
+SHA256: f931ee51d5a7f0908890202c04669235c04063822de467bad709aaa8d4000067
+SHA512: adf05c48db9eefd66dfb51873c6a96f3bcf86208f69ab5c2359141bfeb2ecba83d6811153b341417c33b4ee4db41dfc62fbd714d5b705a4858ef05b76c7e8147
+Description: Preserve settings made with lxinput.
+
+Package: ffmpeg
+Priority: optional
+Section: video
+Installed-Size: 30000
+Maintainer: fredx181
+Architecture: i386
+Version: 11:3.1.2
+Filename: ./Extra/ffmpeg_3.1.2_i386.deb
+Size: 9324488
+MD5sum: bf76c040ddea53da46abe56ee5ca7d7f
+SHA1: f81787e30cb760114589d7d956ec273d08e74c69
+SHA256: 20cc612833a95122a239a0dbac8f3831542e4a5603bfd2d0bfdecf3b508e3204
+SHA512: 2f83b3648d15e0f4ebed01f723aad0ec0aa43c5b588c0cb4c449ff24afa8e4cdc45f905339e31f59cc526dc9eadc326b133071843534d7775ac51ae0a1a92e67
+Description: Static build of the latest FFmpeg binaries
+
+Package: palemoon
+Priority: optional
+Section: web
+Installed-Size: 60619
+Maintainer: fredx181 <fredx@nomail.nl>
+Original-Maintainer: Marian Kadanka <marian.kadanka@openmailbox.org>
+Architecture: i386
+Version: 26.1.0
+Replaces: iceweasel
+Provides: x-www-browser
+Depends: libasound2 (>= 1.0.16), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.7), libcairo2 (>= 1.2.4), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.78), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.3.9), libgcc1 (>= 1:4.1.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.20.0), libgtk2.0-0 (>= 2.24.0), libpango1.0-0 (>= 1.14.0), libstdc++6 (>= 4.6), libx11-6, libxext6, libxrender1, libxt6
+Suggests: gstreamer0.10-ffmpeg
+Filename: ./Extra/palemoon_26.1.0_i386.deb
+Size: 23980266
+MD5sum: 70dde8a779eb406343e663121c524ea2
+SHA1: cb8958a94df919c1aba033b033bf92777f814241
+SHA256: b5a49f59ae44bf034b676a828f9175adcc0d7867eb11ca36a30e7c308cb08b2d
+SHA512: fb67293c2e62e854b68eb4dd6557a39b13bcb4e094de4409781f82dfef449a5321cc07483274eff55fd8a0c6671d73a6453b42949393cb77eba69945269e00c6
+Description: Firefox-based, efficient and easy to use web browser
+ Pale Moon offers selected features and optimizations to maximize
+ the browser's speed, stability and user experience, while maintaining
+ compatibility with the thousands of Firefox extensions you have come
+ to love and rely on.
+ .
+ Pale Moon requires a processor that supports the SSE2 instruction set.
+ Run /proc/cpuinfo in a terminal, and look for sse2 in the flags to ensure
+ that your processor supports it.
+Homepage: http://www.palemoon.org/
+
+Package: dogradio
+Installed-Size: 3100 
+Maintainer: fredx181
+Architecture: i386
+Version: 0.0.6
+Depends: libc6, gtk2-engines-murrine, yad, sed, conky, gnome-mplayer-1.0.7 | mplayer, file, streamripper
+Filename: ./Extra/dogradio_0.0.6_i386.deb
+Size: 869484
+MD5sum: bc51f2e2e8df50c5d09a3cc9103b36d1
+SHA1: f03b64c1ba4ebaaf392d687d0ae4625e4576e7d8
+SHA256: 334fd1e98ca7b916e2a556b940d42d5933bb00beb64f148a283afa7da9b1bb42
+SHA512: d8576612b4b9e127d60809c5fb9ce919ffe79f6374590f21ef99503ecdacd1f07cca68bcaed8e862b5b1d4ad310b6a3fac4dc7ac85c173ca82ea8a2f125aeb8d
+Description: Dogradio is a GUI displaying icons for playing radio streams.
+ - Change in v 0.0.5: added option to rip streams (from right-click on tray-icon) 
+ - Using yad for the icons GUI
+ - Easy add/remove radio stream items
+ - Using conky for 'conky ticker', showing metadata
+ (can be enabled/disabled from tray icon menu + other settings)
+
+Package: findnrun-doc
+Priority: optional
+Installed-Size: 207
+Maintainer: name <name@email>
+Architecture: all
+Version: 1.10.6-1
+Depends: libc6, findnrun
+Filename: ./Extra/findnrun-doc_1.10.6-1_all.deb
+Size: 132180
+MD5sum: 7749e4a8cc6d038bf5a1a66a0a3c0f31
+SHA1: 459eed923b40c17820316e0a34e3b37d2fd69f05
+SHA256: 684b116f40745c278159b1404243a2a32c3bba9d4cc4e312b8ab9c7c6c64eca9
+SHA512: e1cab3504e08567984548436efd53e6a2613c63d179dfb845f81b6e07dde72cc4858b4efbc1ea0e7c82ee0b2cee25c1216ab69a2ba7704d1fa94c02f53c5a3fd
+Description:  findnrun 1.10.6 (documentation)
+  Findnrun is a gtk-dialog based application finder and starter
+  for freedesktop.org desktop application files.
+  Files in this add-on package: larger English help (HTML).
+  https://github.com/step-/find-n-run/ 
+
+Package: upgrade-kernel
+Installed-Size: 20
+Maintainer: fredx181 dog@root.nl
+Architecture: all
+Version: 1.0.0
+Depends: libc6, dpkg, findutils, cpio, xz-utils, gzip, gsu | gksu
+Filename: ./Extra/upgrade-kernel_1.0.0_all.deb
+Size: 10058
+MD5sum: 1180d9a6c1d7a4e3de56dacfc91fc477
+SHA1: 55cd733458cbf608d5c4caabfc03c83b568ec4c6
+SHA256: b4dfb16a967c2f0a861a5eb85aae539946d805f7814654dc72a410dae921802d
+SHA512: d6886455205f0afe438759db5cd97129fd1c4944cf29fbc8ad1f041449dfd979406bf1f360c423aa0f3d11cad825fd7e51823b1fc8a0919218fd9750f4299880
+Description: Warning - This package works only in DebianDog!
+
+Package: skype
+Priority: extra
+Section: non-free/net
+Installed-Size: 43261
+Maintainer: Skype Technologies <info@skype.net>
+Architecture: i386
+Version: 4.3.0.37-1
+Replaces: skype-mid, skype-common, skype-bin
+Depends: libc6 (>= 2.3.6-6~), libc6 (>= 2.7), libgcc1 (>= 1:4.1.1), libqt4-dbus (>= 4:4.5.3), libqt4-network (>= 4:4.8.0), libqt4-xml (>= 4:4.5.3), libqtcore4 (>= 4:4.7.0~beta1), libqtgui4 (>= 4:4.8.0), libqtwebkit4 (>= 2.1.0~2011week13), libstdc++6 (>= 4.2.1), libx11-6, libxext6, libxss1, libxv1, libssl1.0.0, libpulse0, libasound2-plugins
+Conflicts: skype-mid, skype-common, skype-bin
+Filename: ./Extra/skype-debian_4.3.0.37-1_i386.deb
+Size: 20118938
+MD5sum: 6d64a302c3babe399d8308855a886ba6
+SHA1: 69970a59159f97edb9a23d1e91e51f7c91b69f1e
+SHA256: a820e641d1ee3fece3fdf206f384eb65e764d7b1ceff3bc5dee818beb319993c
+SHA512: 6541980d8870eeee82484bb965ec7bc245782e905cd07eebe7a82f5a746b068ce010f0066caeb9b42c6e09ce5d2129c5b07a1ab1936dcd75fb87161c260e3732
+Description: Wherever you are, wherever they are
+ Skype keeps you together. Call, see, message and share with others.
+  * It's free to download and join.
+  * Call, instant message and send photos and documents to anyone else on Skype.
+  * And with a webcam you can catch up face-to-face with a video call.
+  * Call mobiles and landlines worldwide at low rates.
+  * Easily text message anywhere in the world.
+  * Get your friends together on a conference call.
+ .
+ And that's just the start...
+
+Package: midori
+Priority: optional
+Section: web
+Installed-Size: 12000
+Maintainer: fredx181
+Architecture: i386
+Version: 0.5.2a
+Provides: www-browser
+Depends: libc6, libcairo2, libgdk-pixbuf2.0-0, libglib2.0-0, libgtk2.0-0
+Recommends: gnome-icon-theme
+Conflicts: libsoup2.4-1 (<< 2.25.2)
+Filename: ./Extra/midori_0.5.2a_i386.deb
+Size: 11245222
+MD5sum: 879205338922bb834cb2a00d51b34294
+SHA1: 5086e9e52ef10f20fbc23211ad508405b3513e24
+SHA256: afb1c99bd776d304ff38ad83ae8eb11d0041d41b568dc5c090fe386b347572b8
+SHA512: f5bf8466e439b8de4bfe83c5b51e53977d6646116911883e82351eb87e8db4fcfbca23586968984e22f6ccba46666fbf2bc817a4da867a41cc66641a74edc532
+Description: fast, lightweight graphical web browser
+ Midori is a lightweight web browser based on WebKit.
+ .
+ Its features include:
+ .
+  * Full integration with GTK+2.
+  * Fast rendering with WebKit.
+  * Tabs, windows and session management.
+  * Flexibly configurable Web Search.
+  * User scripts and user styles support.
+  * Straightforward bookmark management.
+  * Customizable and extensible interface.
+  * Support for extensions (written in C).
+  * Custom context menu actions.
+Homepage: http://www.twotoasts.de/index.php?/pages/midori_summary.html
+
+Package: oxygen-icon-theme-light
+Priority: optional
+Section: x11
+Installed-Size: 880
+Maintainer: root
+Architecture: all
+Source: oxygen-icons
+Version: 4:4.14.0-1
+Provides: oxygen-icon-theme
+Depends: hicolor-icon-theme
+Conflicts: oxygen-icon-theme
+Filename: ./Extra/oxygen-icon-theme-light_4.14.0-1_all.deb
+Size: 708274
+MD5sum: 863c78864820799a16d525ab017bf995
+SHA1: 33b5c6f80bddc1b366b9148177f22fde2343495e
+SHA256: 46d32945fb592d054de2dc49724f107e7cbff3ec0ec453cba7c0530f97a5bd61
+SHA512: ef830ffa29881bf19050cd499041b2e8c544143ed9b1abc5f4989eefb46165cd9cc2c353d5747c6802a2c9e4400dc3ef394b83ee9c2d8f0531f5c5fe5fa0433b
+Description: Oxygen icon theme
+ Oxygen is the standard icon theme for KDE 4, but follows the freedesktop.org
+ icon schemes, so it can be used in other desktop environments using this
+ specification.
+Homepage: http://www.kde.org/
+
+Package: osmo-portable
+Priority: optional
+Section: x11
+Installed-Size: 975
+Maintainer: root
+Architecture: i386
+Version: 0.2.8-1
+Depends: libc6, gtkdialog, libgtk2.0-0, libatk1.0-0, libglib2.0-0, libpango1.0-0, libgdk-pixbuf2.0-0, libcairo2, libfreetype6, zlib1g, libfontconfig1, libxml2
+Recommends: libc6-i686
+Conflicts: osmo
+Filename: ./Extra/osmo-portable_0.2.8-1_i386.deb
+Size: 427394
+MD5sum: 0a6d806feba3abc7922129c8da2e289b
+SHA1: 4b16fc012ec28eada575cbcce8c0a0b910b2caf2
+SHA256: 2eb4f36a8ec5ea1834c142b06d1b7c34dd9a0b4f968dc9173f9ef900b5b6c48b
+SHA512: 8fc513fc8bb1dde61122e4e9666e3b8a6acdbf01a35dbf3ab659c809ff4a07084a6ca7242c26fa74f92a0812f7ab082ad9339ff982250e77bf5e8609f72cecad
+Description: personal organizer for GTK+
+ Osmo is a personal organizer, which includes calendar, task
+ manager and address book modules. It aims to be easy to use and
+ configurable to meet the user's preferences.
+Homepage: http://clayo.org/osmo
+
+Package: youtube-get2
+Installed-Size: 938 
+Maintainer: fredx181 
+Architecture: i386
+Version: 0.1.6
+Replaces: youtube-get
+Depends: libc6, yad, sed, wget, python, gnome-mplayer-1.0.7 | mpv | mplayer | gmplayer-portable, gsu | gksu
+Recommends: locales
+Filename: ./Extra/youtube-get2_0.1.6_i386.deb
+Size: 1312552
+MD5sum: d96c046dea0e4c2631eee3ebd20caa90
+SHA1: f9a37ce14f6784a78e901806e8e69a7e369ec508
+SHA256: b1ed4fecf4b8798b063f98632b6145f0a6ebd5511eab1ce8884b78239bf88543
+SHA512: 9fcb8c5345a6526262b99f685c9eda75df3e7c1e468810b3ef5880e130f4c7eab77a919e77fcaf2cb1d7f05d9e00f997d1825cf19fdaab86a0ee78ee8bfb27a1
+Description: YouTube Downloader, frontend for youtube-dl
+ A Youtube update broke the search function of previous versions; fixed in this version.
+ - A shell script (bash) with yad as GUI for youtube-dl
+ - Options to enter url(s), playlist, username and to do a search:
+ - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
+ - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
+
+Package: wex
+Priority: extra
+Section: audio
+Installed-Size: 284
+Maintainer: William McEwan <mcewanw of murga-linux/puppy forum>
+Architecture: i386
+Version: 0.8.18
+Replaces: weav
+Depends: libc6, gtkdialog, ffmpeg (>= 11:3.1.2), weav, scrox
+Filename: ./Extra/wex_0.8.18_i386.deb
+Size: 32856
+MD5sum: 3fc8aa4ecdeab94416224fb8ac170882
+SHA1: 883422a8f14124d312465e266969621a34697371
+SHA256: e8f9156808525024729a1593e6f91782794efd4134e4cd9a1ef2c224c73e5c00
+SHA512: a91d85cf0b8ae6aa3ad1f66c478bc08eee0331f199c5a631ff0db0f291fa6ef3a577dd83d37de31319fdc68f7176efaa2893bb04f77089275fcb60f350e00aec
+Description: weX AV and X11 recorder
+
+Package: conkyclock
+Installed-Size: 2700 
+Maintainer: fredx181 <fredx@nomail.nl>
+Architecture: all
+Version: 0.0.2
+Depends: libc6, yad (>= 0.26.0), sed, conky-all, liblua5.1-0, wmctrl, hsetroot
+Filename: ./Extra/conkyclock_0.0.2_all.deb
+Size: 2682772
+MD5sum: 3e1bb390a3e430febce0f4dff9b42f5e
+SHA1: 2f8c504dcefd5fc5dd04777b0a49d694b530995e
+SHA256: 003e836cb5e2d2ece33e186e44c5ed56ebd23c949c33871baa0bd160a78fb9e7
+SHA512: 2ecc11dcd59f9a8dcbf50308ee0d2c649295564c068d7906c84020ff1c46597d6fb13dd6b5edecf708a5ff2db2a16bb0554c0594bbdd2a8e744e2247e7de7bda
+Description: Conky-clock, choose analog clock display on the Desktop
+
+Package: youtube-viewer
+Priority: optional
+Section: perl
+Installed-Size: 1100
+Maintainer: fredx181
+Architecture: all
+Version: 3.1.5.1-jessie
+Depends: perl, libjson-perl, libjson-xs-perl, libdata-dump-perl, libfile-sharedir-perl, libgtk2-perl, libwww-perl, libterm-readline-gnu-perl, mpv | vlc 
+Recommends: youtube-get2
+Suggests: gcap, liblwp-protocol-https-perl, libtext-charwidth-perl, libterm-readkey-perl, libterm-ui-perl, wget
+Filename: ./Extra/youtube-viewer_3.1.5.1-jessie_all.deb
+Size: 406070
+MD5sum: 4f9eee55aaa2980fd3bec0e50651ede9
+SHA1: 0a6c2ae86c755a88553d133a44ffcc1118a98d1a
+SHA256: 886c0421df899d050522017b9ba8188a95ff0212c59e060b2ec59ceb89d49558
+SHA512: 2b0c9a786f94eead431f50d25389dd9de1ff16221b913aa0cac7c7fc4ec3894d9e832f8069fe975999cdea4549579cf3707f17f820cbd6037db5db303fb6b40a
+Description: A Gtk2 application for searching and streaming videos from YouTube.
+ WWW-YoutubeViewer - a very easy interface to YouTube.
+ Highly recommended: install mpv or vlc mediaplayer and youtube-get2 (includes youtube-dl) to be able to play all videos without exceptions.
+Homepage: https://github.com/trizen/youtube-viewer
+
+Package: youtube-get
+Installed-Size: 68 
+Maintainer: fredx181 
+Architecture: i386
+Version: 0.1.0
+Replaces: youtube-get2
+Depends: libc6, yad, sed, wget, xterm, gnome-mplayer-1.0.7 | mpv | mplayer | gmplayer-portable
+Recommends: locales
+Filename: ./Extra/youtube-get_0.1.0_i386.deb
+Size: 21254
+MD5sum: 2c152001e093d19d1fdfd098e398e587
+SHA1: 1cdf0f1e64f850f44194e5663abbe24796b0fda3
+SHA256: a7f3e2d2ddc40e4a44f6706a8c54b3fe27405124c783af04bba04e71cbdad8b6
+SHA512: ceb782c9c5408130d2908a3982cac0e7a7032942834558b614a186beda7ee75755719cd6bfa8a48fd6926becb3188d61b3c6ae79dac2edbf930cab4573a75003
+Description: A simple YouTube Downloader
+ - A shell script (bash) with yad as frontend
+ - Based on the idea of Dr. Mark Humphrys, see here:
+  https://computing.dcu.ie/~humphrys/Notes/UNIX/lab.youtube.html
+ - Gives choice which quality to download, e.g. 360p or 720p, etc...
+ - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
+
+Package: weav
+Priority: extra
+Section: audio
+Installed-Size: 148
+Maintainer: William McEwan <mcewanw of murga-linux/puppy forum>
+Architecture: i386
+Version: 9.1.1
+Replaces: wex
+Depends: libc6, gtkdialog
+Filename: ./Extra/weav_9.1.1_i386.deb
+Size: 13570
+MD5sum: 0c106d5b81c71e7f41266c0b22c060ec
+SHA1: 811acf51765066a43f64ba5d2ba18446d332aa8d
+SHA256: 3cd58c9b99a5cfc961cfc810982ef3a1f9e19be2450df7bdbe13fa20b25f043c
+SHA512: 6fe92a79de653c0b92327a59e2827d33b5e5f7b0b0eb2f0d237e0c19d20f0169118400176d0f0bd2d16573061fbf76be3e6e138aff3d80f77cd56d9b8d6eda92
+Description: weav commandline processor
+
+Package: ceni
+Priority: optional
+Section: net
+Installed-Size: 235
+Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
+Architecture: all
+Version: 2.31a
+Replaces: frisbee, wifibox, wifibox-dhcpcd
+Depends: perl, libcurses-ui-perl, libexpect-perl, libterm-readkey-perl, ifupdown, udev, wpasupplicant, resolvconf, dhcpcd | dhcpcd5, xterm
+Suggests: wpagui
+Conflicts: frisbee, wifibox, wifibox-dhcpcd
+Filename: ./Extra/ceni_2.31a_all.deb
+Size: 56542
+MD5sum: e24148d7840651132df4da157245c23b
+SHA1: bc9e65ef121442352dddef5e74ed9f9d48bdfc4d
+SHA256: 3846a34d1e3a4ff505e7589a728cae7549a664b062d186f3161abe0ead5c0483
+SHA512: 331327699ee15f2a8dcc76dd49b8a9e0502e390ef50bb4d9e3543aa9f21b31803f6fe1ad74a8b1975adb3680c702d9a3629c45a22cce3e1c8ea4567b1f217c1a
+Description: Curses interface to /etc/network/interfaces
+ A Curses user interface for configuring network interfaces with ifupdown.
+ Ceni can manage basic network interface ifupdown configuration stanzas for
+ ethernet and wireless devices.
+
+Package: dogradio
+Installed-Size: 3100 
+Maintainer: fredx181
+Architecture: i386
+Version: 0.0.7b
+Depends: libc6, gtk2-engines-murrine, yad, sed, conky, gnome-mplayer-1.0.7 | mplayer, file, streamripper
+Filename: ./Extra/dogradio_0.0.7b_i386.deb
+Size: 935894
+MD5sum: 583fa71daeb19853bc498ad79188dafa
+SHA1: 7e7c46bda4a015ea4064840e27d3d3bdd3b27c6c
+SHA256: 5138dbef91899e6efa5ffb65c4bb1f42e4135c8eb37940c3797c9b071a8f47ed
+SHA512: ea01f4580cb36681604a64f243f51a5d95559c5408a631e14c6f5920aaee443483872874ac81eac57e51593bf152216b7ec3377dcb320dcc7d62c9c379706974
+Description: Dogradio is a GUI displaying icons for playing radio streams.
+ - Change in v 0.0.5: added option to rip streams (from right-click on tray-icon) 
+ - Using yad for the icons GUI
+ - Easy add/remove radio stream items
+ - Using conky for 'conky ticker', showing metadata
+ (can be enabled/disabled from tray icon menu + other settings)
+
+Package: scrox
+Priority: optional
+Section: graphics
+Installed-Size: 84
+Maintainer: William McEwan <mcewanw of murga-linux/puppy forum>
+Architecture: i386
+Version: 0.8-17
+Depends: giblib1, libimlib2, libx11-6
+Filename: ./Extra/scrox_0.8-17_i386.deb
+Size: 13176
+MD5sum: 496179aa10f84b2140bdd0026283571c
+SHA1: fed25f0b8cfd6bc776c895da94ab595a04147ce1
+SHA256: 65fee421013909173b64fd11a5f7366f0c3e22ddf639ce0bd85f8fd6bda83648
+SHA512: 18add3856737d4e288ad470ea6cb5e7a34ee5c15b8299d9700401f4bdf9458fd53f72933b886b3b5d8871cd0023dbf4430a78d7f545fa9f2bf72380729d0a148
+Description: scrox is a fork of the scrot command line screen capture utility 
+ including identical functionality plus can output coordinate information for
+ full screen or the selected rectangular area.
+
+Package: fontconfig-config
+Priority: optional
+Section: fonts
+Installed-Size: 354
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Keith Packard <keithp@debian.org>
+Architecture: all
+Source: fontconfig
+Version: 2.11.0-0ubuntu4.2
+Replaces: fontconfig (<< 2.3.2-2)
+Depends: fonts-dejavu-core | ttf-bitstream-vera | fonts-freefont-ttf | gsfonts-x11, ucf (>= 0.29)
+Conflicts: fontconfig (<< 2.3.2-2)
+Filename: ./Extra/fontconfig-config_2.11.0-0ubuntu4.2_all.deb
+Size: 47424
+MD5sum: 0810d79c48f4cc873a73a721b6f51806
+SHA1: 00081270945f0b5d80dedf7309286da4b5216a5e
+SHA256: 544544d3da955ffbb276230d142875b33e60c2b7747c429542f4c4da5c41bda4
+SHA512: bf3b6d9361604ec504f455323dc1b0517357797b1388da3253be503ea3ce4df5544cae6ed8b51a34f82e52a4a801f32037b6b9c1765dbd19bdc15b1bc0022abb
+Description: generic font configuration library - configuration
+ Fontconfig is a font configuration and customization library, which
+ does not depend on the X Window System. It is designed to locate
+ fonts within the system and select them according to requirements
+ specified by applications.
+ .
+ This package contains the configuration files and scripts for fontconfig.
+Multi-Arch: foreign
+
+Package: mount-wizard-2
+Installed-Size: 50
+Maintainer: root
+Architecture: i386
+Version: 1.0.1
+Depends: libc6, gtkdialog, mount, gsu | gksu
+Filename: ./Extra/mount-wizard-2_1.0.1_i386.deb
+Size: 16102
+MD5sum: 971fee89c258b3056f5ca97f596a55eb
+SHA1: a556b9816b639db6ac5e70c052f27468361745c9
+SHA256: 0050cd2138f3ad2113b0702ff98f11e236c91584fe0ce4474c21d38b03c3829a
+SHA512: 04c34ebf5d17e09622bfe685fbe08ca4679dd77cf016fa177150a34121abd51e850e58132dcb6be538f7183ba78cf0778d0985ff77d1e52dcd7a703b9d8a3df6
+Description: mount drives utility
+
+Package: lumina-desktop-debdog
+Priority: extra
+Section: checkinstall
+Installed-Size: 7000
+Maintainer: root@debian
+Architecture: i386
+Version: 0.8.7-1-devel-jessie-qt5
+Provides: lumina-desktop
+Depends: fluxbox, xscreensaver, xbacklight, alsa-utils, acpi, numlockx, pavucontrol,  libxcb-damage0, libqt5core5a, libqt5quickwidgets5, libqt5multimedia5, libqt5x11extras5, libxcb-ewmh2, libxcb-composite0, libqt5multimediawidgets5, libqt5concurrent5, oxygen-icon-theme-light | oxygen-icon-theme
+Conflicts: lumina-desktop
+Filename: ./Extra/lumina-desktop-debdog_0.8.7-1-devel-jessie-qt5_i386.deb
+Size: 5215916
+MD5sum: cf82e5147a7ad0b8625895f856810665
+SHA1: b0160bce913d2a0074e000eadef40e9e8293a862
+SHA256: 37d51bb0c9019f78722a558862f05ef27e41d0c2b64df49ebbda922d3f59ed36
+SHA512: 4af79a46a3c895b5a43ba3b3d89c9c04eebf1dbd24d194d0b490aecb0f344e50df8ad90ff862a78bf811f38afff67fc422c907741623845ab9c86287d4a92411
+Description: lumina - light window manager - home page: https://github.com/pcbsd/lumina
+
+Package: echinus
+Priority: extra
+Section: checkinstall
+Installed-Size: 176
+Maintainer: root
+Architecture: i386
+Version: 3.8.3-1
+Depends: libc6, libx11-6, libxft2, libxrandr2, fbpanel
+Filename: ./Extra/echinus_3.8.3-1_i386.deb
+Size: 30622
+MD5sum: 641fb25994e8394177333aae1c6fe32d
+SHA1: dafa4964022ee5a2ffb79e0826bf04c3ba644960
+SHA256: ed7a1daeb6b8c426b6f2ab3f7e2c4564ca721d34e823e2814946293fc8947da9
+SHA512: 1549e9b0aa0a49978605a75c50766c633659d417306f1dc6efa1ab176ec7913460599cde89f83323094803178a18efbe1829d86d000c2a01ffbd08938b477933
+Description: Light window manager
+
+Package: libgnutls26
+Priority: standard
+Section: libs
+Installed-Size: 1399
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Architecture: i386
+Source: gnutls26
+Version: 2.12.20-8+deb7u3
+Replaces: gnutls0, gnutls0.4, gnutls3
+Depends: libc6 (>= 2.8), libgcrypt11 (>= 1.4.5), libp11-kit0 (>= 0.11), libtasn1-3 (>= 1.6-0), zlib1g (>= 1:1.1.4)
+Pre-Depends: multiarch-support
+Conflicts: gnutls0, gnutls0.4
+Breaks: ccbuild (<= 2.0.1-1), csync2 (<= 1.34-2.2), freewheeling (<= 0.6-1.1), gkrellm (<= 2.3.4-1), libsoup2.4-1 (= 2.31.2-1), libsoup2.4-1 (<= 2.30.1-1), macopix-gtk2 (<= 1.7.4-3), pokerth (<= 0.8.3-3+b1), pokerth-server (<= 0.8.3-3+b1), sipsak (<= 0.9.6-2.1), slrn (<= 1.0.0~pre18-1.1), slrnpull (<= 1.0.0~pre18-1.1), snowdrop (<= 0.02b-9), ssmtp (<= 2.64-4), tf5 (<= 5.0beta8-4), wput (<= 0.6.2-2), zoneminder (<= 1.24.4-1)
+Filename: ./Extra/libgnutls26_2.12.20-8+deb7u3_i386.deb
+Size: 610392
+MD5sum: 4ee5211cb476f0df31ce33b890d06a2b
+SHA1: 6676bf47d7bf729618f222e318be10eccafb3b50
+SHA256: fc4258157e5cb322cf92914bf25e2c819860e2b04e94f09e9797e2092ac034cf
+SHA512: 767f15dc174081be5a4618af79c266ff71beb51f8f2ab1a2f8f2e1a1117ee39538e6598ae339d8c8ec8a11eb45365b97dc3ed341fce43a0dede0a4d356f11d1d
+Description: GNU TLS library - runtime library
+ GnuTLS is a portable library which implements the Transport Layer
+ Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 protocols.
+ .
+ GnuTLS features support for:
+  - TLS extensions: server name indication, max record size, opaque PRF
+    input, etc.
+  - authentication using the SRP protocol.
+  - authentication using both X.509 certificates and OpenPGP keys.
+  - TLS Pre-Shared-Keys (PSK) extension.
+  - Inner Application (TLS/IA) extension.
+  - X.509 and OpenPGP certificate handling.
+  - X.509 Proxy Certificates (RFC 3820).
+  - all the strong encryption algorithms (including SHA-256/384/512 and
+    Camellia (RFC 4132)).
+ .
+ This package contains the runtime libraries.
+Multi-Arch: same
+Homepage: http://www.gnutls.org/
+
+Package: flite-hts-engine
+Priority: extra
+Section: sound
+Installed-Size: 2532
+Maintainer: mcewanw <Murga Puppy Linux Forum>
+Architecture: i386
+Version: 1.05
+Depends: libc6
+Filename: ./Extra/flite-hts-engine_1.05_i386.deb
+Size: 1617310
+MD5sum: 9c660afd9abdfec226c7d6075fc46215
+SHA1: f73991d946d89e1dd67f48a8772e7a16fb1c4a93
+SHA256: 9dfc172ce5e784dc524071eb3e14b7a16ddf32b1b7c94c142d982af43bc09f8c
+SHA512: e1490c50fe489c45b8a0932511a329a818b9ac56f20cda33329402299fa9507c4efd0a1556b6e0059806407f173efd459da39eddd9f6825e5f7bbb35c0bf625a
+Description: flite-hts-engine for DebianDog:
+ stdout patched version by mcewanw with 1kB buffer
+
+Package: Firewall-Puppy
+Priority: extra
+Section: system
+Installed-Size: 200
+Maintainer: root@wheezy
+Architecture: i386
+Version: 1.0.0-2
+Provides: Firewall
+Depends: libc6, dialog, iptables
+Filename: ./Extra/firewall-puppy_1.0.0-2_i386.deb
+Size: 19634
+MD5sum: a9b18be2c81cbd4b2574ecae2448c08f
+SHA1: 05ebf5c04c624ca26dff935a490d197d13497d69
+SHA256: b2143a6f9481fb871bb6c88b8f9d9c79ef991918fcfdaf92a23b4ddf168ea4fd
+SHA512: 069c7b801482c879d64fe24f158059badb3d60acd471bf59357e5ee287d8a7cdb0eed1ebff3ac13b3a46f7b019678ff7060f0bbd2111920a10b786dc4d93118a
+Description: system-firewall
+
+Package: wmx
+Priority: extra
+Section: checkinstall
+Installed-Size: 208
+Maintainer: root
+Architecture: i386
+Version: 8.0.1
+Depends: libice6, libsm6, libxcomposite1, libxpm4, libxext6, libx11-6, libxft2, libfreetype6, libfontconfig1, libstdc++6, libc6-i686, libgcc1, libc6, fbpanel
+Filename: ./Extra/wmx_8.0.1_i386.deb
+Size: 80556
+MD5sum: 7ef499fb2cbea0917af3a959a2ab65d9
+SHA1: 3508eafa669c925c11d6f9918a8a40d513c4ad96
+SHA256: 74f4bdf519f59b75d629d66449085c7f9ace9a0f259c8877803619df2a4de28c
+SHA512: 8b811da7dd23e356639f0bc8e05437fe721f1b1e6d608fe44053d9e21df1939d6e92d8c539b3694f101ecc6abb34c9daf712d4ba06f61d6acf4b709c77f79860
+Description: Light window manager.
+
+Package: dogradio
+Installed-Size: 3100 
+Maintainer: fredx181
+Architecture: i386
+Version: 0.0.5
+Depends: libc6, gtk2-engines-murrine, yad, sed, conky, gnome-mplayer-1.0.7 | mplayer, file, streamripper
+Filename: ./Extra/dogradio_0.0.5_i386.deb
+Size: 852978
+MD5sum: a6bca0ab7e048d11a2499b1d8c651a11
+SHA1: 60d5731c2672bcb803f24ddd185336a6381d7f1b
+SHA256: 8d6fe33296108f95fb820dbbd3ab8354a23de3b2c67346096033d5b6a09c2422
+SHA512: 02fc3ee011bee70ffa1d924312854421e5f94c3125513b4f0382467254e3c4979436a45dd5428b9f6164c47d93392c8af885a31d705b3b7a4ae2bfceff77afdf
+Description: Dogradio is a GUI displaying icons for playing radio streams.
+ - Change in v 0.0.5: added option to rip streams (from right-click on tray-icon) 
+ - Using yad for the icons GUI
+ - Easy add/remove radio stream items
+ - Using conky for 'conky ticker', showing metadata
+ (can be enabled/disabled from tray icon menu + other settings)
+
+Package: youtube-get2
+Installed-Size: 938 
+Maintainer: fredx181 
+Architecture: i386
+Version: 0.1.7
+Replaces: youtube-get
+Depends: libc6, yad, sed, wget, python, gnome-mplayer-1.0.7 | mpv | mplayer | gmplayer-portable, gsu | gksu
+Recommends: locales
+Filename: ./Extra/youtube-get2_0.1.7_i386.deb
+Size: 1342440
+MD5sum: c0941bb1a38fc82453fe4e405ad09077
+SHA1: 7fe378cf2b5c71b34ee628b57e4440df964f36bd
+SHA256: f0cb733a42621d522ce2e266ffbdc1d4aa389103ed574e8b07c14cbd923cba74
+SHA512: aecb488e9598dbac34c004aa10871339121a1eb8632f893fd16c99d97dd9f94b2e7858a5b7a97a7aa2c8ce3c44abc2dc0014fd2cc97fea09c801bd46d0e9768c
+Description: YouTube Downloader, frontend for youtube-dl
+ A Youtube update broke the search function of previous versions; fixed in this version.
+ - A shell script (bash) with yad as GUI for youtube-dl
+ - Options to enter url(s), playlist, username and to do a search:
+ - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
+ - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
+
+Package: peasyscale
+Priority: optional
+Section: utilities
+Installed-Size: 48
+Maintainer: root
+Architecture: i386
+Version: 1.8
+Depends: libc6, gtkdialog, libjpeg-progs, libgtk2.0-0, libpango1.0-0, libcairo2, libglib2.0-0, libpng12-0
+Recommends: libc6-i686
+Suggests: rox-filer
+Filename: ./Extra/peasyscale_1.8_i386.deb
+Size: 9682
+MD5sum: cc33bbb0884a566c8d33767148e46d43
+SHA1: 59a33608b39058f861a92830aac4951878fc6463
+SHA256: 85817b0c73f1a784d0cd585f8189f722854b201b09686695cf72a8f828803a51
+SHA512: 67a33054e6cee26ab31e8fe4e8f2a4b6c062b600554feacfeca0e46bdc18eb4bbd1d76dd68193dbec350494d821b510a757fe1dd3a9a1ef4d423adfb24cbbcaa
+Description: peasyscale from rcrsn51 for Puppy linux
+
+Package: yassm-smbclient-mpscan
+Priority: optional
+Section: net
+Installed-Size: 1000
+Maintainer: root
+Architecture: i386
+Source: samba
+Version: 2:2.6-2
+Depends: libc6, gtkdialog, mount, libpopt0, libreadline5, libncurses5, gsu
+Recommends: libc6-i686
+Conflicts: samba4-clients, smbclient, samba
+Filename: ./Extra/yassm-smbclient-mpscan_2.6-2_i386.deb
+Size: 279820
+MD5sum: 0d0ded5a0bf39296e8371df4fbdffe6a
+SHA1: 7e1d7ad0d81d62a2ae9d19a79483491256ae6b09
+SHA256: 0d21768c3377edac7455574bedc7c188186d0ef1ca757c891054f512fec0d92c
+SHA512: 567b34adfad7339d965dfc87bb0826a29435a1ddb21c1e21b5f8b04b9820ada2d92ce0bfd1a05ba6cee5bfd560dd7255b2a3b7dd3f8da28738844016a9c959b5
+Description: SMB/CIFS clients for Unix
+
+Package: xvidcap
+Priority: optional
+Section: x11
+Installed-Size: 7844
+Maintainer: Karl H. Beckers <karl.h.beckers@gmx.net>
+Architecture: i386
+Version: 1.1.7
+Depends: libatk1.0-0 (>= 1.20.0), libc6 (>= 2.7), libcairo2 (>= 1.2.4), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.78), libfontconfig1 (>= 2.4.0), libfreetype6 (>= 2.2.1), libglade2-0 (>= 1:2.6.1), libglib2.0-0 (>= 2.16.0), libgtk2.0-0 (>= 2.16.0), libmp3lame0 (>= 3.98), libogg0 (>= 1.0rc3), libpango1.0-0 (>= 1.14.0), libtheora0 (>= 0.0.0.alpha7.dfsg), libx11-6, libxdamage1 (>= 1:1.1), libxext6, libxfixes3 (>= 1:4.0.1), libxml2 (>= 2.6.27), libxmu6, zlib1g (>= 1:1.1.4), scrollkeeper, imagemagick, oss-compat
+Suggests: yelp
+Filename: ./Extra/xvidcap_1.1.7jaunty_i386.deb
+Size: 2686108
+MD5sum: 7bcf40a5f245d6c11b9893750fdcf741
+SHA1: a8384e529894a67c4b8d512cae4be064ded7f989
+SHA256: af5a21485a30ea9f02660f068cf9769951e74a8d51a9cf8da70e2831801c0e1d
+SHA512: 23ea5b8c576b7447d5bdbd9976da88b6712c8bb141ad8b6599062c5db3928d77d25feeb52fb9c7ff8216dfd0080619a01dd83bf8dc8cacc085d248e0ece2f761
+Description: Screen video capture for X
+ A screen capture enabling you to capture videos off your X-Window desktop
+ for illustration or documentation purposes. It is intended to be a
+ standards-based alternative to tools like Lotus ScreenCam.
+ .
+ Video can be saved in MPEG or AVI files format.
+
+Package: slimjet
+Priority: optional
+Section: web
+Installed-Size: 197904
+Maintainer: FlashPeak <support@flashpeak.com>
+Architecture: i386
+Version: 12.0.6.0
+Provides: www-browser
+Depends: gconf-service, libasound2 (>= 1.0.23), libatk1.0-0 (>= 1.12.4), libcap2 (>= 2.10), libc6 (>= 2.11), libcairo2 (>= 1.6.0), libcups2 (>= 1.4.0), libdbus-1-3 (>= 1.2.14), libexpat1 (>= 1.95.8), libfontconfig1 (>= 2.8.0), libfreetype6 (>= 2.3.9), libgcc1 (>= 1:4.1.1), libgconf-2-4 (>= 2.31.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.26.0), libgtk2.0-0 (>= 2.24.0), libnspr4 (>= 1.8.0.10), libnss3 (>= 3.14.3), libpango1.0-0 (>= 1.14.0), libstdc++6 (>= 4.6), libx11-6 (>= 2:1.4.99.1), libxcomposite1 (>= 1:0.3-1), libxcursor1 (>> 1.1.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3 (>= 1:5.0), libxi6 (>= 2:1.2.99.4), libxrandr2 (>= 2:1.2.99.2), libxrender1, libxss1, libxtst6, ca-certificates, libappindicator1, libcurl3, lsb-base (>= 3.2), xdg-utils (>= 1.0.2), wget
+Pre-Depends: dpkg (>= 1.14.0)
+Filename: ./Extra/slimjet_12.0.6.0_i386.deb
+Size: 53283788
+MD5sum: e61b8777f3516ceabd638468010892e9
+SHA1: 957fc4dbfd495413a87aede4a1532744d990b910
+SHA256: 7e5aaf1599bc67616c2af96e2b77388adab8807ce478018671f0341c569c4cf8
+SHA512: ff79ba367b8aadaae4b281656bb607d09e77a97ece9fb567fa0e039199b8a45e42d678a6f85cb45170ed72ef5e7d0d7a6610bd7d9c3b73cd4fb50d22c1a32eed
+Description: Fast, smart and powerful browser based on Blink
+ Slimjet is a fast, smart and powerful web browser based on the Blink engine. It is built on top of the Chromium open source project, on which Google chrome is also based. Slimjet integrates a lot of powerful and convenient features to help users maximize their online productivity. Slimjet also includes many options and settings so that users can customize the browser to best suit their own personal preference.
+Homepage: http://www.slimjet.com
+
+Package: master-pdf-editor3
+Priority: extra
+Section: editors
+Installed-Size: 19600
+Maintainer: Code Industry Ltd <support@code-industry.net>
+Architecture: i386
+Version: 3.7.10
+Replaces:master-pdf-editor (<< 3.6.11)
+Depends: libqt4-svg (>= 4.6.4) , libqt4-network (>= 4.6.4) , libqtcore4 (>= 4.6.4), libqtgui4 (>= 4.8.4)
+Filename: ./Extra/master-pdf-editor-3.7.10_i386.deb
+Size: 9526844
+MD5sum: bb3c0c478b7367d2d6542d4389b97748
+SHA1: 5761c70aeab3ce185a82a210b67dd5b13d5087f1
+SHA256: 3737f12282208fa0602598a5cdae3239121b128306a034ec31c9b494ab51f4e4
+SHA512: ac553fe232ee5aadc1801ba3385292ca6fe8f94793999c00cbc6e80c9b1942b181c2ee60243a579658c022c846b41797d9d34631cb99c621957deb1d79e79894
+Description: Master PDF Editor is complete solution for view, print and edit PDF files.
+ * Edit PDF text, images and pages with full editing features
+ * Create new PDF or edit existing ones.
+ * Add and/or edit bookmarks in PDF files.
+ * Encrypt and/or protect PDF files using 128 bit encryption.
+ * Convert XPS files into PDF.
+ * Add PDF controls (like buttons, checkboxes, lists, etc.) into your PDFs.
+ * Import/export PDF pages into commong raphical formats including BMP, JPG, PNG, and TIFF.
+ * Split and merge PDF files.
+ * JavaScript support
+ * Validation Forms and Calculate Values
+ * Adding a digital signature and Signing PDF Documents
+ * Fast and simple PDF forms fill out
+ * Changing font attributes (size, family, color etc)
+Homepage: http://code-industry.net/pdfeditor.php
+
+Package: wifibox-dhcpcd
+Priority: extra
+Section: checkinstall
+Installed-Size: 282
+Maintainer: root@wheezy
+Architecture: i386
+Version: 1.0.2
+Replaces: ceni, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, frisbee, wifibox, wifibox-tazpanel
+Depends: libc6, rfkill, libiw30, yad, libgtk2.0-0, libglade2-0, psmisc, wpasupplicant, wireless-tools, net-tools, gsu | gksu
+Conflicts: ceni, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, frisbee, wifibox, wifibox-tazpanel 
+Filename: ./Extra/wifibox-dhcpcd_1.0.2_i386.deb
+Size: 93738
+MD5sum: 77346a3a1afd706f4ee32848a55c1f52
+SHA1: f527c05394b64d86deb70fa2d3a5911a4a46e091
+SHA256: 50b18a4929f2e0e3af3eb85f1967b9b904cb97c51441de3a89eeba85275592d7
+SHA512: 1ab7b10cf9a62f797d103d6e8fa32662b1f1e266f5753d4b4fc585e3c6452c79f630e8af7672a6a77ee3ce20dc61be16e40cd8fa2b2a5559d38f2029ae21831d
+Description: Wireless Network manager
+
+Package: teamviewer
+Priority: optional
+Section: non-free/net
+Installed-Size: 35208
+Maintainer: TeamViewer GmbH <service@teamviewer.com>
+Architecture: i386
+Version: 12.0.71510
+Replaces: teamviewer5, teamviewer6, teamviewer7, teamviewer8, teamviewer9
+Depends: libc6 (>= 2.11), libgcc1, libasound2, libdbus-1-3, libexpat1, libfontconfig1, libfreetype6, libjpeg62, libsm6, libxdamage1, libxext6, libxfixes3, libxinerama1, libxrandr2, libxrender1, libxtst6, zlib1g
+Recommends: ttf-liberation | fonts-liberation
+Conflicts: teamviewer5, teamviewer6, teamviewer7, teamviewer8, teamviewer9, teamviewer-host
+Filename: ./Extra/teamviewer_12.0.71510_i386.deb
+Size: 46556110
+MD5sum: c380443acf784181f10a1296536b158c
+SHA1: bd559c70cc4081a79a1da384dc3a3cfe8a9cd801
+SHA256: 172f68c05f29657bcf312b9e3fd8b77027bdf82bd969da9dd7ffcc7eb3605838
+SHA512: edc1e5823939f20a9879bd29d952a728275f5f190ad434b95e71e886086b8aca407749d5671284cec9b20007aaa4b5907c84a83cc4921f9f715738cd33c704db
+Description: Remote control and meeting solution.
+ TeamViewer provides easy, fast and secure remote access and meeting solutions
+ to Linux, Windows PCs, Apple PCs and various other platforms,
+ including Android and iPhone.
+ .
+ TeamViewer is free for personal use.
+ You can use TeamViewer completely free of charge to access your private
+ computers or to help your friends with their computer problems.
+ .
+ To buy a license for commercial use, please visit http://www.teamviewer.com
+ .
+ This package contains Free Software components.
+ For details, see /opt/teamviewer/doc/license_foss.txt
+Homepage: http://www.teamviewer.com
+
+Package: guessfstype
+Installed-Size: 40
+Maintainer: root
+Architecture: i386
+Version: 1.0.0
+Depends: libc6
+Filename: ./Extra/guessfstype_1.0.0_i386.deb
+Size: 11120
+MD5sum: a12b17509300116e2cd29a0a1e0f1c19
+SHA1: b0e8e985f49c7e71a2a16271e7dec82f66d87074
+SHA256: 1c89cd0c9b1a2b6371e5b4fba1e1d62c7328fe425e686c7794e1ecbd0bc3717f
+SHA512: 7221036fc777ce1ee6c15fad1dfbe46e505691fe4a21beb8db472541dd6d33a8349c30fe3e3170f747794379f94e38369629186fd845941f2486073b2703df3d
+Description: File system type CLI tool from Puppy linux.
+
+Package: libjpeg8
+Priority: optional
+Section: libs
+Installed-Size: 261
+Maintainer: Bill Allombert <ballombe@debian.org>
+Architecture: i386
+Version: 8d1-2
+Depends: libc6 (>= 2.7)
+Pre-Depends: multiarch-support
+Filename: ./Extra/libjpeg8_8d1-2_i386.deb
+Size: 120178
+MD5sum: 0bb8fc7318b6dce2899510493f808167
+SHA1: 09024d0c10595034c74c4f8009b7802176388c7d
+SHA256: 0d0b6f2815aa289a448ca946766d7774eddc7ab6ea6d8c3dab50019e0c524726
+SHA512: 1825eff9f40c6b89ecacf75c0c7b87a08fbcdebe260f2c7e77626b949f43e956cdabfc884676a0af97ac5e0f6fca70531bb9c85c89ac27657f7fcec3f17f860d
+Description: Independent JPEG Group's JPEG runtime library
+ The Independent JPEG Group's JPEG library is a library for handling
+ JPEG files.
+ .
+ This package contains the shared library.
+Multi-Arch: same
+
+Package: xhippo
+Priority: optional
+Section: utilities
+Installed-Size: 436
+Maintainer: root
+Architecture: i386
+Version: 1.0.1
+Depends: libc6
+Filename: ./Extra/xhippo_1.0.1_i386.deb
+Size: 36076
+MD5sum: 39927c5ef24a4298f1faca0fa3140176
+SHA1: 1a05155ca873722f2498ea00c64d81ffc3b6bdf8
+SHA256: f3b63bbe6c55eb2efce18ff799f765788122cd217f2ad902bc196226370e9328
+SHA512: 4d537f80be7ad8f240b2b92fd0b693fa1664b50a2b11a5dcf333751ea71f86704c0332ad5176c021c2c8fc7ce0b70cfc32c6960cdc08d3904c610496acb1bb9f
+Description: xhippo-converted-pet-to-deb
+
+Package: samba-tng-rcrsn-0.5-rc1-debdog
+Priority: optional
+Section: net
+Installed-Size: 5300
+Maintainer: root
+Architecture: i386
+Source: samba
+Version: 0.5-rc2
+Depends: libc6, gtkdialog, libreadline6, libncurses5, adduser, gsu
+Recommends: libc6-i686
+Conflicts: samba4-clients, smbclient, samba
+Filename: ./Extra/samba-tng-rcrsn-0.5-rc1-debdog_0.5-rc2_i386.deb
+Size: 709776
+MD5sum: 86ab5aa23c8a473b07c47e4f6e60b547
+SHA1: 300a66919bf627ded86db1df7a3daf2a47135c1e
+SHA256: 8980dc5135afec1dc693764aef33326424f570a9c9bdbbf6723eafbc9b699187
+SHA512: 76289675e36857faffdd5fc1b6d0da618b96891e39e2de3d594bbc7766ea3684eeeac62d87e6f7bb3dba373bcd0bb31007b77938ef92a599804b7bf0543b4877
+Description: SMB/CIFS clients for Unix
+
+Package: findnrun-nls
+Priority: optional
+Installed-Size: 110
+Maintainer: name <name@email>
+Architecture: all
+Version: 1.10.6-1
+Depends: libc6, findnrun
+Filename: ./Extra/findnrun-nls_1.10.6-1_all.deb
+Size: 7036
+MD5sum: 1609fbdaff94b14c6cd777a48c2b6d77
+SHA1: 919a22dfca3d7559a4a3ede984d7742d2fb90de4
+SHA256: f6bcbf1185b4d7efba9879d04ab81d5748b3105fb96b21d8021f71159bdb2e04
+SHA512: f7de31c836b8fb56da2f2807bb8d17d95e0c3ca287f792fa19b7aaf187aad1af9c037c77ea4316b0acd51703950db21d372dffe64dd3b38f687ec3891dafad6e
+Description:  findnrun 1.10.6 (i18n)
+  Findnrun is a gtk-dialog based application finder and starter
+  for freedesktop.org desktop application files.
+  Files in this add-on package: localized runtime messages.
+  https://github.com/step-/find-n-run/ 
+
+Package: ffmpeg
+Priority: optional
+Section: video
+Installed-Size: 30000
+Maintainer: fredx181
+Architecture: i386
+Version: 11:3.1.3
+Filename: ./Extra/ffmpeg_3.1.3_i386.deb
+Size: 9323876
+MD5sum: 64d51e8e058b14b6c7c137bcc4ce4262
+SHA1: 2e9da51336dd72c617c03f71ad60c4fb94593b8d
+SHA256: fefd843677d6d300de380e5d572d60dc143a374dd28e0716c12b801ac616545c
+SHA512: d6b18961cf1871b289cfcf8bf33d53fabc44e8cb90f463479d07be3df7e4b68bfc8853ad41961f61ae112b7e7cb08340b53cf4879a910c1412df659907481559
+Description: Static build of the latest FFmpeg binaries
+
+Package: youtube-get
+Installed-Size: 68 
+Maintainer: fredx181 
+Architecture: i386
+Version: 0.1.1
+Replaces: youtube-get2
+Depends: libc6, yad, sed, wget, xterm, gnome-mplayer-1.0.7 | mpv | mplayer | gmplayer-portable
+Recommends: locales
+Filename: ./Extra/youtube-get_0.1.1_i386.deb
+Size: 20710
+MD5sum: ee9bca311d6c4a6195172b5db97852f9
+SHA1: 39603d990bf2abf6b709b1664ac02fce8ee39f82
+SHA256: 8b8cdf87a8d5b5c4670b3be643987650f725a016b72bc1ff4d9991008c373319
+SHA512: f3c0a711b2903a6e8df115b4783f7c4e28c963e01c2de5240b5cb7b248562f2ef42069a6b47177e687d81f925ef7df4e5d33599396eebdd8264371c71e997504
+Description: A simple YouTube Downloader
+ - A shell script (bash) with yad as frontend
+ - Based on the idea of Dr. Mark Humphrys, see here:
+  https://computing.dcu.ie/~humphrys/Notes/UNIX/lab.youtube.html
+ - Gives choice which quality to download, e.g. 360p or 720p, etc...
+ - Extra addition: m-play script + menu entry for playing YouTube url with mpv
+
+Package: apulse
+Priority: extra
+Section: checkinstall
+Installed-Size: 168
+Maintainer: root@debian
+Architecture: i386
+Version: 20150727-1
+Depends: libc6, alsa-base, alsa-utils
+Filename: ./Extra/apulse_20150727-1_i386.deb
+Size: 32846
+MD5sum: d8ee158c782d3786685a4b1308e6816b
+SHA1: d3593f0362f63f6e023a2cdc86c75293ae5df641
+SHA256: 0ff6d9aa73be9cc3924b1ef20444c493d622d09eb5409ff994a46bf11139f82c
+SHA512: f16994a14d928a83221dc331cbe47d45a26307e3c9860a7c71e55f297780288b462e9c75766142286422d2d7cda9301acff9048be9a84684c3c98008d78b8892
+Description: Pulseaudio emulator using alsa
+
+Package: googleearth
+Priority: optional
+Section: non-free/science
+Maintainer:  <root@jessie>
+Architecture: i386
+Version: 6.0.3.2197+1.2.0-1
+Depends: fonts-liberation, libfreeimage3, lsb-core, libqtcore4, libgl1-mesa-glx, libglu1-mesa 
+Suggests: lib32nss-mdns, libgl1-nvidia-glx, libgl1-fglrx-glx
+Filename: ./Extra/googleearth_6.0.3.2197+1.2.0-1_i386.deb
+Size: 24143862
+MD5sum: 2e431123ad5f3de4bb721932aec5e906
+SHA1: 0c0053a222dc8f1174c5f46ee9ef760c65da0fc4
+SHA256: 748f6ea8ceccea6706aa576800f8e8d3f9fad8b597a5147d7e387b79fd1ed329
+SHA512: 434f3ab47ddc23ab4ebba865bf2501d4f34e7235eb1941eb6d0bbd72098c40987f3543f8366fac61fb6cdae3690ff0c0875bf1232edfe1867ddab6301077ae7c
+Description: Google Earth, a 3D map/planet viewer
+ Package built with googleearth-package.
+
+Package: thunar
+Priority: optional
+Section: xfce
+Installed-Size: 945
+Maintainer: Debian Xfce Maintainers <pkg-xfce-devel@lists.alioth.debian.org>
+Architecture: i386
+Version: 1:1.6.3-2
+Replaces: thunar-data (<< 1.2.3-3)
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.4), libcairo2 (>= 1.6.0), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.88), libexo-1-0 (>= 0.10.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.24.0), libgudev-1.0-0 (>= 146), libice6 (>= 1:1.0.0), libnotify4 (>= 0.7.0), libpango-1.0-0 (>= 1.14.0), libsm6, libthunarx-2-0 (>= 1.1.0), libxfce4ui-1-0 (>= 4.9.0), libxfce4util6 (>= 4.9.0), libxfconf-0-2 (>= 4.6.0), thunar-data (= 1.6.3-2), desktop-file-utils, shared-mime-info, exo-utils
+Recommends: dbus-x11, libfontconfig1 (>= 2.11), libfreetype6 (>= 2.2.1), libpangocairo-1.0-0 (>= 1.14.0), libpangoft2-1.0-0 (>= 1.14.0), xfce4-panel (>= 4.9.2), xfce4-panel (<< 4.11), thunar-volman, tumbler, xdg-user-dirs, gvfs
+Suggests: thunar-archive-plugin, thunar-media-tags-plugin
+Breaks: thunar-data (<< 1.2.3-3)
+Filename: ./Extra/thunar_1.6.3-2_i386.deb
+Size: 274508
+MD5sum: d3a6c87822a2976414e93b5aad34538f
+SHA1: 2f346728f4313910d581a2e5853f5146f9d5f9fa
+SHA256: 0c8fa5f12305f1246e1878b536af6f0a8ef0a89ceea896c2cc5be84c728c1f7b
+SHA512: 6b4eb4bd564d8a6c11cb8f40913fba32907ed7a2947116fc445852a3994a4305dae2d5381709f527ec260b505572faf514c383ea27cd23497a3dc87f8c4bc6e0
+Description: File Manager for Xfce
+ Thunar is the file manager designed to be the default file manager for the
+ Xfce desktop environment. It has been designed to be fast and easy to use.
+ .
+ Also included is an Xfce panel plugin which can manage the desktop trash.
+Homepage: http://thunar.xfce.org
+
+Package: isotools
+Installed-Size: 73 
+Maintainer: fredx181 dog@root.nl
+Architecture: all
+Version: 1.0.2
+Depends: libc6, yad, pburn, xorriso, isolinux, x11-utils, mount, procps, coreutils, gsu | gksu
+Filename: ./Extra/isotools_1.0.2_all.deb
+Size: 28458
+MD5sum: 47c2ea914dc33df12f4e3b68a553c2af
+SHA1: 44e108561b956bf1a0dfa9f796e7a21e2fee6b48
+SHA256: bb8b154be00c619839752abef52ace8733cd9983ea3c002a0dcd32115d5dfa3f
+SHA512: b897e6dbf896b35586b8a4201e9fc2de463612d9e00f3086a6c90e8173027db618c85e76eaf22bb41258ab6f14efef22c4d7ae8849f65c5c52a771cfff2bc795
+Description: Create iso, edit iso, burn iso or write (hybrid) iso to usb. Changes from version 1.0.0: added 'export LC_ALL=C' on top of script, which makes sure it works also when locale is set to other language than english. And added to entry box for to enter usb drive (for writing iso to USB) a list of available drives.
+  Changes in this version 1.0.2
+  - Display progress bar for writing ISO to USB
+  - Changed entry box for to enter usb drive, to: display a list of available drives to choose from.
+
+Package: redshiftgui
+Priority: optional
+Section: util
+Installed-Size: 940
+Maintainer: Mao Yu [maoserr@gmail.com]
+Architecture: i386
+Version: 0.2.1-ddjessie
+Depends: libcurl3, libxcb-randr0
+Filename: ./Extra/redshiftgui_0.2.1-ddjessie_i386.deb
+Size: 342846
+MD5sum: 3463be4f3d8ae44a825b8fb467516914
+SHA1: 0ee9902e0a05044e2da79ba311aea3e2bdf2dfc2
+SHA256: d211a32fd63306fa4a4ee4fb948e94ebd08e63ddee13583bc63c03e35ce2bf83
+SHA512: 699cf583285a324a10d7bf89a98f24f90b965b037211ea1ac61fd02cd54226c29ddd56cb29ee9bc7e51551344ccf9dc1232d882fb1fb8fb4ded8ac7589380173
+Description: Monitor color adjustment tool.
+
+Package: flburn
+Priority: extra
+Section: x11
+Installed-Size: 2192
+Maintainer: Arman Poghosyan
+Architecture: i386
+Version: 0.0.3
+Depends: libc6 (>= 2.7-1), libc6-i686, libxext6, libx11-6, libstdc++6, libgcc1
+Filename: ./Extra/flburn_0.0.3_i386.deb
+Size: 932244
+MD5sum: 415088e688d6c0af009ac7fc52b646dd
+SHA1: 5cb6872b448115e1a661a4f59279867f4888d7f5
+SHA256: 47b978289991747d73270eadd0874d3284de739591283319673b984c94c7c6ba
+SHA512: 736de0107af785a0f015093fbc9a629b5a76815ce09afb007a1e409945f6e7a075eaf99f78ada65beece698f70f132d928d8ae015c5109ff3b7d59fb3fb77843
+Description: Optical disc burning software for linux
+Homepage: http://flburn.sourceforge.net/
+
+Package: apulse
+Priority: extra
+Section: checkinstall
+Installed-Size: 168
+Maintainer: root@debian
+Architecture: i386
+Version: 20140922-1
+Depends: libc6, alsa-base, alsa-utils
+Filename: ./Extra/apulse_20140922-1_i386.deb
+Size: 45756
+MD5sum: 5c3f106c8a4228b7cfdd86cbddd199e7
+SHA1: e137d96aa74f264bf48edb4cbc6d8322dbf188e0
+SHA256: d655d3da2cbb2ad228a9e09b0d9742f56fd0302030c55db98c2363492fe89c39
+SHA512: 9ab509330ed07621062e03a3ddb88e3e9d36d0c293a0c758672c8d4314665d00310ee4694172b56f1f0b03e6818059e019cb68dbd0e0af9785f3df4039cd7387
+Description: Pulseaudio emulator using alsa
+

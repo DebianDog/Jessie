@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Origin: Debian
+Label: DebianDog
+Suite: stable
+Version: 1.0
+Codename: jessie
+Architectures: i386
+Components: main
+Description: DebianDog repository
+Date: Sun, 04 Dec 2016 00:45:45 UTC
+MD5Sum:
+ 05d7fd6a07e576fe841f22bf43dbe05d           129141 Packages
+ d7267e4248ee509d11947504c65ca5e4            50272 Packages.gz
+ 16d95e565f30490d2f5eb6e11391ce92              147 Release
+ d7267e4248ee509d11947504c65ca5e4            50272 Translation-en.gz
+SHA1:
+ c3d54abb4a9c52751279c6899871fe925629f58b           129141 Packages
+ 8cceadb4b01ea351bd3c9bd2784b3ba5bf292337            50272 Packages.gz
+ f7f9cdc238475cfc47c7813d70a42c0ff1a1e7b6              147 Release
+ 8cceadb4b01ea351bd3c9bd2784b3ba5bf292337            50272 Translation-en.gz
+SHA256:
+ cf9aed09dd9158af86321ddbe7ba4a77ce3311d934674ec905509a20e2ac8d1d           129141 Packages
+ 221b218223266ce40dcd7b4a7bd83d627e60e30af901c208e5336e79afdbe419            50272 Packages.gz
+ 1fa55e4027dc946f1f5542b28f56c5e1f2c51794003c2d27761fadd9f411db3e              147 Release
+ 221b218223266ce40dcd7b4a7bd83d627e60e30af901c208e5336e79afdbe419            50272 Translation-en.gz
+SHA512:
+ 11947bbf0021566c73b746a6d5df2c4d291a527f578dafeeb2880a872aef415cc45318deef7ab854d950194d70e094408a9d92d429c7d4cff285c56ac0815750           129141 Packages
+ ed299d624f14e3ecc772a511be8e35f2017154507cfac97326f3b060e5be363d677cd728b01f97bf910ca36ce85f3c9697f6037a1a075760ef21a43e44c05550            50272 Packages.gz
+ 996e9c0931ed449630ff52d7cf68b109996b529e018d0638d047adf75159a63a3572c7dade7dcb92057f96bdccd7fa129d9c215130ff7c19efbe50db2148e3d5              147 Release
+ ed299d624f14e3ecc772a511be8e35f2017154507cfac97326f3b060e5be363d677cd728b01f97bf910ca36ce85f3c9697f6037a1a075760ef21a43e44c05550            50272 Translation-en.gz
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBCAAGBQJYQ2c/AAoJEK2HvHp9cwgdzAAH/3ofUw6UqNUl337yz0vEgat8
+M4OlF2Ddh0TaoA7rWrMu1krJ2usnM/HBnUD29QxazuTv0lrZe3lHd2CLjAx0iB7Q
+g1WtsE7xblHHXKoTYMdmiEr3TwO0YURFbiLqEzywh+RIjzboqdeJU0+BlEUY1bVp
+xDwwlMiR/lg/geRDmtc6xdxf+tUpQTYa9Zj84OcuK1v9AZ7chW4G34fpFRcNbpB4
+KwuCAGwZhkvJlRXoFjaqgd52TIvm0spWusv8oWpOvsl8FteRavQxovA1kg48ss1Q
+ZdCbW8AwpZtmes61qOpPGsgEQKI1qhj8LpNWLuxTb0iGNuOnGZ8wMuU2BBTfmhU=
+=Pbut
+-----END PGP SIGNATURE-----

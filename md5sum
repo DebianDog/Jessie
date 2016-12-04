@@ -1,0 +1,23 @@
+Iso images:
+
+793099d259caf51fd547697db74fa0b0  DebianDog-Jessie-jwm_icewm-2015-09-02.iso
+08d34ecdc5d9f385c81d872c00839d67  DebianDog-Jessie-jwm_icewm-2015-09-02-PAE.iso
+5d75d041a4a4641d7679be5a1d1d2f78  DebianDog-Jessie-openbox_xfce-2015-09-02.iso
+3dd81eb1efa6093498547a1af4e715ce  DebianDog-Jessie-openbox_xfce-2015-09-02-PAE.iso
+ca8ffc28b386f109ceabf62692810a2c  DebianDog-Jessie-openbox_xfce-jwm-2016-10-16.iso
+
+Extra squashfs modules:
+
+9ba2c6188da2411349a5ca1b58212afd  024-goffice-lupu-528JP-1-jessie.squashfs
+a9b1bfd224ff9b9499a611bd82730979  midori-0.5.2.squashfs
+6f27e982183a00b960fe014a808cd870  00-boot-folder-vmlinuz-initrd-jessie.squashfs
+b6a6b76c0c2c0b326ffcbc1073fe9f82  00-locale-files-jessie-openbox_xfce.squashfs
+7c59fb74f3837952237a7767055acd76  00-locale-files-jwm-icewm-jessie.squashfs
+f527ae623c1fd26dc88415b004fede36  061-man-doc-info-jessie.squashfs
+ecf5b22af33be8c0648898e339becff5  061-DEVX-DebianDog-Jessie.squashfs
+aa7bc3e44dc4e9491ad16857eb8cadde  slimjet-i386.squashfs
+8a729cfa58a5c3a19829827e09d714ad  3.16-NOPAE-kernel-squashfs-lz4-support.tar.gz
+1aa18a4d886374e7b7cbdd4a6b8e6504  3.16-PAE-kernel-squashfs-lz4-support.tar.gz
+f9167546dd2dc8ac4291398cd9197e48  infinality-jessie.zip
+813d634bf2b0a0fe35715e37be1f0cad  99-new-save-setup.squashfs
+651fa9eeffc57c75008f6c7849a245ff  09-jessie-repo-2016.03.13.squashfs
