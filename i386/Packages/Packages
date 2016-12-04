@@ -2667,23 +2667,6 @@ SHA256: 0ff6d9aa73be9cc3924b1ef20444c493d622d09eb5409ff994a46bf11139f82c
 SHA512: f16994a14d928a83221dc331cbe47d45a26307e3c9860a7c71e55f297780288b462e9c75766142286422d2d7cda9301acff9048be9a84684c3c98008d78b8892
 Description: Pulseaudio emulator using alsa
 
-Package: googleearth
-Priority: optional
-Section: non-free/science
-Maintainer:  <root@jessie>
-Architecture: i386
-Version: 6.0.3.2197+1.2.0-1
-Depends: fonts-liberation, xfonts-75dpi, xfonts-100dpi, libfreeimage3, lsb-core, libqtcore4, libgl1-mesa-glx, libglu1-mesa 
-Suggests: lib32nss-mdns, libgl1-nvidia-glx, libgl1-fglrx-glx
-Filename: ./Extra/googleearth_6.0.3.2197+1.2.0-1_i386.deb
-Size: 24331744
-MD5sum: 67dac1d33be55a9c257659311e88efdb
-SHA1: f66aaeb20b4a158c6f17703799b272073c3db675
-SHA256: 65c558c28e1b29da2113c1b2e9fd6b35828e296385e97697d4c07138a59a0d1b
-SHA512: 8dca68f55361eb874cdea0babe35172522a924b4d4c13173b982921d4763a35000ae5e7ff6c27772b901186b1af6277f548b836f1efdac2eb93a619ed4b67068
-Description: Google Earth, a 3D map/planet viewer
- Package built with googleearth-package.
-
 Package: thunar
 Priority: optional
 Section: xfce
