@@ -2742,6 +2742,36 @@ SHA512: 736de0107af785a0f015093fbc9a629b5a76815ce09afb007a1e409945f6e7a075eaf99f
 Description: Optical disc burning software for linux
 Homepage: http://flburn.sourceforge.net/
 
+Package: wps-office
+Priority: optional
+Section: editors
+Installed-Size: 349520
+Maintainer: WPS Office Community Team <wps_linux@kingsoft.com>
+Architecture: i386
+Version: 10.1.0.5672~a21
+Replaces: kingsoft-office
+Depends: libc6(>= 2.15), libfreetype6(>= 2.4),
+         libcups2, libglib2.0-0, libpng12-0, libglu1-mesa,
+         libsm6, libxrender1, libfontconfig1,
+         libxext6, libxcb1, xdg-utils
+Recommends: ttf-mscorefonts-installer
+Filename: ./Extra/wps-office_10.1.0.5672~a21_i386.deb
+Size: 87918012
+MD5sum: 68c91f0139309eb701586b4eca0dda68
+SHA1: e7744aa4bcb8806cd60caff8c7f0abecc40094a2
+SHA256: 4c7cd69d5d05de5369c2dad8e7c293ddc4e1eb94449a3dfc92b4120dc3f548c2
+SHA512: 401d4a633edf8b87e2f12166e1326de2842b5cad363c834011e5a9b2af1b81f79634ce713e302801e1a11367c169d693341570a6178d19da706c42c8f2547308
+Description: WPS Office, is an office productivity suite.
+ WPS Office including Writer, Presentation
+ and Spreadsheets, is a powerful office suite, which is able to process
+ word file, produce wonderful slides, and analyze data as well. It is
+ deeply compatible with all of the latest Microsoft Office file formats. 
+ It can easily open and read the documents created with Microsoft Office.
+ This is the Linux version, and it's now a TESTING package.
+ Welcome to our website: http://wps-community.org
+Multi-Arch: foreign
+Homepage: http://wps-community.org
+
 Package: apulse
 Priority: extra
 Section: checkinstall

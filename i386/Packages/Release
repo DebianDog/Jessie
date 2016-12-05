@@ -6,24 +6,24 @@ Codename: jessie
 Architectures: i386
 Components: main
 Description: DebianDog repository
-Date: Sun, 04 Dec 2016 11:53:15 UTC
+Date: Mon, 05 Dec 2016 18:08:17 UTC
 MD5Sum:
- 15bde6c988d6d457d0e46d903113f096           128382 Packages
- 499637ccbcc8f3912ea92e5630204550            49912 Packages.gz
+ 743b982c3bc8554d4cb2236999eac240           129746 Packages
+ da4b70201480889962fb3ad786a2d02e            50528 Packages.gz
  16d95e565f30490d2f5eb6e11391ce92              147 Release
- 499637ccbcc8f3912ea92e5630204550            49912 Translation-en.gz
+ da4b70201480889962fb3ad786a2d02e            50528 Translation-en.gz
 SHA1:
- fa00db39b79aea467bfc37bc6ba401aef313b489           128382 Packages
- 779ec9071a6cf4a189e4dcb9eda8a3ca1fba88bb            49912 Packages.gz
+ b623249bca0e0f8d27c08e0e79c7811ea3eaa29b           129746 Packages
+ ef5ff2f8399cf8fa5aec84ec3d9e32c82a37f7c9            50528 Packages.gz
  f7f9cdc238475cfc47c7813d70a42c0ff1a1e7b6              147 Release
- 779ec9071a6cf4a189e4dcb9eda8a3ca1fba88bb            49912 Translation-en.gz
+ ef5ff2f8399cf8fa5aec84ec3d9e32c82a37f7c9            50528 Translation-en.gz
 SHA256:
- 046c5d6b5931ffb85d4bdd34fdc00c62f7d2e1d702fdbb81edd42df5664853b5           128382 Packages
- 6c1aea5fed4f364b828e27661cb58e13b419c2319b9322dcfe45078c4e32429a            49912 Packages.gz
+ bc19615be98ca9521137a4e5ce7f76042db06dc4ab6cc834510f8164d6d5c8e0           129746 Packages
+ 1ea96c8cc56f81d62dae8a4ea098c94d94b21b6d25d7b00b6d7fae800faf25a9            50528 Packages.gz
  1fa55e4027dc946f1f5542b28f56c5e1f2c51794003c2d27761fadd9f411db3e              147 Release
- 6c1aea5fed4f364b828e27661cb58e13b419c2319b9322dcfe45078c4e32429a            49912 Translation-en.gz
+ 1ea96c8cc56f81d62dae8a4ea098c94d94b21b6d25d7b00b6d7fae800faf25a9            50528 Translation-en.gz
 SHA512:
- 28639b796d29806934c225e006b33d58010ad7a98d615a766e021279f2e12a363612e8c7134effa67c187ae49e1ba924c276665d1254137a3e323a3f15138698           128382 Packages
- aa940f721a89507f96eeddacd0db438fa3ccf50e8b02fda0baddb121e10de28de4212478d88cfb966e0c36c7626960b30206431bf58b7d7db744104575ae76ad            49912 Packages.gz
+ 34ede53a79dbca4194c082b4a2398ad6b0478f552a9b1209f1ef611b961899b8c857a61902ede5348a1033298100310125deda3e3afcc883f1c127a5ccc9adb7           129746 Packages
+ d28d743e4c518cd058258901fba8b98e19ea3882c54ff31a9b328b2a92f1e23361cc7043bc0ea9a1defc34c826a4da782b7c84cb13527ecb1cde2e9a5b278245            50528 Packages.gz
  996e9c0931ed449630ff52d7cf68b109996b529e018d0638d047adf75159a63a3572c7dade7dcb92057f96bdccd7fa129d9c215130ff7c19efbe50db2148e3d5              147 Release
- aa940f721a89507f96eeddacd0db438fa3ccf50e8b02fda0baddb121e10de28de4212478d88cfb966e0c36c7626960b30206431bf58b7d7db744104575ae76ad            49912 Translation-en.gz
+ d28d743e4c518cd058258901fba8b98e19ea3882c54ff31a9b328b2a92f1e23361cc7043bc0ea9a1defc34c826a4da782b7c84cb13527ecb1cde2e9a5b278245            50528 Translation-en.gz
