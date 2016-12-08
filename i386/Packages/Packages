@@ -26,6 +26,30 @@ Description: simple graphical file manager for X11 (compiled in DebianDog)
  current working directory if no arguments are given.
 Homepage: http://rox.sourceforge.net/desktop/ROX-Filer
 
+Package: apt2sfs
+Installed-Size: 72 
+Maintainer: fredx181 dog@root.nl
+Architecture: i386
+Version: 1.1.1
+Depends: libc6, x11-utils, x11-xserver-utils, findutils, yad, unionfs-fuse, coreutils, menu, mount, procps, sed, squashfs-tools, apt, xterm, gsu | gksu
+Filename: ./Included/apt2sfs_1.1.1_i386.deb
+Size: 9734
+MD5sum: 16aef3da1adb9152d01c346f65f7cf7a
+SHA1: fe424b10d23a3a36eabd62ffb745ba685fc58a84
+SHA256: c90e40a473a4d48053aa93b3c592214ba8d8b9a335cab3f06ded728fdc7d98ef
+SHA512: 277532861a1dd678b23f62b5a8be6136fc5dfbbc8aa8405f2dee9fbc8f879f8b664a7c1769f3c1b8b415a50d26e025b29120299affd22a03d789ca8f30d11865
+Description: Warning - This package works only in XenialDog! Fix: Force being user 'root' in chroot, otherwise installing might fail (for example when running with new created user).  
+ Fix: version 1.0.4 (and earlier) doesn't work well because of 'stable' entry in /etc/apt/sources.list after jessie became stable at 2015-04-25.
+ .
+ Fix after version 1.0.3: added option to choose location / or /tmp for working directory (in case you have only vfat or ntfs partitions available).
+ For creating a *.squashfs module from installing by apt-get
+ The installing takes place outside of the running system, in 'chroot'
+ - apt2sfs, GUI using yad
+ - apt2sfs-fullinst, GUI using yad, can be used on a full install
+ - Choice dialog now for compression algorthim: xz, gz or lz4
+ - Output from apt-get through xterm (instead using yad in previous versions)
+ Fix in v 1.1.0: skip symlinks while cleaning man and doc files
+
 Package: debdoginstallscripts
 Installed-Size: 863
 Maintainer: root
@@ -380,6 +404,23 @@ Description: Mozilla Firefox web browser - Extended Support Release (ESR)
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
 
+Package: remaster-scripts
+Installed-Size: 57
+Maintainer: fredx181 dog@root.nl
+Architecture: all
+Version: 1.0.7
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu
+Filename: ./Included/remaster-scripts_1.0.7_all.deb
+Size: 9020
+MD5sum: ed1a647a8190d96a9da5c17bfa1142b3
+SHA1: ab0e9026c01dec984ad92ac70377e0a0ffc5bcc0
+SHA256: 27c169fc67586a8581fd6785764ada2def37cfb102de743faa3d031845c8c3cb
+SHA512: a2427bf6622f10067e93064896274a86c1107dbc611db4e9b14add475bf0fb7410c7b9fa5a43dfde65e8a2026cdb9528049a7150adc89d9e34262ee85cc63444
+Description: Warning - This package works only in DebianDog! In ver. 1.0.3 fixed progress bar bug for very old PC.
+ .
+ For creating a *.squashfs module from changes (from /live/cow directory) or full system remaster (from / directory).
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+
 Package: sfsload
 Installed-Size: 47 
 Maintainer: fredx181 dog@root.nl
@@ -707,6 +748,30 @@ Description: Warning - This package works only in DebianDog! In ver. 1.0.3 fixed
  For creating a *.squashfs module from changes (from /live/cow directory) or full system remaster (from / directory).
  Fix in v 1.0.6: skip symlinks while cleaning man and doc files
 
+Package: portablesfs-loadsfs-fuse
+Installed-Size: 87 
+Maintainer: fredx181 dog@root.nl
+Architecture: all
+Version: 1.0.6
+Depends: libc6, yad, unionfs-fuse, gsu | gksu, linux-user-chroot, squashfuse, aufs-tools, lsof
+Filename: ./Included/portablesfs-loadsfs-fuse_1.0.6_all.deb
+Size: 9138
+MD5sum: 9b8d3788e5e216f07ccc53f6a3250b25
+SHA1: 08cf47fae7eca112d37ec1310a30ce548d420967
+SHA256: 4daf1bb4dc5d2151fe16ec265ac1cdfd20b43acd255d930393708b86abbb07d7
+SHA512: 0131e8423edfbc71765e2027c93cfe60aa76bd9789593cc0daedeffb610b88b81e3797eabd11720c688f15c41ab799486b8d701970c316057521c67a3a347cb7
+Description: Load a *.squashfs or *.sfs module.
+ Changes in v 1.0.3:
+ When logged in as unprivileged user, no password is required to run portable sfs script with 'Chroot Mode'
+ Same for activating a .squashfs module with loadsfs-fuse.
+ - portablesfs creates a portable script to activate *.squashfs or *.sfs module
+ (changed in v 1.0.2: added (optional) choice to enter a command that will be executed directly when running created portable script, instead of showing 'Applications' menu)  
+ - loadsfs-fuse activates a provided *.squashfs or *.sfs module from the commandline or:
+ by drag and drop (can be used on a full install).
+ - loadsfs-fuse-writesfs: basically the same as loadsfs-fuse but it leaves no traces in / (rootfs), instead it writes the config files (or any other) that a program creates to: /root/<name_of_module> directory  
+ Changes in v 1.0.5:
+ - kill processes which are keeping from proper unmounting (might be needed in some cases for SFS-load mode)
+
 Package: yad-splash
 Priority: optional
 Section: utility
@@ -796,6 +861,22 @@ Description: The flashplayerchoice script gives choice of several options to ins
  - version 11 from http://www.smokey01.com/OscarTalks/ (= 17 Mb uncompressed)
  - Install flashplugin-nonfree with apt-get (= 34 Mb uncompressed)
  - Create flashplugin-nonfree.sfs module (= 8,9 Mb compressed)
+
+Package: sfsload
+Installed-Size: 47 
+Maintainer: fredx181 dog@root.nl
+Architecture: i386
+Version: 1.0.2
+Depends: libc6, yad, gsu | gksu, aufs-tools, lsof
+Filename: ./Included/sfsload_1.0.2_i386.deb
+Size: 6628
+MD5sum: 5132a8248aeca0a6df6440106bd04c13
+SHA1: e79f0753864d41db934dc686a35540814a04b982
+SHA256: 8a101e29a751ecdf718fbc1191ebb2e0ae3d881309e5dae3817dc7f486bccec2
+SHA512: 935cdb81f86f7f923ddad2f0809bc48b987ea51153ffaea57e81ac12c9dca6d182ee269831fcf03b54809819a05f45fbc3efba8b9cd21b2be35d1c90870f921e
+Description: Load a *.squashfs or *.sfs module.
+ Changes compared to included scripts in DebianDog-2015-09-02 iso: loadmodule and loadsfs
+ In case unloading failed at first, find out (by 'aubusy', from aufs-tools) which process is keeping it from unloading and kill it, then try again.
 
 Package: mount-wizard
 Installed-Size: 73
@@ -2576,6 +2657,20 @@ SHA1: 1a05155ca873722f2498ea00c64d81ffc3b6bdf8
 SHA256: f3b63bbe6c55eb2efce18ff799f765788122cd217f2ad902bc196226370e9328
 SHA512: 4d537f80be7ad8f240b2b92fd0b693fa1664b50a2b11a5dcf333751ea71f86704c0332ad5176c021c2c8fc7ce0b70cfc32c6960cdc08d3904c610496acb1bb9f
 Description: xhippo-converted-pet-to-deb
+
+Package: sfsget
+Installed-Size: 126 
+Maintainer: fredx181 dog@root.nl
+Architecture: i386
+Version: 1.0.0
+Depends: libc6, yad, wget, elinks, gsu | gksu
+Filename: ./Extra/sfsget_1.0.0_i386.deb
+Size: 112860
+MD5sum: 9fb13b3c30ff674f28f7abaf8ca1bc0b
+SHA1: 83a4505eb05467e26d91e213a5fa33459ac41957
+SHA256: d2107ee2700c15be4e059d9d785f1feeb604a3cd39560bf1e15b0498240e6fde
+SHA512: 03feb178793699bb885ad81dc210b6807ab6c2190bc4a5f6038990da9b6f2b2343ec30529eddebdc434658068c9918a17d870cd974d85b35b111a9ba06006348
+Description: The sfsget program downloads .squashfs modules from github.com
 
 Package: samba-tng-rcrsn-0.5-rc1-debdog
 Priority: optional
