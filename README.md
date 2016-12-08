@@ -4,7 +4,9 @@
 
 [New DebianDog-Jessie iso image 2016-10-16](https://github.com/DebianDog/Jessie/releases/tag/v2.1)
 
-[Extra squashfs modules 2016-10-16](https://github.com/DebianDog/Jessie/releases/tag/v2.0)
+##### Update: extra modules has been moved:   
+[Extra squashfs modules for version 2016-10-16](https://github.com/DebianDog/SFSget/releases)   
+See also: [SFSget](https://github.com/DebianDog/SFSget)   
 
 [Bugs and fixes information after 2016-10-16](https://github.com/DebianDog/Jessie/blob/gh-pages/Bugs-and-Fixes-after-2016-10-16.md)
 
