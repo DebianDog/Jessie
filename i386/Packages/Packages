@@ -26,6 +26,30 @@ Description: simple graphical file manager for X11 (compiled in DebianDog)
  current working directory if no arguments are given.
 Homepage: http://rox.sourceforge.net/desktop/ROX-Filer
 
+Package: portablesfs-loadsfs-fuse
+Installed-Size: 87 
+Maintainer: fredx181 dog@root.nl
+Architecture: all
+Version: 1.0.7
+Depends: libc6, yad, unionfs-fuse, gsu | gksu, linux-user-chroot, squashfuse, aufs-tools, lsof
+Filename: ./Included/portablesfs-loadsfs-fuse_1.0.7_all.deb
+Size: 9158
+MD5sum: 6da14af4877067415e3bc515a4b30bba
+SHA1: e6026929006abf5142cfb5130a8dcceb3e8d1f42
+SHA256: 3b02547ca32a02e69198082d6c1a8f732fb95e2f167fd7dd16d0904da7795641
+SHA512: 94c64f5009c59f0ec6c2e1690e9b690ad38f21351802aeb4df4c1e35d088353024315eed3801b986812307540558032a9065b6257c077ff71fed5374a56659e3
+Description: Load a *.squashfs or *.sfs module.
+ Changes in v 1.0.3:
+ When logged in as unprivileged user, no password is required to run portable sfs script with 'Chroot Mode'
+ Same for activating a .squashfs module with loadsfs-fuse.
+ - portablesfs creates a portable script to activate *.squashfs or *.sfs module
+ (changed in v 1.0.2: added (optional) choice to enter a command that will be executed directly when running created portable script, instead of showing 'Applications' menu)  
+ - loadsfs-fuse activates a provided *.squashfs or *.sfs module from the commandline or:
+ by drag and drop (can be used on a full install).
+ - loadsfs-fuse-writesfs: basically the same as loadsfs-fuse but it leaves no traces in / (rootfs), instead it writes the config files (or any other) that a program creates to: /root/<name_of_module> directory  
+ Changes in v 1.0.5:
+ - kill processes which are keeping from proper unmounting (might be needed in some cases for SFS-load mode)
+
 Package: apt2sfs
 Installed-Size: 72 
 Maintainer: fredx181 dog@root.nl
@@ -296,6 +320,22 @@ SHA1: c311249a31796e576f5522988a477a0d54041f78
 SHA256: 69df8db58f4d0d1c9d2885cbc55d0b4951265212e374bdec8bdfbab1a1d46194
 SHA512: c30ddfefe42a98ff27d74d49a943df6b75d0fecc6d46ed22375ffc0cfe2c8bfb4a2894ed0dee2c66314a3d2623504b3ecd33396310495c51918e8e3f7e27ab8b
 Description: Make and auto-mount swap file script. Security fix: owner root:root and chmod 0600 for new created swap file.
+
+Package: sfsload
+Installed-Size: 47 
+Maintainer: fredx181 dog@root.nl
+Architecture: i386
+Version: 1.0.3
+Depends: libc6, yad, gsu | gksu, aufs-tools, lsof
+Filename: ./Included/sfsload_1.0.3_i386.deb
+Size: 6646
+MD5sum: afcbc3cab008edfbdeb16b74588f070e
+SHA1: ee6a08cd646a1b2bb5028cde850b656926b8f076
+SHA256: c98d4fa14c99faab0053f891e358e36c1bafb86e55998d14f5aad4b88bfc2ab7
+SHA512: 40fb030c35113d7187f50d0c76841861c84dd234973380651b1584b8efb2ffecdb44fea2bbdc4cbee1abaf5d6de8ef1a5f95f72fa77c286479b9f48957e5ee62
+Description: Load a *.squashfs or *.sfs module.
+ Changes compared to included scripts in DebianDog-2015-09-02 iso: loadmodule and loadsfs
+ In case unloading failed at first, find out (by 'aubusy', from aufs-tools) which process is keeping it from unloading and kill it, then try again.
 
 Package: apt2sfs
 Installed-Size: 72 

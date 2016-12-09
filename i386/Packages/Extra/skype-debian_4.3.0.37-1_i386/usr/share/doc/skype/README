@@ -1,0 +1,216 @@
+Skype for Linux 4.3 README
+
+INSTALLATION
+============
+
+If you are using one of the distribution-specific packages, simply run the
+"skype" executable.  KDE users should find a launcher for Skype in their
+Internet menu if Skype has been installed through one of these packages.
+
+If you are using the dynamic and statically linked generic versions, you
+will need to choose a path for Skype to exist in.  We recommend copying the
+Skype binary to /usr/bin and installing sounds/, lang/ and avatars/ into
+the /usr/share/skype directory.
+
+KNOWN ISSUES
+============
+
+General
+
+  * On Debian 6.0 64-bit version, Skype crashes on startup with the message: 
+    "Inconsistency detected by ld.so: dl-open.c: 623: _dl_open: Assertion 
+    `_dl_debug_initialize (0, args.nsid)->r_state == RT_CONSISTENT' failed!"
+    This seems to be Debian only issue with 32 bit PulseAudio libraries being 
+    installed even if PulseAudio is not active, a workaround can be:
+    - Debian Squeeze:
+      sudo chmod a-r /usr/lib32/libpulse{-simple.so.0.0.3,.so.0.12.2,common-0.9.21.so}
+
+  * On some 64-bit distributions avatars are not showing, this is a problem 
+    with 32-bit emulation Qt library. Qt tries to find its image format 
+    plugins but finds a 64-bit version instead and fails to load it.
+    A workaround is to specify a plugin path when launching Skype like this:
+    - Ubuntu 64 bit: install "ia32-libs" package and launch Skype with: 
+      QT_PLUGIN_PATH=/usr/lib32/qt4/plugins skype
+    - Arch 64 bit (with 32 bit chroot installed in /opt/arch32): 
+      QT_PLUGIN_PATH=/opt/arch32/usr/lib/qt/plugins skype
+    - Other distributions might have a different path.
+
+  * Ubuntu/Unity users that upgraded from older versions might experience
+    missing Skype icon in the Tray, a workaround can be:
+      sudo apt-get install dconf-tools
+      dconf-editor
+    Expand "desktop->unity->panel" and add the following to the
+    "systray-whitelist" item: 'Skype', 'skype'
+    Finally logout and login again from Unity.
+
+  * If the Skype icon still does not appear in the Tray, a workaround can be:
+      sudo apt-get install sni-qt:i386
+
+  * Kubuntu 12.04+ 64-bit users may have trouble installing the DEB package,
+    this is because the Kubuntu's default DEB manager is not able to 
+    handle correctly multiarch support.
+    To workaround this you need to install a better one:
+    - from a console type:
+      sudo apt-get install qapt-deb-installer
+    - right click on the Skype DEB package -> Open With -> Other...
+    - type:
+      /usr/bin/qapt-deb-installer
+    - click on OK
+    - proceed with the installation from the new window.
+
+  * Debian 7.x 64-bit users may have trouble installing the DEB package,
+    from the root user run the following commands:
+      dpkg --add-architecture i386
+      apt-get update
+    Now proceed with the installation of the DEB package.
+
+Accessibility
+
+  * In order to have Screen Reader support on incoming notifications you need
+    the 'notify-send' binary in your path:
+    - Debian (from the root user)
+      apt-get install libnotify-bin
+    - Ubuntu
+      sudo apt-get install libnotify-bin
+
+  * Ubuntu and Debian 64-bit users may experience no screen reader support,
+    due to the lack of the 32-bit plugin, a workaround can be:
+    - Debian 7.x 64-bit (from the root user)
+      apt-get install qt-at-spi:i386
+    - Ubuntu 12.04+
+      sudo apt-get install qt-at-spi:i386
+    Ubuntu 13.10+ users may also need to reboot the OS after that.
+
+  * Ubuntu and Debian 64-bit users may experience no High Contrast nor style support,
+    a workaround can be:
+    - Debian 7.x 64-bit (from the root user)
+      apt-get install libgtk2.0-0:i386 gtk2-engines:i386 libgconf-2-4:i386
+    - Ubuntu 12.04+ 64-bit
+      sudo apt-get install libgtk2.0-0:i386 gtk2-engines:i386 libgconf-2-4:i386
+
+  * How to navigate Skype for Linux using only the keyboard:
+      Tab             Moves the current focus from one element to another.
+      Space           Selects any push button.
+      Return          Selects a chat or call from history or missed events, 
+                      and selects an option from a drop down list.
+      Up/Down arrow   Moves through contacts, history/missed events, radio boxes 
+                      and combo box selection.
+    All the other hotkeys are listed at the end of this file.
+
+  * Orca Screen Reader Key Bindings
+    Orca provides two keyboard modes: "desktop" and "laptop" keyboard layout.
+    The 'Orca_Modifier' key is 'Insert' in "desktop" keyboard layout and 
+    'Caps_Lock' in "laptop" keyboard layout.
+      Orca_Modifier + Space    Displays the preferences configuration dialog
+      Orca_Modifier + Return   Performs the basic "Where am I" operation
+      Tip: Apply this key binding when wanting to listen to previous Skype chat messages.
+
+Audio
+
+  * Ubuntu users might have problems in PulseAudio recognition.
+    Please run the following command to fix this issue:
+      sudo apt-get install libasound2-plugins:i386
+
+  * Alsa users with no PulseAudio installed/running will have no audio devices.
+    Alsa support has been disabled from Skype for Linux, please install and run
+    PulseAudio.
+
+Chats
+
+  * Selections behaviour is unpredictable in right-to-left languages.
+  * Fedora users may have issues with special characters like accented letters 
+    or with Asian languages; a possible workaround may be to run the following 
+    command line:
+      sudo yum install ibus-qt.i686
+
+File Transfers
+
+  * When sending a file to a contact, even after is correctly sent, stays
+    in 'Waiting' state.
+    This is a feature and not a bug, sending files now is possible to all
+    recipients' instances (desktop, mobile, etc) and you can also send files
+    to yourself if you are signed-in on multiple Skype instances, please uncheck:
+    Options -> Advanced -> Hide files I've sent on other devices.
+
+  * There is currently no File Overwrite confirmation dialog.
+    - Files will be automatically renamed currently to avoid overwriting.
+
+  * On Ubuntu 12.04, when 'qt-at-spi' package is installed, causes
+    Skype to crash when trying to send files.
+    Please uninstall that package to solve the issue, however you'll
+    loose accessibility functionality, like support for screen readers.
+    https://bugs.launchpad.net/ubuntu/+source/qt-at-spi/+bug/857790
+
+Options Dialog
+
+  * When PulseAudio is enabled in the audio settings, only that specific entry
+    will be available; to change the settings, use the PulseAudio manager 
+    tool that is bundled with your distribution.
+
+Video
+
+  * If your camera capture is showing a green, scrambled or black image,
+    this workaround may help:
+    - Under Ubuntu's command line:
+      sudo apt-get install libv4l-0:i386
+      LD_PRELOAD=/usr/lib/i386-linux-gnu/libv4l/v4l2convert.so skype
+    - Other distributions might have the same library, but may have a 
+      different path.
+
+  * Webcam problems when trying to send video from a Logitech camera and/or 
+    the error message 'Failed to query UVC control' in the console and syslog.
+    Visit http://www.quickcamteam.net/documentation/faq/logitech-webcam-linux-usb-incompatibilities
+    for the suggested fix.
+
+HOTKEYS
+=======
+Main Window:
+  Ctrl+E                Switch between Events History and Contact List
+  Ctrl+U                Show/Hide Offline Contacts
+  Ctrl+W                Hide Main Skype Window
+  Ctrl+O                Open Skype Options
+  Ctrl+Q                Quit Skype
+
+Unified Conversations Window:
+  Ctrl+Tab              Select next Conversation
+  Ctrl+Shift+Tab        Select previous Conversation
+  Ctrl+W                Hide current Conversation
+  Alt+1                 Set the focus to the Conversations list
+
+Chat Window:
+  Ctrl+F                Find/Search this Chat
+  F3/Shift-F3           Find Next/Previous Match (use after Ctrl+F)
+  Ctrl+W                Close/Hide Chat Window
+  Enter/Ctrl+Enter      Send the chat message (based on: Options->Chat->Pressing Enter will...)
+
+Quickfilter:
+  F6                    Jump to Quickfilter
+  Escape                Clear Quickfilter
+
+Call Window:
+  F                     Toggle Fullscreen mode
+  ESC                   Exit Fullscreen mode
+  H                     Hold/Resume the Call
+  M                     Mute/Unmute the Microphone
+  D                     Show Dialpad button if hidden
+
+COMMAND-LINE OPTIONS
+====================
+
+  --dbpath=<path>       Specify an alternative path to store Skype data files
+                        Default: ~/.Skype
+  --resources=<path>    Specify a path where Skype can find its resource files
+                        Default: /usr/share/skype
+  --secondary           Start a secondary instance of Skype.
+  --disable-api         Disable initialisation of the Skype Public API
+
+  --pipelogin           Command line login. 
+                        "echo username password | skype --pipelogin"
+  --version             Display version information
+
+SUPPORT
+=======
+
+You can obtain support from the community via our online forums:
+
+http://community.skype.com/t5/Linux/bd-p/Linux
