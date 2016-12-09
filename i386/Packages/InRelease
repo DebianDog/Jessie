@@ -9,35 +9,35 @@ Codename: jessie
 Architectures: i386
 Components: main
 Description: DebianDog repository
-Date: Fri, 09 Dec 2016 17:49:13 UTC
+Date: Fri, 09 Dec 2016 17:55:36 UTC
 MD5Sum:
- 021f811a25a91f05807fdc81038cd5e7           137439 Packages
- b68f2cf32b654c28ad76e258b6415416            52009 Packages.gz
+ 227c40c92092938d0d56770bf4c45ac1           135086 Packages
+ 2d73f595164881c0a670104851fa5acb            51611 Packages.gz
  16d95e565f30490d2f5eb6e11391ce92              147 Release
- b68f2cf32b654c28ad76e258b6415416            52009 Translation-en.gz
+ 2d73f595164881c0a670104851fa5acb            51611 Translation-en.gz
 SHA1:
- 80f94573e23d9eb3bc870eaf9d2f82bee5f1c59b           137439 Packages
- 2162a2a355201785be3477641e4c6ed21a51033f            52009 Packages.gz
+ f90120365fcf7468ec7b4258309129d5206eacae           135086 Packages
+ 004f3e25ee1823dd1df40a6be6ad6d0229874dc1            51611 Packages.gz
  f7f9cdc238475cfc47c7813d70a42c0ff1a1e7b6              147 Release
- 2162a2a355201785be3477641e4c6ed21a51033f            52009 Translation-en.gz
+ 004f3e25ee1823dd1df40a6be6ad6d0229874dc1            51611 Translation-en.gz
 SHA256:
- 9652d78a4e36b4ed5481105d9947d2d2fd694de078b23341ebb71f695b8a719c           137439 Packages
- 0c85b03677d94d627510b23dbc85b9dde00d699d13393477903004948f2b4a34            52009 Packages.gz
+ 0af732ca03f49057bd623135aaf4ff36b1b4aadbb8023d38f8d12f8560465c8e           135086 Packages
+ a93019f0edd0f85f53d2824f783dca055cd9d70ef3cc72288a43a951b27fc18e            51611 Packages.gz
  1fa55e4027dc946f1f5542b28f56c5e1f2c51794003c2d27761fadd9f411db3e              147 Release
- 0c85b03677d94d627510b23dbc85b9dde00d699d13393477903004948f2b4a34            52009 Translation-en.gz
+ a93019f0edd0f85f53d2824f783dca055cd9d70ef3cc72288a43a951b27fc18e            51611 Translation-en.gz
 SHA512:
- 1dd9fd85ab3c132816cdd81110aba800d69943d7eb3b36ecda8cbb169d391422058ee02e98ef71788141dffcac97aebeac05f3d9f67aadea1f6a9ddd621f7d8a           137439 Packages
- 97498d905a5b9d937ef4ae6e47069b7e756500aaf218f974ea51f4a2854b5f9fd57cb918925042c615ded498fd4954be7ac29325fcb1f6159828da3323ccc0a8            52009 Packages.gz
+ b13bd71f734c145a61863440875cd28a5f4c27ff773abfaedaf0e2f50e5516039ffd8d3b0d8c76e04ce6c2ed88f2a0d7307d93cca3efb079bb8a89677860faee           135086 Packages
+ 2f76b96c806432de0e56d2b17990f0d1effb1af7568e2e95603a96da3bbbf20d9b6b14b3fc5f9b28d70385b17d57352a8d7f57e404208c9fadea97e5afa09b4f            51611 Packages.gz
  996e9c0931ed449630ff52d7cf68b109996b529e018d0638d047adf75159a63a3572c7dade7dcb92057f96bdccd7fa129d9c215130ff7c19efbe50db2148e3d5              147 Release
- 97498d905a5b9d937ef4ae6e47069b7e756500aaf218f974ea51f4a2854b5f9fd57cb918925042c615ded498fd4954be7ac29325fcb1f6159828da3323ccc0a8            52009 Translation-en.gz
+ 2f76b96c806432de0e56d2b17990f0d1effb1af7568e2e95603a96da3bbbf20d9b6b14b3fc5f9b28d70385b17d57352a8d7f57e404208c9fadea97e5afa09b4f            51611 Translation-en.gz
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBCAAGBQJYSu6fAAoJEK2HvHp9cwgdGCAIALOjBX9mwrKtOE8nAGohmBY6
-MPddPE/0h1a9p9cAHW4F3NngN02WWx+RqsxP5KRdjoDJYlanT7ZdQXqQv0WcX7P6
-4sI59MtpXTjSPtid6Nr2x+1/2Q55XjVwoQITDcuMC63YL+O7UXO/F6AsCuRYQjHR
-UkKy4hwnEt2Mm/R11IEMitGCTrxobSr1MqYm0x8qi0QRaIbWad8lrFO13O9MphKG
-LMfHJmfBTLswiG+FfskT36ieUU1iPvW/Z7BZK7qLiUFWXuiuhRva2DhIAQI2V7ds
-mqugg8gMKIrNwRE+7Un/7z1+da1znX41JqZKVoNvaBUxa3KQdOPZNEhtgd7RqWA=
-=GQeE
+iQEcBAEBCAAGBQJYSvA0AAoJEK2HvHp9cwgdSfcH/3fZJ6QmbAHj23vpwV2i3pBt
+/a5GAsmIEmRFD88oQyNSSKEFu36vO/ET4RPIWXVlBhkOC2PPnXAbiU3d2WEZbu7w
+YCnQ/Eiiuic36VQXSEYsBAF5avJ7chj1FnUMc/fnmGeGWE6Eq4RuSBtfUF7RsDU3
+EKqcAGvaHjB+FqHQkVB2+uyR35ja5x6ShFs8mWHDgn60m40tUVaxB8cv4WS0XcEA
+/UyoHYP15aapuCBeHkYfBYUvZWiRr+szy3lHITv+vaytYqbgQUAilkgQvYwDw1XW
+NCvfWbITmDjdxCCP0CXnuUCQEar6higkhFIQ40YeIW40ElUywazLl5Kdz6nHszM=
+=WlxR
 -----END PGP SIGNATURE-----
