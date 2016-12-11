@@ -57,11 +57,11 @@ Architecture: i386
 Version: 1.1.1
 Depends: libc6, x11-utils, x11-xserver-utils, findutils, yad, unionfs-fuse, coreutils, menu, mount, procps, sed, squashfs-tools, apt, xterm, gsu | gksu
 Filename: ./Included/apt2sfs_1.1.1_i386.deb
-Size: 9734
-MD5sum: 16aef3da1adb9152d01c346f65f7cf7a
-SHA1: fe424b10d23a3a36eabd62ffb745ba685fc58a84
-SHA256: c90e40a473a4d48053aa93b3c592214ba8d8b9a335cab3f06ded728fdc7d98ef
-SHA512: 277532861a1dd678b23f62b5a8be6136fc5dfbbc8aa8405f2dee9fbc8f879f8b664a7c1769f3c1b8b415a50d26e025b29120299affd22a03d789ca8f30d11865
+Size: 9720
+MD5sum: a48565f41df728f4b0c22ee7f58ee890
+SHA1: 52f9e7799317b3366177a099ddc4278c30bccede
+SHA256: 4184c9e2ea5f1f300a138be3f6c7f1aeca3b752b477246757f6bbe595a112530
+SHA512: 790f2ff6ea232c61b340f45bc6a49c0dc7e17d2bd0ebdd8a44ab01da4e111924afc1cd6bee81bacc0c689661aae175a6d51c9ab546e240204f1bd3d596094a93
 Description: Warning - This package works only in XenialDog! Fix: Force being user 'root' in chroot, otherwise installing might fail (for example when running with new created user).  
  Fix: version 1.0.4 (and earlier) doesn't work well because of 'stable' entry in /etc/apt/sources.list after jessie became stable at 2015-04-25.
  .
@@ -451,11 +451,11 @@ Architecture: all
 Version: 1.0.7
 Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu
 Filename: ./Included/remaster-scripts_1.0.7_all.deb
-Size: 9020
-MD5sum: ed1a647a8190d96a9da5c17bfa1142b3
-SHA1: ab0e9026c01dec984ad92ac70377e0a0ffc5bcc0
-SHA256: 27c169fc67586a8581fd6785764ada2def37cfb102de743faa3d031845c8c3cb
-SHA512: a2427bf6622f10067e93064896274a86c1107dbc611db4e9b14add475bf0fb7410c7b9fa5a43dfde65e8a2026cdb9528049a7150adc89d9e34262ee85cc63444
+Size: 9018
+MD5sum: 8d28b2a2bbe5f893879d406c561b81f4
+SHA1: e1aeb544d16e224662cf406bef92354ff2cdd045
+SHA256: 6ebcdd05b72c979a1dcc975d31981109455069dc7223dbf0604831eaba836605
+SHA512: 5483e1e00a5da4117b7a12564cc7bdab15ef153bb86977cd839c9199d8f347efa0d4f0a8436d29228be70d1e6c8bec321483f177c8e66684f8f647695a31b728
 Description: Warning - This package works only in DebianDog! In ver. 1.0.3 fixed progress bar bug for very old PC.
  .
  For creating a *.squashfs module from changes (from /live/cow directory) or full system remaster (from / directory).
