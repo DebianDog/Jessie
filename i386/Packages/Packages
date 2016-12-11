@@ -1886,6 +1886,20 @@ SHA256: 20cc612833a95122a239a0dbac8f3831542e4a5603bfd2d0bfdecf3b508e3204
 SHA512: 2f83b3648d15e0f4ebed01f723aad0ec0aa43c5b588c0cb4c449ff24afa8e4cdc45f905339e31f59cc526dc9eadc326b133071843534d7775ac51ae0a1a92e67
 Description: Static build of the latest FFmpeg binaries
 
+Package: sfsget
+Installed-Size: 126 
+Maintainer: fredx181 dog@root.nl
+Architecture: i386
+Version: 1.0.1
+Depends: libc6, yad, wget, elinks, gsu | gksu
+Filename: ./Extra/sfsget_1.0.1_i386.deb
+Size: 133094
+MD5sum: 22f61fafb02e855448bee9c8414db25a
+SHA1: 9002465b98b1dc25630b714bded014c5fe4c17e1
+SHA256: e3de33169ca13f690f85209b59d62182029fcae0962f387629551118ddaa63a2
+SHA512: f83cca96756caba62c35fed89821f9b6d8d6d1ddf96e3a55f79f9a29cc7e9e3488bfe79a4c51607d6e5756b4c333e4ec365241d8eb5f91912e13c288f1d58d88
+Description: The sfsget program downloads .squashfs modules from github.com
+
 Package: palemoon
 Priority: optional
 Section: web
