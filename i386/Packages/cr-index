@@ -56,9 +56,7 @@ p.big {
         echo '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">';
         echo "<html><head><title>Index of ${DOMAIN}${SUBDIR}</title></head>";
         echo "<body><h2>Index of ${SUBDIR}</h2><pre><b> Name                                                                                Last modified            Size</b>";
-echo '<p STYLE="font-size: 13px;" class="big">'
- 
-        # start of content output
+echo '<p STYLE="font-size: 13px;" class="big">'"<a href="$(dirname ${DOMAIN}${SUBDIR})">Parent Directory/</a>"
         (
             # change IFS locally within subshell so the for loop saves line correctly to L var
             IFS=$'\n';

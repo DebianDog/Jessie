@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Fun
+Icon=/usr/local/sfsget/icon/games48.png
+Comment=Fun
+Exec=/usr/local/sfsget/script/fun
+Type=Application
+

@@ -1,0 +1,58 @@
+if  [ ! -f /mnt/live/tmp/modules ]; then    # for live-boot
+# should be exact, parse from /proc/cmdline
+   live_dir=$(grep -o "live-media-path=.*" /proc/cmdline |sed 's: .*::' |sed 's:live-media-path=/::')
+   if [[ -z "$live_dir" ]] ; then
+      live_dir="live/"
+   fi
+
+# get the exact path containing initrd and vmlinuz files for live-boot 3/4. 
+test_persistence() {
+NUM=$(find /lib/live/mount/persistence -mindepth 1 -maxdepth 1 -not -empty -type d | wc -l)
+if [ "$NUM" -gt 2 ]; then
+    for i in $(ls -d /lib/live/mount/persistence/* 2> /dev/null); do
+    # Create a testfile on / and check if it exists also on the root of the directory '$i'
+    # If it does, then this should be the persistence directory
+    BASE=$(basename "$i") 
+    TESTFILE=$(mktemp --tmpdir=/)  
+    [ -n $i ] && [ -f $i/$TESTFILE ] && PERSIST="$i"
+    # Define the 'home' partition
+    EXCL=$(losetup -a | grep '/live/persistence' | grep -o "$BASE")
+    [ -n "$(ls -A $i 2> /dev/null)" ] && [ -z "$EXCL" ] && [ ! -f $i/$TESTFILE ] && MEDIUM="$i"
+    rm -f $TESTFILE
+    done
+else
+    for i in $(ls -d /lib/live/mount/persistence/* 2> /dev/null); do
+    # Create a testfile on / and check if it exists also on the root of the directory '$i'
+    # If it does, then this should be the persistence directory 
+    TESTFILE=$(mktemp --tmpdir=/)  
+    [ -n $i ] && [ -f $i/$TESTFILE ] && PERSIST="$i"
+    # The directory that does not contain the testfile should be the 'home' partition: 
+    [ -n "$(ls -A $i 2> /dev/null)" ] && [ ! -f $i/$TESTFILE ] && MEDIUM="$i"
+    rm -f $TESTFILE
+    done
+fi
+}
+test_persistence
+
+if [ -z "$MEDIUM" ]; then
+MEDIUM=$(mount -l | grep -m 1 /lib/live/mount/persistence | awk 'BEGIN{FS=" "} {print $3}')
+fi
+
+# still no path for MEDIUM found, booting without persistence?
+if [ -z "$MEDIUM" ]; then
+   if grep -qv " persistence " /proc/cmdline; then
+MEDIUM="/lib/live/mount/medium"
+   fi
+fi
+
+# remount MEDIUM read-write
+mount -o remount,rw $MEDIUM 2> /dev/null
+
+# By default overlay is mounted twice (in case no persistence), unmounting it, sort of 'releases' it, not sure why but it works ;) 
+umount /lib/live/mount/overlay 2> /dev/null
+
+BASE="$MEDIUM/$live_dir"
+
+else    # for porteus-boot
+BASE="$(cat /mnt/live/etc/homedrv)"
+fi

@@ -1,0 +1,32 @@
+Package: wifibox
+Priority: extra
+Section: checkinstall
+Installed-Size: 290
+Maintainer: root@wheezy
+Depends: libc6, rfkill, libiw30, yad, libgtk2.0-0, libglade2-0, psmisc, wpasupplicant, wireless-tools, net-tools, gsu | gksu
+Architecture: amd64
+Version: 1.0.4
+Conflicts: ceni, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, frisbee, wifibox-tazpanel, wifibox-dhcpcd 
+Replaces: ceni, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, udhcpc, frisbee, wifibox-tazpanel, wifibox-dhcpcd
+Description: Wireless Network manager
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

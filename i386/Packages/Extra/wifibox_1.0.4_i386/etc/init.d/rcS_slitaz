@@ -1,0 +1,55 @@
+#!/bin/sh
+#
+### BEGIN INIT INFO
+# Provides:          rcS_slitaz
+# Required-Start:    $all
+# Required-Stop:     
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Wireless authentication supplicant & DHCP client & tiny webserver
+# Description:       Daemons for ethernet and wireless networking
+### END INIT INFO
+
+# /etc/init.d/rcS    : Initial boot script for SliTaz GNU/Linux. 
+# Only RUN_SCRIPTS and _DAEMONS routines needed for DebianDog so extracted - mcewanw.
+# Configuration file : /etc/rcS.conf
+#
+# rcS is the main initialization script used to check fs, mount, clean,
+# run scripts and start daemons.
+#
+. /etc/init.d/rc.functions
+. /etc/rcS.conf
+
+# fredx181 added start and stop actions
+case "$1" in
+start)
+# Start all scripts specified with $RUN_SCRIPTS
+for script in $RUN_SCRIPTS; do
+	echo $(colorize 34 "Processing: /etc/init.d/$script")
+	/etc/init.d/$script start
+done
+
+;;
+stop)
+# Stop all scripts specified with $RUN_SCRIPTS
+for script in $RUN_SCRIPTS; do
+	echo $(colorize 34 "Processing: /etc/init.d/$script")
+	/etc/init.d/$script stop
+done
+
+;;
+restart)
+# Stop all scripts specified with $RUN_SCRIPTS
+for script in $RUN_SCRIPTS; do
+	echo $(colorize 34 "Processing: /etc/init.d/$script")
+	/etc/init.d/$script stop
+done
+
+# Start all scripts specified with $RUN_SCRIPTS
+for script in $RUN_SCRIPTS; do
+	echo $(colorize 34 "Processing: /etc/init.d/$script")
+	/etc/init.d/$script start
+done
+
+;;
+esac

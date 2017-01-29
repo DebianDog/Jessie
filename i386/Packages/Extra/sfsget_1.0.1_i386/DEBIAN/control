@@ -1,0 +1,22 @@
+Package: sfsget
+Maintainer: fredx181 dog@root.nl
+Architecture: i386
+Version: 1.0.1
+Installed-Size: 126 
+Depends: libc6, yad, wget, elinks, gsu | gksu
+Description: The sfsget program downloads .squashfs modules from github.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

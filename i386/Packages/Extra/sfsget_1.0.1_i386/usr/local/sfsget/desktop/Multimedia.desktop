@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Multimedia
+Icon=/usr/local/sfsget/icon/multimedia48.png
+Comment=Mutimedia
+Exec=/usr/local/sfsget/script/multimedia
+Type=Application

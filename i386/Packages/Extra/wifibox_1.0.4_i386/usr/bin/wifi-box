@@ -1,0 +1,277 @@
+#!/bin/bash
+#
+# Small Wi-Fi utility to quickly connect to a network. Easy network connection
+# is most important, this tool provides a quick way to connect or change Wi-Fi
+# settings while full network configuration is done in TazPanel.
+#
+# Copyright (C) 2012-2016 SliTaz GNU/Linux - GNU GPL v2
+#
+# Authors: Christophe Lincoln <pankso@slitaz.org>
+#
+
+if [ -z `which gsu` ]; then
+[ "`whoami`" != "root" ] && exec gksu ${0} "$@"
+else
+[ "`whoami`" != "root" ] && exec gsu ${0} "$@"
+fi
+
+. /lib/libtaz.sh
+export TEXTDOMAIN='slitaz-boxes' #i18n
+
+usage() {
+	newline; _ 'Small Wi-Fi utility to quickly connect to a network.'
+	newline; boldify "$(_ 'Usage:')"
+	echo "  $(basename $0) [$(_ 'interface')]"
+	newline
+}
+
+# fredx181 function Yad colored-splash
+set_gtkrc()
+{
+# Yad colored-splash
+# Set variables for foreground, background, fontname and text.
+[ -z "$FOREGROUND" ] && FOREGROUND="#000000"
+[ -z "$BACKGROUND" ] && BACKGROUND="#7FD785"
+[ -z "$FONTNAME" ] && FONTNAME="Bold 10"
+cat > /tmp/gtkrc.yad <<EOF
+style "default" { bg[NORMAL] = "$BACKGROUND" fg[NORMAL] = "$FOREGROUND" font_name="$FONTNAME" } class "GtkWidget"    style "default"
+EOF
+}
+export -f set_gtkrc
+
+# Start a Wi-Fi connection
+
+start_wifi() {
+	. /etc/network.conf
+	sed -i \
+		-e s'/^DHCP=.*/DHCP="yes"/' \
+		-e s'/^STATIC=.*/STATIC="no"/' \
+		-e s'/^WIFI=.*/WIFI="yes"/' \
+		/etc/network.conf
+rfkill unblock wlan
+	ifconfig $WIFI_INTERFACE up
+ret=$?
+echo ret=$ret
+if [ $ret -ne 0 ]; then
+export NOWIFI="yes"
+connect_wired
+exit
+fi
+	iwconfig $WIFI_INTERFACE txpower auto
+if [ -n "$WIFI_ESSID" ]; then # fredx181, only if WIFI_ESSID is not empty
+# fredx181 change, splash message
+set_gtkrc
+GTK2_RC_FILES="/tmp/gtkrc.yad" yad --on-top --title=apt2sfs --text="   Disconnecting wired network...   \n Trying to connect to Wifi network \n \t    Please wait... " --center --undecorated --no-buttons --timeout 6 &
+	/etc/init.d/network.sh start
+fi
+}
+
+
+# Catch ESSIDs and format output for GTK tree. We get the list of
+# networks by Cell and without spaces.
+
+detect_wifi() {
+	if [ -d /sys/class/net/$WIFI_INTERFACE/wireless ]; then
+		ifconfig $WIFI_INTERFACE up
+		echo -e "$( _n 'any')\n$(_n 'N/A')\n$(_n 'none')\n$(_n '-')"
+		for i in $(iwlist $WIFI_INTERFACE scan | sed s/"Cell "/Cell-/ | grep "Cell-" | awk '{print $1}')
+		do
+			scan=$(iwlist $WIFI_INTERFACE scan last | \
+				awk '/(Cell|ESS|Qual|Encry|IE: WPA|WPA2)/ {print}' | \
+				sed s/"Cell "/Cell-/ | grep -A 5 "$i")
+			essid=$(echo $scan | cut -d '"' -f 2)
+# fredx181, not required anymore, see below printf command
+# 			[ "$essid" = "\x00" ] && continue # added by Fred (fredx181) of murga-linux forum
+			if echo "$scan" | grep -q Quality; then
+				quality=$(echo $scan | sed 's/.*Quality=\([^ ]*\).*/\1/' | sed 's/.*Quality:\([^ ]*\).*/\1/')
+			else
+				quality="$(_n '-')"
+			fi
+
+			crypto=$(echo $scan | sed 's/.*key:\([^ ]*\).*/\1/')
+			# Check encryption type
+			if echo "$scan" | grep -q WPA*; then
+				crypto="WPA"
+			fi
+
+			# Connected or not connected...
+			if ifconfig | grep -A 1 $WIFI_INTERFACE | \
+				grep -q inet && iwconfig $WIFI_INTERFACE | \
+				grep ESSID | grep -q -w "$essid"; then
+				status="$(_n 'connected')"
+			else
+				status="$(_n '-')"
+			fi
+
+			# fredx181, set variable NewLine from printf, might deal better with backslash in ESSID name
+			printf -v NewLine "\n"
+			echo "$essid${NewLine}$quality${NewLine}${crypto/off/NONE}${NewLine}$status"
+
+		done
+	fi
+}
+
+
+# Prompt for password or connect
+
+connect_main() {
+	case $keytype in
+		WPA)	label="$(_n 'WPA Password:')" ;;
+		WEP)	label="$(_n 'WEP Password:')" ;;
+		*)		label= ;;
+	esac
+	case $keytype in
+		WPA|WEP)
+			icon='network-wireless'
+			yad --title="$(_n 'Wi-Fi connection')" --window-icon=$icon \
+				--width=520 --height=140 --on-top --center \
+				--image=$icon --image-on-top \
+				--text="$(_n 'Connection to:') <b>$essid</b>" \
+				--form \
+				--field="$label:H" ;;
+		none) continue ;;
+		*) exit 0 ;;
+	esac
+}
+
+
+connect() {
+	main=$(connect_main)
+	ret=$?
+	# Deal with --button values
+	case $ret in
+		1) exit 0 ;;
+		*) continue ;;
+	esac
+	/etc/init.d/network.sh stop
+	sleep 1
+	key=$(echo "$main" | cut -d '|' -f 1)
+	#fredx181 encrypt password, do not escape quotes for "$key"
+key=$(echo $(wpa_passphrase $essid $key | grep  "psk=" | grep -v "#psk=" | sed 's/psk=//')) 
+	sed -i \
+		-e s"/^WIFI_ESSID=.*/WIFI_ESSID=\"$essid\""/ \
+		-e s"/^WIFI_KEY=.*/WIFI_KEY="$key"/" \
+		-e s"/^WIFI_KEY_TYPE=.*/WIFI_KEY_TYPE=\"$keytype\"/" \
+		/etc/network.conf
+	start_wifi
+}
+
+# fredx181 change, function connect_wired, to switch to wired connection (if available) when stopping Wifi
+connect_wired() {
+if [ "$NOWIFI" = "yes" ]; then
+set_gtkrc
+GTK2_RC_FILES="/tmp/gtkrc.yad" yad --on-top --title=apt2sfs --text=" \tCannot connect to WIFI... \n Trying to connect to wired network   \n \t    Please wait... " --center --undecorated --no-buttons --timeout 6 &
+else
+set_gtkrc
+GTK2_RC_FILES="/tmp/gtkrc.yad" yad --on-top --title=apt2sfs --text=" \tDisconnecting Wifi... \n Trying to connect to wired network   \n \t    Please wait... " --center --undecorated --no-buttons --timeout 6 &
+fi
+sed -i -e s'/^WIFI=.*/WIFI="no"/' /etc/network.conf
+ifconfig $INTERFACE up && sleep 5
+	[ -f /var/run/udhcpc.$INTERFACE.pid ] && killall udhcpc
+rm -f /tmp/no_fail_message
+rm -f /tmp/no_connect_message
+# fredx181 change, instead /etc/udhcpc/default.script read from custom script (for splash message)
+/sbin/udhcpc -b -T 1 -A 12 -i $INTERFACE -p /var/run/udhcpc.$INTERFACE.pid -s /etc/slitaz/wifibox_udhcpc
+
+}
+
+# fredx181 change, function for 'Preferences' button, edit /etc/network.conf or /etc/wpa/wpa.conf
+prefs() {
+edit_network() {
+NETCONF=$(yad --center --title "Edit Network configuration" --height=650 --width=800 --editable --fontname="Bold 10" --text-info --filename=/etc/network.conf)
+	if [ "$?" -eq 0 ]; then
+	echo "$NETCONF" > /etc/network.conf
+	fi
+}
+
+edit_wpa() {
+WPA=$(yad --center --title "Edit WPA configuration" --height=650 --width=800 --editable --fontname="Bold 10" --text-info --filename=/etc/wpa/wpa.conf)
+	if [ "$?" -eq 0 ]; then
+	echo "$WPA" > /etc/wpa/wpa.conf
+	fi
+}
+
+icon='network-wireless'
+yad --center --width=550 --image=$icon --image-on-top --title="Edit Network Config" --text=" Edit configuration file /etc/network.conf or /etc/wpa/wpa.conf \n For more advanced options: \n Install 'wifibox-tazpanel' package to run tazpanel control center instead" --button="Edit network.conf!gtk-edit:2" --button="Edit wpa.conf!gtk-edit:0" --button="gtk-cancel:1"
+ret=$?
+case $ret in
+0) edit_wpa
+;;
+2) edit_network
+;;
+1|252) exit 1
+;;
+esac
+
+}
+export -f prefs
+
+
+
+# Main GUI box function with pure Yad spec
+
+wifi_main() {
+	icon='network-wireless'
+# fredx181 check also if WIFI is not set to yes 
+	if iwconfig 2>/dev/null | grep -q 'Tx-Power=off' || [ "$WIFI" != 'yes' ]; then
+		startstop="$(_n 'Start Wi-Fi')!media-playback-start:4"
+		refresh=''
+	else
+		startstop="$(_n 'Stop Wi-Fi')!media-playback-stop:3"
+		refresh="--button=gtk-refresh:5"
+	fi
+	detect_wifi | yad --title="$(_n 'Wi-Fi network')" --window-icon=$icon \
+		--width=520 --height=370 --center \
+		--image=$icon --image-on-top --expand-column=1 \
+		--text="$(_n '<b>Connect to a Wi-Fi network</b> (Double click to connect)')" \
+		--list \
+		--column "$(_n 'ESSID Name')" --column "$(_n 'Quality')" \
+		--column "$(_n 'Encryption')" --column "$(_n 'Status')" \
+		--button="$startstop" $refresh \
+		--button="gtk-preferences:2" --button="gtk-close:1"
+}
+
+
+# Main function
+
+wifi() {
+	# Store box results
+	main=$(wifi_main)
+	ret=$?
+	# Deal with --button values
+	case $ret in
+		1) exit 0 ;;
+		2) prefs; $0 ;;
+		3) /etc/init.d/network.sh stop; sleep 3; connect_wired; $0 ;;
+		4) start_wifi; $0 ;;
+		5) $0 ;;
+	esac
+	if [ -n "$main" ]; then
+		essid=$(echo "$main" | cut -d "|" -f 1)
+		keytype=$(echo "$main" | cut -d "|" -f 3)
+		connect
+	fi
+}
+
+
+#
+# Script commands
+#
+
+case "$1" in
+	-h|--help|usage|help|-*)
+		usage ;;
+	*)
+		# Only for root.
+		if [ $(id -u) -ne 0 ]; then
+			exec tazbox su $0 $@
+			exit 0
+		fi
+
+		. /etc/network.conf
+		[ -n "$1" ] && WIFI_INTERFACE="$1"
+		wifi ;;
+esac
+
+exit 0
+

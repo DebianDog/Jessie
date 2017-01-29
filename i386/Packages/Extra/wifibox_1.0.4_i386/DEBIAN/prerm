@@ -1,0 +1,17 @@
+#!/bin/sh
+set -e
+
+update-rc.d -f rcS_slitaz remove
+#service rcS_slitaz stop || exit $?
+#/etc/init.d/rcS_slitaz stop || exit $?
+invoke-rc.d rcS_slitaz stop || exit $?
+
+if [ -f /etc/network.conf ]; then
+	. /etc/network.conf
+	if [ -n "$WIFI_ESSID" ]; then
+	mv -f /etc/network.conf /etc/network.conf.bak
+	[ -f /etc/wpa/wpa.conf ] && mv -f /etc/wpa/wpa.conf /etc/wpa/wpa.conf.bak
+	fi
+fi
+
+

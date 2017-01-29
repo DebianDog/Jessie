@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Desktop
+Icon=/usr/local/sfsget/icon/harddrive48.png
+Comment=Desktop
+Exec=/usr/local/sfsget/script/desktop
+Type=Application

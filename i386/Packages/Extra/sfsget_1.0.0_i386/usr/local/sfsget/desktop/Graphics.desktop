@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Graphics
+Icon=/usr/local/sfsget/icon/paint48.png
+Comment=Graphics
+Exec=/usr/local/sfsget/script/graphics
+Type=Application

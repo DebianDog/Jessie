@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Network
+Icon=/usr/local/sfsget/icon/connect48.png
+Comment=network
+Exec=/usr/local/sfsget/script/network
+Type=Application
