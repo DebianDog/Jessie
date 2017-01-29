@@ -1,8 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Name=Utility
-Icon=/usr/local/sfsget/icon/utility48.png
-Comment=Utility
-Exec=/usr/local/sfsget/script/utility
-Type=Application
-
