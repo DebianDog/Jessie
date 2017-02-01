@@ -2903,11 +2903,11 @@ Suggests: linux-doc-4.7, debian-kernel-handbook, grub-pc | extlinux
 Conflicts: linux-image-4.7.0-1-686-pae-unsigned
 Breaks: initramfs-tools (<< 0.110~), xserver-xorg-input-vmmouse (<< 1:13.0.99)
 Filename: ./Extra/linux-image-4.7.0-1-686-pae_4.7.8-1_i386.deb
-Size: 37695390
-MD5sum: b16e2a06e2dd2c1fc69742dec5c7586c
-SHA1: f75a2a4ec1cb9333e4054d4e39e7008b1edbe8fd
-SHA256: 4267ec924db6c5115b71f9b87de74df93a75922a42e057a3b11bf431f0757fb1
-SHA512: 3a4ef7aa3b39248735cba50dc3dfc027434143cb0380fdc4c1e7e03d3691944f75509a7c946fa6a4394ef1bf83e85e5ba1b0159dfdbe75f63bcf46f98e7f8388
+Size: 37547828
+MD5sum: 2a8bf47391f987aa531590dfb2200282
+SHA1: d740b982302719163b672b0d295b5bd79f29e9dd
+SHA256: 0815802cb44f2e7846725810fc4eedd8b40da949b77153ba98362aa1c28153ac
+SHA512: f95772c7aea10b46011a82ee36ae537adcddd5f05312c297d67424ca236be58836cf5c5430adde43aa0cbf12b2631f5bae895c9c1ea2d2013f8ea5ff603e04fc
 Description: Linux 4.7 for modern PCs (signed)
  The Linux kernel 4.7 and modules for use on PCs with one or more
  processors supporting PAE.
