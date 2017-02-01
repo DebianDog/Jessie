@@ -1744,6 +1744,28 @@ Description: fast, lightweight graphical web browser
   * Custom context menu actions.
 Homepage: http://www.twotoasts.de/index.php?/pages/midori_summary.html
 
+Package: linux-headers-4.7.0-1-common
+Priority: optional
+Section: kernel
+Installed-Size: 28752
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: i386
+Source: linux
+Version: 4.7.8-1
+Filename: ./Extra/linux-headers-4.7.0-1-common_4.7.8-1_i386.deb
+Size: 5272948
+MD5sum: d23c0e40c4b02db6c0aeaaba231676ef
+SHA1: fc7aa28300a3e322f212c705550c9d9af2426da5
+SHA256: b7f7d7106812cdb3d56623e14a28d545597e42503d6719c4a2fa9722710b305a
+SHA512: d6983191c87c5edea8e461dcd2ca4a97687725ec97737180dde9621ea192cc71fc7bf5c160ba872670c9b15c936a86abb0c99dfadc297d7507ece93a33aeea95
+Description: Common header files for Linux 4.7.0-1
+ This package provides the architecture-specific common kernel header files
+ for Linux kernel version 4.7.0-1, generally used for building out-of-tree
+ kernel modules.  To obtain a complete set of headers you also need to
+ install the linux-headers-4.7.0-1-(flavour) package, matching the flavour
+ of the kernel you intend the build for.
+Homepage: https://www.kernel.org/
+
 Package: mpv
 Priority: optional
 Section: misc
@@ -2052,6 +2074,27 @@ Description: Wherever you are, wherever they are
   * Get your friends together on a conference call.
  .
  And that's just the start...
+
+Package: linux-kbuild-4.7
+Priority: optional
+Section: kernel
+Installed-Size: 1179
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: i386
+Source: linux
+Version: 4.7.8-1
+Depends: libc6 (>= 2.11), libssl1.0.2 (>= 1.0.2d)
+Filename: ./Extra/linux-kbuild-4.7_4.7.8-1_i386.deb
+Size: 594066
+MD5sum: d3f19c950d3fe99e74a5ae6d5b38a859
+SHA1: af241e8d5c863126b4b5cbaa4a6f992f17828feb
+SHA256: 150b8c35bd2d83ebaf4278d47f2e96a15f42b3d97f351676051dadcaa581dd03
+SHA512: 56698658673988d3d1bed1399593b618c4d7d09db1be018e65965ac5417bcfcf2031eb1d58528d27fd8957f12574fdb906e8963f81b097056d82fd07b790e359
+Description: Kbuild infrastructure for Linux 4.7
+ This package provides the kbuild infrastructure for the headers packages
+ for Linux kernel version 4.7.
+Multi-Arch: foreign
+Homepage: https://www.kernel.org/
 
 Package: midori
 Priority: optional
@@ -2375,6 +2418,30 @@ SHA1: dafa4964022ee5a2ffb79e0826bf04c3ba644960
 SHA256: ed7a1daeb6b8c426b6f2ab3f7e2c4564ca721d34e823e2814946293fc8947da9
 SHA512: 1549e9b0aa0a49978605a75c50766c633659d417306f1dc6efa1ab176ec7913460599cde89f83323094803178a18efbe1829d86d000c2a01ffbd08938b477933
 Description: Light window manager
+
+Package: linux-headers-4.7.0-1-686-pae
+Priority: optional
+Section: kernel
+Installed-Size: 4432
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: i386
+Source: linux
+Version: 4.7.8-1
+Depends: linux-headers-4.7.0-1-common (= 4.7.8-1), linux-kbuild-4.7, linux-compiler-gcc-5-x86
+Filename: ./Extra/linux-headers-4.7.0-1-686-pae_4.7.8-1_i386.deb
+Size: 487288
+MD5sum: cb4019ae6f15ebb8328ac2f193a1974c
+SHA1: 0e260842eb30fefb4be3500528314f69374a05ac
+SHA256: 1b79a13ff215b3fde3d33e8e3d89a884e5907b07801afcd5ad71a990faed1d9c
+SHA512: 22e11c35255a366999b2efdb6519dcb49805a8b460345b6f6c6f2f339909016edafd23b6f7fcfa042da5f8a83d642226714702fc85379d9157b97929a4a8c8bd
+Description: Header files for Linux 4.7.0-1-686-pae
+ This package provides the architecture-specific kernel header files for
+ Linux kernel 4.7.0-1-686-pae, generally used for building out-of-tree
+ kernel modules.  These files are going to be installed into
+ /usr/src/linux-headers-4.7.0-1-686-pae, and can be used for building
+ modules that load into the kernel provided by the
+ linux-image-4.7.0-1-686-pae package.
+Homepage: https://www.kernel.org/
 
 Package: libgnutls26
 Priority: standard
@@ -2821,6 +2888,42 @@ SHA256: 0ff6d9aa73be9cc3924b1ef20444c493d622d09eb5409ff994a46bf11139f82c
 SHA512: f16994a14d928a83221dc331cbe47d45a26307e3c9860a7c71e55f297780288b462e9c75766142286422d2d7cda9301acff9048be9a84684c3c98008d78b8892
 Description: Pulseaudio emulator using alsa
 
+Package: linux-image-4.7.0-1-686-pae
+Priority: optional
+Section: kernel
+Installed-Size: 133771
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: i386
+Source: linux-signed (2.8)
+Version: 4.7.8-1
+Replaces: linux-image-4.7.0-1-686-pae-unsigned
+Depends: kmod, linux-base (>= 4.3~), initramfs-tools (>= 0.110~) | linux-initramfs-tool
+Recommends: firmware-linux-free, irqbalance
+Suggests: linux-doc-4.7, debian-kernel-handbook, grub-pc | extlinux
+Conflicts: linux-image-4.7.0-1-686-pae-unsigned
+Breaks: initramfs-tools (<< 0.110~), xserver-xorg-input-vmmouse (<< 1:13.0.99)
+Filename: ./Extra/linux-image-4.7.0-1-686-pae_4.7.8-1_i386.deb
+Size: 37695390
+MD5sum: b16e2a06e2dd2c1fc69742dec5c7586c
+SHA1: f75a2a4ec1cb9333e4054d4e39e7008b1edbe8fd
+SHA256: 4267ec924db6c5115b71f9b87de74df93a75922a42e057a3b11bf431f0757fb1
+SHA512: 3a4ef7aa3b39248735cba50dc3dfc027434143cb0380fdc4c1e7e03d3691944f75509a7c946fa6a4394ef1bf83e85e5ba1b0159dfdbe75f63bcf46f98e7f8388
+Description: Linux 4.7 for modern PCs (signed)
+ The Linux kernel 4.7 and modules for use on PCs with one or more
+ processors supporting PAE.
+ .
+ This kernel requires PAE (Physical Address Extension). This feature is
+ supported by the Intel Pentium Pro/II/III/4/4M/D, Xeon, Core and Atom; AMD
+ Geode NX, Athlon (K7), Duron, Opteron, Sempron, Turion or Phenom;
+ Transmeta Efficeon; VIA C7; and some other processors.
+ .
+ This kernel also runs on a Xen hypervisor.  It supports both privileged
+ (dom0) and unprivileged (domU) operation.
+ .
+ The kernel image and modules are signed for use with Secure Boot.
+Built-Using: linux (= 4.7.8-1)
+Homepage: https://www.kernel.org/
+
 Package: thunar
 Priority: optional
 Section: xfce
@@ -2913,6 +3016,20 @@ SHA256: 47b978289991747d73270eadd0874d3284de739591283319673b984c94c7c6ba
 SHA512: 736de0107af785a0f015093fbc9a629b5a76815ce09afb007a1e409945f6e7a075eaf99f78ada65beece698f70f132d928d8ae015c5109ff3b7d59fb3fb77843
 Description: Optical disc burning software for linux
 Homepage: http://flburn.sourceforge.net/
+
+Package: upgrade-kernel
+Installed-Size: 20
+Maintainer: fredx181 dog@root.nl
+Architecture: all
+Version: 1.0.1
+Depends: libc6, dpkg, findutils, cpio, xz-utils, gzip, gsu | gksu
+Filename: ./Extra/upgrade-kernel_1.0.1_all.deb
+Size: 11644
+MD5sum: 8ddfb82ca0aa4d8d8d9aa2bad666d17a
+SHA1: 267181bf53c0e2745246f74a6d833d30b4f6a677
+SHA256: 10558a9f9d83fa7f7b6ac29f749a257ab660b8cd19728e76cbaf05c13deb812b
+SHA512: 392f8783bebabfad19fe2fb3e1e13a7ef5820f611e0a0cb7afec60b8f3026c71cea188023f8bc29f17cea655608813c90adac2fce168bf30cdf4a2b49d5bb81c
+Description: Warning - This package works only in DebianDog!
 
 Package: wps-office
 Priority: optional
