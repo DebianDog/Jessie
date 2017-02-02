@@ -7,7 +7,8 @@ Bug fix: gz compression option not working in quick-remastergui from version 1.0
 
 **2.** Added package upgrade-kernel
 Upgrade to latest kernel and update intrd + vmlinuz1 files at the same time (frugal install only)
-See also [Here](http://murga-linux.com/puppy/viewtopic.php?p=930244#930244) and [Here](http://murga-linux.com/puppy/viewtopic.php?p=929740#929740)
+See also [Here](http://murga-linux.com/puppy/viewtopic.php?p=930244#930244) and [Here](http://murga-linux.com/puppy/viewtopic.php?p=929740#929740)   
+**Update:** New version of upgrade-kernel and added newer kernels to repository, see also [Here](http://murga-linux.com/puppy/viewtopic.php?p=941598#941598)   
 
 **3.** Included gnome-player doesn't play Audio CD's
 It's because of mplayer not compiled with cdda support, fixed now by recompiling (with CD and DVD support), to upgrade gnome-mplayer-1.0.7 :
