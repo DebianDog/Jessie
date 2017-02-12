@@ -1,0 +1,27 @@
+Package: porteusbootscripts
+Section: checkinstall
+Installed-Size: 56
+Maintainer: root@jessie
+Depends: libc6
+Architecture: i386
+Version: 0.0.2a
+Description: Porteus-boot helper-scripts (Note: works only on DebianDog)
+ This version has included the scripts for the new-save-setup
+ Note: Removing this package does not make any change.
+ This is on purpose because the scrips are essential for porteus-boot to work
+ To revert back to the old save-setup, install version 0.0.2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

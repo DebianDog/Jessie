@@ -1,0 +1,28 @@
+#!/bin/sh
+# postinst script for porteusbootscripts
+#
+# see: dh_installdeb(1)
+
+set -e
+
+. /usr/share/debconf/confmodule
+
+mv -f -t /usr/bin /opt/tmp/snapmergepuppy /opt/tmp/save2flash /opt/tmp/wmpoweroff /opt/tmp/wmreboot
+mv -f -t /etc/init.d /opt/tmp/snapexit
+mv -f -t /usr/local/bin /opt/tmp/snap
+mv -f -t /usr/local/bin /opt/tmp/mk-save.gtkdlg
+mv -f -t /usr/bin /opt/tmp/makepfile.sh 
+
+rm -rf /opt/tmp/*
+
+
+if [ -x "/etc/init.d/snapexit" ]; then
+	update-rc.d snapexit defaults >/dev/null
+fi
+
+
+
+
+db_stop;
+
+exit 0
