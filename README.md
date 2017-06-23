@@ -1,4 +1,6 @@
 
+[**Our thanks to Daniel Baumann! DebianDog wouldn't exist without his work.**](https://lists.debian.org/debian-live/2015/11/msg00024.html)
+
 The DebianDog team also like to give thanks to Smokey and KazzaMozz for hosting DebianDog project
 to Debian team for keeping Debian such flexible system,
 to the murga-linux Puppy forum for the opportunity to work on a project different from puppy linux,
