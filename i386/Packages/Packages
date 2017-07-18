@@ -137,6 +137,22 @@ Description: Warning - This package works only in XenialDog! Fix: Force being us
  - Output from apt-get through xterm (instead using yad in previous versions)
  Fix in v 1.1.0: skip symlinks while cleaning man and doc files
 
+Package: flashplayerchoice
+Installed-Size: 14 
+Maintainer: root
+Architecture: i386
+Version: 1.0.3
+Depends: libc6, wget, yad, sed, menu, tar, gsu | gksu
+Filename: ./Included/flashplayerchoice_1.0.3_i386.deb
+Size: 5824
+MD5sum: 4ea4dc318d49701ca471e31505126e9e
+SHA1: 13f0949834333e9e1f8d4647f60b9986f1ae91c1
+SHA256: 99308724febac07b27678e71650558abc4c60f4d18671cc4b1e7a4ff06a25853
+SHA512: f59ddda741bc3bc9deb425646a7d28879637c0daa1776aa2da767c8d729efcc43161ba9525135a25eb3b79d3e4580831f9b75546e1290e669c7050ff55103466
+Description: The flashplayerchoice script gives choice of several options to install flashplayer :
+ - Download latest version directly from Adobe website
+ - version 11 from http://www.smokey01.com/OscarTalks/ (= 17 Mb uncompressed)
+
 Package: libdconf0
 Priority: optional
 Section: libs
@@ -336,6 +352,25 @@ SHA512: 40fb030c35113d7187f50d0c76841861c84dd234973380651b1584b8efb2ffecdb44fea2
 Description: Load a *.squashfs or *.sfs module.
  Changes compared to included scripts in DebianDog-2015-09-02 iso: loadmodule and loadsfs
  In case unloading failed at first, find out (by 'aubusy', from aufs-tools) which process is keeping it from unloading and kill it, then try again.
+
+Package: quick-remaster
+Installed-Size: 336
+Maintainer: fredx181 dog@root.nl
+Architecture: all
+Version: 1.0.8
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isotools
+Filename: ./Included/quick-remaster_1.0.8-jessie_all.deb
+Size: 160288
+MD5sum: f0325301cb277a7287729a370dce33d7
+SHA1: 817a521e14f6d985f341e68fb9ecfe2e9251340a
+SHA256: f198d99a05c93fceaf892e9af87a63b768f39efc94ab98158bdde4e2def1f2fb
+SHA512: 9fcb35c874e2583eadab75cce015ddc3243d4942fd01db8f48c41cde6320983eac71483d519f21e47d2d502876b87f77da6bbaa6b28820eec7c53eb5969dcd56
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ Bug fix: set the correct permissions for /tmp 
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+ Version 1.0.7: added option to create ISO
 
 Package: apt2sfs
 Installed-Size: 72 
@@ -818,6 +853,26 @@ SHA1: ade1095a1a315fbfbeeca3ee74305aace02788a0
 SHA256: 4527725b2422252fab72ccfc2ad7bf78d767ec9e356cd1a1cbcd900634bd48b8
 SHA512: 112434ac62f10e11a082d4229e014257b24e420760b0eb1f7bece080354abbe265d56f2ffaa77b8e86e94ca82aa3feb1d8c5e4ca095ead70d0e2a38722c3e4fb
 Description: View free space (free RAM) utility taken from PuppyRus-A: http://wiki.puppyrus.org/puppyrus/start
+
+Package: gsu
+Priority: optional
+Section: admin
+Installed-Size: 20
+Maintainer: root
+Architecture: i386
+Version: 1.0.3
+Depends: libc6, sudo, xterm, yad
+Filename: ./Included/gsu_1.0.3_i386.deb
+Size: 1598
+MD5sum: 358cf6d600f83b547b1ed6f007e254ac
+SHA1: b6114e8b4c8400454991188aad35593dc9ef3111
+SHA256: a5656aab03083f4ef77fddc9c2bde56999b3ddf508f50ce1428db4de633737cd
+SHA512: 537f8005e8e1f2f69fc38311ec359ff61ac449be433d5e0a648d6a1c2a6c63c148aa1b8f199daf8b4656da1df231d45bd819a8752c1b3609a511ff5a788ed381
+Description: graphical frontend to sudo - this version is fix for Jessie and SID upgrade but it is safe to install in Wheezy also.
+  You can keep old gsu version in Wheezy without problem.
+  .
+  More information available here:
+  http://www.murga-linux.com/puppy/viewtopic.php?p=829680#829680
 
 Package: precord
 Priority: extra
@@ -1391,51 +1446,6 @@ Description: desktop-independent graphical login manager for X11
  that don't require remote logins.
 Homepage: http://sourceforge.net/projects/slim.berlios/
 
-Package: linux-image-4.9.0-1-686-pae-unsigned
-Priority: optional
-Section: kernel
-Installed-Size: 134338
-Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
-Architecture: i386
-Source: linux
-Version: 4.9.2-2
-Replaces: linux-image-4.9.0-1-686-pae
-Provides: linux-image-4.9.0-1-686-pae
-Depends: kmod, linux-base (>= 4.3~), initramfs-tools (>= 0.110~) | linux-initramfs-tool
-Recommends: firmware-linux-free, irqbalance
-Suggests: linux-doc-4.9, debian-kernel-handbook, grub-pc | extlinux
-Conflicts: linux-image-4.9.0-1-686-pae
-Breaks: initramfs-tools (<< 0.110~)
-Filename: ./Testing/linux-image-4.9.0-1-686-pae-unsigned_4.9.2-2_i386.deb
-Size: 36994786
-MD5sum: 200ae0575597c23db11b9144599994db
-SHA1: b937ea84a461c2713cd1e9a55ec762bb78b42cbe
-SHA256: 95ad54e9fd78591dc3a8afd3742abca5a5b858cf569be47365c4bca3028b1b6b
-SHA512: b924c66607ff65d6d8e8459868a06e3c71646169650b4767b08cdf03a878e521a34046663037cd6b66c69386f0e24b7948acc8ca2056f3a4705529dcf9a6c2ee
-Description: Linux 4.9 for older PCs
- The Linux kernel 4.9 and modules for use on PCs with one or more
- processors not supporting PAE.
-Homepage: https://www.kernel.org/
-
-Package: linux-base
-Priority: optional
-Section: kernel
-Installed-Size: 85
-Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
-Architecture: all
-Version: 4.3~bpo8+1
-Depends: debconf (>= 0.5) | debconf-2.0
-Filename: ./Testing/linux-base_4.3~bpo8+1_all.deb
-Size: 18988
-MD5sum: 6cc71f29827e3a3ce667d5ae7c82ab11
-SHA1: 79a0d7403ed1e18288d58443704fd4860bc4ee96
-SHA256: fe0f9509ff4e0d6d054f79339dcd7544e6ba58dd0cb4ef2db9080ea292ddbb8b
-SHA512: 6285b3c25d9aa244ee08d146df111117f16dd92dd8b9e4ded3423bd4687eedae68cd5ac57d21220f080b5cd2cd1a061882578483f9939783208d86a65b0789e6
-Description: Linux image base package
- This package contains files and support scripts for all Linux
- images.
-Multi-Arch: foreign
-
 Package: adwaita-icon-theme
 Priority: optional
 Section: gnome
@@ -1607,35 +1617,6 @@ Description: retrieves files from the web
 Multi-Arch: foreign
 Homepage: https://www.gnu.org/software/wget/
 
-Package: dpkg
-Essential: yes
-Priority: required
-Section: admin
-Installed-Size: 6447
-Maintainer: Dpkg Developers <debian-dpkg@lists.debian.org>
-Architecture: i386
-Version: 1.17.25
-Replaces: manpages-it (<< 2.80-4)
-Pre-Depends: libbz2-1.0, libc6 (>= 2.11), liblzma5 (>= 5.1.1alpha+20120614), libselinux1 (>= 2.3), zlib1g (>= 1:1.1.4), tar (>= 1.23)
-Suggests: apt
-Conflicts: ada-reference-manual (<< 20021112web-4), asn1-mode (<< 2.7-7), bogosort (<< 0.4.2-3), cl-yacc (<< 0.3-3), cpp-4.1-doc (<< 4.1.2.nf2-4), cpp-4.2-doc (<< 4.2.4.nf1-4), gcc-4.1-doc (<< 4.1.2.nf2-4), gcc-4.2-doc (<< 4.2.4.nf1-4), gcj-4.1-doc (<< 4.1.2.nf2-4), gcj-4.2-doc (<< 4.2.4.nf1-4), gfortran-4.1-doc (<< 4.1.2.nf2-4), gfortran-4.2-doc (<< 4.2.4.nf1-4), ggz-docs (<< 0.0.14.1-2), glame (<< 2.0.1-6), gnat-4.1-doc (<< 4.1.2.nf2-4), gnat-4.2-doc (<< 4.2.4.nf1-4), gtalk (<< 0.99.10-16), libalogg-dev (<< 1.3.7-2), libgtk1.2-doc (<< 1.2.10-19), libnettle-dev (<< 2), liborbit-dev (<< 0.5.17-12), libreadline5-dev (<< 5.2-8), librep-doc (<< 0.90), mmucl (<< 1.5.2-3), nxml-mode (<< 20041004-9), octave3.0-info (<< 1:3.0.1-6lenny3), octave3.2-info (<< 3.2.4-8), polgen-doc (<< 1.3-3), r6rs-doc (<< 1.0-2), serveez-doc (<< 0.1.5-3), slat (<< 2.0-6), texlive-base-bin-doc (<< 2007.dfsg.2-9), ttcn-el (<< 0.6.9-2), ulog-acctd (<< 0.4.3-3), xconq-doc (<< 7.4.1-5), zenirc (<< 2.112.dfsg-1)
-Breaks: apt (<< 0.7.7), apt-cudf (<< 3.3~beta1-3), aptitude (<< 0.4.7-1), auctex (<< 11.87-3+deb8u1), ccache (<< 3.1.10-1), cups (<< 1.7.5-10), debian-security-support (<< 2014.10.26), distcc (<< 3.1-6.1), doc-base (<< 0.10.5), dpkg-dev (<< 1.15.8), fontconfig (<< 2.11.0-6.2), fusionforge-plugin-mediawiki (<< 5.3.2+20141104-3), gap-core (<< 4r7p5-2), gitweb (<< 1:2.1.4-2.1), grace (<< 1:5.1.24-3), gxine (<< 0.5.908-3.1), hoogle (<< 4.2.33-4), icecc (<< 1.0.1-2), install-info (<< 5.1.dfsg.1-3), libapache2-mod-php5 (<< 5.6.4+dfsg-3), libapache2-mod-php5filter (<< 5.6.4+dfsg-3), libdpkg-perl (<< 1.15.8), libjs-protoaculous (<< 5), man-db (<< 2.6.3-6), mcollective (<< 2.6.0+dfsg-2.1), php5-fpm (<< 5.6.4+dfsg-3), pypy (<< 2.4.0+dfsg-3), readahead-fedora (<< 2:1.5.6-5.2), wordpress (<< 4.1+dfsg-1), xfonts-traditional (<< 1.7), xine-ui (<< 0.99.9-1.2)
-Filename: ./Mod/dpkg_1.17.25_i386.deb
-Size: 1909778
-MD5sum: 6f0f8b32f07d52d2164c7f4282aa8255
-SHA1: b0444d8f057d310491ebd70e93d44adfa5c54b15
-SHA256: bdb6a06dcfbab3d8e657f31aea5a4cda12ed59f8f0aceeac556feefe4e26e028
-SHA512: 50a85524043f1abbf008148fde4619e6b161a4fe6835abcb4e5aa5d7b3fc1cdb50bd5dfafbd989df40f36dec201491023cb18aaea94a6983689272a558c43116
-Description: Debian package management system
- This package provides the low-level infrastructure for handling the
- installation and removal of Debian software packages.
- .
- For Debian package development tools, install dpkg-dev.
-Origin: debian
-Bugs: debbugs://bugs.debian.org
-Multi-Arch: foreign
-Homepage: https://wiki.debian.org/Teams/Dpkg
-
 Package: dmmediaconverter
 Priority: optional
 Section: video
@@ -1744,27 +1725,21 @@ Description: fast, lightweight graphical web browser
   * Custom context menu actions.
 Homepage: http://www.twotoasts.de/index.php?/pages/midori_summary.html
 
-Package: linux-headers-4.7.0-1-common
+Package: gifondesktop
 Priority: optional
-Section: kernel
-Installed-Size: 28752
-Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Section: utilities
+Installed-Size: 3060
+Maintainer: root
 Architecture: i386
-Source: linux
-Version: 4.7.8-1
-Filename: ./Extra/linux-headers-4.7.0-1-common_4.7.8-1_i386.deb
-Size: 5272948
-MD5sum: d23c0e40c4b02db6c0aeaaba231676ef
-SHA1: fc7aa28300a3e322f212c705550c9d9af2426da5
-SHA256: b7f7d7106812cdb3d56623e14a28d545597e42503d6719c4a2fa9722710b305a
-SHA512: d6983191c87c5edea8e461dcd2ca4a97687725ec97737180dde9621ea192cc71fc7bf5c160ba872670c9b15c936a86abb0c99dfadc297d7507ece93a33aeea95
-Description: Common header files for Linux 4.7.0-1
- This package provides the architecture-specific common kernel header files
- for Linux kernel version 4.7.0-1, generally used for building out-of-tree
- kernel modules.  To obtain a complete set of headers you also need to
- install the linux-headers-4.7.0-1-(flavour) package, matching the flavour
- of the kernel you intend the build for.
-Homepage: https://www.kernel.org/
+Version: 1.0.0
+Depends: libc6, gtkdialog, x11-utils, file, yad, gtkdesklet
+Filename: ./Extra/gifondesktop_1.0.0_i386.deb
+Size: 1675604
+MD5sum: e2fe3823d33d7ede38705d594c255407
+SHA1: cc8f8845344cb9343c3f86cc368da8fbd3f85e9f
+SHA256: f7213091d35201938415577a9779e731360493f2df1b8a718ba366c9d0c0068e
+SHA512: 775dada72d4f438d69712a27975d9cfa786981d02e4faa1a25b77821d1e4b75935f9e59630470f02aa7e89c52965a289841e2e8b176a2f6d0f150af64ac4fab7
+Description: Display Animated Gif on Desktop
 
 Package: mpv
 Priority: optional
@@ -2034,6 +2009,43 @@ Description:  findnrun 1.10.6 (documentation)
   Files in this add-on package: larger English help (HTML).
   https://github.com/step-/find-n-run/ 
 
+Package: youtube-get
+Installed-Size: 68 
+Maintainer: fredx181 
+Architecture: i386
+Version: 0.1.2
+Replaces: youtube-get2
+Depends: libc6, yad, sed, wget, xterm, gnome-mplayer-1.0.7 | mpv | mplayer | gmplayer-portable
+Recommends: locales
+Filename: ./Extra/youtube-get_0.1.2_i386.deb
+Size: 20738
+MD5sum: 611eeb116d1e14256635e272fd3a7d60
+SHA1: 0ef39ffd7ff7eddefac54fe3b498d8172a02a226
+SHA256: 58a37da502f72ab914f16cf44a21a3b229b6b16b753f067968fd185efd13fe4f
+SHA512: 3b25f0ca7b7d54b700cabf0f1a9e8e14bfaa133bc36b8d5cd56a224abd3345d5487f091b26466b6d928406d234145983411fc82e62117f48b789086c899d4bd5
+Description: A simple YouTube Downloader
+ - A shell script (bash) with yad as frontend
+ - Based on the idea of Dr. Mark Humphrys, see here:
+  https://computing.dcu.ie/~humphrys/Notes/UNIX/lab.youtube.html
+ - Gives choice which quality to download, e.g. 360p or 720p, etc...
+ - Extra addition: m-play script + menu entry for playing YouTube url with mpv
+
+Package: txt2svg
+Priority: optional
+Section: utilities
+Installed-Size: 107
+Maintainer: root
+Architecture: i386
+Version: 20170601
+Depends: libc6
+Filename: ./Extra/txt2svg_20170601_i386.deb
+Size: 91510
+MD5sum: a303633aa4115ed85b68339e6d7cee38
+SHA1: 0579340b0d47a34f98728102911c199ee7843833
+SHA256: 76015eecff21165b171d20c180372140cc6d5abb81cb56171bdda11661d243da
+SHA512: c82d7ad5836b5abc7dcfc353437a9b65ab1ca3a26ef12be9dc17f442c766dd409b9c191cac8cf8c107f09e2f0c264aeb067eaffa72574ae8c09f83d46b1cac58
+Description: Text to SVG/PNG Fancy Text and Logo Generator
+
 Package: upgrade-kernel
 Installed-Size: 20
 Maintainer: fredx181 dog@root.nl
@@ -2075,26 +2087,21 @@ Description: Wherever you are, wherever they are
  .
  And that's just the start...
 
-Package: linux-kbuild-4.7
+Package: gifdance
 Priority: optional
-Section: kernel
-Installed-Size: 1179
-Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Section: utilities
+Installed-Size: 355
+Maintainer: root
 Architecture: i386
-Source: linux
-Version: 4.7.8-1
-Depends: libc6 (>= 2.11), libssl1.0.2 (>= 1.0.2d)
-Filename: ./Extra/linux-kbuild-4.7_4.7.8-1_i386.deb
-Size: 594066
-MD5sum: d3f19c950d3fe99e74a5ae6d5b38a859
-SHA1: af241e8d5c863126b4b5cbaa4a6f992f17828feb
-SHA256: 150b8c35bd2d83ebaf4278d47f2e96a15f42b3d97f351676051dadcaa581dd03
-SHA512: 56698658673988d3d1bed1399593b618c4d7d09db1be018e65965ac5417bcfcf2031eb1d58528d27fd8957f12574fdb906e8963f81b097056d82fd07b790e359
-Description: Kbuild infrastructure for Linux 4.7
- This package provides the kbuild infrastructure for the headers packages
- for Linux kernel version 4.7.
-Multi-Arch: foreign
-Homepage: https://www.kernel.org/
+Version: 1.0.0
+Depends: libc6, imagemagick, yad
+Filename: ./Extra/gifdance_1.0.0_i386.deb
+Size: 311112
+MD5sum: 8c804d621457914c606d877d81d28be8
+SHA1: 1c7fee479199b9c075127f8051cfd4bb5677e178
+SHA256: 68c3bb6af223dfde996149435299aefdc3cb5dc8e4883fa140a418cc2a3a9c8f
+SHA512: 2db06ce89e1bfe7269470f3977efe695ecae9c47c8defde113fafde9494658c9c90bd984235ed7e05ab4477d1f48a6922deaacf813606013dc0e8e5e503f144d
+Description: Create GIF from dancing letters
 
 Package: midori
 Priority: optional
@@ -2195,6 +2202,24 @@ Description: YouTube Downloader, frontend for youtube-dl
  - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
  - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
 
+Package: firewall-ng
+Priority: optional
+Section: utilities
+Installed-Size: 163
+Maintainer: root
+Architecture: i386
+Version: 1.0.1
+Replaces: firewall-puppy, peasyfwmon
+Depends: libc6, gtkdialog, iptables
+Conflicts: firewall-puppy, peasyfwmon
+Filename: ./Extra/firewall-ng_1.0.1_i386.deb
+Size: 18430
+MD5sum: d6f4b1b84fe06bb8922751777d707e71
+SHA1: a3a8aee62997c4e0eadf534666f45ea5d0bbbcd5
+SHA256: c15c7cb679fbe33e7811bd278c5c5a320669e856e823b5adc3aea61278ceb122
+SHA512: a16b9c1d7be86767aa2a6fe530ce59ddb0ed405a49e68853bdb6ace4aaf4f346388aa6a686c84386616cad25b812596d0506887c92124dab43b54800cc78236e
+Description: Firewall-ng by 01micko, based on Alien Bob's Firewall
+
 Package: wex
 Priority: extra
 Section: audio
@@ -2211,6 +2236,29 @@ SHA1: 883422a8f14124d312465e266969621a34697371
 SHA256: e8f9156808525024729a1593e6f91782794efd4134e4cd9a1ef2c224c73e5c00
 SHA512: a91d85cf0b8ae6aa3ad1f66c478bc08eee0331f199c5a631ff0db0f291fa6ef3a577dd83d37de31319fdc68f7176efaa2893bb04f77089275fcb60f350e00aec
 Description: weX AV and X11 recorder
+
+Package: bacon
+Priority: extra
+Section: devel
+Installed-Size: 2332
+Maintainer: Peter van Eerten <peter@basic-converter.org>
+Architecture: i386
+Version: 3.5.3-1
+Provides: bacon
+Depends: libc6
+Filename: ./Extra/bacon_3.5.3-1_i386.deb
+Size: 504802
+MD5sum: dc85fc7dbdb827a04ec6c39ceb80fc7a
+SHA1: 80ea6d11319a42728c79526443d7b7956597290b
+SHA256: 78492020db9ab93f0cd5ad12d34d4c5e9144fb1fbccc6339eeb5d46dec7207b4
+SHA512: 289926fd4fc763d7606b1f7504bbb07a2aebde180586d858765b8c76cc95051d5a9fb4e7d9bdc02da4c354d6a4b15676740f9f9151fb0acca3b3a5c1a69fff22
+Description: Free BASIC to C converter for Unix-based systems.
+ BaCon is a free BASIC to C translator for Unix-based systems, which runs on
+ most Unix/Linux/BSD platforms, including MacOSX. It intends to be a programming
+ aid in creating tools which can be compiled on different platforms (including
+ 64bit environments), while trying to revive the days of the good old BASIC.
+ Code converted by BaCon can be compiled by GCC, the Compaq C Compiler, TCC, the
+ clang/LLVM compiler and possibly also by other C compilers.
 
 Package: conkyclock
 Installed-Size: 2700 
@@ -2419,29 +2467,21 @@ SHA256: ed7a1daeb6b8c426b6f2ab3f7e2c4564ca721d34e823e2814946293fc8947da9
 SHA512: 1549e9b0aa0a49978605a75c50766c633659d417306f1dc6efa1ab176ec7913460599cde89f83323094803178a18efbe1829d86d000c2a01ffbd08938b477933
 Description: Light window manager
 
-Package: linux-headers-4.7.0-1-686-pae
+Package: locale-conf
 Priority: optional
-Section: kernel
-Installed-Size: 4432
-Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
-Architecture: i386
-Source: linux
-Version: 4.7.8-1
-Depends: linux-headers-4.7.0-1-common (= 4.7.8-1), linux-kbuild-4.7, linux-compiler-gcc-5-x86
-Filename: ./Extra/linux-headers-4.7.0-1-686-pae_4.7.8-1_i386.deb
-Size: 487288
-MD5sum: cb4019ae6f15ebb8328ac2f193a1974c
-SHA1: 0e260842eb30fefb4be3500528314f69374a05ac
-SHA256: 1b79a13ff215b3fde3d33e8e3d89a884e5907b07801afcd5ad71a990faed1d9c
-SHA512: 22e11c35255a366999b2efdb6519dcb49805a8b460345b6f6c6f2f339909016edafd23b6f7fcfa042da5f8a83d642226714702fc85379d9157b97929a4a8c8bd
-Description: Header files for Linux 4.7.0-1-686-pae
- This package provides the architecture-specific kernel header files for
- Linux kernel 4.7.0-1-686-pae, generally used for building out-of-tree
- kernel modules.  These files are going to be installed into
- /usr/src/linux-headers-4.7.0-1-686-pae, and can be used for building
- modules that load into the kernel provided by the
- linux-image-4.7.0-1-686-pae package.
-Homepage: https://www.kernel.org/
+Section: utilities
+Installed-Size: 50
+Maintainer: root
+Architecture: all
+Version: 1.0.0-j
+Depends: libc6, httpfs2, yad
+Filename: ./Extra/locale-conf_1.0.0-j_all.deb
+Size: 16706
+MD5sum: 4a1f1d0be8da4e023d947eea2d25b342
+SHA1: ca56b79ff15ed590e5fc9038bf78bd2a201b86f0
+SHA256: d678b7fd9ed170d0f771e6400905b94ac05d4a140a6a190b1ece6cc5ce29e70b
+SHA512: 7955eeed581a60817b12d2f33496da3cbc4be9a0613b85e96e6cca88a76b472da5a51cd5acf65ca238ed1d99d4616ee39ed0257d7f5345f54fe0f30e92bf0abb
+Description: Set system locale
 
 Package: libgnutls26
 Priority: standard
@@ -2498,6 +2538,22 @@ SHA256: 9dfc172ce5e784dc524071eb3e14b7a16ddf32b1b7c94c142d982af43bc09f8c
 SHA512: e1490c50fe489c45b8a0932511a329a818b9ac56f20cda33329402299fa9507c4efd0a1556b6e0059806407f173efd459da39eddd9f6825e5f7bbb35c0bf625a
 Description: flite-hts-engine for DebianDog:
  stdout patched version by mcewanw with 1kB buffer
+
+Package: gtkdesklet
+Priority: optional
+Section: utilities
+Installed-Size: 56
+Maintainer: root
+Architecture: i386
+Version: 1.0.1
+Depends: libc6
+Filename: ./Extra/gtkdesklet_1.0.1_i386.deb
+Size: 13972
+MD5sum: 95c9f990acec556e69c7e110c00c63a7
+SHA1: d72167f4f25c584036006173d3c4d886c9c68f9b
+SHA256: 89e5cafa794e0f82487649cee12ddcf4a4e06740781b462ed74fdbf20d424ff6
+SHA512: a12958cdbc0c5c2983b9d3fbfd6719a9b252c1b03a012d2badccab0d5201cad8ee429d1e169b1018f5ec40b8e2277d8b166f0678e5a936ad41478f1fec1c7e77
+Description: gtkdesklet
 
 Package: Firewall-Puppy
 Priority: extra
@@ -2609,6 +2665,22 @@ SHA256: 0d21768c3377edac7455574bedc7c188186d0ef1ca757c891054f512fec0d92c
 SHA512: 567b34adfad7339d965dfc87bb0826a29435a1ddb21c1e21b5f8b04b9820ada2d92ce0bfd1a05ba6cee5bfd560dd7255b2a3b7dd3f8da28738844016a9c959b5
 Description: SMB/CIFS clients for Unix
 
+Package: create-portable
+Priority: optional
+Section: utilities
+Installed-Size: 900
+Maintainer: root
+Architecture: i386
+Version: 1.0.0
+Depends: libc6, unionfs-fuse, xorriso, yad, python, linux-user-chroot
+Filename: ./Extra/create-portable_1.0.0_i386.deb
+Size: 263534
+MD5sum: bab33debff71b9a41a3c9a653e12f832
+SHA1: 68129a22de5d401c4929ed4a28186f443f56dd68
+SHA256: cb976bd49fd1957d76bd371b7bbb55abe03d6ae2cbb9260ebfb92189b13367eb
+SHA512: c4db945c15da9d1c46f862006a6e8006aa18a7325a73fd4b5733d5bbc04a96e217d77fe7f88ea0cd650ee3d33e058c0a191408b6bc7a449e8a595ef1bb9070de
+Description: Create portable AppImage
+
 Package: xvidcap
 Priority: optional
 Section: x11
@@ -2699,6 +2771,28 @@ SHA1: f527c05394b64d86deb70fa2d3a5911a4a46e091
 SHA256: 50b18a4929f2e0e3af3eb85f1967b9b904cb97c51441de3a89eeba85275592d7
 SHA512: 1ab7b10cf9a62f797d103d6e8fa32662b1f1e266f5753d4b4fc585e3c6452c79f630e8af7672a6a77ee3ce20dc61be16e40cd8fa2b2a5559d38f2029ae21831d
 Description: Wireless Network manager
+
+Package: youtube-get2
+Installed-Size: 938 
+Maintainer: fredx181 
+Architecture: i386
+Version: 0.1.8
+Replaces: youtube-get
+Depends: libc6, yad, sed, wget, python, gsu | gksu
+Recommends: locales
+Filename: ./Extra/youtube-get2_0.1.8_i386.deb
+Size: 1496922
+MD5sum: f47ca6dde7f51de679daa80b8e970134
+SHA1: 4ffef4f69af07b2d55ef1d4ba4f7a0b17a2de845
+SHA256: 6c101cef36fee9e263e5be3baf9064d51c6c1eb59c347629bd5432c9f0c32cc9
+SHA512: 3a63319d65c73e0b70e60c36343939e5d72ed1e59dc322dcfa5dbec490cdbc75d8a0174f5648447068515fadbbc2dc1be96e6da6b323d60bc9b0ad8226a1e607
+Description: YouTube Downloader, frontend for youtube-dl
+ A Youtube update broke the search function of previous versions; fixed in this version.
+ - A shell script (bash) with yad as GUI for youtube-dl
+ - Options to enter url(s), playlist, username and to do a search:
+ - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
+ - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
+ - Download from Playlist supports channel download also now (version 0.1.8)
 
 Package: teamviewer
 Priority: optional
@@ -2888,41 +2982,40 @@ SHA256: 0ff6d9aa73be9cc3924b1ef20444c493d622d09eb5409ff994a46bf11139f82c
 SHA512: f16994a14d928a83221dc331cbe47d45a26307e3c9860a7c71e55f297780288b462e9c75766142286422d2d7cda9301acff9048be9a84684c3c98008d78b8892
 Description: Pulseaudio emulator using alsa
 
-Package: linux-image-4.7.0-1-686-pae
-Priority: optional
-Section: kernel
-Installed-Size: 133771
-Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Package: dogradio
+Installed-Size: 3100 
+Maintainer: fredx181
 Architecture: i386
-Source: linux-signed (2.8)
-Version: 4.7.8-1
-Replaces: linux-image-4.7.0-1-686-pae-unsigned
-Depends: kmod, linux-base (>= 4.3~), initramfs-tools (>= 0.110~) | linux-initramfs-tool
-Recommends: firmware-linux-free, irqbalance
-Suggests: linux-doc-4.7, debian-kernel-handbook, grub-pc | extlinux
-Conflicts: linux-image-4.7.0-1-686-pae-unsigned
-Breaks: initramfs-tools (<< 0.110~), xserver-xorg-input-vmmouse (<< 1:13.0.99)
-Filename: ./Extra/linux-image-4.7.0-1-686-pae_4.7.8-1_i386.deb
-Size: 37547828
-MD5sum: 2a8bf47391f987aa531590dfb2200282
-SHA1: d740b982302719163b672b0d295b5bd79f29e9dd
-SHA256: 0815802cb44f2e7846725810fc4eedd8b40da949b77153ba98362aa1c28153ac
-SHA512: f95772c7aea10b46011a82ee36ae537adcddd5f05312c297d67424ca236be58836cf5c5430adde43aa0cbf12b2631f5bae895c9c1ea2d2013f8ea5ff603e04fc
-Description: Linux 4.7 for modern PCs (signed)
- The Linux kernel 4.7 and modules for use on PCs with one or more
- processors supporting PAE.
- .
- This kernel requires PAE (Physical Address Extension). This feature is
- supported by the Intel Pentium Pro/II/III/4/4M/D, Xeon, Core and Atom; AMD
- Geode NX, Athlon (K7), Duron, Opteron, Sempron, Turion or Phenom;
- Transmeta Efficeon; VIA C7; and some other processors.
- .
- This kernel also runs on a Xen hypervisor.  It supports both privileged
- (dom0) and unprivileged (domU) operation.
- .
- The kernel image and modules are signed for use with Secure Boot.
-Built-Using: linux (= 4.7.8-1)
-Homepage: https://www.kernel.org/
+Version: 0.0.7c
+Depends: libc6, gtk2-engines-murrine, yad, sed, conky, gnome-mplayer-1.0.7 | mplayer, file, streamripper
+Filename: ./Extra/dogradio_0.0.7c_i386.deb
+Size: 936026
+MD5sum: 635d3a9915f91543d95aa4af2fdfbb55
+SHA1: a2e2170097747ee0d6de1ec0b744e73d4620ea75
+SHA256: 3d11835919f74aa862f0d5b22af94fbf4c3aa922079300a0303f19684077901c
+SHA512: 0da6a24b9fb904817d1cfb6984545d02a447ef047a0c4a047b2b739a9630ea0d88d42a8ab6a557d8ff57447cc7e1ede60aee3fd98b774d6389a136b72373b5cc
+Description: Dogradio is a GUI displaying icons for playing radio streams.
+ - Change in v 0.0.5: added option to rip streams (from right-click on tray-icon) 
+ - Using yad for the icons GUI
+ - Easy add/remove radio stream items
+ - Using conky for 'conky ticker', showing metadata
+ (can be enabled/disabled from tray icon menu + other settings)
+
+Package: gifenc
+Priority: optional
+Section: utilities
+Installed-Size: 43
+Maintainer: root
+Architecture: i386
+Version: 1.0.0
+Depends: libc6, ffmpeg, yad
+Filename: ./Extra/gifenc_1.0.0_i386.deb
+Size: 15740
+MD5sum: d3972b24e33da554a962cec1835975e8
+SHA1: 4fc2733bb6369fd00bba86bf93e04ec893cc3bdc
+SHA256: 4295012752535123f8db66c989d3c33e11800963dd8f788166d7e25b94bdd9a6
+SHA512: 50e7967358647f8b1adc9d11acbceae487e5ffdfdb47515f61dc202c0dca051aa567c77b5fe5a2c71305dd6a73072fde6e18e2f7fe93f3a3479ab64bc079bafc
+Description: Convert video (or portion of video) to Animated GIF
 
 Package: thunar
 Priority: optional
@@ -3000,6 +3093,56 @@ SHA256: 9560ce19e0c0420653cf64bcf9be232aa0e74e8e44ba3923849421b86f7762e3
 SHA512: 6fa176a0781b9cf3d6fec02d7f24e1f0d584f1ff616e1a6abeb6c8d68c6996230ae5e1597e0cfc8b16c7fe1682945bd54446806faf0339d83ec3777c94f3c805
 Description: Wireless Network manager
 
+Package: qtweb
+Priority: optional
+Section: utilities
+Installed-Size: 32700
+Maintainer: root
+Architecture: i386
+Version: 1.0.1
+Depends: libc6
+Filename: ./Extra/qtweb_1.0.1_i386.deb
+Size: 9635556
+MD5sum: e4e3f03fe9cb2b6db773bbe71aa56d17
+SHA1: 1b69e07412c3f5fdd121428bcbb153d079a59fc1
+SHA256: 5ca5c61107a992e6fc41f37fde1ddc377f1c15f630bc6ff8ff904dca410dfb27
+SHA512: f80945e088dc7371899e2aa90a6433a63e3ea74c9042947f77e52519de50048ae258608ae4e162613fbea0443a75f89326bb368c993b610fb424c14939ad07f7
+Description: qtweb-converted-pet-to-deb
+
+Package: peasyfwmon
+Priority: optional
+Section: utilities
+Installed-Size: 163
+Maintainer: root
+Architecture: i386
+Version: 1.0.1
+Replaces: firewall-puppy
+Depends: libc6, gtkdialog, iptables
+Conflicts: firewall-puppy
+Filename: ./Extra/peasyfwmon_1.0.1_i386.deb
+Size: 22676
+MD5sum: 3c81c85beec9749c61414b9704c38fbd
+SHA1: 10f5ee70ae2432a898672f12bf98ef69b8ad20a0
+SHA256: aa73eb93ed451a0e232ace1cca89f00650a50fad92f98826ffde41b5939ce460
+SHA512: 7f599330481cc696c295079f355ae453e7dcee85934f1f6df9d33cd3f0ad34b36121c77efda7eb85601a19d686ea585127cb4814a5dc343261d2acb4a772b43a
+Description: Peasy Firewall Monitor
+
+Package: gifenc
+Priority: optional
+Section: utilities
+Installed-Size: 43
+Maintainer: root
+Architecture: i386
+Version: 1.0.1
+Depends: libc6, ffmpeg, yad
+Filename: ./Extra/gifenc_1.0.1_i386.deb
+Size: 15744
+MD5sum: fc9f023cf549e74031e0dc32333b1b50
+SHA1: 32ca30a527383a83f62b78e5ec4a8144ea8b55b3
+SHA256: cf807f8bc475dc3681ef6c102d43d5700976d70230c83543f306799a3ff32ea4
+SHA512: e1241b757cf98954c0abe1096aecd8fcf80a9194355916fcd292dbcac80a2ac7802404225b7db476c0ddbb0bf1262f602dff68224b6f5da1c5e5b61f09b94506
+Description: Convert video (or portion of video) to Animated GIF
+
 Package: flburn
 Priority: extra
 Section: x11
@@ -3022,13 +3165,13 @@ Installed-Size: 20
 Maintainer: fredx181 dog@root.nl
 Architecture: all
 Version: 1.0.1
-Depends: libc6, dpkg, findutils, cpio, xz-utils, gzip, gsu | gksu
+Depends: libc6, dpkg, findutils, cpio, xz-utils, gzip, gsu | gksu, live-tools
 Filename: ./Extra/upgrade-kernel_1.0.1_all.deb
-Size: 11644
-MD5sum: 8ddfb82ca0aa4d8d8d9aa2bad666d17a
-SHA1: 267181bf53c0e2745246f74a6d833d30b4f6a677
-SHA256: 10558a9f9d83fa7f7b6ac29f749a257ab660b8cd19728e76cbaf05c13deb812b
-SHA512: 392f8783bebabfad19fe2fb3e1e13a7ef5820f611e0a0cb7afec60b8f3026c71cea188023f8bc29f17cea655608813c90adac2fce168bf30cdf4a2b49d5bb81c
+Size: 10068
+MD5sum: 0460ee3ca0ad53c2ccccab4c5732ed55
+SHA1: b8bd370b123e4ddd82a5dcc53844f30a15854e67
+SHA256: 8851cc4102ebc0434e58f4c5eba63543b3b2e67f5cbb65a3c18627385dd7814f
+SHA512: 90288605f5c6d6cce24e2a3c591df71f96723580a6f60b6b871ea28db0a8ea4d34c99685cb5ccd59027652e6e3a97c1ec0853f055a9f75c8f1e40eaf1e26da87
 Description: Warning - This package works only in DebianDog!
 
 Package: wps-office
