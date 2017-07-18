@@ -2237,6 +2237,22 @@ SHA256: e8f9156808525024729a1593e6f91782794efd4134e4cd9a1ef2c224c73e5c00
 SHA512: a91d85cf0b8ae6aa3ad1f66c478bc08eee0331f199c5a631ff0db0f291fa6ef3a577dd83d37de31319fdc68f7176efaa2893bb04f77089275fcb60f350e00aec
 Description: weX AV and X11 recorder
 
+Package: locale-conf
+Priority: optional
+Section: utilities
+Installed-Size: 50
+Maintainer: root
+Architecture: all
+Version: 1.0.1-j
+Depends: libc6, httpfs2, yad
+Filename: ./Extra/locale-conf_1.0.1-j_all.deb
+Size: 16752
+MD5sum: b2084744f45fe39b265c1a6ace51d938
+SHA1: 02ee8d497e8d462caf2c29e8f5000a40744f960e
+SHA256: 239b7254a44c6d0ba5f1aad934abdc5680c69fc0e2cc83a315dd3dfa7daf6d04
+SHA512: 1b6f8ce6f955b22b4412ab10aa89c1a7bad7ea09a454d3816f1fe3eda79ac5f07262f4b747f7cc72fe61185faa721050a35d86d23a8de051a7b2d5607c72875a
+Description: Set system locale
+
 Package: bacon
 Priority: extra
 Section: devel
