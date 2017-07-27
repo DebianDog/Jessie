@@ -97,6 +97,7 @@ etc/init.d/firewall.sh					    peasyfwmon
 etc/init.d/frisbee					    frisbee
 etc/init.d/network.sh					    wifibox-dhcpcd,wifibox
 etc/init.d/rc.functions					    wifibox-dhcpcd,wifibox
+etc/init.d/rc.network					    PeasyWiFi
 etc/init.d/rc.yassm					    yassm-smbclient-mpscan
 etc/init.d/rcS_slitaz					    wifibox-dhcpcd,wifibox
 etc/init.d/slim						    slim
@@ -124,7 +125,11 @@ etc/ppp/chatscripts/gprs-connect-chat			    frisbee
 etc/ppp/chatscripts/gprs-disconnect-chat		    frisbee
 etc/ppp/options.gprs					    frisbee
 etc/precord/.precordrc					    precord
+etc/pwf/ethernet/eth0.dhcp				    PeasyWiFi
+etc/pwf/interfaces					    PeasyWiFi
+etc/pwf/udhcpc/default.script				    PeasyWiFi
 etc/rc.d/rc.firewall.pfm				    peasyfwmon
+etc/rc.d/rc.network					    PeasyWiFi
 etc/rcS.conf						    wifibox-dhcpcd,wifibox
 etc/skel/.config/rox.sourceforge.net/MIME-types/application jwm-setup
 etc/skel/.config/rox.sourceforge.net/MIME-types/image_png   jwm-setup
@@ -3400,6 +3405,7 @@ root/Startup/killmenu-cached				    jwm-setup
 root/Startup/netmon_wce					    wifibox
 root/Startup/network_tray.sh				    sns,wifibox-dhcpcd
 root/Startup/peasyfwmon_tray				    peasyfwmon
+root/Startup/peasywifi_tray				    PeasyWiFi
 root/startup-jwm					    jwm-setup
 sbin/cryptsetup						    cryptsetup-bin
 sbin/cryptsetup-reencrypt				    cryptsetup-bin
@@ -4351,6 +4357,7 @@ usr/local/bin/peasyfwmon				    peasyfwmon
 usr/local/bin/peasyglue					    peasyglue
 usr/local/bin/peasyscale				    peasyscale
 usr/local/bin/peasyscale.bin				    peasyscale
+usr/local/bin/peasywifi					    PeasyWiFi
 usr/local/bin/pngtopnm					    peasyglue
 usr/local/bin/pnmcat					    peasyglue
 usr/local/bin/pnmtojpeg					    peasyglue
@@ -6202,6 +6209,8 @@ usr/local/peasyglue/peasyglue				    peasyglue
 usr/local/peasyglue/spacer16.pnm			    peasyglue
 usr/local/peasyglue/spacer32.pnm			    peasyglue
 usr/local/peasyglue/spacer8.pnm				    peasyglue
+usr/local/peasywifi/green.rc				    PeasyWiFi
+usr/local/peasywifi/peasywifi				    PeasyWiFi
 usr/local/pfind/box_input				    pfind
 usr/local/pfind/box_ok					    pfind
 usr/local/pfind/box_splash				    pfind
@@ -6394,6 +6403,7 @@ usr/sbin/dhcpcd						    frisbee,wifibox-dhcpcd
 usr/sbin/dhcpcd_dropwait_option				    frisbee,wifibox-dhcpcd
 usr/sbin/get_modem_alternate_device			    frisbee
 usr/sbin/grub4dosconfig					    grub4dosconfig
+usr/sbin/ipinfo						    PeasyWiFi
 usr/sbin/luksformat					    cryptsetup-bin
 usr/sbin/micro-edit					    desktop-editor
 usr/sbin/mount.cifs					    yassm-smbclient-mpscan
@@ -7066,6 +7076,7 @@ usr/share/applications/pburn.desktop			    pburn
 usr/share/applications/peasy_firewall_monitor.desktop	    peasyfwmon
 usr/share/applications/peasyglue.desktop		    peasyglue
 usr/share/applications/peasyscale.desktop		    peasyscale
+usr/share/applications/peasywifi.desktop		    PeasyWiFi
 usr/share/applications/pfind.desktop			    pfind
 usr/share/applications/precord.desktop			    precord
 usr/share/applications/qtweb.desktop			    qtweb
@@ -10212,6 +10223,8 @@ usr/share/pixmaps/palemoon.png				    palemoon
 usr/share/pixmaps/palemoon.xpm				    palemoon
 usr/share/pixmaps/peasyglue48.png			    peasyglue
 usr/share/pixmaps/peasyscale.png			    peasyscale
+usr/share/pixmaps/peasywifi-24.png			    PeasyWiFi
+usr/share/pixmaps/peasywifi-48.png			    PeasyWiFi
 usr/share/pixmaps/prefs.png				    jwm-setup
 usr/share/pixmaps/puppy/cell1_0.svg			    wifibox
 usr/share/pixmaps/puppy/cell1_1.svg			    wifibox
