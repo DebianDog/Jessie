@@ -1692,6 +1692,22 @@ SHA256: a13d76449ed052af40b6da0711e79f4117f5ea880265274b6d972b0c402fea72
 SHA512: 6b93ab3d7a8b39195d6c8a3457015508785517f366ef31ddce5b797029510e5a92d9c5c87fb193d3e3e533ec24eeab7dfc6c0cbe37460d4e96556c9ce2be05d0
 Description: Grub4DosConfig GUI script from Shinobar written for Puppy linux.
 
+Package: uextract
+Architecture: i386
+Version: 1.0.1
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 308
+Depends: libc6, gtkdialog
+Filename: ./Extra/uextract_1.0.1_i386.deb
+Size: 64534
+MD5sum: e004ba41f76d623306c8c93582f6c5ad
+SHA1: aa37a8a531000bc8bbfb65175105385bf24f1fba
+SHA256: f950e47ba5c18ad2d2de6b87ab736b7ae4ad7ea6b1a1b5dd0588a304b41eb86f
+SHA512: e7c95fdf2447926bb431d171e5e64d7d39db1819e3126e265c4570f68b12fb489e02e36bd9e7801ff5768a17f5c422e8bb5a3fe81a496c5e07e8c34a19b4b9c5
+Description: uextract-converted-pet-to-deb
+
 Package: midori
 Architecture: i386
 Version: 0.5.2

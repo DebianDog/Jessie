@@ -4205,6 +4205,28 @@ usr/local/apps/Connect/AppRun				    sns,wifibox,wifibox-dhcpcd,frisbee
 usr/local/apps/Pfind/.DirIcon				    pfind
 usr/local/apps/Pfind/AppInfo.xml			    pfind
 usr/local/apps/Pfind/AppRun				    pfind
+usr/local/apps/UExtract/.DirIcon			    uextract
+usr/local/apps/UExtract/AppIcon.xpm			    uextract
+usr/local/apps/UExtract/AppInfo.xml			    uextract
+usr/local/apps/UExtract/AppRun				    uextract
+usr/local/apps/UExtract/UExtract.desktop		    uextract
+usr/local/apps/UExtract/UExtract.png			    uextract
+usr/local/apps/UExtract/UExtract.svg			    uextract
+usr/local/apps/UExtract/createshortcut			    uextract
+usr/local/apps/UExtract/doc/CHANGELOG.txt		    uextract
+usr/local/apps/UExtract/doc/CREDITS.txt			    uextract
+usr/local/apps/UExtract/doc/FILETYPES.txt		    uextract
+usr/local/apps/UExtract/doc/FILETYPES_pl.txt		    uextract
+usr/local/apps/UExtract/doc/GPL2.txt			    uextract
+usr/local/apps/UExtract/doc/LINKS.txt			    uextract
+usr/local/apps/UExtract/locale/de/LC_MESSAGES/uextract.mo   uextract
+usr/local/apps/UExtract/locale/es/LC_MESSAGES/uextract.mo   uextract
+usr/local/apps/UExtract/locale/pl/LC_MESSAGES/uextract.mo   uextract
+usr/local/apps/UExtract/locale/ru/LC_MESSAGES/uextract.mo   uextract
+usr/local/apps/UExtract/pinstall.sh			    uextract
+usr/local/apps/UExtract/puninstall.sh			    uextract
+usr/local/apps/UExtract/resources/README.txt		    uextract
+usr/local/apps/UExtract/uextract			    uextract
 usr/local/apps/gnome-mplayer-1.0.6/gnome-mplayer	    gnome-mplayer-1.0.7
 usr/local/apps/gnome-mplayer-1.0.6/lib/libdvdnavmini.so.4   gnome-mplayer-1.0.7
 usr/local/apps/gnome-mplayer-1.0.6/lib/libdvdnavmini.so.4.1.2 gnome-mplayer-1.0.7
@@ -4388,6 +4410,7 @@ usr/local/bin/start-stop-slim				    slim
 usr/local/bin/transmission				    transmission-2.31
 usr/local/bin/transmission-gtk				    transmission-2.31
 usr/local/bin/txt2svg					    txt2svg
+usr/local/bin/uextract					    uextract
 usr/local/bin/upgrade-kernel				    upgrade-kernel
 usr/local/bin/upgrade-kernel-start			    upgrade-kernel
 usr/local/bin/weav					    weav
@@ -7021,6 +7044,7 @@ usr/share/applications/SfsGet.desktop			    sfsget
 usr/share/applications/Thunar-bulk-rename.desktop	    thunar
 usr/share/applications/Thunar-folder-handler.desktop	    thunar
 usr/share/applications/Thunar.desktop			    thunar
+usr/share/applications/UExtract.desktop			    uextract
 usr/share/applications/YouTube-Get.desktop		    youtube-get
 usr/share/applications/YouTube-Get2.desktop		    youtube-get2
 usr/share/applications/apt2sfs-fullinst.desktop		    apt2sfs
@@ -8387,6 +8411,7 @@ usr/share/icons/Adwaita/scalable/status/weather-snow-symbolic.svg adwaita-icon-t
 usr/share/icons/Adwaita/scalable/status/weather-storm-symbolic.svg adwaita-icon-theme
 usr/share/icons/application-x-squashfs.png		    sfsget
 usr/share/icons/browserdload.png			    sfsget
+usr/share/icons/hicolor/128x128/apps/UExtract.png	    uextract
 usr/share/icons/hicolor/128x128/apps/ceni.png		    ceni
 usr/share/icons/hicolor/128x128/apps/findnrun.png	    findnrun
 usr/share/icons/hicolor/128x128/apps/firefox-esr.png	    firefox-esr
@@ -9837,6 +9862,7 @@ usr/share/locale/de/LC_MESSAGES/epdfview.mo		    epdfview
 usr/share/locale/de/LC_MESSAGES/findnrun.mo		    findnrun-nls
 usr/share/locale/de/LC_MESSAGES/libgnutls26.mo		    libgnutls26
 usr/share/locale/de/LC_MESSAGES/luksformat.mo		    cryptsetup-bin
+usr/share/locale/de/LC_MESSAGES/uextract.mo		    uextract
 usr/share/locale/de/LC_MESSAGES/xfe.mo			    xfe
 usr/share/locale/de/LC_MESSAGES/xvidcap.mo		    xvidcap
 usr/share/locale/de/LC_MESSAGES/yad.mo			    yad
@@ -9850,6 +9876,7 @@ usr/share/locale/es/LC_MESSAGES/cryptsetup.mo		    cryptsetup-bin
 usr/share/locale/es/LC_MESSAGES/epdfview.mo		    epdfview
 usr/share/locale/es/LC_MESSAGES/findnrun.mo		    findnrun-nls
 usr/share/locale/es/LC_MESSAGES/jwm.mo			    jwm
+usr/share/locale/es/LC_MESSAGES/uextract.mo		    uextract
 usr/share/locale/es/LC_MESSAGES/xfe.mo			    xfe
 usr/share/locale/es/LC_MESSAGES/xvidcap.mo		    xvidcap
 usr/share/locale/es_AR/LC_MESSAGES/xfe.mo		    xfe
@@ -9889,6 +9916,7 @@ usr/share/locale/pl/LC_MESSAGES/cryptsetup.mo		    cryptsetup-bin
 usr/share/locale/pl/LC_MESSAGES/epdfview.mo		    epdfview
 usr/share/locale/pl/LC_MESSAGES/jwm.mo			    jwm
 usr/share/locale/pl/LC_MESSAGES/libgnutls26.mo		    libgnutls26
+usr/share/locale/pl/LC_MESSAGES/uextract.mo		    uextract
 usr/share/locale/pl/LC_MESSAGES/xfe.mo			    xfe
 usr/share/locale/pt-PT/LC_MESSAGES/jwm.mo		    jwm
 usr/share/locale/pt_BR/LC_MESSAGES/epdfview.mo		    epdfview
@@ -9899,6 +9927,7 @@ usr/share/locale/pt_PT/LC_MESSAGES/xfe.mo		    xfe
 usr/share/locale/ru/LC_MESSAGES/epdfview.mo		    epdfview
 usr/share/locale/ru/LC_MESSAGES/jwm.mo			    jwm
 usr/share/locale/ru/LC_MESSAGES/mount-wizard.mo		    mount-wizard
+usr/share/locale/ru/LC_MESSAGES/uextract.mo		    uextract
 usr/share/locale/ru/LC_MESSAGES/xfe.mo			    xfe
 usr/share/locale/ru/LC_MESSAGES/yad.mo			    yad
 usr/share/locale/sk/LC_MESSAGES/yad.mo			    yad
@@ -10145,6 +10174,7 @@ usr/share/pixmaps/BaCon24.png				    bacon
 usr/share/pixmaps/Insight-FileManager.png		    lumina-desktop-debdog
 usr/share/pixmaps/Lumina-DE.png				    lumina-desktop-debdog
 usr/share/pixmaps/QtWeb.png				    qtweb
+usr/share/pixmaps/UExtract.png				    uextract
 usr/share/pixmaps/application-x-squashfs.png		    sfs-get-smokey-get
 usr/share/pixmaps/application-x-squashfs2.png		    remaster-scripts
 usr/share/pixmaps/application-x-squashfs3.png		    quick-remaster
