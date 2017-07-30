@@ -1636,6 +1636,24 @@ Homepage: http://dmsimpleapps.blogspot.ro/2014/04/dmmediaconverter.html
 Description: dmMediaConverter - ffmpeg GUI. deb modded 2014/08/29 to use external ffmpeg by mcewanw
  dmMediaConverter is a ffmpeg GUI intended to be simple and easy to use but also to be able to achieve complex tasks. It's inspired from a many media converters like Handbrake, WinFF and MkvMergeGui. One feature that was lacking in most such tools is video stream copy (pass-through), this being the main reason for creating dmMediaConverter.
 
+Package: PeasyWiFi
+Architecture: i386
+Version: 4.3-1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: libc6, gtkdialog, gettext-base, net-tools, wpasupplicant, wireless-tools, x11-utils
+Filename: ./Extra/peasywifi_4.3-1_i386.deb
+Size: 15544
+MD5sum: 797884ed2375442342174dae4967937d
+SHA1: 4b5ee659a0617a97495004967297fe1e7dc5e3c3
+SHA256: f0568b18e0d45e24e8fcd45f398c5f7dd701308d332907861ca24771bed758ae
+SHA512: 3df7c2a11ecfbf6e99471cfa2822f87e71413f0c9f509ab5625994a98fd6fe71708f5c63bcbe445e7b0b420e1651faad85d8fa68f21ed28aab05b31e97bbd284
+Description: Reliable network manager
+ -changes in v4.3-1 in peasywifi script by rcrsn51:
+ - added option (Ethernet tab) to bring the interface down
+ - added Names button (to select interface names)
+
 Package: conkyclock2
 Architecture: all
 Version: 1.0.1

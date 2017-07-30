@@ -98,6 +98,7 @@ etc/init.d/frisbee					    frisbee
 etc/init.d/network.sh					    wifibox-dhcpcd,wifibox
 etc/init.d/rc.functions					    wifibox-dhcpcd,wifibox
 etc/init.d/rc.network					    PeasyWiFi
+etc/init.d/rc.network-start				    PeasyWiFi
 etc/init.d/rc.yassm					    yassm-smbclient-mpscan
 etc/init.d/rcS_slitaz					    wifibox-dhcpcd,wifibox
 etc/init.d/slim						    slim
