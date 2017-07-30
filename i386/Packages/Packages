@@ -2193,6 +2193,26 @@ Description: Oxygen icon theme
  icon schemes, so it can be used in other desktop environments using this
  specification.
 
+Package: PeasyWiFi
+Architecture: i386
+Version: 4.4-0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: libc6, gtkdialog, gettext-base, net-tools, wpasupplicant, wireless-tools, x11-utils
+Filename: ./Extra/peasywifi_4.4-0_i386.deb
+Size: 15540
+MD5sum: 1e091774c0707b1212882de4676b4242
+SHA1: 1de320f7cbd8ce780e86a6ec7cc3b48a14504047
+SHA256: 8babcbfb9958aa72c6d46f3f549fd7a2f458bd601ca799cf64344ae0e2d424a5
+SHA512: bf64ec8d00d0e7cbafba54436152d006543754687401fd4602211b8d4047ee9066e3b32276b7cd17c6a55808311b6d3e2185f6f13c30ad8b9ee94466c0e11f3f
+Description: Reliable network manager
+ -changes in v4.4-0 in peasywifi script by rcrsn51:
+ - added option (Ethernet tab) to bring the interface down
+ - added Names button (to select interface names)
+ - A modification to Names. It resets the Ethernet profiles in /etc/pwf/ethernet
+ - Updated Help screen
+
 Package: osmo-portable
 Architecture: i386
 Version: 0.2.8-1
