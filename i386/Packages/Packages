@@ -1796,6 +1796,26 @@ Description: mplayer/mplayer2 based video player, minimal build
  This package is not part of Debian. It was created by mpv-build scripts with
  statically linked ffmpeg (not libav) and libass from upstream.
 
+Package: PeasyWiFi
+Architecture: i386
+Version: 4.4-1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: libc6, gtkdialog, gettext-base, net-tools, wpasupplicant, wireless-tools, x11-utils
+Filename: ./Extra/peasywifi_4.4-1_i386.deb
+Size: 16288
+MD5sum: 25139dfc0c99b231674e212e527dd649
+SHA1: 4b9406c41f6a2ce037b35c40523a08a96b0818ca
+SHA256: c108612ccdfb9f49e2943c7c3fc809ce57ad745c64b8294c484c009f31a363a7
+SHA512: b3dbf878c506d8bfd818262d3f498fafdac3fca034d52f82df4f38c75f663e0de3533e8fba4e797dbaf1230d79e8a5cbb0865c90d620e486dca4f0857e5a3ee2
+Description: Reliable network manager
+ -changes in v4.4-0 in peasywifi script by rcrsn51:
+ - added option (Ethernet tab) to bring the interface down
+ - added Names button (to select interface names)
+ - A modification to Names. It resets the Ethernet profiles in /etc/pwf/ethernet
+ - Updated Help screen
+
 Package: notecase-portable
 Architecture: i386
 Version: 1.9.8-1

@@ -9,35 +9,35 @@ Codename: jessie
 Architectures: i386
 Components: main
 Description: DebianDog repository
-Date: Sun, 30 Jul 2017 12:15:03 +0000
+Date: Tue, 01 Aug 2017 20:40:15 +0000
 MD5Sum:
- 5f17a67f01666d881757fafd0d609474           150351 Packages
- dbea010bc56a09d9d1097b137d14b91a            56809 Packages.gz
- 741ecca239db2d35c05cc1ff51ca6f1a              185 Release
- dbea010bc56a09d9d1097b137d14b91a            56809 Translation-en.gz
+ 886139b8ef4e3465f57294794d2c8109           151207 Packages
+ 38f7cf996684ac621b65c4b9cd2ab298            57072 Packages.gz
+ 06c499f3a501a305fcfc4359f54104da              185 Release
+ 38f7cf996684ac621b65c4b9cd2ab298            57072 Translation-en.gz
 SHA1:
- 8f9e64a6e6f034b89f8f79e00d43e5dab4edfa4e           150351 Packages
- fef6e5167dadc9ca8de2bc0473d482780891d92b            56809 Packages.gz
- 76b83e1a35774c9f69fe677a61def93941e0873a              185 Release
- fef6e5167dadc9ca8de2bc0473d482780891d92b            56809 Translation-en.gz
+ 9d5814306a0cab317363e74487ea689cc1e4b76e           151207 Packages
+ b506f6019b4dd77ac876e62da7825985d25e621d            57072 Packages.gz
+ d39aa72c37c7c174de388efeb6962065d911f279              185 Release
+ b506f6019b4dd77ac876e62da7825985d25e621d            57072 Translation-en.gz
 SHA256:
- 76a7b555cc391541186d2256407722facf092af8a807ff952e95d743826dca9f           150351 Packages
- 494c899aea17c341f226815a8a322d43cc7a1ddfad086f03ab89744e5fefc853            56809 Packages.gz
- 21a1d1079c138ae0c6e25ee14982d6ee3a140f6669bb1db997cf92b3ec9c24fd              185 Release
- 494c899aea17c341f226815a8a322d43cc7a1ddfad086f03ab89744e5fefc853            56809 Translation-en.gz
+ e9a134ca1d73328db0a8583f72318086c4f0675b74aeb0d58647745f99854480           151207 Packages
+ 0ffd4128c1e10fc150d18921d832904b7abe48f602564b789a17f30120c0db53            57072 Packages.gz
+ fb321ae3f17a81df7e6ed7b2c87c6c33639558e032c8231e72ad91918479c083              185 Release
+ 0ffd4128c1e10fc150d18921d832904b7abe48f602564b789a17f30120c0db53            57072 Translation-en.gz
 SHA512:
- 7324e67735a9979422cf90cd7712e98f6a7a50feecc3c2e2c90ce61655d8c902a771a29cdbcb18c5c219ec5a70b83806b9ea3a6ddc2d941abe0c965dcfb5d469           150351 Packages
- 32d2a98785c8b6aca42a70b6c8f6e79313f8b08a8259e7b0e4bb07680968213a8c05904ca7fc40b59d4ca1e2f1151105d8349f3bde52af5e3a3c572e9c290377            56809 Packages.gz
- c40bf45c79f1bfacb9e4f5172d85c01af4d352bf01c4e9a9b817ae0e3cbdc48319d0b2e346b0d1db5543c564e29137b470f915680e577af87a03c986dea6f6d2              185 Release
- 32d2a98785c8b6aca42a70b6c8f6e79313f8b08a8259e7b0e4bb07680968213a8c05904ca7fc40b59d4ca1e2f1151105d8349f3bde52af5e3a3c572e9c290377            56809 Translation-en.gz
+ 08cf434d46f535e81d5528c21dadd2e7efd012604adc4ca49352a177a367f09d45ab512627a13681b30e5b789965f8ea3b002dba002010a65d7d6620a4175f6b           151207 Packages
+ de7781f2b21299fa3f254d250144e6c8e1abe2bb00bacd685290e424f0c02c196c6b52bb205508c6a20cd48ee4dd1159b98f90b39d8aad1f5851501ce0b49fed            57072 Packages.gz
+ e24ffe4bca363a71669da65c4cc557da3aa5b5b0f42876801f312877152e938e18c943cb234aa500275c97c00285c5986f23738fc46cf5e1d8ca2b51bf7c5166              185 Release
+ de7781f2b21299fa3f254d250144e6c8e1abe2bb00bacd685290e424f0c02c196c6b52bb205508c6a20cd48ee4dd1159b98f90b39d8aad1f5851501ce0b49fed            57072 Translation-en.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCAAdFiEEEzvZDupk2V//eP5nrYe8en1zCB0FAll9zdMACgkQrYe8en1z
-CB32ygf/XgiMqj6kJkJTUKVSYFoDQAVdmF+M+1hQ+O/cYAr+pPpQM3XNZbLxnZon
-o+w/ohOjhYxyFWM9fxIcLeK6T57B5tOw7TNDBUb7PtAepVbHzgVCY+s+eM1GTG95
-iNlIsLNf8StdTEUpwg35qLpETGLBtlA0QgD4R58Q9FWQp5k3TKnYgvvAXcguMIf2
-ISUHFsfWkEvH6kpKvUuVBhI2H3V+uEbEu3xwnWgNITcC3jYxnmXJWWKjx2ZClFpP
-Gbwd1j9vjMCtniOaeMYv1N78aWl6lKH4TDWOS31okBpsQOMBWPpHr5GDoa8D29XT
-yeRp+Op6gdo/mVniRLLN/6OvgomUsQ==
-=z5dO
+iQEzBAEBCAAdFiEEEzvZDupk2V//eP5nrYe8en1zCB0FAlmA5zkACgkQrYe8en1z
+CB2VrQgAmD9sPQYgTmy8eaFdtlNLuWgmcd7kmL+uOrfVtmHBFJOolvQQsnxx/Ak/
+S9Yv2JMnOeHGfGZjsPjr1BBYwETf/59ZFKnsnCsiI9WKu0bxOxnhZWHkbHUtnhhK
+4aD36KGJ1RSnwYx3tBgxCT6X5Vwr+o2g+CvljCE8WHy0rV38jDo4CBUkG9iSWw69
+1T9bYulZUeKxeLtEzlxzJAcb14ssMt2DoOYsYxTBurQHjcbzEI0g0+7LysCjtRHW
+yL1c2Nfd3+Nplp7KFwQGbNt49VVNW9lpkZBZtL8z+qe48QUS7ZbV4UsWU3ybyM8R
+QO3IQceFAMgf1VTrCtZ5Z3c5G8b5zA==
+=j6jk
 -----END PGP SIGNATURE-----

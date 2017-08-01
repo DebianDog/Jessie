@@ -4345,6 +4345,7 @@ usr/local/bin/install-dir-debs-and-dependencies		    fixdepinstall
 usr/local/bin/instdeb					    fixdepinstall
 usr/local/bin/instdeb-cli				    fixdepinstall
 usr/local/bin/instdeb-gui				    fixdepinstall
+usr/local/bin/ipinfo					    PeasyWiFi
 usr/local/bin/isotools					    isotools
 usr/local/bin/jpegtopnm					    peasyglue
 usr/local/bin/jwm-obmenu				    jwm-setup
